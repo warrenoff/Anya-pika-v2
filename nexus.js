@@ -81,7 +81,7 @@ async function startXBotInc() {
         if (!XBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(XBotInc, mek, store)
-        require("./XeonCheems4")(XBotInc, m, chatUpdate, store)
+        require("./XBOT")(XBotInc, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
@@ -203,7 +203,6 @@ XBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    │✨  𝗧𝗶𝗺𝗲 : 
    │✨  ${xtime} ${xdate}
    └───────────────┈ ⳹`
-      /!
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
 ]
