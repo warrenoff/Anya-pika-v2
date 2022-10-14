@@ -167,10 +167,10 @@ const {
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 
 //Database omther\\
-let xysticker = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
-let xaudio = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-let ximage = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/image.json'));
-let xvideo = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/video.json'));
+// let xysticker = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
+// let xaudio = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
+// let ximage = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/image.json'));
+// let xvideo = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
@@ -732,11 +732,11 @@ XBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.sp
 // 					}
 // 			}
 // 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-			for (let anju of xaudio){
-				if (budy === anju){
-					result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
-					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
-					}
+// 			for (let anju of xaudio){
+// 				if (budy === anju){
+// 					result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
+// 					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+// 					}
 // 			}
 // 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 // 			for (let anjh of xeonyimage){
