@@ -4520,7 +4520,7 @@ if (isBanChat) return reply(mess.banChat)
                 let buttonMessage = {
                     image: { url: 'https://coffee.alexflipnote.dev/random' },
                     caption: `Here you go!`,
-                    footer:
+                    footer: `${botname}`,
                     buttons: buttons,
                     headerType: 4
                 }
