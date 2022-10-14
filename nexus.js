@@ -610,7 +610,7 @@ XBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 
 
 //send 5 button image by x
-    XBotInc.send5ButImg = async (jid , text = '' , footer = '', img, but = [], thumb, options = {}) =>{
+     XBotInc.send5ButImg = async (jid , text = '' , footer = '', img, but = [], thumb, options = {}) =>{
         let message = await prepareWAMessageMedia({ image: img, jpegThumbnail:thumb }, { upload: XBotInc.waUploadToServer })
         var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
         templateMessage: {
