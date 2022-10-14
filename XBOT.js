@@ -167,10 +167,10 @@ const {
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
 
 //Database omther\\
-let xeonysticker = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
-let xeonyaudio = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-let xeonyimage = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/image.json'));
-let xeonyvideo = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/video.json'));
+let xysticker = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
+let xaudio = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
+let ximage = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/image.json'));
+let xvideo = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
@@ -194,7 +194,7 @@ module.exports = XBotInc = async (XBotInc, m, chatUpdate, store) => {
     try {
         var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ''
         var budy = (typeof m.text == 'string' ? m.text : '')
-        var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
+        var prefix = global.prefa
         const isCmd = body.startsWith(prefix)
         const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
         const args = body.trim().split(/ +/).slice(1)
@@ -212,15 +212,15 @@ module.exports = XBotInc = async (XBotInc, m, chatUpdate, store) => {
 	    const messagesD = body.slice(0).trim().split(/ +/).shift().toLowerCase()
 
         //group\\
-        const groupMetadata = m.isGroup ? await XBotInc.groupMetadata(m.chat).catch(e => {}) : ''
-        const groupName = m.isGroup ? groupMetadata.subject : ''
-        const participants = m.isGroup ? await groupMetadata.participants : ''
-        const groupAdmins = m.isGroup ? await participants.filter(v => v.admin !== null).map(v => v.id) : ''
-        const groupOwner = m.isGroup ? groupMetadata.owner : ''
-    	const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
-    	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
-    	const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
-        const AntiLink = m.isGroup ? ntilink.includes(from) : false
+const groupMetadata = m.isGroup ? await XBotInc.groupMetadata(m.chat).catch(e => {}) : ''
+const groupName = m.isGroup ? groupMetadata.subject : ''
+const participants = m.isGroup ? await groupMetadata.participants : ''
+const groupAdmins = m.isGroup ? await participants.filter(v => v.admin !== null).map(v => v.id) : ''
+const groupOwner = m.isGroup ? groupMetadata.owner : ''
+const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
+const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
+const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
+const AntiLink = m.isGroup ? ntilink.includes(from) : false
 const AntiLinkYoutubeVid = m.isGroup ? ntilinkytvid.includes(from) : false
 const AntiLinkYoutubeChannel = m.isGroup ? ntilinkytch.includes(from) : false
 const AntiLinkInstagram = m.isGroup ? ntilinkig.includes(from) : false
@@ -236,8 +236,8 @@ const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : false
 const isAutoStick = _autostick.includes(from)
 const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
 const Autoreply = m.isGroup ? autorep.includes(from) : true
-        const isBan = banUser.includes(m.sender)
-        const isBanChat = m.isGroup ? banchat.includes(from) : false
+const isBan = banUser.includes(m.sender)
+const isBanChat = m.isGroup ? banchat.includes(from) : false
 autoreadsw = true
 	    
         //member\\
@@ -272,8 +272,8 @@ autoreadsw = true
 	    if (setting) {
 		if (!isNumber(setting.status)) setting.status = 0
 		if (!('autobio' in setting)) setting.autobio = false
-if (!('templateImage' in setting)) setting.templateImage = false
-if (!('templateVideo' in setting)) setting.templateVideo = false
+		if (!('templateImage' in setting)) setting.templateImage = false
+		if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
 		if (!('templateMsg' in setting)) setting.templateMsg = false
 		if (!('templateDocument' in setting)) setting.templateDocument = true
@@ -725,33 +725,33 @@ XBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.sp
 
                 //auto reply by xeon
   //if (Autoreply) //remove forwad slashes to make it autoreply on off
-        for (let anji of xeonysticker){
-				if (budy === anji){
-					result = fs.readFileSync(`./TEAM_XMEDIA/sticker/${anji}.webp`)
-					XBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
-					}
-			}
-			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-			for (let anju of xeonyaudio){
-				if (budy === anju){
-					result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
-					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
-					}
-			}
-			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-			for (let anjh of xeonyimage){
-				if (budy === anjh){
-					result = fs.readFileSync(`./TEAM_XMEDIA/image/${anjh}.jpg`)
-					XBotInc.sendMessage(m.chat, { image: result }, { quoted: m })
-					}
-			}
-			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-					for (let anjh of xeonyvideo){
-				if (budy === anjh){
-					result = fs.readFileSync(`./TEAM_XMEDIA/video/${anjh}.mp4`)
-					XBotInc.sendMessage(m.chat, { video: result }, { quoted: m })
-					}
-				  }
+//         for (let anji of xeonysticker){
+// 				if (budy === anji){
+// 					result = fs.readFileSync(`./TEAM_XMEDIA/sticker/${anji}.webp`)
+// 					XBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
+// 					}
+// 			}
+// 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+// 			for (let anju of xeonyaudio){
+// 				if (budy === anju){
+// 					result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
+// 					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+// 					}
+// 			}
+// 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+// 			for (let anjh of xeonyimage){
+// 				if (budy === anjh){
+// 					result = fs.readFileSync(`./TEAM_XMEDIA/image/${anjh}.jpg`)
+// 					XBotInc.sendMessage(m.chat, { image: result }, { quoted: m })
+// 					}
+// 			}
+// 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+// 					for (let anjh of xeonyvideo){
+// 				if (budy === anjh){
+// 					result = fs.readFileSync(`./TEAM_XMEDIA/video/${anjh}.mp4`)
+// 					XBotInc.sendMessage(m.chat, { video: result }, { quoted: m })
+// 					}
+// 				  }
 
 //emoji 
 const emote = (satu, dua) => {
