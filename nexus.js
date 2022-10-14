@@ -168,7 +168,7 @@ let buttons = [
 let buttonMessage = {
 document: fs.readFileSync('./TEAM_XMEDIA//theme/XBOT.xlsx'),
 mimetype: docs,
-jpegThumbnail:XeonWlcm,
+jpegThumbnail:XWlcm,
 mentions: [num],
 fileName: `${metadata.subject}`,
 fileLength: 99999999999999,
@@ -180,7 +180,7 @@ contextInfo:{externalAdReply:{
 title: `${ownername}`,
 body: `Don't forget to read group description`,
 mediaType:2,
-thumbnail: XeonWlcm,
+thumbnail: XWlcm,
 sourceUrl: `${websitex}`,
 mediaUrl: `${websitex}`
 }}
