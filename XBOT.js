@@ -3315,7 +3315,7 @@ id: 'owner'
                     XBotInc.send5ButImg(i, DGx, `${global.botname}`, buffer, butoon)
                     } else if (/video/.test(mime)) {
                     let DGx = `*「 ${global.ownername}'s Broadcast」*${text ? '\n\n' + text : ''}`
-                    XBotInc.sendMessage(i, {video: buffer, caption: `${}`}, { quoted: ftroli })
+                    XBotInc.sendMessage(i, {video: buffer, caption: `${botname}`}, { quoted: ftroli })
                     } else if (/audio/.test(mime)) {
                     XBotInc.sendMessage(i, {audio: buffer, mimetype: 'audio/mpeg'}, { quoted : ftroli })
                     } else {
