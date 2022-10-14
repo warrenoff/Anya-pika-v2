@@ -6603,7 +6603,7 @@ if (isBan) return reply(mess.ban)
       m.chat, 
       {
        text: `${ucapannya2} ${pushname} *Search Results From ${text} Click the button below to choose*`,
-       footer:
+       footer:`${botname}`,
        title: "*APK DOWNLOADER,*",
        buttonText: "CLICK HERE",
        sections
@@ -7550,7 +7550,7 @@ if (isBanChat) return reply(mess.banChat)
                 let buttonMessage = {
                     image: { url: result.image[0] },
                     caption: `Title : ${result.title}\nCategory : ${result.type}\nDetail : ${result.source}\nMedia Url : ${result.image[2] || result.image[1] || result.image[0]}`,
-                    footer:
+                    footer: `${botname}`,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -7991,8 +7991,8 @@ case 'ttaud':{
     XBotInc.sendMessage(from, { audio: { url: xeonytiktokaudio }, mimetype: 'audio/mp4' }, { quoted: m })
    }
  break
-	case 'music': case 'play': case 'song': case 'ytplay': {
-   if (isBan) return reply(mess.ban)	 			
+case 'music': case 'play': case 'song': case 'ytplay': {
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 let yts = require("yt-search")
 let search = await yts(text)
@@ -8051,7 +8051,7 @@ let buttons = [
 let buttonMessage = {
 image: {url:res.thumb},
 caption: textyt,
-footer:
+footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
