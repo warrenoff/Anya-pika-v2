@@ -732,11 +732,11 @@ XBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.sp
 // 					}
 // 			}
 // 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-// 			for (let anju of xeonyaudio){
-// 				if (budy === anju){
-// 					result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
-// 					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
-// 					}
+			for (let anju of xaudio){
+				if (budy === anju){
+					result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
+					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+					}
 // 			}
 // 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 // 			for (let anjh of xeonyimage){
@@ -761,7 +761,7 @@ const emoji = new EmojiAPI();
 emoji.get(satu)
 .then(emoji => {
 const buttons = [{buttonId: "y", buttonText: {displayText:satu}, type: 1}]
-const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Here you go!",footerText:buttons: buttons,headerType: 4}
+const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Here you go!",footerText:`${botname}` , buttons: buttons,headerType: 4}
 XBotInc.sendMessage(from, buttonMessage, {quoted:m})
 })
 } catch (e) {
