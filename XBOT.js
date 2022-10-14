@@ -8797,7 +8797,8 @@ XBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
             { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
             { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
         	]
-        	XBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./TEAM_XMEDIA/theme/XBOT.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer:`${botname}`, mentionedJid: [m.sender] })
+        	XBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./TEAM_XMEDIA/theme/XBOT.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+                        }
                         }
                      }
             break
