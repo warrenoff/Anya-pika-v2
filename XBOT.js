@@ -297,12 +297,12 @@ XBotInc.sendMessage(m.chat, { text :teks, }, {quoted: m, thumbnail: fs.readFileS
 }
 
 //FAKE CONTACT
-const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `916909137213 -1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Click to chat\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
+const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `120363026115750939@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Click to chat\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
 //FAKEREPLY PRODUCT
 const ftoko = {
 key: {
 fromMe: false,
-participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "919971690443@s.whatsapp.net" } : {})
 },
 message: {
 "productMessage": {
@@ -390,7 +390,7 @@ const fgclink = {
 },
 "message": {
 "groupInviteMessage": {
-"groupJid": "916909137213-1616169743@g.us",
+"groupJid": "120363026115750939@g.us",
 "inviteCode": `${global.ownername}`,
 "groupName": `${global.botname}`, 
 "caption":`${global.watermark}`, 
@@ -403,7 +403,7 @@ const fgif = {
 key: { 
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? 
-{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+{ remoteJid: "120363026115750939@g.us" } : {}) 
 },
 message: { 
  "videoMessage": { 
@@ -421,7 +421,7 @@ const ftextt = {
 key: { 
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? 
-{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+{ remoteJid: "120363026115750939@g.us" } : {}) 
 },
 message: { 
 "extendedTextMessage": {
@@ -436,7 +436,7 @@ const fvn = {
 key: { 
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? 
-{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+{ remoteJid: "120363026115750939@g.us" } : {}) 
 },
 message: { 
 "audioMessage": {
@@ -3276,7 +3276,7 @@ if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
                 if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) return reply(`*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`)
                 let anu = await store.chats.all().map(v => v.id)
-                let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./TEAM_XMEDIA/theme/CHEEMSpic.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                let ftroli = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./TEAM_XMEDIA/theme/NEXUS.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 reply(`*Send Broadcast To* ${anu.length} *Group Chat, Time ${anu.length * 1.5} secs*`)
                 for (let i of anu) {
                     await sleep(1500)
@@ -3337,12 +3337,12 @@ if (!isCreator) return replay(mess.owner)
 	     	for (let yoi of anu) {
 	     	await sleep(1500)
 		    var button = [{ buttonId: `${prefix}ho`, buttonText: { displayText: `${melo2}` }, type: 1 }]              
-            XBotInc.sendMessage(yoi, { caption: `${melo}`, location: { jpegThumbnail: await getBuffer(picak+`${ownername}'s Broadcast`) }, buttons: button, footer: mentions: [m.sender] })
+            XBotInc.sendMessage(yoi, { caption: `${melo}`, location: { jpegThumbnail: await getBuffer(picak+`${ownername}'s Broadcast`) }, buttons: button, footer: `${botname}`, mentions: [m.sender] })
 		}		
             }
             break
 case 'chatinfo': {
-   if (isBan) return reply(mess.ban)	 			
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.quoted) replay('Reply Message')
 let msg = await m.getQuotedObj()
