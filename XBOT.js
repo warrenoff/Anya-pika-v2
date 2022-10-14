@@ -8960,8 +8960,7 @@ case 'allmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝚂𝚎𝚕𝚏
 ╠🔥${prefix}𝙿𝚞𝚋𝚕𝚒𝚌
@@ -9726,8 +9725,7 @@ case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Owner Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝚂𝚎𝚕𝚏
 ╠🔥${prefix}𝙿𝚞𝚋𝚕𝚒𝚌
@@ -9754,8 +9752,7 @@ case 'groupmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Group Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓰𝓻𝓸𝓾𝓹 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓰𝓻𝓸𝓾𝓹 」	
 ╿
 ╠🔥${prefix}𝙶𝚛𝚘𝚞𝚙𝚜𝚎𝚝𝚝𝚒𝚗𝚐
 ╠🔥${prefix}𝙶𝚛𝚘𝚞𝚙𝚕𝚒𝚗𝚔
@@ -9803,8 +9800,7 @@ case 'rpgmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Rpg Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓻𝓹𝓰 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓻𝓹𝓰 」	
 ╿
 ╠🔥${prefix}𝙷𝚞𝚗𝚝
 ╠🔥${prefix}𝙼𝚒𝚗𝚎
@@ -9824,8 +9820,7 @@ case 'makermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Maker Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓶𝓪𝓴𝓮𝓻 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓶𝓪𝓴𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝙲𝚊𝚗𝚍𝚢
 ╠🔥${prefix}8𝚋𝚒𝚝
@@ -9941,8 +9936,7 @@ case 'downloadmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Download Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓭𝓸𝔀𝓷𝓵𝓸𝓪𝓭 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓭𝓸𝔀𝓷𝓵𝓸𝓪𝓭 」	
 ╿
 ╠🔥${prefix}𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 [𝚄𝚛𝚕]
 ╠🔥${prefix}𝙸𝚐𝚝𝚟 [𝚄𝚛𝚕]
@@ -10006,8 +10000,7 @@ case 'convertmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Convert Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓬𝓸𝓷𝓿𝓮𝓻𝓽 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓬𝓸𝓷𝓿𝓮𝓻𝓽 」	
 ╿
 ╠🔥${prefix}𝚃𝚘𝚒𝚖𝚊𝚐𝚎 [𝚁𝚎𝚙𝚕𝚢 𝚂𝚝𝚒𝚌𝚔]
 ╠🔥${prefix}𝚂𝚝𝚒𝚌𝚔𝚎𝚛 [𝚁𝚎𝚙𝚕𝚢 𝙸𝚖𝚐|𝙶𝚒𝚏]
@@ -10044,8 +10037,7 @@ case 'randomimagemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Random Image Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓻𝓪𝓷𝓭𝓸𝓶 𝓲𝓶𝓰」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓻𝓪𝓷𝓭𝓸𝓶 𝓲𝓶𝓰」	
 ╿
 ╠🔥${prefix}𝙲𝚘𝚏𝚏𝚎𝚎
 ╠🔥${prefix}𝙱𝚝𝚜
@@ -10067,8 +10059,7 @@ case 'emotemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Emote Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓮𝓶𝓸𝓽𝓮 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓮𝓶𝓸𝓽𝓮 」	
 ╿
 ╠🔥${prefix}𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖𝚎𝚖𝚘𝚓𝚒
 ╠🔥${prefix}𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔𝚎𝚖𝚘𝚓𝚒
@@ -10089,8 +10080,7 @@ case 'imageeffectmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Image Effect Menu')
-await XBotInc.send5ButImg(from, `
-╔═════➻「𝓲𝓶𝓰 𝓮𝓯𝓯𝓮𝓬𝓽 」	
+await XBotInc.send5ButImg(from, `╔═════➻「𝓲𝓶𝓰 𝓮𝓯𝓯𝓮𝓬𝓽 」	
 ╿
 ╠🔥${prefix}𝚆𝚊𝚗𝚝𝚎𝚍
 ╠🔥${prefix}𝙱𝚕𝚞𝚛
@@ -10113,8 +10103,7 @@ case 'animemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Anime Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 」	
 ╿
 ╠🔥${prefix}𝙽𝚊𝚛𝚞𝚝𝚘
 ╠🔥${prefix}𝚈𝚊𝚘𝚒
@@ -10170,8 +10159,7 @@ case 'stickermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Sticker Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝙿𝚊𝚝𝚛𝚒𝚌𝚔
 ╠🔥${prefix}𝙴𝚖𝚘𝚓𝚒
@@ -10187,8 +10175,7 @@ case 'animestickermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Anime Sticker Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝙻𝚘𝚕𝚒
 ╠🔥${prefix}𝙱𝚞𝚕𝚕𝚢
@@ -10226,8 +10213,7 @@ case 'nsfwmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Nsfw Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓷𝓼𝓯𝔀 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓷𝓼𝓯𝔀 」	
 ╿
 ╠🔥${prefix}𝙷𝚎𝚗𝚝𝚊𝚒𝚟𝚒𝚍𝚎𝚘
 ╠🔥${prefix}𝚈𝚞𝚛𝚒
@@ -10261,8 +10247,7 @@ case 'funmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Fun Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓕𝓤𝓝 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓕𝓤𝓝 」	
 ╿
 ╠🔥${prefix}𝙷𝚘𝚠 [𝚃𝚎𝚡𝚝
 ╠🔥${prefix}𝚆𝚑𝚎𝚗 [𝚃𝚎𝚡𝚝]
@@ -10335,8 +10320,7 @@ case 'soundmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Sound Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓢𝓞𝓤𝓝𝓓 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓢𝓞𝓤𝓝𝓓 」	
 ╿
 ╠🔥${prefix}𝚂𝚘𝚞𝚗𝚍1
 ╠🔥${prefix}𝚂𝚘𝚞𝚗𝚍2
@@ -10506,8 +10490,7 @@ case 'gamemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Game Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓰𝓪𝓶𝓮 」
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓰𝓪𝓶𝓮 」
 ╿	
 ╠🔥${prefix}𝚃𝚛𝚞𝚝𝚑
 ╠🔥${prefix}𝙳𝚊𝚛𝚎
@@ -10523,8 +10506,7 @@ case 'anonymousmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Anonymous Menu')
-await XBotInc.send5ButImg(from, `
-╔═══➻「 𝓪𝓷𝓸𝓷𝔂𝓶𝓸𝓾𝓼 」	
+await XBotInc.send5ButImg(from, `╔═══➻「 𝓪𝓷𝓸𝓷𝔂𝓶𝓸𝓾𝓼 」	
 ╿
 ╠🔥${prefix}𝙰𝚗𝚘𝚗𝚢𝚖𝚘𝚞𝚜
 ╠🔥${prefix}𝚂𝚝𝚊𝚛𝚝
@@ -10537,8 +10519,7 @@ case 'toolmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Tool Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓽𝓸𝓸𝓵 」
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓽𝓸𝓸𝓵 」
 ╿	
 ╠🔥${prefix}𝚃𝚛𝚊𝚗𝚜𝚕𝚊𝚝𝚎 [𝚃𝚎𝚡𝚝]
 ╠🔥${prefix}𝙵𝚕𝚒𝚙𝚝𝚎𝚡𝚝 [𝚃𝚎𝚡𝚝]
@@ -10550,8 +10531,7 @@ case 'databasemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Database Menu')
-await XBotInc.send5ButImg(from, `
-╔═══➻「 𝓭𝓪𝓽𝓪𝓫𝓪𝓼𝓮 」	
+await XBotInc.send5ButImg(from, `╔═══➻「 𝓭𝓪𝓽𝓪𝓫𝓪𝓼𝓮 」	
 ╿
 ╠🔥${prefix}𝚂𝚎𝚝𝚌𝚖𝚍
 ╠🔥${prefix}𝙻𝚒𝚜𝚝𝚌𝚖𝚍
@@ -10568,8 +10548,7 @@ case 'indomenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Indo Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓲𝓷𝓭𝓸 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓲𝓷𝓭𝓸 」	
 ╿
 ╠🔥${prefix}𝙳𝚊𝚛𝚔𝚓𝚘𝚔𝚎
 ╠🔥${prefix}𝚀𝚞𝚘𝚝𝚎𝚜
@@ -10602,8 +10581,7 @@ case 'indohoroscopemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Indo Horoscope Menu')
-await XBotInc.send5ButImg(from, `
-╔═➻「 𝓲𝓷𝓭𝓸 𝓱𝓸𝓻𝓸𝓼𝓬𝓸𝓹𝓮 」	
+await XBotInc.send5ButImg(from, `╔═➻「 𝓲𝓷𝓭𝓸 𝓱𝓸𝓻𝓸𝓼𝓬𝓸𝓹𝓮 」	
 ╿
 ╠🔥${prefix}𝙽𝚘𝚖𝚘𝚛𝚑𝚘𝚔𝚒
 ╠🔥${prefix}𝙰𝚛𝚝𝚒𝚖𝚒𝚖𝚙𝚒 
@@ -10644,8 +10622,7 @@ case 'othermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Other Menu')
-await XBotInc.send5ButImg(from, `
-╔═══════➻「 𝓸𝓽𝓱𝓮𝓻 」	
+await XBotInc.send5ButImg(from, `╔═══════➻「 𝓸𝓽𝓱𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝙰𝚏𝚔
 ╠🔥${prefix}𝚁𝚎𝚊𝚍𝚖𝚘𝚛𝚎 [𝚃𝚎𝚡𝚝]
