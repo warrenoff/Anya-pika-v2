@@ -8749,7 +8749,7 @@ XBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
 case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
-		if (isBan) return reply(mess.ban)	 			
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 	                let btn = [{
@@ -8787,11 +8787,9 @@ XBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
                         XBotInc.send5ButVid(m.chat, anu, global.botname, global.vidmenu, btn, global.thumb)
                         } else if (setbot.templateVideo) {
                         XBotInc.send5ButVid(m.chat, menulist, global.botname, global.vidmenu, btn, global.thumb)
-                        /////////} else if (setbot.templateMsg) {
-                        /////////XBotInc.send5ButMsg(m.chat, menulist, global.botname, btn)
                         } else if (setbot.templateDocument) {
                         let buttonmenu = [
-        	{ urlButton: { displayText: `github 🍒`, url : `${websitex}` } },
+            { urlButton: { displayText: `github 🍒`, url : `${websitex}` } },
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
             { quickReplyButton: { displayText: `All Menu 🍱`, id: 'allmenu'} },
             { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
@@ -8799,12 +8797,11 @@ XBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
         	]
         	XBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./TEAM_XMEDIA/theme/XBOT.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
-                        }
                      }
-            break
-                case 'command': {
-                	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+            break			
+case 'command': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hi ${pushname}`,
