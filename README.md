@@ -3,7 +3,7 @@ A MULTI FUNCTIONAL BOT FOR WHATSAPP ##
 
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NEXUSAT12/TEAM_xBOT/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NEXUSAT12/XBOT/)
 
 ## SCAN QR CODE
 
