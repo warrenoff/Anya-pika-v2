@@ -8797,7 +8797,7 @@ XBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
             { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
             { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
         	]
-        	XBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./TEAM_XMEDIA/theme/XBOT.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: mentionedJid: [m.sender] })
+        	XBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./TEAM_XMEDIA/theme/XBOT.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer:`${botname}`, mentionedJid: [m.sender] })
                         }
                      }
             break
@@ -8964,6 +8964,7 @@ case 'allmenu':
 var unicorn = await getBuffer(picak+'All Menu')
 await XBotInc.send5ButImg(from, `
 ╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
+╿
 ╠🔥${prefix}𝚂𝚎𝚕𝚏
 ╠🔥${prefix}𝙿𝚞𝚋𝚕𝚒𝚌
 ╠🔥${prefix}𝙰𝚗𝚝𝚒𝚝𝚊𝚐
@@ -8985,7 +8986,8 @@ await XBotInc.send5ButImg(from, `
 ╠🔥${prefix}𝙱𝚕𝚘𝚌𝚔 [𝚃𝚊𝚐/𝙽𝚞𝚖𝚋𝚎𝚛]
 ╠🔥${prefix}𝚄𝚗𝚋𝚕𝚘𝚌𝚔 [𝚃𝚊𝚐/𝙽𝚞𝚖𝚋𝚎𝚛]
 ╠🔥${prefix}𝙲𝚘𝚘𝚠𝚗𝚎𝚛 [𝙰𝚍𝚍/𝙳𝚎𝚕]
-╿╠═══════➻「 𝓰𝓻𝓸𝓾𝓹 」	        
+╿
+╠═══════➻「 𝓰𝓻𝓸𝓾𝓹 」	        
 ╿
 ╠🔥${prefix}𝙶𝚛𝚘𝚞𝚜𝚎𝚝𝚝𝚒𝚗𝚐
 ╠🔥${prefix}𝙶𝚛𝚘𝚞𝚙𝚕𝚒𝚗𝚔
