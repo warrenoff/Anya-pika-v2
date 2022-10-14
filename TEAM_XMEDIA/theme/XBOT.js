@@ -1,0 +1,3 @@
+{
+	"name": "XBOT Multi Device "
+}
