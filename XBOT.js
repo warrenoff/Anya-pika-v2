@@ -4562,7 +4562,7 @@ if (isBanChat) return reply(mess.banChat)
       m.chat, 
       {
        text: `${data.meta.title} *Here is the list of videos, click the button below to choose*`,
-       footer:
+       footer: `${botname}`, 
        title: "*SAVE FROM*",
        buttonText: "CLICK HERE",
        sections
