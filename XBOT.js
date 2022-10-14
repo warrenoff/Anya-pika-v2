@@ -479,9 +479,9 @@ const reply = (teks) => {
         //hitter
         global.hit = {}
 if (isCmd) {
-data = await fetchJson('https://api.countapi.xyz/hit/XBOT/visits')
+data = await fetchJson('https://api.countapi.xyz/hit/CheemsBot/visits')
 jumlahcmd = `${data.value}`
-dataa = await fetchJson(`https://api.countapi.xyz/hit/XBOT${moment.tz('Asia/Kolkata').format('DDMMYYYY')}/visits`)
+dataa = await fetchJson(`https://api.countapi.xyz/hit/CheemsBot${moment.tz('Asia/Kolkata').format('DDMMYYYY')}/visits`)
 jumlahharian = `${dataa.value}`
 }
         
