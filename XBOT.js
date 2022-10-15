@@ -8719,11 +8719,11 @@ if (isBanChat) return reply(mess.banChat)
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid \n\n If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
-                    break
+break
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-teks = `*「 ${global.botname} Script 」*\n\ngithub: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
+let teks = `*「 ${global.botname} Script 」*\n\ngithub: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu 🌺'}, type: 1}
 ]
@@ -8740,7 +8740,7 @@ body: "Click to donate",
 thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
-sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
+sourceUrl: "https://github.com/NEXUSAT12"
 }}
 }
 XBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8774,7 +8774,6 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-            break			
 case 'command': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
@@ -9718,6 +9717,7 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 }
+break 
 case 'ownermenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
