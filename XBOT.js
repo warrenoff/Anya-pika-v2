@@ -9788,7 +9788,8 @@ mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
 }}
-}	     
+}
+}
 XBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 break
 case 'groupmenu':
