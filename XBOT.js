@@ -477,13 +477,13 @@ const reply = (teks) => {
         })
         
         //hitter
-global.hit = {}
-if (isCmd) {
-data = await fetchJson('https://api.countapi.xyz/hit/XBOT/visits?') 
-jumlahcmd = `${data.value}`
-dataa = await fetchJson(`https://api.countapi.xyz/hit/XBOT${moment.tz('Asia/Kolkata').format('DDMMYYYY')}/visits`)
-jumlahharian = `${dataa.value}`
-}
+// global.hit = {}
+// if (isCmd) {
+// 	data = await fetchJson('https://api.countapi.xyz/hit/XBOT/visits?') 
+// 	jumlahcmd = `${data.value}`
+// 	dataa = await fetchJson(`https://api.countapi.xyz/hit/XBOT${moment.tz('Asia/Kolkata').format('DDMMYYYY')}/visits`)
+// 	jumlahharian = `${dataa.value}`
+// 	}
         
 	//auto set bio\\
 	if (db.data.settings[botNumber].autobio) {
@@ -514,9 +514,9 @@ await XBotInc.sendPresenceUpdate('composing', m.chat)
 XBotInc.sendReadReceipt(from, m.sender, [m.key.id])}
 }
   //autoread gc only
-  if (global.autoReadGc) {
-  if (m.isGroup) { XBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id]) }
-}
+//   if (global.autoReadGc) {
+//   if (m.isGroup) { XBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id]) }
+// }
   //auto recording all
     if (global.autoRecord) { if (m.chat) { XBotInc.sendPresenceUpdate('recording', m.chat) }
 }
@@ -1083,8 +1083,6 @@ const latensie = speed() - timestampe
 │𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 │𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 │𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
 └┬────────────┈ ⳹
    │✑  Please Select
    │✑  The Button Below
