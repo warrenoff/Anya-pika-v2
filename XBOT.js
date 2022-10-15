@@ -9695,16 +9695,16 @@ const allmenu =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」
 ╠🔥${prefix}𝚁𝚎𝚙𝚘𝚛𝚝 [𝙱𝚞𝚐]
 ╽
 ╚┅┅┅┅┅┅┅༻` 
-let buttons = [
+let buons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1},
-{buttonId: `owner`, buttonText: {displayText: 'owner👑'}, type: 1},
+{buttonId: `owner`, buttonText: {displayText: 'owner👑'}, type: 1}
 ]
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
 caption: allmenu,
 footer: `${botname}`,
-buttons: buttons,
+buttons: buons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
@@ -9811,12 +9811,15 @@ let teks =  `╔═══════➻「 𝓰𝓻𝓸𝓾𝓹 」
 ╠🔥${prefix}𝙳𝚎𝚕𝚟𝚘𝚝𝚎
 ╽
 ╚┅┅┅┅┅┅┅༻` 
+let button = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
-buttons: buttons,
+buttons: button,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
@@ -9848,12 +9851,15 @@ let teks =  `╔═══════➻「 𝓻𝓹𝓰 」
 ╠🔥${prefix}𝙻𝚎𝚊𝚍𝚎𝚛𝚋𝚘𝚊𝚛𝚍
 ╽
 ╚┅┅┅┅┅┅┅༻`
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
-buttons: buttons,
+buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
@@ -9981,12 +9987,15 @@ let teks = `╔═══════➻「 𝓶𝓪𝓴𝓮𝓻 」
 ╠🔥${prefix}𝙲𝚕𝚊𝚜𝚜𝚒𝚌
 ╽
 ╚┅┅┅┅┅┅┅༻`
+let bttons = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
-buttons: buttons,
+buttons: bttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
@@ -10027,12 +10036,15 @@ let teks =  `╔═══════➻「 𝓭𝓸𝔀𝓷𝓵𝓸𝓪𝓭 」
 ╠🔥${prefix}𝚉𝚒𝚙𝚙𝚢𝚜𝚑𝚊𝚛𝚎 [𝚄𝚛𝚕]
 ╽
 ╚┅┅┅┅┅┅┅༻` 
+let uttons = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
-buttons: buttons,
+buttons: uttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
@@ -10079,12 +10091,15 @@ let teks =  `
 ╠🔥${prefix}𝙳𝚛𝚊𝚔𝚘𝚛 [𝚀𝚞𝚎𝚛𝚢]
 ╽
 ╚┅┅┅┅┅┅┅༻`
+let butons = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
-buttons: buttons,
+buttons: butons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
