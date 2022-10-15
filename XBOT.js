@@ -8721,7 +8721,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid \
                     }
                     break
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-	if (isBan) return reply(mess.ban)	 			
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 teks = `*「 ${global.botname} Script 」*\n\ngithub: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
 let buttons = [
@@ -8955,10 +8955,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 case 'allmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
+const allmenu =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝚂𝚎𝚕𝚏
 ╠🔥${prefix}𝙿𝚞𝚋𝚕𝚒𝚌
@@ -9717,13 +9717,37 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓸𝔀𝓷𝓮
 ╠🔥${prefix}𝚁𝚎𝚚𝚞𝚎𝚜𝚝
 ╠🔥${prefix}𝚁𝚎𝚙𝚘𝚛𝚝 [𝙱𝚞𝚐]
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let message = await prepareWAMessageMedia({ image: picak+'all menu', buffer, jpegThumbnail:log0 }, { upload: XBotInc.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: allmenu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+ quickReplyButton: {
+ displayText: "𝓢𝓤𝓟𝓟𝓞𝓡𝓣_𝓖𝓡𝓞𝓤𝓟🔥",
+ id : `${prefix}support`
+}
+}, {
+urlButton: {
+displayText: '𝓖𝓘𝓣𝓗𝓤𝓑🔥✨',
+url: 'https://github.com/NEXUSAT12/TEAM_xBOT'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+XBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
 break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Owner Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
+teks  =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝚂𝚎𝚕𝚏
 ╠🔥${prefix}𝙿𝚞𝚋𝚕𝚒𝚌
@@ -9744,7 +9768,28 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓸𝔀𝓷𝓮
 ╠🔥${prefix}𝚂𝚎𝚝𝚙𝚙𝚋𝚘𝚝 [𝙸𝚖𝚊𝚐𝚎]
 ╠🔥${prefix}𝚂𝚎𝚝𝚎𝚡𝚒𝚏
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttons = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu :)'}, type: 1}
+]
+let buttonMessage = {
+image: thum,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+}
 break
 case 'groupmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10701,17 +10746,17 @@ break
                     return !0
                 }
 			//anti-tag
-const listTag = [`${global.ownertag}@s.whatsapp.net`]
-const partiNum = (m.mtype === 'extendedTextMessage') ? m.message.extendedTextMessage.contextInfo.participant : ''
-//anti-tag 2
-if (listTag.includes(partiNum)) {
-if (antitags === false) return
-if (!m.isGroup) return
-if (m.key.fromMe) return
-sendNye = fs.readFileSync('./TEAM_XMEDIA/theme/yourtag.webp')
-XBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
-XBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
-}
+// const listTag = [`${global.ownertag}@s.whatsapp.net`]
+// const partiNum = (m.mtype === 'extendedTextMessage') ? m.message.extendedTextMessage.contextInfo.participant : ''
+// //anti-tag 2
+// if (listTag.includes(partiNum)) {
+// if (antitags === false) return
+// if (!m.isGroup) return
+// if (m.key.fromMe) return
+// sendNye = fs.readFileSync('./TEAM_XMEDIA/theme/yourtag.webp')
+// XBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
+// XBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
+// }
 //anti-tag 3
 if (budy.includes(`${global.ownertag}`)) {
 if (antitags === false) return
@@ -10721,17 +10766,15 @@ sendNye = fs.readFileSync('./TEAM_XMEDIA/theme/yourtag.webp')
 XBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
 XBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
-		if (isCmd && budy.toLowerCase() != undefined) {
-		    if (m.chat.endsWith('broadcast')) return
-		    if (m.isBaileys) return
-		    let msgs = global.db.data.database
-		    if (!(budy.toLowerCase() in msgs)) return
-		    XBotInc.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
-		}
-        }
-        
-
-    } catch (err) {
+if (isCmd && budy.toLowerCase() != undefined) {
+if (m.chat.endsWith('broadcast')) return
+if (m.isBaileys) return
+let msgs = global.db.data.database
+if (!(budy.toLowerCase() in msgs)) return
+XBotInc.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
+}
+}
+       } catch (err) {
         m.reply(util.format(err))
     }
 }
