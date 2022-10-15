@@ -8746,7 +8746,7 @@ sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
 XBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': 
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
@@ -8772,6 +8772,7 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 }}
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
             break			
 case 'command': {
@@ -8931,7 +8932,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             XBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
-case 'allmenu': 
+case 'allmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
@@ -9716,8 +9717,8 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 }}
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
-		
-case 'ownermenu': 
+}
+case 'ownermenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Owner Menu')
@@ -9763,8 +9764,9 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 }}
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'groupmenu':
+case 'groupmenu':{
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Group Menu')
@@ -9831,8 +9833,9 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 }}
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'rpgmenu':
+case 'rpgmenu':{
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Rpg Menu')
@@ -9871,10 +9874,11 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 }}
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'makermenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'makermenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Maker Menu')
 let teks = `╔═══════➻「 𝓶𝓪𝓴𝓮𝓻 」	
 ╿
@@ -10007,8 +10011,9 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 }}
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'downloadmenu':
+case 'downloadmenu':{
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Download Menu')
@@ -10056,6 +10061,7 @@ sourceUrl: "https://github.com/NEXUSAT12/"
 }}
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
 case 'searchmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10112,9 +10118,9 @@ sourceUrl: "https://github.com/NEXUSAT12/"
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 break
-case 'convertmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'convertmenu': 
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Convert Menu')
 await XBotInc.send5ButImg(from, `╔═══════➻「 𝓬𝓸𝓷𝓿𝓮𝓻𝓽 」	
 ╿
