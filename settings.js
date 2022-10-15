@@ -38,14 +38,14 @@ global.socialm = "GitHub: NEXUSAT12" //ur github or insta name
 global.location = "India, UP, GHAZIABAD" //ur location
 
 //bot bomdy 
-global.owner = ['918130784851, 919987052500']
+global.owner = ['918130784851', '919987052500']
 global.ownertag = '918130784851' //ur tag number
 global.botname = '❧⃟ 🅇🄱🄾🅃 ⃟☙' //ur bot name
 global.linkz = "https://wa.me/+91813078451" //your theme url which will be displayed on whatsapp
 global.websitex = "https://github.com/NEXUSAT12" //ur website to be displayed
 global.botscript = 'https://chat.whatsapp.com/DDWBpH9ciy38RCGYO7RkfM' //script link
 global.reactmoji = "😘" //ur menu react emoji
-global.themeemoji = "🦄" //ur theme emoji
+global.themeemoji = "❤️‍🔥" //ur theme emoji
 global.packname = "ᎲᏰᎾᎿ Stickers\n\n\n\n\n\n\n\n\n\n\n✨✨✨ " //ur sticker watermark packname
 global.author = "✨ᏦᎨᏁᎶᏁᎬᎲᏬᏕ" //ur sticker watermark author
 
