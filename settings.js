@@ -38,6 +38,7 @@ global.socialm = "GitHub: NEXUSAT12" //ur github or insta name
 global.location = "India, UP, GHAZIABAD" //ur location
 
 //bot bomdy 
+global.aliveMessage = `HELLO MY dear *${pushname}* ❧⃟ 🄽🄴🅇🅄🅂 ⃟☙ is alive`
 global.owner = ['918130784851', '919987052500']
 global.ownertag = '918130784851' //ur tag number
 global.botname = '❧⃟ 🅇🄱🄾🅃 ⃟☙' //ur bot name
