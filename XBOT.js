@@ -9718,7 +9718,7 @@ const allmenu =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」
 ╠🔥${prefix}𝚁𝚎𝚙𝚘𝚛𝚝 [𝙱𝚞𝚐]
 ╽
 ╚┅┅┅┅┅┅┅༻` 
-let message = await prepareWAMessageMedia({ image: picak+'all menu', buffer, jpegThumbnail:log0 }, { upload: XBotInc.waUploadToServer })
+let message = await prepareWAMessageMedia({ image: unicorn, jpegThumbnail:log0 }, { upload: XBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 templateMessage: {
 hydratedTemplate: {
@@ -9744,9 +9744,9 @@ XBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
 break
 		
-case 'ownermenu': {
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'ownermenu': 
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Owner Menu')
 teks  =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
 ╿
@@ -9771,9 +9771,9 @@ teks  =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」
 ╽
 ╚┅┅┅┅┅┅┅༻` 
 let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu :)'}, type: 1}
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
-let buttonMessage = {
+let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
 caption: teks,
@@ -9789,12 +9789,11 @@ mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.j
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
 }}
 }
-}
-XBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 break
 case 'groupmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Group Menu')
 await XBotInc.send5ButImg(from, `╔═══════➻「 𝓰𝓻𝓸𝓾𝓹 」	
 ╿
