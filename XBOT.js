@@ -8746,56 +8746,33 @@ sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
 XBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': 
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
-	                let btn = [{
-                                urlButton: {
-                                    displayText: 'github 🍒',
-                                    url: `${websitex}`
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Script 🍜',
-                                    url: `${botscript}`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'All Menu 🍱',
-                                    id: 'allmenu'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu 🍢',
-                                    id: 'command'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner 🤣',
-                                    id: 'owner'
-                                }
-                            }]
-                         let setbot = db.data.settings[botNumber]
-                        if (setbot.templateImage) {
-                        XBotInc.send5ButImg(m.chat, menulist, global.botname, global.thumb, btn, global.thumb)
-                        } else if (setbot.templateGif) {
-                        XBotInc.send5ButGif(m.chat, menulist, global.botname, global.vidmenu, btn, global.thumb)
-                        } else if (setbot.templateVid) {
-                        XBotInc.send5ButVid(m.chat, anu, global.botname, global.vidmenu, btn, global.thumb)
-                        } else if (setbot.templateVideo) {
-                        XBotInc.send5ButVid(m.chat, menulist, global.botname, global.vidmenu, btn, global.thumb)
-                        } else if (setbot.templateDocument) {
-                        let buttonmenu = [
-            { urlButton: { displayText: `github 🍒`, url : `${websitex}` } },
-            { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `All Menu 🍱`, id: 'allmenu'} },
-            { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
-            { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
-        	]
-        	XBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./TEAM_XMEDIA/theme/XBOT.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
-                        }
-                     }
+let text  = `${global.aliveMessage}....click on any button to get the command list \n\n and DOnt forget to follow me on ${global.websitex}`
+let buttons = [
+{buttonId: `allmenu`, buttonText: {displayText: 'AllMenu😎'}, type: 1},
+{buttonId: `sc`, buttonText: {displayText:'SUPPORT_GROUP'},type: 1}
+]
+let ntus = {
+image: thum,
+jpegThumbnail: log0,
+caption: text,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+break
             break			
 case 'command': {
 if (isBan) return reply(mess.ban)
@@ -8954,7 +8931,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             XBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
-case 'allmenu': {
+case 'allmenu': 
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
@@ -9718,37 +9695,33 @@ const allmenu =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」
 ╠🔥${prefix}𝚁𝚎𝚙𝚘𝚛𝚝 [𝙱𝚞𝚐]
 ╽
 ╚┅┅┅┅┅┅┅༻` 
-let message = await prepareWAMessageMedia({ image: unicorn, jpegThumbnail:log0 }, { upload: XBotInc.waUploadToServer })
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-templateMessage: {
-hydratedTemplate: {
-imageMessage: message.imageMessage,
-hydratedContentText: allmenu,
-hydratedFooterText: `${global.botname}`,
-hydratedButtons: [{        
- quickReplyButton: {
- displayText: "𝓢𝓤𝓟𝓟𝓞𝓡𝓣_𝓖𝓡𝓞𝓤𝓟🔥",
- id : `${prefix}support`
-}
-}, {
-urlButton: {
-displayText: '𝓖𝓘𝓣𝓗𝓤𝓑🔥✨',
-url: 'https://github.com/NEXUSAT12/TEAM_xBOT'
-}
-}
+let buttons = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1},
+{buttonId: `owner`, buttonText: {displayText: 'owner👑'}, type: 1},
 ]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: allmenu,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
 }
-}
-}), { userJid: m.chat })
-XBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
-}
-break
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 		
 case 'ownermenu': 
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Owner Menu')
-teks  =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
+let teks  =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝚂𝚎𝚕𝚏
 ╠🔥${prefix}𝙿𝚞𝚋𝚕𝚒𝚌
@@ -9795,7 +9768,7 @@ case 'groupmenu':
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Group Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓰𝓻𝓸𝓾𝓹 」	
+let teks =  `╔═══════➻「 𝓰𝓻𝓸𝓾𝓹 」	
 ╿
 ╠🔥${prefix}𝙶𝚛𝚘𝚞𝚙𝚜𝚎𝚝𝚝𝚒𝚗𝚐
 ╠🔥${prefix}𝙶𝚛𝚘𝚞𝚙𝚕𝚒𝚗𝚔
@@ -9837,13 +9810,30 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓰𝓻𝓸𝓾
 ╠🔥${prefix}𝙲𝚑𝚎𝚌𝚔𝚟𝚘𝚝𝚎
 ╠🔥${prefix}𝙳𝚎𝚕𝚟𝚘𝚝𝚎
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 break
 case 'rpgmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Rpg Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓻𝓹𝓰 」	
+let teks =  `╔═══════➻「 𝓻𝓹𝓰 」	
 ╿
 ╠🔥${prefix}𝙷𝚞𝚗𝚝
 ╠🔥${prefix}𝙼𝚒𝚗𝚎
@@ -9857,13 +9847,30 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓻𝓹𝓰 」
 ╠🔥${prefix}𝙸𝚗𝚟𝚎𝚗𝚝𝚘𝚛𝚢
 ╠🔥${prefix}𝙻𝚎𝚊𝚍𝚎𝚛𝚋𝚘𝚊𝚛𝚍
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 break
 case 'makermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Maker Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓶𝓪𝓴𝓮𝓻 」	
+let teks = `╔═══════➻「 𝓶𝓪𝓴𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝙲𝚊𝚗𝚍𝚢
 ╠🔥${prefix}8𝚋𝚒𝚝
@@ -9973,13 +9980,30 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓶𝓪𝓴𝓮
 ╠🔥${prefix}𝚆𝚊𝚝𝚎𝚛𝚌𝚘𝚕𝚘𝚛
 ╠🔥${prefix}𝙲𝚕𝚊𝚜𝚜𝚒𝚌
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 break
 case 'downloadmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Download Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓭𝓸𝔀𝓷𝓵𝓸𝓪𝓭 」	
+let teks =  `╔═══════➻「 𝓭𝓸𝔀𝓷𝓵𝓸𝓪𝓭 」	
 ╿
 ╠🔥${prefix}𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 [𝚄𝚛𝚕]
 ╠🔥${prefix}𝙸𝚐𝚝𝚟 [𝚄𝚛𝚕]
@@ -10002,13 +10026,30 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓭𝓸𝔀𝓷
 ╠🔥${prefix}𝚂𝚘𝚞𝚗𝚍𝚌𝚕𝚘𝚞𝚍 [𝚄𝚛𝚕]
 ╠🔥${prefix}𝚉𝚒𝚙𝚙𝚢𝚜𝚑𝚊𝚛𝚎 [𝚄𝚛𝚕]
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://github.com/NEXUSAT12/"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 break
 case 'searchmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Search Menu')
-await XBotInc.send5ButImg(from, `
+let teks =  `
 ╔═══════➻「 𝓼𝓮𝓪𝓻𝓬𝓱 」
 ╿	
 ╠🔥${prefix}𝙿𝚕𝚊𝚢 [𝚀𝚞𝚎𝚛𝚢]
@@ -10037,7 +10078,25 @@ await XBotInc.send5ButImg(from, `
 ╠🔥${prefix}𝙼𝚌𝚜𝚎𝚛𝚟𝚎𝚛 [𝙸𝚙|𝙿𝚘𝚛𝚝]
 ╠🔥${prefix}𝙳𝚛𝚊𝚔𝚘𝚛 [𝚀𝚞𝚎𝚛𝚢]
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://github.com/NEXUSAT12/"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+break
 case 'convertmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -10762,9 +10821,9 @@ if (budy.includes(`${global.ownertag}`)) {
 if (antitags === false) return
 if (!m.isGroup) return
 if (m.key.fromMe) return
-sendNye = fs.readFileSync('./TEAM_XMEDIA/theme/yourtag.webp')
+let sendNy = fs.readFileSync('./TEAM_XMEDIA/theme/yourtag.webp')
 XBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
-XBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
+XBotInc.sendMessage(from, {sticker: sendNy , contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
 }
 if (isCmd && budy.toLowerCase() != undefined) {
 if (m.chat.endsWith('broadcast')) return
