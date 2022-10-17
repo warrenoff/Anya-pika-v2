@@ -161,16 +161,20 @@ const {
    const isInventoryMonay = cekDuluJoinAdaApaKagaMonaynyaDiJson(m.sender)
    const ikan = ['🐟','🐠','🐡']   
 
-//rpg d;atabase\\
+//rpg database\\
  let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
  let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'));
+
+let xeonysticker = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
+let xeonyaudio = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
+let xeonyimage = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/image.json'));
+let xeonyvideo = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
 let banchat = JSON.parse(fs.readFileSync('./database/banChat.json'));
 let bad = JSON.parse(fs.readFileSync('./src/toxic/bad.json'))
-
 //read database\\
 let tebaklagu = db.data.game.tebaklagu = []
 let _family100 = db.data.game.family100 = []
@@ -232,7 +236,7 @@ const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
 const Autoreply = m.isGroup ? autorep.includes(from) : true
 const isBan = banUser.includes(m.sender)
 const isBanChat = m.isGroup ? banchat.includes(from) : false
-let autoreadsw = false
+autoreadsw = false
 	    
         //member\\
         let picaks = [flaming,fluming,flarun,flasmurf]
@@ -716,6 +720,38 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
+	     for (let anji of xeonysticker){
+				if (budy === anji){
+					let result = fs.readFileSync(`./TEAM_XMEDIA/sticker/${anji}.webp`)
+					XBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
+					}
+			}
+			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+			for (let anju of xeonyaudio){
+				if (budy === anju){
+					let result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
+					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+					}
+			}
+			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+			for (let anjh of xeonyimage){
+				if (budy === anjh){
+					let result = fs.readFileSync(`./TEAM_XMEDIA/image/${anjh}.jpg`)
+					XBotInc.sendMessage(m.chat, { image: result }, { quoted: m })
+					}
+			}
+			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
+					for (let anjh of xeonyvideo){
+				if (budy === anjh){
+					let result = fs.readFileSync(`./TEAM_XMEDIA/video/${anjh}.mp4`)
+					XBotInc.sendMessage(m.chat, { video: result }, { quoted: m })
+					}
+				  }
+
+	    
+	    
+	    
+	    
 //emoji 
 const emote = (satu, dua) => {
 try{	    
@@ -10028,8 +10064,8 @@ XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
 case 'searchmenu': {
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Search Menu')
 let teks =  `
 ╔═══════➻「 𝓼𝓮𝓪𝓻𝓬𝓱 」
@@ -10142,8 +10178,8 @@ XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
 case 'randomimagemenu': {
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Random Image Menu')
 let teks = `╔═══════➻「 𝓻𝓪𝓷𝓭𝓸𝓶 𝓲𝓶𝓰」	
 ╿
@@ -11090,14 +11126,14 @@ break
 case 'tqtt': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
-reply(`╔══𓊈𝓓𝓔𝓥𝓔𝓛𝓞𝓟𝓔𝓡 𝓞𝓕 𝓣𝓔𝓐𝓜-𝓧_FIRE𓊉══╗\n╠𝐌𝐫.𝐍𝐞𝐱𝐮𝐬(𝐚𝐲𝐮𝐬𝐡)🔥: 𝐭𝐡𝐞 𝐦𝐚𝐢𝐧 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐚𝐧𝐝 𝐭𝐡𝐞 𝐥𝐞𝐚𝐝𝐞𝐫 𝐨𝐟 𝐭𝐞𝐚𝐦-𝐗_𝐅𝐈𝐑𝐄\n╠𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 :𓆩😈𓆪  https://wa.me/+918130784851𓆩😎𓆪 \n╠𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌 :⧼ ᥬ🥰᭄ 𝐃𝐎𝐍𝐓 𝐅𝐎𝐑𝐆𝐄𝐓 𝐓𝐎 𝐅𝐎𝐋𝐋𝐎𝐖 ⧽ https://www.instagram.com/at.__010/ \n ╠𝐆𝐈𝐓𝐇𝐔𝐁 : https://github.com/NEXUSAT12 \n ╔═╾ 𝟐𝐧𝐝 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 ╼═╗\n╠𝐌𝐫.𝐏𝐈𝐊𝐀(𝐀𝐑𝐈𝐅)✨ : 𝐇𝐄𝐋𝐏𝐄𝐃 𝐈𝐍 𝐅𝐎𝐔𝐍𝐃𝐈𝐍𝐆 𝐓𝐇𝐄 𝐀𝐏𝐈 𝐀𝐍𝐃 𝐃𝐄𝐒𝐒𝐈𝐆𝐍𝐈𝐍𝐆 𝐎𝐅 𝐁𝐎𝐓 \n╠𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 : https://wa.me/+918811074852\n╠𝐆𝐈𝐓𝐇𝐔𝐁: https://github.com/Pika4O4`)
+let teks = `╔══𓊈𝓓𝓔𝓥𝓔𝓛𝓞𝓟𝓔𝓡 𝓞𝓕 𝓣𝓔𝓐𝓜-𝓧_FIRE𓊉══╗\n╠𝐌𝐫.𝐍𝐞𝐱𝐮𝐬(𝐚𝐲𝐮𝐬𝐡)🔥: 𝐭𝐡𝐞 𝐦𝐚𝐢𝐧 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐚𝐧𝐝 𝐭𝐡𝐞 𝐥𝐞𝐚𝐝𝐞𝐫 𝐨𝐟 𝐭𝐞𝐚𝐦-𝐗_𝐅𝐈𝐑𝐄\n╠𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 :𓆩😈𓆪  https://wa.me/+918130784851𓆩😎𓆪 \n╠𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌 :⧼ ᥬ🥰᭄ 𝐃𝐎𝐍𝐓 𝐅𝐎𝐑𝐆𝐄𝐓 𝐓𝐎 𝐅𝐎𝐋𝐋𝐎𝐖 ⧽ https://www.instagram.com/at.__010/ \n ╠𝐆𝐈𝐓𝐇𝐔𝐁 : https://github.com/NEXUSAT12 \n ╔═╾ 𝟐𝐧𝐝 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 ╼═╗\n╠𝐌𝐫.𝐏𝐈𝐊𝐀(𝐀𝐑𝐈𝐅)✨ : 𝐇𝐄𝐋𝐏𝐄𝐃 𝐈𝐍 𝐅𝐎𝐔𝐍𝐃𝐈𝐍𝐆 𝐓𝐇𝐄 𝐀𝐏𝐈 𝐀𝐍𝐃 𝐃𝐄𝐒𝐒𝐈𝐆𝐍𝐈𝐍𝐆 𝐎𝐅 𝐁𝐎𝐓 \n╠𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 : https://wa.me/+918811074852\n╠𝐆𝐈𝐓𝐇𝐔𝐁: https://github.com/Pika4O4`
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
-caption: reply,
+caption: teks,
 footer: `${botname}`,
 buttons: buttns,
 headerType: 4,
@@ -11113,7 +11149,6 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 }
 break	
-break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return reply(mess.owner)
@@ -11169,14 +11204,6 @@ break
                     }
                     return !0
                 }
-if (budy.includes(`${global.ownertag}`)) {
-if (antitags === false) return
-if (!m.isGroup) return
-if (m.key.fromMe) return
-let sendNy = fs.readFileSync('./TEAM_XMEDIA/theme/yourtag.webp')
-XBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
-XBotInc.sendMessage(from, {sticker: sendNy , contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
-}
 if (isCmd && budy.toLowerCase() != undefined) {
 if (m.chat.endsWith('broadcast')) return
 if (m.isBaileys) return
