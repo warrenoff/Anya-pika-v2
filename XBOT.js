@@ -229,10 +229,10 @@ const antiVirtex = m.isGroup ? ntvirtex.includes(from) : true
 const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : false
 const isAutoStick = _autostick.includes(from)
 const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
-const Autoreply = m.isGroup ? autorep.includes(from) : false
+const Autoreply = m.isGroup ? autorep.includes(from) : true
 const isBan = banUser.includes(m.sender)
 const isBanChat = m.isGroup ? banchat.includes(from) : false
-autoreadsw = false
+let autoreadsw = false
 	    
         //member\\
         let picaks = [flaming,fluming,flarun,flasmurf]
