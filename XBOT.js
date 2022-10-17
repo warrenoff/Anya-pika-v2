@@ -10224,7 +10224,7 @@ case 'emotemenu':
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Emote Menu')
-let teks `╔═══════➻「 𝓮𝓶𝓸𝓽𝓮 」	
+let teks = `╔═══════➻「 𝓮𝓶𝓸𝓽𝓮 」	
 ╿
 ╠🔥${prefix}𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖𝚎𝚖𝚘𝚓𝚒
 ╠🔥${prefix}𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔𝚎𝚖𝚘𝚓𝚒
