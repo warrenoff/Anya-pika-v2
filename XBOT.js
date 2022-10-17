@@ -4853,9 +4853,10 @@ case 'sound160':
 case 'sound161':
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-xeony_buffer = await getBuffer(`https://github.com//Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
+xeony_buffer = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
 await XBotInc.sendMessage(m.chat, { audio: xeony_buffer, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 break
+
 case'glitch3':
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -10825,19 +10826,6 @@ break
                     }
                     return !0
                 }
-			//anti-tag
-// const listTag = [`${global.ownertag}@s.whatsapp.net`]
-// const partiNum = (m.mtype === 'extendedTextMessage') ? m.message.extendedTextMessage.contextInfo.participant : ''
-// //anti-tag 2
-// if (listTag.includes(partiNum)) {
-// if (antitags === false) return
-// if (!m.isGroup) return
-// if (m.key.fromMe) return
-// sendNye = fs.readFileSync('./TEAM_XMEDIA/theme/yourtag.webp')
-// XBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id])
-// XBotInc.sendMessage(from, {sticker:sendNye, contextInfo:{forwardingScore: 800, isForwarded: true}}, {quoted:m})
-// }
-//anti-tag 3
 if (budy.includes(`${global.ownertag}`)) {
 if (antitags === false) return
 if (!m.isGroup) return
