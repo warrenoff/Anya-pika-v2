@@ -10220,7 +10220,7 @@ XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
 
-case 'emotemenu':
+case 'emotemenu':{
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Emote Menu')
