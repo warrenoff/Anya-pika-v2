@@ -716,31 +716,6 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-let vien = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-if (Autoreply)
-for (let ayu of vien ){
-if (budy == ayu){
-let result = fs.readFileSync(`./TEAM_XMEDIA/audio/${ayu}.mp3`)
-XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4' , ptt: true }, { quoted: m})
-}
-} 
-}
-// 			}
-// 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-// 			for (let anjh of xeonyimage){
-// 				if (budy === anjh){
-// 					result = fs.readFileSync(`./TEAM_XMEDIA/image/${anjh}.jpg`)
-// 					XBotInc.sendMessage(m.chat, { image: result }, { quoted: m })
-// 					}
-// 			}
-// 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-// 					for (let anjh of xeonyvideo){
-// 				if (budy === anjh){
-// 					result = fs.readFileSync(`./TEAM_XMEDIA/video/${anjh}.mp4`)
-// 					XBotInc.sendMessage(m.chat, { video: result }, { quoted: m })
-// 					}
-// 				  }
-
 //emoji 
 const emote = (satu, dua) => {
 try{	    
@@ -10052,7 +10027,7 @@ sourceUrl: "https://github.com/NEXUSAT12/"
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-case 'searchmenu':
+case 'searchmenu': {
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Search Menu')
@@ -10106,12 +10081,13 @@ sourceUrl: "https://github.com/NEXUSAT12/"
 }}
 }
 XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'convertmenu': 
+case 'convertmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Convert Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓬𝓸𝓷𝓿𝓮𝓻𝓽 」	
+let teks = `╔═══════➻「 𝓬𝓸𝓷𝓿𝓮𝓻𝓽 」	
 ╿
 ╠🔥${prefix}𝚃𝚘𝚒𝚖𝚊𝚐𝚎 [𝚁𝚎𝚙𝚕𝚢 𝚂𝚝𝚒𝚌𝚔]
 ╠🔥${prefix}𝚂𝚝𝚒𝚌𝚔𝚎𝚛 [𝚁𝚎𝚙𝚕𝚢 𝙸𝚖𝚐|𝙶𝚒𝚏]
@@ -10142,13 +10118,34 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓬𝓸𝓷𝓿
 ╠🔥${prefix}𝚂𝚕𝚘𝚠 [𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍]
 ╠🔥${prefix}𝚂𝚚𝚞𝚒𝚛𝚛𝚎𝚕 [𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍]
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'randomimagemenu':
+case 'randomimagemenu': {
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Random Image Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓻𝓪𝓷𝓭𝓸𝓶 𝓲𝓶𝓰」	
+let teks = `╔═══════➻「 𝓻𝓪𝓷𝓭𝓸𝓶 𝓲𝓶𝓰」	
 ╿
 ╠🔥${prefix}𝙲𝚘𝚏𝚏𝚎𝚎
 ╠🔥${prefix}𝙱𝚝𝚜
@@ -10163,14 +10160,35 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓻𝓪𝓷𝓭
 ╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚠𝚊𝚕𝚕 [𝚀𝚞𝚎𝚛𝚢]
 ╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚠𝚊𝚕𝚕2 [𝚀𝚞𝚎𝚛𝚢]
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
 
 case 'emotemenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Emote Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓮𝓶𝓸𝓽𝓮 」	
+let teks `╔═══════➻「 𝓮𝓶𝓸𝓽𝓮 」	
 ╿
 ╠🔥${prefix}𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖𝚎𝚖𝚘𝚓𝚒
 ╠🔥${prefix}𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔𝚎𝚖𝚘𝚓𝚒
@@ -10185,13 +10203,34 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓮𝓶𝓸𝓽
 ╠🔥${prefix}𝙿𝚎𝚍𝚒𝚊𝚎𝚖𝚘𝚓𝚒
 ╠🔥${prefix}𝙼𝚒𝚌𝚛𝚘𝚜𝚘𝚏𝚝𝚎𝚖𝚘𝚓𝚒
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'imageeffectmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'imageeffectmenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Image Effect Menu')
-await XBotInc.send5ButImg(from, `╔═════➻「𝓲𝓶𝓰 𝓮𝓯𝓯𝓮𝓬𝓽 」	
+let teks =  `╔═════➻「𝓲𝓶𝓰 𝓮𝓯𝓯𝓮𝓬𝓽 」	
 ╿
 ╠🔥${prefix}𝚆𝚊𝚗𝚝𝚎𝚍
 ╠🔥${prefix}𝙱𝚕𝚞𝚛
@@ -10208,13 +10247,34 @@ await XBotInc.send5ButImg(from, `╔═════➻「𝓲𝓶𝓰 𝓮𝓯�
 ╠🔥${prefix}𝙳𝚎𝚕𝚎𝚝𝚎𝚎𝚏𝚏𝚎𝚌𝚝
 ╠🔥${prefix}𝙿𝚒𝚡𝚎𝚕𝚊𝚝𝚎
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'animemenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'animemenu':{
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Anime Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 」	
+let teks =  `╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 」	
 ╿
 ╠🔥${prefix}𝙽𝚊𝚛𝚞𝚝𝚘
 ╠🔥${prefix}𝚈𝚊𝚘𝚒
@@ -10264,13 +10324,34 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓪𝓷𝓲𝓶
 ╠🔥${prefix}𝙻𝚘𝚕𝚒
 ╠🔥${prefix}𝙲𝚘𝚞𝚙𝚕𝚎𝚙𝚙
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'stickermenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'stickermenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Sticker Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
+let teks =  `╔═══════➻「 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝙿𝚊𝚝𝚛𝚒𝚌𝚔
 ╠🔥${prefix}𝙴𝚖𝚘𝚓𝚒
@@ -10280,13 +10361,34 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓼𝓽𝓲𝓬
 ╠🔥${prefix}𝙳𝚘𝚐𝚎
 ╠🔥${prefix}𝙻𝚘𝚟𝚎𝚜𝚝𝚒𝚌𝚔𝚎𝚛
 ╽
-╚┅┅┅┅┅┅┅༻${botname}༺` + '' + ' ',unicorn, [{"urlButton": {"displayText": "github 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'animestickermenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'animestickermenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Anime Sticker Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
+let teks = `╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝙻𝚘𝚕𝚒
 ╠🔥${prefix}𝙱𝚞𝚕𝚕𝚢
@@ -10318,13 +10420,34 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓪𝓷𝓲𝓶
 ╠🔥${prefix}𝙽𝚎𝚔𝚘
 ╠🔥${prefix}𝙶𝚞𝚛𝚊
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'nsfwmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'nsfwmenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Nsfw Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓷𝓼𝓯𝔀 」	
+let teks =  `╔═══════➻「 𝓷𝓼𝓯𝔀 」	
 ╿
 ╠🔥${prefix}𝙷𝚎𝚗𝚝𝚊𝚒𝚟𝚒𝚍𝚎𝚘
 ╠🔥${prefix}𝚈𝚞𝚛𝚒
@@ -10352,13 +10475,34 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓷𝓼𝓯𝔀
 ╠🔥${prefix}𝙷𝚗𝚎𝚔𝚘
 ╠🔥${prefix}𝙽𝚠𝚊𝚒𝚏𝚞
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'funmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'funmenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Fun Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓕𝓤𝓝 」	
+let teks = `╔═══════➻「 𝓕𝓤𝓝 」	
 ╿
 ╠🔥${prefix}𝙷𝚘𝚠 [𝚃𝚎𝚡𝚝
 ╠🔥${prefix}𝚆𝚑𝚎𝚗 [𝚃𝚎𝚡𝚝]
@@ -10425,13 +10569,34 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓕𝓤𝓝 」
 ╠🔥${prefix}𝙵𝚞𝚌𝚔𝚐𝚒𝚛𝚕
 ╠🔥${prefix}𝙿𝚕𝚊𝚢𝚐𝚒𝚛𝚕
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'soundmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'soundmenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Sound Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓢𝓞𝓤𝓝𝓓 」	
+let teks = `╔═══════➻「 𝓢𝓞𝓤𝓝𝓓 」	
 ╿
 ╠🔥${prefix}𝚂𝚘𝚞𝚗𝚍1
 ╠🔥${prefix}𝚂𝚘𝚞𝚗𝚍2
@@ -10595,13 +10760,34 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓢𝓞𝓤𝓝
 ╠🔥${prefix}𝚂𝚘𝚞𝚗𝚍160
 ╠🔥${prefix}𝚂𝚘𝚞𝚗𝚍161
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'gamemenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'gamemenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Game Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓰𝓪𝓶𝓮 」
+let teks =  `╔═══════➻「 𝓰𝓪𝓶𝓮 」
 ╿	
 ╠🔥${prefix}𝚃𝚛𝚞𝚝𝚑
 ╠🔥${prefix}𝙳𝚊𝚛𝚎
@@ -10611,38 +10797,101 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓰𝓪𝓶𝓮
 ╠🔥${prefix}𝙼𝚊𝚝𝚑 [𝙼𝚘𝚍𝚎]
 ╠🔥${prefix}𝚂𝚞𝚒𝚝𝚙𝚟𝚙 [𝚃𝚊𝚐]
 ╿
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'anonymousmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'anonymousmenu':{
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Anonymous Menu')
-await XBotInc.send5ButImg(from, `╔═══➻「 𝓪𝓷𝓸𝓷𝔂𝓶𝓸𝓾𝓼 」	
+let teks = `╔═══➻「 𝓪𝓷𝓸𝓷𝔂𝓶𝓸𝓾𝓼 」	
 ╿
 ╠🔥${prefix}𝙰𝚗𝚘𝚗𝚢𝚖𝚘𝚞𝚜
 ╠🔥${prefix}𝚂𝚝𝚊𝚛𝚝
 ╠🔥${prefix}𝙽𝚎𝚡𝚝
 ╠🔥${prefix}𝙻𝚎𝚊𝚟𝚎
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'toolmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'toolmenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Tool Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓽𝓸𝓸𝓵 」
+let teks = `╔═══════➻「 𝓽𝓸𝓸𝓵 」
 ╿	
 ╠🔥${prefix}𝚃𝚛𝚊𝚗𝚜𝚕𝚊𝚝𝚎 [𝚃𝚎𝚡𝚝]
 ╠🔥${prefix}𝙵𝚕𝚒𝚙𝚝𝚎𝚡𝚝 [𝚃𝚎𝚡𝚝]
 ╠🔥${prefix}𝚃𝚘𝚕𝚎𝚝𝚝𝚎𝚛 [𝙽𝚞𝚖𝚋𝚎𝚛]
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'databasemenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'databasemenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Database Menu')
-await XBotInc.send5ButImg(from, `╔═══➻「 𝓭𝓪𝓽𝓪𝓫𝓪𝓼𝓮 」	
+let teks = `╔═══➻「 𝓭𝓪𝓽𝓪𝓫𝓪𝓼𝓮 」	
 ╿
 ╠🔥${prefix}𝚂𝚎𝚝𝚌𝚖𝚍
 ╠🔥${prefix}𝙻𝚒𝚜𝚝𝚌𝚖𝚍
@@ -10653,13 +10902,34 @@ await XBotInc.send5ButImg(from, `╔═══➻「 𝓭𝓪𝓽𝓪𝓫𝓪𝓼
 ╠🔥${prefix}𝙶𝚎𝚝𝚖𝚜𝚐
 ╠🔥${prefix}𝙳𝚎𝚕𝚖𝚜𝚐
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'indomenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'indomenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Indo Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓲𝓷𝓭𝓸 」	
+let teks =  `╔═══════➻「 𝓲𝓷𝓭𝓸 」	
 ╿
 ╠🔥${prefix}𝙳𝚊𝚛𝚔𝚓𝚘𝚔𝚎
 ╠🔥${prefix}𝚀𝚞𝚘𝚝𝚎𝚜
@@ -10686,13 +10956,34 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓲𝓷𝓭𝓸
 ╠🔥${prefix}𝙴𝚊𝚛𝚝𝚑𝚚𝚞𝚊𝚔𝚎
 ╠🔥${prefix}𝚃𝚟𝚜𝚌𝚑𝚎𝚍𝚞𝚕𝚎
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻`
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'indohoroscopemenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'indohoroscopemenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Indo Horoscope Menu')
-await XBotInc.send5ButImg(from, `╔═➻「 𝓲𝓷𝓭𝓸 𝓱𝓸𝓻𝓸𝓼𝓬𝓸𝓹𝓮 」	
+let teks =  `╔═➻「 𝓲𝓷𝓭𝓸 𝓱𝓸𝓻𝓸𝓼𝓬𝓸𝓹𝓮 」	
 ╿
 ╠🔥${prefix}𝙽𝚘𝚖𝚘𝚛𝚑𝚘𝚔𝚒
 ╠🔥${prefix}𝙰𝚛𝚝𝚒𝚖𝚒𝚖𝚙𝚒 
@@ -10725,13 +11016,34 @@ await XBotInc.send5ButImg(from, `╔═➻「 𝓲𝓷𝓭𝓸 𝓱𝓸𝓻𝓸�
 ╠🔥${prefix}𝚉𝚘𝚍𝚒𝚊𝚔
 ╠🔥${prefix}𝚂𝚑𝚒𝚘
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'othermenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'othermenu': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Other Menu')
-await XBotInc.send5ButImg(from, `╔═══════➻「 𝓸𝓽𝓱𝓮𝓻 」	
+let teks =  `╔═══════➻「 𝓸𝓽𝓱𝓮𝓻 」	
 ╿
 ╠🔥${prefix}𝙰𝚏𝚔
 ╠🔥${prefix}𝚁𝚎𝚊𝚍𝚖𝚘𝚛𝚎 [𝚃𝚎𝚡𝚝]
@@ -10752,12 +11064,55 @@ await XBotInc.send5ButImg(from, `╔═══════➻「 𝓸𝓽𝓱𝓮
 ╠🔥${prefix}𝚁𝚎𝚚𝚞𝚎𝚜𝚝
 ╠🔥${prefix}𝚁𝚎𝚙𝚘𝚛𝚝 [𝙱𝚞𝚐]
 ╽
-╚┅┅┅┅┅┅┅༻` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚┅┅┅┅┅┅┅༻` 
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
 break
-case 'tqtt': 
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+case 'tqtt': {
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 reply(`╔══𓊈𝓓𝓔𝓥𝓔𝓛𝓞𝓟𝓔𝓡 𝓞𝓕 𝓣𝓔𝓐𝓜-𝓧_FIRE𓊉══╗\n╠𝐌𝐫.𝐍𝐞𝐱𝐮𝐬(𝐚𝐲𝐮𝐬𝐡)🔥: 𝐭𝐡𝐞 𝐦𝐚𝐢𝐧 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐚𝐧𝐝 𝐭𝐡𝐞 𝐥𝐞𝐚𝐝𝐞𝐫 𝐨𝐟 𝐭𝐞𝐚𝐦-𝐗_𝐅𝐈𝐑𝐄\n╠𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 :𓆩😈𓆪  https://wa.me/+918130784851𓆩😎𓆪 \n╠𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌 :⧼ ᥬ🥰᭄ 𝐃𝐎𝐍𝐓 𝐅𝐎𝐑𝐆𝐄𝐓 𝐓𝐎 𝐅𝐎𝐋𝐋𝐎𝐖 ⧽ https://www.instagram.com/at.__010/ \n ╠𝐆𝐈𝐓𝐇𝐔𝐁 : https://github.com/NEXUSAT12 \n ╔═╾ 𝟐𝐧𝐝 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 ╼═╗\n╠𝐌𝐫.𝐏𝐈𝐊𝐀(𝐀𝐑𝐈𝐅)✨ : 𝐇𝐄𝐋𝐏𝐄𝐃 𝐈𝐍 𝐅𝐎𝐔𝐍𝐃𝐈𝐍𝐆 𝐓𝐇𝐄 𝐀𝐏𝐈 𝐀𝐍𝐃 𝐃𝐄𝐒𝐒𝐈𝐆𝐍𝐈𝐍𝐆 𝐎𝐅 𝐁𝐎𝐓 \n╠𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 : https://wa.me/+918811074852\n╠𝐆𝐈𝐓𝐇𝐔𝐁: https://github.com/Pika4O4`)
+let buttns = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+]
+let ntus = {
+image: unicorn,
+jpegThumbnail: log0,
+caption: reply,
+footer: `${botname}`,
+buttons: buttns,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
+sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+}}
+}
+XBotInc.sendMessage(m.chat , ntus , { quoted: m })
+}
+break	
 break
             default:
                 if (budy.startsWith('=>')) {
