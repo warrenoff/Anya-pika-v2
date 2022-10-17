@@ -168,9 +168,9 @@ const {
 
 //Database omther\\
 // let xysticker = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
-// let xaudio = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-// let ximage = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/image.json'));
-// let xvideo = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/video.json'));
+let xaudio = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
+let ximage = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/image.json'));
+let xvideo = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
@@ -235,10 +235,10 @@ const antiVirtex = m.isGroup ? ntvirtex.includes(from) : true
 const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : false
 const isAutoStick = _autostick.includes(from)
 const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
-const Autoreply = m.isGroup ? autorep.includes(from) : true
+const Autoreply = m.isGroup ? autorep.includes(from) : false
 const isBan = banUser.includes(m.sender)
 const isBanChat = m.isGroup ? banchat.includes(from) : false
-autoreadsw = true
+autoreadsw = false
 	    
         //member\\
         let picaks = [flaming,fluming,flarun,flasmurf]
@@ -724,19 +724,12 @@ XBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.sp
 }
 
                 //auto reply by xeon
-  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-//         for (let anji of xeonysticker){
-// 				if (budy === anji){
-// 					result = fs.readFileSync(`./TEAM_XMEDIA/sticker/${anji}.webp`)
-// 					XBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
-// 					}
-// 			}
-// 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-// 			for (let anju of xaudio){
-// 				if (budy === anju){
-// 					result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
-// 					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
-// 					}
+  			if (Autoreply) 
+			for (let anju of xaudio){
+				if (budy === anju){
+					result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
+					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
+					}
 // 			}
 // 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 // 			for (let anjh of xeonyimage){
