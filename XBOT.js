@@ -161,16 +161,10 @@ const {
    const isInventoryMonay = cekDuluJoinAdaApaKagaMonaynyaDiJson(m.sender)
    const ikan = ['🐟','🐠','🐡']   
 
-//rpg database\\
+//rpg d;atabase\\
  let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
  let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
- let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
-
-//Database omther\\
-// let xysticker = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
-let xaudio = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-let ximage = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/image.json'));
-let xvideo = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/video.json'));
+ let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
@@ -722,14 +716,15 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-
-                //auto reply by xeon
-  			if (Autoreply) 
-			for (let anju of xaudio){
-				if (budy === anju){
-					result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
-					XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
-					}
+let vien = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
+if (Autoreply)
+for (let ayu of vien ){
+if (budy == ayu){
+let result = fs.readFileSync(`./TEAM_XMEDIA/audio/${ayu}.mp3`)
+XBotInc.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4' , ptt: true }, { quoted: m})
+}
+} 
+}
 // 			}
 // 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 // 			for (let anjh of xeonyimage){
