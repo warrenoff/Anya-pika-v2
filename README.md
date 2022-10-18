@@ -33,12 +33,22 @@
 
 ## [2𝓝𝓓 𝓑𝓐𝓢𝓔 𝓞𝓓 𝓜𝓐𝓡𝓘𝓝 𝓑𝓨 𝓝𝓔𝓓𝓤𝓢_𝓐𝓣](https://github.com/NEXUSAT12/MARIN)
 
-## Clone Repo & Installation dependencies
-git clone https://github.com/NEXUSAT12/XBOT.git
+# Install Manually 👇
+## `Requirements`
+* [Node.js](https://nodejs.org/en/)
+* [Git](https://git-scm.com/downloads)
+* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
+* [Libwebp](https://developers.google.com/speed/webp/download)
+
+## `Clone Repo & Installation dependencies`
+```bash
+git clone https://github.com/NEXUSAT12/XBOT
 cd XBOT
 
 npm start
-## For Termux/Ssh/Ubuntu
+```
+## `For Termux/Ssh/Ubuntu`
+```bash
 apt update
 apt upgrade
 pkg update && pkg upgrade
@@ -52,7 +62,9 @@ pkg install imagemagick -y
 git clone https://github.com/NEXUSAT12/XBOT
 cd XBOT
 npm start
-## For VPS
+```
+## `For VPS`
+```bash
 apt install nodejs 
 apt install git 
 apt apt install ffmpeg 
@@ -62,6 +74,8 @@ apt install bash
 git clone https://github.com/NEXUSAT12/XBOT
 cd XBOT
 npm start
-
-## For 24/7 Activation (Termux)
+```
+## `For 24/7 Activation (Termux)`
+```bash
 npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs
+```
