@@ -1,6 +1,9 @@
-# XBOT
-A MULTI FUNCTIONAL BOT FOR WHATSAPP ##
+## XBOT A MULTI FUNCTIONAL BOT FOR WHATSAPP ##
 
+<p align="center">
+<img src="./TEAM_XMEDIA/theme/NEXUS.jpg" width="520"/>
+<p align="center">
+</p>
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NEXUSAT12/XBOT/)
