@@ -1,5 +1,19 @@
-## XBOT A MULTI FUNCTIONAL BOT FOR WHATSAPP ##
+<div align="center">
+  
+## ╭━━━≺👑 𝐗-𝐁𝐎𝐓 👑≻━━━╮
+  
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar&duration=5316&pause=1064&color=F70D0C&width=435&lines=WELCOME+TO+THE+X-BOT;POWERED+BY+TEAM-X_FIRE;CREATED+BY+NEXUS;HOPE+YOU+ENJOY+THE+BOT+;AND+DONT+FORGET+TO+FOLLOW)](https://git.io/typing-svg)
+  
+## ╰━━━≺👑 𝐗-𝐁𝐎𝐓 👑≻━━━╯
+  
+<br>
+<div>
+<br>
 
+
+
+## 𝘅𝗯𝗼𝘁 𝗮 𝗺𝘂𝗹𝘁𝗶 𝗳𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝗮𝗹 𝗯𝗼𝘁 𝗳𝗼𝗿 𝘄𝗵𝗮𝘁𝘀𝗮𝗽𝗽 
+##
 <p align="center">
 <img src="./TEAM_XMEDIA/theme/NEXUS.jpg" width="520"/>
 <p align="center">
