@@ -229,7 +229,7 @@ const AntiLinkTwitter = m.isGroup ? ntilinktwt.includes(from) : false
 const AntiLinkAll = m.isGroup ? ntilinkall.includes(from) : false
 const antiWame = m.isGroup ? ntwame.includes(from) : false
 const antiToxic = m.isGroup ? nttoxic.includes(from) : false
-const antiVirtex = m.isGroup ? ntvirtex.includes(from) : true
+const antiVirtex = m.isChat ? ntvirtex.includes(from) : true
 const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : false
 const isAutoStick = _autostick.includes(from)
 const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
@@ -237,7 +237,6 @@ const Autoreply = m.isGroup ? autorep.includes(from) : true
 const isBan = banUser.includes(m.sender)
 const isBanChat = m.isGroup ? banchat.includes(from) : false
 autoreadsw = false
-	    
         //member\\
         let picaks = [flaming,fluming,flarun,flasmurf]
 		let picak = picaks[Math.floor(Math.random() * picaks.length)]
@@ -591,16 +590,17 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending youtube video link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-//antivirtex by xeon
-  if (antiVirtex) {
-  if (budy.length > 3500) {
-  reply(`Somebody spammed virus!! Mark as read⚠️\n`.repeat(300))
-  reply(`\`\`\`「 Virus Detected 」\`\`\`\n\nSorry You Will Be Kicked !`)
-  if (!isBotAdmins) return reply(mess.botAdmin)
-  XBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-  }
-  }
-//anti bad words by xeon
+
+if (antiVirtex) {
+if (budy.length > 1500) {
+reply(`Somebody spammed virus!! Mark as read⚠️\n`.repeat(1200))
+reply(`\`\`\`「 Virus Detected 」\`\`\`\n\nSorry You Will Be Kicked !`)
+if (!isBotAdmins) return reply(mess.botAdmin)
+let so = delete(budy)
+XBotInc.groupParticipantsUpdate(m.chat, so,[m.sender], 'remove')
+}
+}
+
 if (antiToxic)
 if (bad.includes(messagesD)) {
 tos = ['Hey, watch your mouth','Never been taught how to speak?','Stop being toxic my friend🤢','Dont be toxic🦄']
@@ -654,9 +654,9 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Instagram Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending instagram link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-//antilink facebook by xeon
+
 if (AntiLinkFacebook)
-   if (budy.includes("https://facebook.com/")){
+if (budy.includes("https://facebook.com/")){
 if (!isBotAdmins) return
 bvl = `\`\`\`「 Facebook Link Detected 」\`\`\`\n\nAdmin has sent a facebook link, admin is free to send any link😇`
 if (isAdmins) return reply(bvl)
@@ -667,9 +667,9 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Facebook Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending facebook link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-//antilink telegram by xeon
+
 if (AntiLinkTelegram)
-   if (budy.includes("https://t.me/")){
+if (budy.includes("https://t.me/")){
 if (AntiLinkTelegram)
 if (!isBotAdmins) return
 bvl = `\`\`\`「 Telegram Link Detected 」\`\`\`\n\nAdmin has sent a telegram link, admin is free to send any link😇`
@@ -681,9 +681,9 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Telegram Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending telegram link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-//antilink tiktok by xeon
+
 if (AntiLinkTiktok)
-   if (budy.includes("https://www.tiktok.com/")){
+if (budy.includes("https://www.tiktok.com/")){
 if (!isBotAdmins) return
 bvl = `\`\`\`「 Tiktok Link Detected 」\`\`\`\n\nAdmin has sent a tiktok link, admin is free to send any link😇`
 if (isAdmins) return reply(bvl)
@@ -694,9 +694,9 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Tiktok Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending tiktok link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-//antilink twitter by xeon
+
 if (AntiLinkTwitter)
-   if (budy.includes("https://twitter.com/")){
+if (budy.includes("https://twitter.com/")){
 if (!isBotAdmins) return
 bvl = `\`\`\`「 Twitter Link Detected 」\`\`\`\n\nAdmin has sent a twitter link, admin is free to send any link😇`
 if (isAdmins) return reply(bvl)
@@ -707,9 +707,9 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Tiktok Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending twitter link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-//antilink all by xeon
+
 if (AntiLinkAll)
-   if (budy.includes("https://")){
+if (budy.includes("https://")){
 if (!isBotAdmins) return
 bvl = `\`\`\`「 Link Detected 」\`\`\`\n\nAdmin has sent a link, admin is free to send any link😇`
 if (isAdmins) return reply(bvl)
@@ -1157,7 +1157,7 @@ replay('Success in unbanning the gc')
   break
 
 case 'ban': {
-	   if (isBan) return reply(mess.ban)	 			
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
 if (!args[0]) return replay(`Select add or del(add to ban, del to unban), For Example: Reply *${prefix}ban add* to the user u want to ban`)
@@ -1833,42 +1833,7 @@ Cieeee, What's Going On❤️💖👀`
                     await XBotInc.sendButtonText(m.chat, buttons, jawab, XBotInc.user.name, m, {mentions: menst})
             }
             break
-            case 'is':
-            if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} he married `)
-					const apa = [`Yes`, `No`, `It Could Be`, `Thats right`]
-					const kah = apa[Math.floor(Math.random() * apa.length)]
-XBotInc.sendMessage(from, { text: `Question : Is ${q}\nAnswer : ${kah}` }, { quoted: m })
-
-					break
-					            case 'what':
-					if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} he married `)
-					const lel = [`Ask Your Gf`, `I Dont Know`, `I Don't Know, Ask Your Father`]
-					const kahk = lel[Math.floor(Math.random() * lel.length)]
-XBotInc.sendMessage(from, { text: `Question : What ${q}\nAnswer : ${kahk}` }, { quoted: m })
-
-					break
-case 'can':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} you fuck her lol `)
-					const bisa = [`Can`,`Can't`,`Cannot`,`Of Course You Can!!!`]
-					const ga = bisa[Math.floor(Math.random() * bisa.length)]
-XBotInc.sendMessage(from, { text: `Question : Can ${q}\nAnswer : ${ga}` }, { quoted: m })
-
-					break
-case 'how':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} is my face`)
-					const gimana = [`It's Okay`, `It's Difficult Bro`, `Sorry Bot Can't Answer`, `Try Searching On Google`,`Holy Cow! Really???`,`Dizzy Ah`,`Ohhh I See:(`,`The Patient, Boss:(`,`How Are You?`]
-					const ya = gimana[Math.floor(Math.random() * gimana.length)]
-XBotInc.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${ya}` }, { quoted: m })
-
-					break
+            
 case 'rate':
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -2207,14 +2172,7 @@ case 'dare':
               buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
               XBotInc.sendMessage(from, { image: buffer, caption: '_You choose TRUTH_\n'+ xeontruth }, {quoted:m})
               break
-case 'when':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-				if (!text) return replay(`Use Text, Example : ${prefix + command} will i get married `)
-					const kapan = ['5 More Days', '10 More Days', '15 More Days','20 More Days', '25 More Days','30 More Days','35 More Days','40 More Days','45 More Days','50 More Days','55 More Days','60 More Days','65 More Days','70 More Days','75 More Days','80 More Days','85 More Days','90 More Days','100 More Days','5 Months More', '10 Months More', '15 Months More','20 Months More', '25 Months More','30 Months More','35 Months More','40 Months More','45 Months More','50 Months More','55 Months More','60 Months More','65 Months More','70 Months More','75 Months More','80 Months More','85 Months More','90 Months More','100 Months More','1 More Year','2 More Years','3 More Years','4 More Years','5 More Years','Tomorrow','The Day After Tomorrow',`After This Command, You Too ${q}`]
-					const kapankah = kapan[Math.floor(Math.random() * kapan.length)]
-XBotInc.sendMessage(from, { text: `Question : ${q}\nAnswer : *${kapankah}*` }, { quoted: m })
-					break
+
 case 'wangy':
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -2276,7 +2234,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'add').then(reply(`${pushname}added`).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	case 'promote': {
@@ -2286,7 +2244,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'promote').then(reply(`${pushname}PROMOTED AS THE ADMIN`)).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	case 'demote': {
@@ -2612,8 +2570,8 @@ if (isBanChat) return reply(mess.banChat)
             }
             break
 case 'autosticker':
-            case 'autostiker':
-   if (isBan) return reply(mess.ban)	 			
+case 'autostiker':
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return reply(mess.botAdmin)
@@ -2632,8 +2590,8 @@ reply('auto sticker deactivated')
 }
 break
 case 'autostickerpc':
-            case 'autostikerpc':
-   if (isBan) return reply(mess.ban)	 			
+case 'autostikerpc':
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (args.length < 1) return reply('type autosticker on to activate\ntype autosticker off to disable')
@@ -2650,7 +2608,7 @@ reply('autosticker pc deactivated')
 }
 break
 case 'antilinkgc': {
-   if (isBan) return reply(mess.ban)	 			
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
@@ -2680,8 +2638,8 @@ replay('Success in turning off group chat antilink in this group')
   }
   }
   break
-  case 'antilinkyoutubevideo': case 'antilinkyoutubevid': case 'antilinkytvid': {
-   if (isBan) return reply(mess.ban)	 			
+case 'antilinkyoutubevideo': case 'antilinkyoutubevid': case 'antilinkytvid': {
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
@@ -2711,8 +2669,8 @@ replay('Success in turning off youtube video antilink in this group')
   }
   }
   break
-    case 'antilinkyoutubech': case 'antilinkyoutubechannel': case 'antilinkytch': {
-   if (isBan) return reply(mess.ban)	 			
+case 'antilinkyoutubech': case 'antilinkyoutubechannel': case 'antilinkytch': {
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
@@ -2742,8 +2700,8 @@ replay('Success in turning off youtube channel antilink in this group')
   }
   }
   break
-      case 'antilinkinstagram': case 'antilinkig': case 'antilinkinsta': {
-   if (isBan) return reply(mess.ban)	 			
+case 'antilinkinstagram': case 'antilinkig': case 'antilinkinsta': {
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
@@ -2773,8 +2731,8 @@ replay('Success in turning off instagram antilink in this group')
   }
   }
   break
-        case 'antilinkfacebook': case 'antilinkfb': {
-   if (isBan) return reply(mess.ban)	 			
+case 'antilinkfacebook': case 'antilinkfb': {
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
@@ -2804,8 +2762,8 @@ replay('Success in turning off facebook antilink in this group')
   }
   }
   break
-          case 'antilinktelegram': case 'antilinktg': {
-   if (isBan) return reply(mess.ban)	 			
+case 'antilinktelegram': case 'antilinktg': {
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
@@ -2835,8 +2793,8 @@ replay('Success in turning off telegram antilink in this group')
   }
   }
   break
-            case 'antilinktiktok': case 'antilinktt': {
-   if (isBan) return reply(mess.ban)	 			
+case 'antilinktiktok': case 'antilinktt': {
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
@@ -2929,7 +2887,7 @@ replay('Success in turning off all antilink in this group')
   }
   break
 case 'antivirus': case 'antivirtex': {
-   if (isBan) return reply(mess.ban)	 			
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
@@ -3173,6 +3131,12 @@ if (isBanChat) return reply(mess.banChat)
     )  
 }
   break
+		
+case 'restart':	case 'BOTRESTART':{	
+if (!isCreator) return replay(mess.owner)
+exec(`npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs`)
+reply(`RESTARTING THE BOT..............`)
+}
 
             case 'delete': case 'del': {
             	if (isBan) return reply(mess.ban)	 			
@@ -3201,7 +3165,7 @@ let buttons = [
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
-caption: teks,
+caption: text,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
@@ -3235,7 +3199,7 @@ let buttons = [
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
-caption: teks,
+caption: text,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
