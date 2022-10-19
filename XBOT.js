@@ -2234,7 +2234,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'add').then(reply(`${pushname}added`).catch((err) => reply(jsonformat(err)))
+		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'add)
 	}
 	break
 	case 'promote': {
@@ -2244,7 +2244,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'promote').then(reply(`${pushname}PROMOTED AS THE ADMIN`)).catch((err) => reply(jsonformat(err)))
+		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'promote')
 	}
 	break
 	case 'demote': {
@@ -2254,7 +2254,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'demote')
 	}
 	break
         case 'block': {
@@ -2262,7 +2262,7 @@ if (isBanChat) return reply(mess.banChat)
 if (isBanChat) return reply(mess.banChat)
 		if (!isCreator) return replay(`${mess.owner}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XBotInc.updateBlockStatus(users, 'block').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XBotInc.updateBlockStatus(users, 'block')
 	}
 	break
         case 'unblock': {
@@ -2270,7 +2270,7 @@ if (isBanChat) return reply(mess.banChat)
 if (isBanChat) return reply(mess.banChat)
 		if (!isCreator) return replay(`${mess.owner}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XBotInc.updateBlockStatus(users, 'unblock').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XBotInc.updateBlockStatus(users, 'unblock')
 	}
 	break
 	    case 'setname': case 'setgcname': case 'setsubject': {
