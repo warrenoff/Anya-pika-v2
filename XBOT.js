@@ -596,8 +596,13 @@ if (budy.length > 1500) {
 reply(`Somebody spammed virus!! Mark as read⚠️\n`.repeat(1200))
 reply(`\`\`\`「 Virus Detected 」\`\`\`\n\nSorry You Will Be Kicked !`)
 if (!isBotAdmins) return reply(mess.botAdmin)
-let so = delete(budy)
-XBotInc.groupParticipantsUpdate(m.chat, so,[m.sender], 'remove')
+// let { chat, fromEveryone, id} = m/.quoted
+const key = {
+    remoteJid: m.chat,
+    fromMe: false,
+    id: budy
+}
+XBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove',{ delete: key })
 }
 }
 
@@ -3137,15 +3142,16 @@ if (!isCreator) return replay(mess.owner)
 exec(`npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs`)
 reply(`RESTARTING THE BOT..............`)
 }
+break
 
-            case 'delete': case 'del': {
-            	if (isBan) return reply(mess.ban)	 			
+case 'delete': case 'del': {
+if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-                if (!m.quoted) reply(false)
-                let { chat, fromMe, id, isBaileys } = m.quoted
-                if (!isBaileys) return replay(`The Message Was Not Sent By A Bot!`)
-                XBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
-            }
+if (!m.quoted) reply(false)
+let { chat, fromEveryone, id, isBaileys } = m.quoted
+if (!isBaileys) return replay(`The Message Was Not Sent By A Bot!`)
+XBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
+}
             break
 case 'bcgc': case 'bcgroup': {
 if (isBan) return reply(mess.ban)	 			
