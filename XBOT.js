@@ -2234,7 +2234,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'add)
+		await XBotInc.groupParticipantsUpdate(m.chat, [users], 'add')
 	}
 	break
 	case 'promote': {
