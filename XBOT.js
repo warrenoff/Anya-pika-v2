@@ -578,8 +578,8 @@ await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending youtube video link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-  if (antiWame)
-  if (budy.includes(`http://wa.me`)) {
+if (antiWame)
+if (budy.includes(`http://wa.me`)) {
 if (!isBotAdmins) return
 bvl = `\`\`\`「 Wa.me Link Detected 」\`\`\`\n\nAdmin has sent a wa.me link, admin is free to send any link😇`
 if (isAdmins) return reply(bvl)
@@ -594,18 +594,17 @@ XBotInc.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@${k
 if (antiVirtex) {
 if (budy.length > 1500) {
 reply(`Somebody spammed virus!! Mark as read⚠️\n`.repeat(1200))
-reply(`\`\`\`「 Virus Detected 」\`\`\`\n\nSorry You Will Be Kicked !`)
 if (!isBotAdmins) return reply(mess.botAdmin)
-// let { chat, fromEveryone, id} = m/.quoted
+// let { chat, fromEveryone, id} = m.quoted
 const key = {
     remoteJid: m.chat,
     fromMe: false,
-    id: budy
+    id: budy,
+    participants : m.sender
 }
 XBotInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove',{ delete: key })
 }
 }
-
 if (antiToxic)
 if (bad.includes(messagesD)) {
 tos = ['Hey, watch your mouth','Never been taught how to speak?','Stop being toxic my friend🤢','Dont be toxic🦄']
@@ -620,7 +619,6 @@ kice = m.sender
 await XBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XBotInc.sendMessage(from, {text:`\`\`\`「 Bad Word Detected 」\`\`\`\n\n@${kice.split("@")[0]} was kicked because of using bad words in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
 }
-//antilink youtube video by xeon
 if (AntiLinkYoutubeVid)
 if (budy.includes("https://youtu.be/")){
 if (!isBotAdmins) return
@@ -3128,7 +3126,7 @@ if (isBanChat) return reply(mess.banChat)
       from, 
       {
        text: "Group Settings",
-       footer: botname,
+       footer: `${global.botname}`,
        title: "Set your group settings here......",
        buttonText: "Click Button",
        sections
@@ -3136,11 +3134,18 @@ if (isBanChat) return reply(mess.banChat)
     )  
 }
   break
+case 'igstalk':{
+if (!text) return reply(`Example : ${prefix + command} text`) 
+let { result: anu } = await fetchJson(`https://zenzapis.xyz/stalker/ig?username=${text}&apikey=afae961f1c`)
+if (anu.status == false) return m.reply(anu.result.message)
+XBotInc.sendMedia(m.chat, anu.caption.profile_hd, '', `⭔ Full Name : ${anu.caption.full_name}\n⭔ User Name : ${anu.caption.user_name}\n⭔ ID ${anu.caption.user_id}\n⭔ Followers : ${anu.caption.followers}\n⭔ Following : ${anu.caption.following}\n⭔ Bussines : ${anu.caption.bussines}\n⭔ Profesional : ${anu.caption.profesional}\n⭔ Verified : ${anu.caption.verified}\n⭔ Private : ${anu.caption.private}\n⭔ Bio : ${anu.caption.biography}\n⭔ Bio Url : ${anu.caption.bio_url}\n url:'https://instagram.com/'${anu.caption.user_name}`, m)
+}
+break
 		
 case 'restart':	case 'BOTRESTART':{	
 if (!isCreator) return replay(mess.owner)
-exec(`npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs`)
-reply(`RESTARTING THE BOT..............`)
+exec("npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs")
+replay(`RESTARTING THE BOT..............`)
 }
 break
 
