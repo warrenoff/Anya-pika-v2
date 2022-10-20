@@ -1,3 +1,0 @@
-{ 
-    TEAMX = XBOT MULTI FUNCTIONAL BOT
-}
