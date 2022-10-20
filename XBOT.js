@@ -166,10 +166,10 @@ const {
  let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'));
 
-let Pikachusticker = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
-let Pikachuaudio = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-let Pikachuimage = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/image.json'));
-let Pikachuvideo = JSON.parse(fs.readFileSync('./TEAM_XMEDIA/theme/Media-Store-Karne-Ke-Liye/video.json'));
+let Pikachusticker = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
+let Pikachuaudio = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/Media-Store-Karne-Ke-Liye/audio.json'));
+let Pikachuimage = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/Media-Store-Karne-Ke-Liye/image.json'));
+let Pikachuvideo = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/Media-Store-Karne-Ke-Liye/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
@@ -290,7 +290,7 @@ autoreadsw = false
 	
 	// FAKE TEXT IMG
 const textImg = (teks) => {
-AnyaPika.sendMessage(m.chat, { text :teks, }, {quoted: m, thumbnail: fs.readFileSync('./TEAM_XMEDIA/image/wpmobile.png')}) 
+AnyaPika.sendMessage(m.chat, { text :teks, }, {quoted: m, thumbnail: fs.readFileSync('./AnyaPikaMedia/image/wpmobile.png')}) 
 }
 
 //FAKE CONTACT
@@ -446,11 +446,11 @@ message: {
 	
 	//group target \\
 const reply = (teks) => {
-           AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./TEAM_XMEDIA/theme/NEXUS.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+           AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/NEXUS.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./TEAM_XMEDIA/theme/NEXUS.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+            AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/NEXUS.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -725,28 +725,28 @@ AnyaPika.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${kice.s
 }
 	     for (let anji of Pikachusticker){
 				if (budy === anji){
-					let result = fs.readFileSync(`./TEAM_XMEDIA/sticker/${anji}.webp`)
+					let result = fs.readFileSync(`./AnyaPikaMedia/sticker/${anji}.webp`)
 					AnyaPika.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anju of Pikachuaudio){
 				if (budy === anju){
-					let result = fs.readFileSync(`./TEAM_XMEDIA/audio/${anju}.mp3`)
+					let result = fs.readFileSync(`./AnyaPikaMedia/audio/${anju}.mp3`)
 					AnyaPika.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anjh of Pikachuimage){
 				if (budy === anjh){
-					let result = fs.readFileSync(`./TEAM_XMEDIA/image/${anjh}.jpg`)
+					let result = fs.readFileSync(`./AnyaPikaMedia/image/${anjh}.jpg`)
 					AnyaPika.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 					for (let anjh of Pikachuvideo){
 				if (budy === anjh){
-					let result = fs.readFileSync(`./TEAM_XMEDIA/video/${anjh}.mp4`)
+					let result = fs.readFileSync(`./AnyaPikaMedia/video/${anjh}.mp4`)
 					AnyaPika.sendMessage(m.chat, { video: result }, { quoted: m })
 					}
 				  }
@@ -3183,7 +3183,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to follow", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://github.com/NEXUSAT12/"
@@ -3217,7 +3217,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://github.com/NEXUSAT12"
@@ -3234,7 +3234,7 @@ if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
                 if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) return reply(`*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`)
                 let anu = await store.chats.all().map(v => v.id)
-                let ftroli = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./TEAM_XMEDIA/theme/NEXUS.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                let ftroli = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/NEXUS.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 reply(`*Send Broadcast To* ${anu.length} *Group Chat, Time ${anu.length * 1.5} secs*`)
                 for (let i of anu) {
                     await sleep(1500)
@@ -3269,10 +3269,10 @@ id: 'owner'
                     if (/webp/.test(mime)) {
                     AnyaPika.sendMessage(i, { sticker: { url: media } }, { quoted: ftroli })
                     } else if (/image/.test(mime)) {
-                    let DGx = `*「 ${global.ownername}'s Broadcast」*${text ? '\n\n' + text : ''}`
-                    AnyaPika.send5ButImg(i, DGx, `${global.botname}`, buffer, butoon)
+                    let AnyaPikachu = `*「 ${global.ownername}'s Broadcast」*${text ? '\n\n' + text : ''}`
+                    AnyaPika.send5ButImg(i, AnyaPikachu, `${global.botname}`, buffer, butoon)
                     } else if (/video/.test(mime)) {
-                    let DGx = `*「 ${global.ownername}'s Broadcast」*${text ? '\n\n' + text : ''}`
+                    let AnyaPikachu = `*「 ${global.ownername}'s Broadcast」*${text ? '\n\n' + text : ''}`
                     AnyaPika.sendMessage(i, {video: buffer, caption: `${botname}`}, { quoted: ftroli })
                     } else if (/audio/.test(mime)) {
                     AnyaPika.sendMessage(i, {audio: buffer, mimetype: 'audio/mpeg'}, { quoted : ftroli })
@@ -6986,7 +6986,7 @@ case 'mcpedl': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args.join(" ")) return replay(`Example : ${prefix + command} shader`)
-Xtod.mcpedl(args.join(" ")).then(async(res) => {
+Pikatod.mcpedl(args.join(" ")).then(async(res) => {
 teks = `*| MCPEDL SEARCH |*`
 for (let i of res) {
 teks += `\n\nName : ${i.name}\nCategory : ${i.category}\nDate : ${i.date}\nDesc : ${i.desc}\nLink : ${i.link}`
@@ -7010,7 +7010,7 @@ case 'happymod': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args.join(" ")) return replay(`Example : ${prefix + command} mobile legend`)
-Xtod.happymod(args.join(" ")).then(async(res) => {
+Pikatod.happymod(args.join(" ")).then(async(res) => {
 teks = '```「 HappyMod Search 」```'
 for (let i of res) {
 teks += `\n\n${i.name}\n`
@@ -7061,7 +7061,7 @@ break
 case 'servermc': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-Xtod.servermc().then(async(res) => {
+Pikatod.servermc().then(async(res) => {
 let teks = '*| MINECRAFT SERVER |*\n\nhttps://minecraftpocket-servers.com/country/indonesia/\n\n'
 let no = 1
 for (let i of res) {
@@ -8698,7 +8698,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
 sourceUrl: "https://github.com/NEXUSAT12"
@@ -8726,7 +8726,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9670,7 +9670,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9718,7 +9718,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9787,7 +9787,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9828,7 +9828,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9965,7 +9965,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10015,7 +10015,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://github.com/NEXUSAT12/"
@@ -10071,7 +10071,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://github.com/NEXUSAT12/"
@@ -10129,7 +10129,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10171,7 +10171,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10214,7 +10214,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10258,7 +10258,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10335,7 +10335,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10372,7 +10372,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10431,7 +10431,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10486,7 +10486,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
