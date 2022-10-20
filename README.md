@@ -1,6 +1,8 @@
 <div align="center">
   
 ## ╭━━━≺👑 𝐗-𝐁𝐎𝐓 👑≻━━━╮
+
+<div align="center">  
   
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar&duration=5316&pause=1064&color=F70D0C&width=435&lines=WELCOME+TO+THE+X-BOT;POWERED+BY+TEAM-X_FIRE;CREATED+BY+NEXUS;HOPE+YOU+ENJOY+THE+BOT+;AND+DONT+FORGET+TO+FOLLOW)](https://git.io/typing-svg)
   
