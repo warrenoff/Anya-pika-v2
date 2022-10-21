@@ -3416,18 +3416,7 @@ if (isBanChat) return reply(mess.banChat)
                 })
             }
             break
-case 'dogesticker':
-case 'dogestick':
-	case 'doge':{
-	                	            	            	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/anjing')
-var wifegerak = ano.split('\n')
-var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
-encmedia = await AnyaPika.sendImageAsSticker(from, wifegerakx, m, { packname: global.packname, author: global.author, })
-await fs.unlinkSync(encmedia)
-}
-break
+
 case 'lovesticker':
 case 'lovestick' :{
 	            	            	if (isBan) return reply(mess.ban)
@@ -8896,10 +8885,10 @@ case 'allmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
-const allmenu =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
-╿
-╠🔥${prefix}𝚂𝚎𝚕𝚏
-╠🔥${prefix}𝙿𝚞𝚋𝚕𝚒𝚌
+const allmenu =  ` *━━━〈  🥵 Owner 🥵  〉━━━*	
+
+❒✗ ${prefix}𝚂𝚎𝚕𝚏
+❒✗ ${prefix}𝙿𝚞𝚋𝚕𝚒𝚌
 ╠🔥${prefix}𝙰𝚗𝚝𝚒𝚝𝚊𝚐
 ╠🔥${prefix}𝚁𝚎𝚗𝚝𝚋𝚘𝚝 [𝙰𝚍𝚍/𝙳𝚎𝚕]
 ╠🔥${prefix}𝚁𝚎𝚗𝚝𝚕𝚒𝚜𝚝
