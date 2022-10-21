@@ -1525,6 +1525,8 @@ if (isBanChat) return reply(mess.banChat)
 					AnyaPika.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
 				     break
                     case 'awesomecheck':
+  case 'chutiyacheck'
+  case 'murderercheck'
   case 'greatcheck':
     case 'gaycheck':
       case 'cutecheck':
@@ -8555,6 +8557,14 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}listgc
 ❒✗ ${prefix}request
 ❒✗ ${prefix}report
+❒✗ ${prefix}setcmd
+❒✗ ${prefix}listcmd
+❒✗ ${prefix}delcmd
+❒✗ ${prefix}lockcmd
+❒✗ ${prefix}addmsg
+❒✗ ${prefix}listmsg
+❒✗ ${prefix}getmsg
+❒✗ ${prefix}delmsg
 
 *━━━〈  🥵 Owner 🥵  〉━━━*	
 
@@ -8616,6 +8626,7 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}upvote
 ❒✗ ${prefix}checkvote
 ❒✗ ${prefix}delvote
+❒✗ ${prefix}couplepp
 
 *━━━〈  ✨ Text Maker ✨  〉━━━*
 
@@ -8911,6 +8922,36 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}cringe
 ❒✗ ${prefix}neko
 ❒✗ ${prefix}gura
+❒✗ ${prefix}animenom
+❒✗ ${prefix}animeslap
+❒✗ ${prefix}animespank
+❒✗ ${prefix}animepat
+❒✗ ${prefix}animeneko
+❒✗ ${prefix}animekiss
+❒✗ ${prefix}animewlp
+❒✗ ${prefix}animecuddle
+❒✗ ${prefix}animecry
+❒✗ ${prefix}animekill
+❒✗ ${prefix}animelick
+❒✗ ${prefix}animebite
+❒✗ ${prefix}animeyeet
+❒✗ ${prefix}animebully
+❒✗ ${prefix}animebonk
+❒✗ ${prefix}animewink
+❒✗ ${prefix}animepoke
+❒✗ ${prefix}animesmile
+❒✗ ${prefix}animewave
+❒✗ ${prefix}animeawoo
+❒✗ ${prefix}animeblush
+❒✗ ${prefix}animesmug
+❒✗ ${prefix}animeglomp
+❒✗ ${prefix}animehappt
+❒✗ ${prefix}animedance
+❒✗ ${prefix}animecringe
+❒✗ ${prefix}animehighfive
+❒✗ ${prefix}animehandhold
+❒✗ ${prefix}animemegumin
+❒✗ ${prefix}smug2
 ╽
 ╠═══════➻「 𝓝𝓼𝓯𝔀 」
 ╿
@@ -8956,6 +8997,7 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}lovelycheck
 ❒✗ ${prefix}murderercheck
 ❒✗ ${prefix}chutiyacheck 
+❒✗ ${prefix}dethcheck
 ❒✗ ${prefix}couple
 ❒✗ ${prefix}mysoulmate
 ❒✗ ${prefix}hot
@@ -8993,17 +9035,6 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}translate
 ❒✗ ${prefix}fliptext 
 ❒✗ ${prefix}toletter  *(number)*
-╽
-╠══════➻「 𝓭𝓪𝓽𝓪𝓫𝓪𝓼𝓮 」
-╿
-❒✗ ${prefix}setcmd
-❒✗ ${prefix}listcmd
-❒✗ ${prefix}delcmd
-❒✗ ${prefix}lockcmd
-❒✗ ${prefix}addmsg
-❒✗ ${prefix}listmsg
-❒✗ ${prefix}getmsg
-❒✗ ${prefix}delmsg
 ` 
 let buons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1},
