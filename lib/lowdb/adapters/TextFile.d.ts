@@ -4,5 +4,5 @@ export declare class TextFile implements Adapter<string> {
     private writer;
     constructor(filename: string);
     read(): Promise<string | null>;
-    write(str: string): Promise<void>;
+    write(str: string): Promise<void>; 
 }
