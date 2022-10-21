@@ -8,4 +8,4 @@ export declare class LowSync<T = unknown> {
     constructor(adapter: SyncAdapter<T>);
     read(): void;
     write(): void;
-}
+} 
