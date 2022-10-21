@@ -4,4 +4,4 @@ export declare class LocalStorage<T> implements SyncAdapter<T> {
     constructor(key: string);
     read(): T | null;
     write(obj: T): void;
-}
+} 
