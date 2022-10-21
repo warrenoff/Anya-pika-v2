@@ -7,5 +7,5 @@ export declare class Low<T = unknown> {
     data: T | null;
     constructor(adapter: Adapter<T>);
     read(): Promise<void>;
-    write(): Promise<void>;
+    write(): Promise<void>; 
 }
