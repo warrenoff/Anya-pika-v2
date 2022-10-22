@@ -20,7 +20,7 @@
 </p>
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NEXUSAT12/XBOT/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Pika4O4/Anya-pika-v2/)
 
 ## SCAN QR CODE
 
