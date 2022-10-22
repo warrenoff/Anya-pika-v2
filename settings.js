@@ -59,10 +59,10 @@ itemcount1 = '69696969' // item count in welcome message //
 itemcount2 = '77777777' // item count in left message //
 
 //--------Bot theme media--------\\
-global.thum = fs.readFileSync("./AnyaPikaMedia/theme/Anya.jpg") // thumb pic //
-global.log0 = fs.readFileSync("./AnyaPikaMedia/theme/Anya.jpg") // logo pic //
-global.err4r = fs.readFileSync("./AnyaPikaMedia/theme/Anya.jpg") // error pic //
-global.thumb = fs.readFileSync("./AnyaPikaMedia/theme/Anya.jpg") // thumb pic //
+global.thum = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // thumb pic //
+global.log0 = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // logo pic //
+global.err4r = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // error pic //
+global.thumb = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // thumb pic //
 
 //--------Database--------\\
 global.premium = ['918811074852'] // premium numbers //
@@ -122,7 +122,7 @@ global.mess = {
    umpanawal: 5,
    potionawal: 1
 }
-global.thumb = fs.readFileSync('./AnyaPikaMedia/theme/Anya.jpg')
+global.thumb = fs.readFileSync('./AnyaPikaMedia/theme/Anyapic.jpg')
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
