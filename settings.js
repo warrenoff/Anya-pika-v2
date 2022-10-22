@@ -1,28 +1,27 @@
 const fs = require('fs')
 const chalk = require('chalk')
 
-//Api Website\\
+//--------Api Website--------\\
 global.APIs = {
 	zenz: 'https://zenzapis.xyz',
 }
 
-//Api Key\\
+//--------Api Key--------\\
 global.APIKeys = {
 	'https://zenzapis.xyz': 'afae961f1c',
 }
 
-
-//aumto functioner
+//--------Auto functioner--------\\
 global.autoTyping = false //auto tying in gc (true to on, false to off)
 global.autoreadpmngc = false //auto reading in gc and pm (true to on, false to off)
 global.autoReadGc = false //auto reading in gc (true to on, false to off)
 global.autoRecord = false //auto recording (true to on, false to off)
 global.available = true //auto available (true to on, false to off)
 
-//semt menu variants
-global.vidmenu = fs.readFileSync("./TEAM_XMEDIA/theme/NEXUS.mp4") //gif and video menu
+//--------Semt menu variants--------\\
+global.vidmenu = fs.readFileSync("./AnyaPikaMedia/theme/Anya.mp4") //gif and video menu
 
-//documents variants
+//--------Documents variants--------\\
 global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
 global.doc2 = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 global.doc3 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
@@ -30,34 +29,43 @@ global.doc4 = 'application/zip'
 global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
-//owmner v card
-global.vcardowner = ['918130784851'] //ur owner number
-global.ownername = "꧁⃟ 🄽🄴🅇🅄🅂⃟ ꧂" //ur owner name
-global.ytname = "YT: ❧⃟ 🄽🄴🅇🅄🅂 ⃟☙" //ur yt chanel name
-global.socialm = "GitHub: NEXUSAT12" //ur github or insta name
-global.location = "India, UP, GHAZIABAD" //ur location
+//--------Owner v card--------\\
+global.vcardowner = ['918811074852'] // Owner number //
+global.ownername = "3.69_Pika" // Owner name //
+global.ytname = "YT: ONYXPIKA" // Yt chanel name //
+global.socialm = "GitHub: Pika4o4" // Github or insta name //
+global.location = "India, Assam, Dibrugarh" // Location //
 
-//bot bomdy 
-global.aliveMessage = `HELLO MY dear ❧⃟ 🄽🄴🅇🅄🅂 ⃟☙ is alive`
-global.owner = ['918130784851', '919987052500']
-global.ownertag = '918130784851' //ur tag number
-global.botname = '❧⃟ 🅇🄱🄾🅃 ⃟☙' //ur bot name
-global.linkz = "https://wa.me/+91813078451" //your theme url which will be displayed on whatsapp
-global.websitex = "https://github.com/NEXUSAT12" //ur website to be displayed
-global.botscript = 'https://chat.whatsapp.com/DDWBpH9ciy38RCGYO7RkfM' //script link
-global.reactmoji = "😘" //ur menu react emoji
-global.themeemoji = "❤️‍🔥" //ur theme emoji
-global.packname = "ᎲᏰᎾᎿ Stickers\n\n\n\n\n\n\n\n\n\n\n✨✨✨ " //ur sticker watermark packname
-global.author = "✨ᏦᎨᏁᎶᏁᎬᎲᏬᏕ" //ur sticker watermark author
+//--------Bot body--------\\
+global.aliveMessage = `🦋⃟≛⃝ 𝗔𝗻𝘆𝗮ᵇʸ ᵖⁱᵏᵃ•••       ⬇️` // Alive message for menu //
+global.owner = ['918811074852','917355622763']
+global.ownertag = '918811074852' // Tag number //
+global.botname = '𝐴𝑛𝑦𝑎💫' // Bot name //
+global.linkz = "https://wa.me/+91813078451" // Theme url which will be displayed on whatsapp //
+global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
+global.botscript = 'Not available publicly' // Script link //
+global.themeemoji = "🥵" // Theme emoji//
+global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ\n\n\n\n\n\n\n\n\n\n\n🥵🥵🥵 " // sticker watermark packname //
+global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
+global.BotName3 = '𝑸𝒖𝒆𝒆𝒏 𝑨𝒏𝒚𝒂 𝒗𝟐' // Bot name for AnyaCore.js //
+footer = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪❤️' // Footer //
 
-//Bot theme media
-global.thum = fs.readFileSync("./TEAM_XMEDIA/theme/NEXUS.jpg") //ur thumb pic
-global.log0 = fs.readFileSync("./TEAM_XMEDIA/theme/NEXUS.jpg") //ur logo pic
-global.err4r = fs.readFileSync("./TEAM_XMEDIA/theme/NEXUS.jpg") //ur error pic
-global.thumb = fs.readFileSync("./TEAM_XMEDIA/theme/NEXUS.jpg") //ur thumb pic
+//--------Index--------\\
+global.BotName2 = "Anya さん" // Bot name for welcome and left message // 
+link1 = 'https://github.com/Pika4O4' // 1st link for displaying //
+link2 = 'https://github.com/404Layla' //2nd link for displaying //
+actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
+itemcount1 = '69696969' // item count in welcome message //
+itemcount2 = '77777777' // item count in left message //
 
-//damtabase
-global.premium = ['918130784851'] //ur premium numbers
+//--------Bot theme media--------\\
+global.thum = fs.readFileSync("./AnyaPikaMedia/theme/Anya.jpg") // thumb pic //
+global.log0 = fs.readFileSync("./AnyaPikaMedia/theme/Anya.jpg") // logo pic //
+global.err4r = fs.readFileSync("./AnyaPikaMedia/theme/Anya.jpg") // error pic //
+global.thumb = fs.readFileSync("./AnyaPikaMedia/theme/Anya.jpg") // thumb pic //
+
+//--------Database--------\\
+global.premium = ['918811074852'] // premium numbers //
 global.ntilinkytvid = []
 global.ntilinkytch = []
 global.ntilinkig = []
@@ -77,10 +85,13 @@ global.gcrevoke = []
 global.autorep = []
 global.ntilink = []
 
-//omther
+//--------Commands react--------\\
+global.reactmoji = "🤖" // Menu //
+
+//--------Others--------\\
 global.sessionName = 'session'
 global.antitags = true
-global.prefa = ['#']
+global.prefa = ['','.','-','#']
 global.sp = '⭔'
 global.mess = {
     success: 'Done ✓',
@@ -111,7 +122,7 @@ global.mess = {
    umpanawal: 5,
    potionawal: 1
 }
-global.thumb = fs.readFileSync('./TEAM_XMEDIA/theme/NEXUS.jpg')
+global.thumb = fs.readFileSync('./AnyaPikaMedia/theme/Anya.jpg')
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
