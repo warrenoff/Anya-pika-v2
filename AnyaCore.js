@@ -1857,7 +1857,7 @@ if (isBanChat) return reply(mess.banChat)
           reply(`Exif Has Been Successfully Changed to\n\n${themeemoji} Packname : ${global.packname}\n${themeemoji} Author : ${global.author}`)
             }
             break
-	case 'kick': {
+	case 'remove': case 'nikalbsdk': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 		if (!m.isGroup) return replay(`${mess.group}`)
@@ -8946,18 +8946,17 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}gecg
 ❒✗ ${prefix}feed
 
-╠══════➻「 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」
-╿
+ *━━━〈  👻 Stickers 👻  〉━━━*
+
 ❒✗ ${prefix}patrick
 ❒✗ ${prefix}emoji
 ❒✗ ${prefix}emojimix
 ❒✗ ${prefix}attp
 ❒✗ ${prefix}ttp
 ❒✗ ${prefix}lovesticker
-╽
-╠════➻「 𝓪𝓷𝓲𝓶𝓮 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」
-╿
-❒✗ ${prefix}loli
+
+ *━━━〈  🥶 Reactions 🥶  〉━━━*
+
 ❒✗ ${prefix}bully
 ❒✗ ${prefix}cuddle
 ❒✗ ${prefix}cry
@@ -8987,6 +8986,9 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}cringe
 ❒✗ ${prefix}neko
 ❒✗ ${prefix}gura
+
+ *━━〈 💖 Anime sticker 💖 〉━━*
+
 ❒✗ ${prefix}animenom
 ❒✗ ${prefix}animeslap
 ❒✗ ${prefix}animespank
@@ -9046,7 +9048,7 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}hneko
 ❒✗ ${prefix}nwaifu
 
-╠═══════➻「 𝓯𝓾𝓷 」
+ *━━━〈  💃 Fun 💃  〉━━━*
 
 ❒✗ ${prefix}rate *(Text)*
 ❒✗ ${prefix}wangy
@@ -9079,7 +9081,7 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 
 ....Type 𝗙𝘂𝗻𝗺𝗲𝗻𝘂𝟮 for more....
 
-╠══════➻「 𝓰𝓪𝓶𝓮 」
+ *━━━〈  🎮 Games 🎮  〉━━━*
 
 ❒✗ ${prefix}truth
 ❒✗ ${prefix}dare
@@ -9088,15 +9090,15 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}guess  *(𝙾𝚙𝚝𝚒𝚘𝚗)*
 ❒✗ ${prefix}math
 
-╠══➻「 𝓪𝓷𝓸𝓷𝔂𝓶𝓸𝓾𝓼 𝓬𝓱𝓪𝓽 」
-╿
+ *━━〈  🙆 Anonymous chat 🙆  〉━━*
+
 ❒✗ ${prefix}anonymous 
 ❒✗ ${prefix}start
 ❒✗ ${prefix}next
 ❒✗ ${prefix}leave
-╽
-╠══════➻「 𝓽𝓸𝓸𝓵 」
-╿
+
+ *━━━〈  ⚒️ Tools ⚒️  〉━━━*
+
 ❒✗ ${prefix}translate
 ❒✗ ${prefix}fliptext 
 ❒✗ ${prefix}toletter  *(number)*
