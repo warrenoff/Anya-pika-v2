@@ -446,11 +446,11 @@ message: {
 	
 	//group target \\
 const reply = (teks) => {
-           AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/NEXUS.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+           AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/NEXUS.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+            AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -2847,10 +2847,10 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to follow", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://github.com/NEXUSAT12/"
+sourceUrl: "https://github.com/Pika4O4/"
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -2881,10 +2881,10 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://github.com/NEXUSAT12"
+sourceUrl: "https://github.com/Pika4O4"
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -2898,7 +2898,7 @@ if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
                 if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) return reply(`*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`)
                 let anu = await store.chats.all().map(v => v.id)
-                let ftroli = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/NEXUS.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                let ftroli = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyapic.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 reply(`*Send Broadcast To* ${anu.length} *Group Chat, Time ${anu.length * 1.5} secs*`)
                 for (let i of anu) {
                     await sleep(1500)
@@ -8403,7 +8403,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
 sourceUrl: "https://github.com/NEXUSAT12"
@@ -8431,7 +8431,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: `${global.BotName3}`, 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9117,7 +9117,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9165,7 +9165,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9234,7 +9234,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9275,7 +9275,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9412,7 +9412,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9462,7 +9462,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://github.com/NEXUSAT12/"
@@ -9518,7 +9518,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://github.com/NEXUSAT12/"
@@ -9576,7 +9576,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9618,7 +9618,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9661,7 +9661,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9705,7 +9705,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9782,7 +9782,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9819,7 +9819,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9878,7 +9878,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9933,7 +9933,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10027,7 +10027,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10218,7 +10218,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10255,7 +10255,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10289,7 +10289,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10322,7 +10322,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10360,7 +10360,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10414,7 +10414,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10474,7 +10474,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10522,7 +10522,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10548,7 +10548,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
