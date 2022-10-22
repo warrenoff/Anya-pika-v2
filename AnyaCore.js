@@ -166,10 +166,10 @@ const {
  let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'));
 
-let Pikachusticker = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/Media-Store-Karne-Ke-Liye/sticker.json'));
-let Pikachuaudio = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/Media-Store-Karne-Ke-Liye/audio.json'));
-let Pikachuimage = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/Media-Store-Karne-Ke-Liye/image.json'));
-let Pikachuvideo = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/Media-Store-Karne-Ke-Liye/video.json'));
+let Pikachusticker = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/storemedia/sticker.json'));
+let Pikachuaudio = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/storemedia/audio.json'));
+let Pikachuimage = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/storemedia/image.json'));
+let Pikachuvideo = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/storemedia/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
@@ -192,7 +192,7 @@ module.exports = AnyaPika = async (AnyaPika, m, chatUpdate, store) => {
     try {
         var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ''
         var budy = (typeof m.text == 'string' ? m.text : '')
-        var prefix = global.prefa
+        var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+-✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+-✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
         const isCmd = body.startsWith(prefix)
         const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
         const args = body.trim().split(/ +/).slice(1)
@@ -217,7 +217,7 @@ const groupAdmins = m.isGroup ? await participants.filter(v => v.admin !== null)
 const groupOwner = m.isGroup ? groupMetadata.owner : ''
 const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
 const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
-const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
+const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || true
 const AntiLink = m.isGroup ? ntilink.includes(from) : false
 const AntiLinkYoutubeVid = m.isGroup ? ntilinkytvid.includes(from) : false
 const AntiLinkYoutubeChannel = m.isGroup ? ntilinkytch.includes(from) : false
@@ -226,11 +226,11 @@ const AntiLinkFacebook = m.isGroup ? ntilinkfb.includes(from) : false
 const AntiLinkTiktok = m.isGroup ? ntilinktt.includes(from) : false
 const AntiLinkTelegram = m.isGroup ? ntilinktg.includes(from) : false
 const AntiLinkTwitter = m.isGroup ? ntilinktwt.includes(from) : false
-const AntiLinkAll = m.isGroup ? ntilinkall.includes(from) : false
+const AntiLinkAll = m.isGroup ? ntilinkall.includes(from) : true
 const antiWame = m.isGroup ? ntwame.includes(from) : false
-const antiToxic = m.isGroup ? nttoxic.includes(from) : false
+const antiToxic = m.isGroup ? nttoxic.includes(from) : true
 const antiVirtex = m.isChat ? ntvirtex.includes(from) : true
-const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : false
+const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : true
 const isAutoStick = _autostick.includes(from)
 const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
 const Autoreply = m.isGroup ? autorep.includes(from) : true
@@ -1070,25 +1070,7 @@ const reactionMessage = {
                 
                 const timestampe = speed();
 const latensie = speed() - timestampe
-                const menulist = `┌─❖
-│「 Hi 👋 」
-└┬❖ 「 ${pushname} 」
-┌┤✑  How Are You? 😄
-│└────────────┈ ⳹
-│
-└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」       
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-└┬────────────┈ ⳹
-   │✑  Please Select
-   │✑  The Button Below
-   └─────────────┈ ⳹`
+                const menulist = `🦋⃟≛⃝ 𝗔𝗻𝘆𝗮ᵇʸ ᵖⁱᵏᵃ•••      ⬇️`
    
    //randoming function
 function pickRandom(list) {
@@ -1982,11 +1964,19 @@ if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝ 
- 
- ➲ *Message : ${q ? q : 'no message'}*\n\n`
+let teks = `╭╼━━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛━━━╾ᐧᐧᐧᐧ⳹
+│                                                 ❒
+│            *༺ TAGALL ༻*
+│
+🔥 *Group name* : ${groupMetadata.subject}
+├───────────♡
+🔥 *Message* : ${args.join(" ") ? args.join(" ") : 'no message'}
+├───────────♡
+🔥 *Announcer* : @${m.sender.split('@')[0]}
+╰╼━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹ \n\n╭╼━━━᚜ 𝓜𝓮𝓶𝓫𝓮𝓻𝓼 𝓝𝓪𝓶𝓮 ᚛━━━╾ᐧᐧᐧᐧ⳹
+╽                                                 ❒  `
                 for (let mem of participants) {
-                teks += `${themeemoji} @${mem.id.split('@')[0]}\n`
+                teks += `\n┃🔥@${mem.id.split('@')[0]}\n`
                 }
                 AnyaPika.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
@@ -2799,10 +2789,29 @@ break
 		
 case 'restart':	case 'BOTRESTART':{	
 if (!isCreator) return replay(mess.owner)
-exec("npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs")
+exec("npm i -g pm2 && pm2 start Pika.js && pm2 save && pm2 logs")
 replay(`RESTARTING THE BOT..............`)
 }
 break
+
+ case 'deletethis': case 'delthis': case 'deletethismessage': case 'delthismsg': case 'ignoreit': {
+    if (isBan) return reply(mess.banned)	 			
+ if (isBanChat) return reply(mess.bangc)
+ if (!isBotAdmins) return replay(mess.botadmin)
+ if (!isAdmins && !isCreator) return replay(mess.useradmin)
+ if (!m.quoted) return reply('Please mention a message baka!')
+ let { chat, fromMe, id} = m.quoted
+
+const key = {
+    remoteJid: m.chat,
+    fromMe: false,
+    id: m.quoted.id,
+    participant: m.quoted.sender
+}
+
+await AnyaPika.sendMessage(m.chat, { delete: key })
+ }
+ break
 
 case 'delete': case 'del': {
 if (isBan) return reply(mess.ban)	 			
@@ -2980,6 +2989,58 @@ if (!wokwol.quoted) return replay('The message you replied to does not contain a
 await wokwol.quoted.copyNForward(m.chat, true)
 }
 break
+case 'me': case 'profile': case 'myprofile':
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+  if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
+  if (!isInventory){ addInventori(m.sender) }
+  if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
+     
+
+     var flob = await getBuffer(picak+'User Profile')
+     var bio= await AnyaPika.fetchStatus(m.sender)
+     var bioo = bio.status
+     const adn= isAdmins? "True":"False"
+     
+     try {
+        
+        pfp=await AnyaPika.profilePictureUrl(m.sender, 'image')
+    
+          } catch (e) {
+     
+      pfp ='https://wallpapercave.com/wp/wp10524580.jpg'
+    }
+
+     const profilexx = `💝 *USER PROFILE* 💝 
+
+╭╼━━━᚜𝓤𝓼𝓮𝓻 𝓲𝓷𝓯𝓸. ᚛━━━╾╮
+╽
+🥵 *Your name* : ${pushname}
+🐤 *Bio* : ${bioo}
+🎃 *Group name* : ${groupMetadata.subject}
+❤️ *Group admin?* : ${adn}
+🔥 *Bot name* : ${global.BotName}
+
+╰╼━━━━━━━━━━━━━╾╯ 
+
+Please choose the buttons below to use *more commands*. ✨`
+ 
+
+
+let buttonspro = [
+    {buttonId: `${prefix}soulmate`, buttonText: {displayText: `My soulmate 😚`}, type: 1},
+    {buttonId: `${prefix}menu`, buttonText: {displayText: `🍓 Menu 🍓`}, type: 1}
+    ]
+            let buttonMessage = {
+                image: { url: pfp },
+                caption: profilexx,
+                footer: `${footer}`,
+                buttons: buttonspro,
+                headerType: 4
+            }
+        AnyaPika.sendMessage(m.chat,buttonMessage,{quoted:m})
+        	
+            break
 case 'listpc': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -3041,7 +3102,7 @@ case 'attp': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
            if (!text) reply(`Use ${prefix}attp hello\n*Example : ${prefix + command} ${ownername}*` )
-           await AnyaPika.sendMedia(m.chat, `https://cililitan.herokuapp.com/api/attp?teks=${text}`, 'XBOT', 'Op', m, {asSticker: true}).catch((err) => reply(mess.error))
+           await AnyaPika.sendMedia(m.chat, `https://cililitan.herokuapp.com/api/attp?teks=${text}`, 'Anya', 'Op', m, {asSticker: true}).catch((err) => reply(mess.error))
          }
          break
 case 'ttp': {
@@ -8355,21 +8416,21 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
-let text  = `${global.aliveMessage}....click on any button to get the command list \n\n and DOnt forget to follow me on ${global.websitex}`
+let text  = `${global.aliveMessage}`
 let buttons = [
-{buttonId: `allmenu`, buttonText: {displayText: 'AllMenu😎'}, type: 1},
-{buttonId: `sc`, buttonText: {displayText:'SUPPORT_GROUP'},type: 1}
+{buttonId: `Listmenu`, buttonText: {displayText: '🥵 𝘓𝘪𝘴𝘵 𝘮𝘦𝘯𝘶'}, type: 1},
+{buttonId: `allmenu`, buttonText: {displayText:'𝘈𝘭𝘭 𝘮𝘦𝘯𝘶 🎃'},type: 1}
 ]
 let ntus = {
 image: thum,
 jpegThumbnail: log0,
 caption: text,
-footer: `${footer}`,
+footer: `Choose your menu type here....`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
-body: "Click to donate", 
+body: `${global.BotName3}`, 
 thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
@@ -8542,7 +8603,7 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
 const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 
-❒✗ ${prefix}alive  *(Bot working)*
+❒✗ ${prefix}alive  *(Bot working?)*
 ❒✗ ${prefix}restart
 ❒✗ ${prefix}afk
 ❒✗ ${prefix}chatinfo
@@ -8575,6 +8636,7 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}Rentlist
 ❒✗ ${prefix}ban
 ❒✗ ${prefix}banchat
+❒✗ ${prefix}deletethis
 ❒✗ ${prefix}join
 ❒✗ ${prefix}leavegc
 ❒✗ ${prefix}setbio
@@ -8605,16 +8667,6 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}remove
 ❒✗ ${prefix}hidetag
 ❒✗ ${prefix}tagall
-❒✗ ${prefix}antiwame
-❒✗ ${prefix}antilinkgc
-❒✗ ${prefix}antilinktg
-❒✗ ${prefix}antilinktt
-❒✗ ${prefix}antilinkytch *(channel)*
-❒✗ ${prefix}antilinkytvid *(video)*
-❒✗ ${prefix}antilinkig
-❒✗ ${prefix}antilinkfb
-❒✗ ${prefix}antilinktwitter
-❒✗ ${prefix}antilinkall
 ❒✗ ${prefix}antivirus
 ❒✗ ${prefix}antitoxic
 ❒✗ ${prefix}autoreply
@@ -8627,6 +8679,19 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}checkvote
 ❒✗ ${prefix}delvote
 ❒✗ ${prefix}couplepp
+
+ *━━━〈  🔪 Anti Link 🔪  〉━━━*
+
+❒✗ ${prefix}antiwame
+❒✗ ${prefix}antilinkgc
+❒✗ ${prefix}antilinktg
+❒✗ ${prefix}antilinktt
+❒✗ ${prefix}antilinkytch *(channel)*
+❒✗ ${prefix}antilinkytvid *(video)*
+❒✗ ${prefix}antilinkig
+❒✗ ${prefix}antilinkfb
+❒✗ ${prefix}antilinktwitter
+❒✗ ${prefix}antilinkall
 
 *━━━〈  ✨ Text Maker ✨  〉━━━*
 
@@ -9960,7 +10025,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10151,7 +10216,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10188,7 +10253,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10222,7 +10287,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10255,7 +10320,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10293,7 +10358,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10347,7 +10412,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10407,7 +10472,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10455,7 +10520,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -10481,7 +10546,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("TEAM_XMEDIA/theme/NEXUS.jpg"),
+thumbnail: fs.readFileSync("AnyaPikaMedia/theme/NEXUS.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
