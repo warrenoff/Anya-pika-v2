@@ -208,6 +208,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 let buttons = [
 {buttonId: `${prefix}nikal`, buttonText: {displayText: '𝘕𝘪𝘬𝘢𝘭🫵'}, type: 1},
 {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳❤️'}, type: 1}
+]
 let buttonMessage = {
 document: fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Anya.xlsx'),
 mimetype: docs,
