@@ -19,7 +19,7 @@ global.autoRecord = false //auto recording (true to on, false to off)
 global.available = true //auto available (true to on, false to off)
 
 //--------Semt menu variants--------\\
-global.vidmenu = fs.readFileSync("./AnyaPikaMedia/theme/Anya-bot.mp4") //gif and video menu
+global.vidmenu = fs.readFileSync("./AnyaPikaMedia/theme/Anya-Bot.mp4") //gif and video menu
 
 //--------Documents variants--------\\
 global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
