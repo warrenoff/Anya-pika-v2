@@ -192,7 +192,7 @@ module.exports = AnyaPika = async (AnyaPika, m, chatUpdate, store) => {
     try {
         var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ''
         var budy = (typeof m.text == 'string' ? m.text : '')
-        var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+-✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+-✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
+        var prefix = prefa ? /^ [°•π÷×¶∆£¢€¥®™+-✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^ [°•π÷×¶∆£¢€¥®™+-✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
         const isCmd = body.startsWith(prefix)
         const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
         const args = body.trim().split(/ +/).slice(1)
@@ -1965,7 +1965,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 let teks = `╭╼━━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛━━━╾ᐧᐧᐧᐧ⳹
-│                                                 ❒
+│                                                 
 │            *༺ TAGALL ༻*
 │
 🔥 *Group name* : ${groupMetadata.subject}
@@ -1974,9 +1974,9 @@ let teks = `╭╼━━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛━
 ├───────────♡
 🔥 *Announcer* : @${m.sender.split('@')[0]}
 ╰╼━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹ \n\n╭╼━━━᚜ 𝓜𝓮𝓶𝓫𝓮𝓻𝓼 𝓝𝓪𝓶𝓮 ᚛━━━╾ᐧᐧᐧᐧ⳹
-╽                                                 ❒  `
+╽                                                   `
                 for (let mem of participants) {
-                teks += `\n┃🔥@${mem.id.split('@')[0]}\n`
+                teks += `\n┃🔥@${mem.id.split('@')[0]}`
                 }
                 AnyaPika.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
