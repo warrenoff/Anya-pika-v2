@@ -341,7 +341,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         hydratedTemplate: {
         imageMessage: message.imageMessage,
                "hydratedContentText": text,
-               "hydratedFooterText": ${footer},
+               "hydratedFooterText": footer,
                "hydratedButtons": but
             }
             }
@@ -681,7 +681,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         hydratedTemplate: {
         videoMessage: message.videoMessage,
                "hydratedContentText": text,
-               "hydratedFooterText": ${footer},
+               "hydratedFooterText": footer,
                "hydratedButtons": but
             }
             }
