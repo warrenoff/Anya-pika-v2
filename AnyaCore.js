@@ -2612,7 +2612,7 @@ let off = nttoxic.indexOf(from)
 nttoxic.splice(off, 1)
 replay('Success in turning off antitoxic in this group')
 } else {
-  let buttonsnttoxci = [
+  let buttonsnttoxic = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
