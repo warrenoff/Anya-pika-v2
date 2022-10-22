@@ -652,7 +652,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         let templateButtons = but
         var templateMessage = {
         text: text,
-        footer: ${footer},
+        footer: footer,
         templateButtons: templateButtons
         }
         AnyaPika.sendMessage(jid, templateMessage)
@@ -664,7 +664,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         let sections = sects
         var listMes = {
         text: text,
-        footer: ${footer},
+        footer: footer,
         title: title,
         buttonText: butText,
         sections
