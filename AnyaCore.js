@@ -1507,8 +1507,8 @@ if (isBanChat) return reply(mess.banChat)
 					AnyaPika.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
 				     break
                     case 'awesomecheck':
-  case 'chutiyacheck'
-  case 'murderercheck'
+  case 'chutiyacheck':
+  case 'murderercheck':
   case 'greatcheck':
     case 'gaycheck':
       case 'cutecheck':
@@ -2789,7 +2789,7 @@ break
 		
 case 'restart':	case 'BOTRESTART':{	
 if (!isCreator) return replay(mess.owner)
-exec("npm i -g pm2 && pm2 start Pika.js && pm2 save && pm2 logs")
+exec("npm i -g pm2 && pm2 start nexus.js && pm2 save && pm2 logs")
 replay(`RESTARTING THE BOT..............`)
 }
 break
