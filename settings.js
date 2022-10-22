@@ -91,7 +91,7 @@ global.reactmoji = "🤖" // Menu //
 //--------Others--------\\
 global.sessionName = 'session'
 global.antitags = true
-global.prefa = ['-']
+global.prefa = ['','-']
 global.sp = '⭔'
 global.mess = {
     success: 'Done ✓',
