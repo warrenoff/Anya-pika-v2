@@ -2598,19 +2598,19 @@ if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
 if (antiToxic) return replay(`${pushname} already activated hai babe.`)
 nttoxic.push(from)
-replay('ㅤ|\_/|\n   (  •.• )\n    | >🖤 𝘠𝘦 𝘭𝘰 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n\n𝐍𝐨𝐰 𝐝𝐨𝐧`𝐭 𝐛𝐞 𝐭𝐨𝐱𝐢𝐜...𝐎𝐤𝐚𝐲?')
+replay('ㅤ⍙__⍙\n   (  ^.^ )\n    | >🖤 𝘠𝘦 𝘭𝘰 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n\n𝐍𝐨𝐰 𝐝𝐨𝐧`𝐭 𝐛𝐞 𝐭𝐨𝐱𝐢𝐜...𝐎𝐤𝐚𝐲?')
 var groupe = await AnyaPika.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-AnyaPika.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nNobody is allowed to use bad words in this group, one who uses will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+AnyaPika.sendMessage(from, {text: `❒✗-  Because, now if you'll be toxic in this group....⚠️\n\n𝗬𝗼𝘂'𝗹𝗹 𝗯𝗲 𝗴𝗲𝘁 𝗸𝗶𝗰𝗸𝗲𝗱 𝗶𝗺𝗺𝗲𝗱𝗶𝗮𝘁𝗲𝘁𝗹𝘆`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!antiToxic) return replay('Already deactivated')
+if (!antiToxic) return replay('Antitoxic in already turned 𝗼𝗳𝗳 ${pushname}...\n_Tap on 𝗼𝗻𝗻 button if you want to turn it 𝗼𝗻𝗻._')
 let off = nttoxic.indexOf(from)
 nttoxic.splice(off, 1)
-replay('Success in turning off antitoxic in this group')
+replay('ㅤㅤ   ⍙__⍙\n         ( ^⌔^  )\n𝘉𝘺𝘦~🖤< |\n𝐌𝐞 𝐜𝐡𝐚𝐥𝐢 𝐚𝐩𝐧𝐚 𝐝𝐢𝐥 𝐥𝐞 𝐤𝐚𝐫....\n\n❒✗-  𝘛𝘶𝘮𝘭𝘰𝘨 𝘢𝘣 𝘣𝘪𝘯𝘥𝘢𝘴𝘴 𝘨𝘢𝘢𝘭𝘪 𝘥𝘰 𝘣𝘦𝘯𝘤𝘩𝘰 _!!_')
 } else {
   let buttonsnttoxic = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
