@@ -223,7 +223,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${actiontitle}`,
-body: `${Pikamembers}th member left the group.`,
+body: `${xmembers}th member left the group.`,
 mediaType:2,
 thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Welcome-Left-msg/Left.jpg'),
 sourceUrl: `${link2}`,
