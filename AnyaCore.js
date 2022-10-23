@@ -549,6 +549,13 @@ AnyaPika.sendReadReceipt(from, m.sender, [m.key.id])}
             }
         }
 
+
+if (!isCmd && !m.isGroup){
+    const botreply = await axios.get(`http://api.brainshop.ai/get?bid=168848&key=v4GwpQWOS3tSQddf&uid=[uid]&msg=[${budy}]`)
+    txt = `${botreply.data.cnt}`
+    m.reply(txt)
+    }
+
 	// AntiLinkgc
 if (AntiLink) {
 linkgce = await AnyaPika.groupInviteCode(from)
@@ -9199,12 +9206,12 @@ let teks  =  `ㅤㅤ࿙༺⟅∙𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖∙⟆༻�
 ┃➥ ${pushname}
 ┣━━━━━━━━━━♡
 ┃✘  𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
-┃➥ ${global.OwnerName}
+┃➥ ${global.ownername}
 ┣━━━━━━━━━━♡
 ┃✘  𝗚𝗿𝗼𝘂𝗽 :
 ┃➥ ${groupMetadata.subject}
 ┗━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
-╭╼━━━᚜ 𝓞𝔀𝓷𝓮𝓻 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓞𝔀𝓷𝓮𝓻 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
 ┊
 ❒✗ ${prefix}self
 ❒✗ ${prefix}public
@@ -9229,7 +9236,7 @@ let teks  =  `ㅤㅤ࿙༺⟅∙𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖∙⟆༻�
 ❒✗ ${prefix}unblock
 ❒✗ ${prefix}coowner
 ┊
-╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ༻` 
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻` 
 let buttons = [
 {buttonId: `${prefix}tagall 𝘏𝘦𝘺 𝘦𝘷𝘦𝘳𝘺𝘰𝘯𝘦 𝘤𝘰𝘮𝘦 𝘰𝘯𝘭𝘪𝘯𝘦 𝘢𝘯𝘥 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘢𝘸𝘦𝘴𝘰𝘮𝘦 𝘉𝘰𝘵.`, buttonText: {displayText: '𝘛𝘢𝘨𝘢𝘭𝘭✨'}, type: 1},
 {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳❤️'}, type: 1}
