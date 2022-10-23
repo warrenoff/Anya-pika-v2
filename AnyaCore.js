@@ -8484,7 +8484,7 @@ let buttons = [
 {buttonId: `allmenu`, buttonText: {displayText:'𝘈𝘭𝘭 𝘮𝘦𝘯𝘶 🎃'},type: 1}
 ]
 let ntus = {
-image: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
+image: fs.readFileSync('./AnyaPikaMedia/theme/Menuimg.jpg'),
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: text,
 footer: `Choose your menu type here....`,
