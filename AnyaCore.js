@@ -4151,15 +4151,15 @@ case 'waifu' :
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
-reply(`𝘊𝘰𝘮𝘮𝘢𝘯𝘥 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨ᵃⁿʸᵃ ᵇʸ ᵖⁱᵏᵃ....\n𝘔𝘰𝘳𝘦 𝘵𝘩𝘢𝘯 𝘰𝘯𝘦 𝘸𝘢𝘪𝘧𝘶 𝘸𝘪𝘭𝘭 𝘥𝘦𝘧𝘪𝘯𝘪𝘵𝘦𝘭𝘺 𝘳𝘶𝘪𝘯 𝘺𝘰𝘶𝘳 𝘓𝘢𝘪𝘧𝘶! ❤️.`)	
+reply(`_Command processing_ ᵃⁿʸᵃ ᵇʸ ᵖⁱᵏᵃ.....`)	
     waifuddd = await axios.get('https://waifu.pics/api/sfw/waifu')
- var wbuttsssr = [
-    {buttonId: `${prefix}waifu`, buttonText: {displayText: `More waifu 🥵`}, type: 1},
-    {buttonId: `${prefix}loli`, buttonText: {displayText: 'Loli 😚'}, type: 1}            
-    ]
+ var wbuttsssr = let buons = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1},
+{buttonId: `owner`, buttonText: {displayText: 'owner👑'}, type: 1}
+]
         let button4Messagess = {
         image: {url:waifuddd.data.url},
-        caption: '_${global.BoyName2}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 🥵.',
+        caption: `_${global.BoyName2}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 🥵.`,
         buttons: wbuttsssr,
         headerType: 4
          }     
