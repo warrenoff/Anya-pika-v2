@@ -3056,7 +3056,7 @@ case 'listgc': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
-let teks = `💝 𝘛𝘰𝘵𝘢𝘭 _${anu.length}_ 𝘶𝘴𝘦𝘳𝘴 𝘢𝘳𝘦 𝘶𝘴𝘪𝘯𝘨 _${global.BotName}_ 𝘪𝘯 𝘵𝘩𝘦𝘳𝘦 𝘨𝘳𝘰𝘶𝘱𝘴.\n`
+let teks = `*💝 𝘛𝘰𝘵𝘢𝘭 _${anu.length}_ 𝘶𝘴𝘦𝘳𝘴 𝘢𝘳𝘦 𝘶𝘴𝘪𝘯𝘨 _${global.BotName4}_ 𝘪𝘯 𝘵𝘩𝘦𝘳𝘦 𝘨𝘳𝘰𝘶𝘱𝘴.*\n`
 for (let i of anu) {
  let metadata = await AnyaPika.groupMetadata(i)
  if (metadata.owner === "undefined") {
@@ -6703,7 +6703,7 @@ if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 	reply(mess.wait)
 if (!q) return reply(`What film you wanna search?\nExample: ${prefix}film Spiderman`)
-Xkey.Film(q)
+Pikakey.Film(q)
     .then(data => {console.log(data)
     let krl = `*❒「  Film ${q} 」*\n*🌿 Author* : ${data[0].author}\n\n`
 			    for (let i of data) {
@@ -9192,36 +9192,53 @@ case 'ownermenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Owner Menu')
-let teks  =  `╔═══════➻「 𝓸𝔀𝓷𝓮𝓻 」	
-╿
-╠🔥${prefix}𝚂𝚎𝚕𝚏
-╠🔥${prefix}𝙿𝚞𝚋𝚕𝚒𝚌
-╠🔥${prefix}𝙰𝚗𝚝𝚒𝚝𝚊𝚐
-╠🔥${prefix}𝙱𝚊𝚗 [𝙰𝚍𝚍/𝙳𝚎𝚕]
-╠🔥${prefix}𝙱𝚊𝚗𝚌𝚑𝚊𝚝 [𝙾𝚗/𝙾𝚏𝚏]
-╠🔥${prefix}𝙹𝚘𝚒𝚗 [𝙻𝚒𝚗𝚔]
-╠🔥${prefix}𝙻𝚎𝚊𝚟𝚎𝚐𝚌
-╠🔥${prefix}𝚂𝚎𝚝𝚋𝚒𝚘
-╠🔥${prefix}𝙱𝚕𝚘𝚌𝚔 [𝚄𝚜𝚎𝚛]
-╠🔥${prefix}𝚄𝚗𝚋𝚕𝚘𝚌𝚔 [𝚄𝚜𝚎𝚛]
-╠🔥${prefix}𝙱𝚌𝚐𝚛𝚘𝚞𝚙 [𝚃𝚎𝚡𝚝]
-╠🔥${prefix}𝙱𝚌𝚊𝚕𝚕 [𝚃𝚎𝚡𝚝]
-╠🔥${prefix}𝙱𝚌𝚒𝚖𝚊𝚐𝚎 [𝙸𝚖𝚊𝚐𝚎]
-╠🔥${prefix}𝙱𝚌𝚟𝚒𝚍𝚎𝚘 [𝚅𝚒𝚍𝚎𝚘]
-╠🔥${prefix}𝙱𝚌𝚊𝚞𝚍𝚒𝚘 [𝙰𝚞𝚍𝚒𝚘]
-╠🔥${prefix}𝙱𝚌𝚕𝚘𝚌 [𝚃𝚎𝚡𝚝]
-╠🔥${prefix}𝚂𝚎𝚝𝚙𝚙𝚋𝚘𝚝 [𝙸𝚖𝚊𝚐𝚎]
-╠🔥${prefix}𝚂𝚎𝚝𝚎𝚡𝚒𝚏
-╽
-╚┅┅┅┅┅┅┅༻` 
+let teks  =  `ㅤㅤ࿙༺⟅∙𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖∙⟆༻࿚
+
+┏━━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+┃✘  𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┃➥ ${pushname}
+┣━━━━━━━━━━♡
+┃✘  𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┃➥ ${global.OwnerName}
+┣━━━━━━━━━━♡
+┃✘  𝗚𝗿𝗼𝘂𝗽 :
+┃➥ ${groupMetadata.subject}
+┗━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━━᚜ 𝓞𝔀𝓷𝓮𝓻 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}self
+❒✗ ${prefix}public
+❒✗ ${prefix}antitag
+❒✗ ${prefix}RentBot
+❒✗ ${prefix}Rentlist
+❒✗ ${prefix}ban
+❒✗ ${prefix}banchat
+❒✗ ${prefix}deletethis
+❒✗ ${prefix}join
+❒✗ ${prefix}leavegc
+❒✗ ${prefix}setbio
+❒✗ ${prefix}bcgroup
+❒✗ ${prefix}bcall
+❒✗ ${prefix}bcimage
+❒✗ ${prefix}bcvideo
+❒✗ ${prefix}bcaudio
+❒✗ ${prefix}bclocation
+❒✗ ${prefix}setppbot
+❒✗ ${prefix}setexif
+❒✗ ${prefix}block
+❒✗ ${prefix}unblock
+❒✗ ${prefix}coowner
+┊
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ༻` 
 let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
+{buttonId: `${prefix}tagall 𝘏𝘦𝘺 𝘦𝘷𝘦𝘳𝘺𝘰𝘯𝘦 𝘤𝘰𝘮𝘦 𝘰𝘯𝘭𝘪𝘯𝘦 𝘢𝘯𝘥 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘢𝘸𝘦𝘴𝘰𝘮𝘦 𝘉𝘰𝘵.`, buttonText: {displayText: '𝘛𝘢𝘨𝘢𝘭𝘭✨'}, type: 1},
+{buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳❤️'}, type: 1}
 ]
 let ntus = {
 image: unicorn,
 jpegThumbnail: log0,
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${global.BotName2}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
