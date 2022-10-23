@@ -607,7 +607,7 @@ AnyaPika.groupParticipantsUpdate(m.chat, [m.sender], 'remove',{ delete: key })
 }
 if (antiToxic)
 if (bad.includes(messagesD)) {
-tos = ['Hey, watch your mouth','Never been taught how to speak?','Stop being toxic my friend🤢','Dont be toxic🦄']
+tos = [`Maa - Baap ne tameez nhi sikhai ${pushname} tujhe?`,`Bolna sikh kar aa ${pushname}`,`Stop being toxic ${pushname} now !!`,`Hay, ${pushname} dont be toxic yrr...🙂`,`Bas kro ${pushname} don't abuse`,`Chup kar na bsdk ${pushname}...Huh`]
 sin =  tos[Math.floor(Math.random() * (tos.length))]
 reply(sin)
 if (m.text) {
@@ -1964,7 +1964,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╭╼━━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛━━━╾ᐧᐧᐧᐧ⳹
+let teks = `╭╼━━━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛━━╾ᐧᐧᐧᐧ⳹
 │                                                 
 │             *༺ TAGALL ༻*
 │
@@ -1973,7 +1973,7 @@ let teks = `╭╼━━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛━
 🔥 *Message* : ${args.join(" ") ? args.join(" ") : 'no message'}
 ├───────────♡
 🔥 *Announcer* : @${m.sender.split('@')[0]}
-╰╼━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹ \n\n╭╼━━━᚜ 𝓜𝓮𝓶𝓫𝓮𝓻𝓼 𝓝𝓪𝓶𝓮 ᚛━━━╾ᐧᐧᐧᐧ⳹
+╰╼━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹ \n\n╭╼━━━━᚜ 𝓜𝓮𝓶𝓫𝓮𝓻𝓼 𝓝𝓪𝓶𝓮 ᚛━━╾ᐧᐧᐧᐧ⳹
 ╽                                                   `
                 for (let mem of participants) {
                 teks += `\n┃🔥@${mem.id.split('@')[0]}`
@@ -2596,7 +2596,7 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (antiToxic) return replay(`${pushname} already activated hai babe.`)
+if (antiToxic) return replay(`Antitoxic already activated hai ${pushname} babe.`)
 nttoxic.push(from)
 replay('ㅤㅤ⍙__⍙\n      (  ^⌔^ )\n       | >❤️ 𝘠𝘦 𝘭𝘰 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n\n𝐍𝐨𝐰 𝐝𝐨𝐧`𝐭 𝐛𝐞 𝐭𝐨𝐱𝐢𝐜...𝐎𝐤𝐚𝐲?')
 var groupe = await AnyaPika.groupMetadata(from)
@@ -2607,7 +2607,7 @@ mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
 AnyaPika.sendMessage(from, {text: `❒✗-  Because, now if you'll be toxic in this group....⚠️\n\n𝗬𝗼𝘂'𝗹𝗹 𝗯𝗲 𝗴𝗲𝘁 𝗸𝗶𝗰𝗸𝗲𝗱 𝗶𝗺𝗺𝗲𝗱𝗶𝗮𝘁𝗲𝘁𝗹𝘆`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!antiToxic) return replay('Antitoxic in already turned 𝗼𝗳𝗳 ${pushname}...\n_Tap on 𝗼𝗻𝗻 button if you want to turn it 𝗼𝗻𝗻._')
+if (!antiToxic) return replay(`Antitoxic in already turned 𝗼𝗳𝗳 ${pushname}...\n\n_Tap on 𝗼𝗻𝗻 button if you want to turn it 𝗼𝗻𝗻._`)
 let off = nttoxic.indexOf(from)
 nttoxic.splice(off, 1)
 replay('ㅤㅤ   ⍙__⍙\n         ( ^⌔^  )\n𝘉𝘺𝘦~🖤< |\n𝐌𝐞 𝐜𝐡𝐚𝐥𝐢 𝐚𝐩𝐧𝐚 𝐝𝐢𝐥 𝐥𝐞 𝐤𝐚𝐫....\n\n❒✗-  𝘛𝘶𝘮𝘭𝘰𝘨 𝘢𝘣 𝘣𝘪𝘯𝘥𝘢𝘴𝘴 𝘨𝘢𝘢𝘭𝘪 𝘥𝘰 𝘣𝘦𝘯𝘤𝘩𝘰 _!!_')
@@ -3056,7 +3056,7 @@ case 'listgc': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
-let teks = `𝗠𝗬 𝗚𝗥𝗢𝗨𝗣 𝗨𝗦𝗘𝗥 𝗟𝗜𝗦𝗧 🤏🕶️🐤\n💝 𝘛𝘰𝘵𝘢𝘭 _${anu.length}_ 𝘶𝘴𝘦𝘳𝘴 𝘢𝘳𝘦 𝘶𝘴𝘪𝘯𝘨 _${global.BotName}_ 𝘪𝘯 𝘵𝘩𝘦𝘳𝘦 𝘨𝘳𝘰𝘶𝘱𝘴.`
+let teks = `💝 𝘛𝘰𝘵𝘢𝘭 _${anu.length}_ 𝘶𝘴𝘦𝘳𝘴 𝘢𝘳𝘦 𝘶𝘴𝘪𝘯𝘨 _${global.BotName}_ 𝘪𝘯 𝘵𝘩𝘦𝘳𝘦 𝘨𝘳𝘰𝘶𝘱𝘴.\n`
 for (let i of anu) {
  let metadata = await AnyaPika.groupMetadata(i)
  if (metadata.owner === "undefined") {
@@ -3064,7 +3064,7 @@ for (let i of anu) {
  } else {
  loldd = metadata.owner
  }
- teks += `\n┏━━━━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛━━━╾ᐧᐧᐧᐧ⳹
+ teks += `\n┏━━━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛━━╾ᐧᐧᐧᐧ⳹
 ╽
 ┃➥ 𝗡𝗮𝗺𝗲 :
 ┃✑ ${metadata.subject ? metadata.subject : "undefined"}
@@ -3076,19 +3076,19 @@ for (let i of anu) {
 ┃✑ ${metadata.creation ? moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss') : "undefined"}
 ┃➥ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀 :
 ┃✑ ${metadata.participants.length ? metadata.participants.length : "undefined"}
-┗━━━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹`
+┗━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹`
 }
 AnyaPika.sendTextWithMentions(m.chat, teks, m)
 }
 break
-case 'listonline': case 'listaktif': {
+case 'listonline': case 'online': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
 let online = [...Object.keys(store.presences[id]), botNumber]
 let liston = 1
-AnyaPika.sendText(m.chat, '     「 Online List 」\n\n┌╼━━━━᚜ 𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪 ᚛━━━╾ᐧᐧᐧᐧ⳹\n┊' + online.map(v => `${liston++} . @` + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
+AnyaPika.sendText(m.chat, 'ㅤ ࿙⳼ 𝗢𝗻𝗹𝗶𝗻𝗲 𝗹𝗶𝘀𝘁 🖥️✋🏻 ⳹࿚\n\n┌╼━━━᚜ 𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪 ᚛━╾ᐧᐧᐧᐧ⳹\n┊\n' + online.map(v => `${liston++} . @` + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
 }
 break
 case 'patrick':
@@ -3101,15 +3101,7 @@ var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
 encmedia = await AnyaPika.sendImageAsSticker(from, wifegerakx, m, { packname: global.packname, author: global.author, })
 await fs.unlinkSync(encmedia)
 }
-break
-       case 'attp2': {
-		   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-           if (!text) return reply(`Example : ${prefix + command} text`)
-           await AnyaPika.sendMedia(m.chat, `https://xteam.xyz/${command}?file&text=${text}`, 'hisoka', 'morou', m, {asSticker: true})
-
-         }
-         break
+break      
 case 'attp': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -9022,7 +9014,7 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}emoji
 ❒✗ ${prefix}emojimix
 ❒✗ ${prefix}attp
-❒✗ ${prefix}ttp
+❒✗ ${prefix}ttp  *(text)*
 ❒✗ ${prefix}lovesticker
 
  *━━━〈  🥶 Reactions 🥶  〉━━━*
