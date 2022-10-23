@@ -2989,7 +2989,7 @@ if (!wokwol.quoted) return replay('The message you replied to does not contain a
 await wokwol.quoted.copyNForward(m.chat, true)
 }
 break
-case 'me': case 'profile': case 'myprofile':
+case 'profile': case 'myprofile':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
   if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
@@ -3465,7 +3465,7 @@ if (!m.isGroup) return replay(mess.group)
                     return('Error!')
                 })
 break
-case 'waifu3':
+case 'waifu-face':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(mess.wait)						
@@ -4154,12 +4154,12 @@ case 'waifu' :
 reply(`_Command processing_ ᵃⁿʸᵃ ᵇʸ ᵖⁱᵏᵃ.....`)	
     waifuddd = await axios.get('https://waifu.pics/api/sfw/waifu')
  let buons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1},
+{buttonId: `waifu-face`, buttonText: {displayText: 'Menu'}, type: 1},
 {buttonId: `owner`, buttonText: {displayText: 'owner👑'}, type: 1}
 ]
         let button4Messagess = {
         image: {url:waifuddd.data.url},
-        caption: `_${global.BoyName2}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 🥵.`,
+        caption: `_${global.BotName2}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 🥵.`,
         buttons: buons,
         headerType: 4
          }     
@@ -8470,7 +8470,7 @@ sourceUrl: "https://github.com/NEXUSAT12"
 AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': case 'commands': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
@@ -8498,7 +8498,7 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-case 'command': {
+case 'listmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -8993,7 +8993,7 @@ const allmenu =  ` *━━━〈  💻 Core 💻  〉━━━*
 ❒✗ ${prefix}waifu2
 ❒✗ ${prefix}awoo2
 ❒✗ ${prefix}shinobu
-❒✗ ${prefix}waifu3
+❒✗ ${prefix}waifu-face
 ❒✗ ${prefix}foxgirl
 ❒✗ ${prefix}megumin2
 ❒✗ ${prefix}loli
