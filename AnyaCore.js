@@ -617,7 +617,7 @@ if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await AnyaPika.groupParticipantsUpdate(m.chat, [kice], 'remove')
-AnyaPika.sendMessage(from, {text:`ㅤ ㅤ⍙__⍙ 💢\n💢 (  ∗_∗ )         \n        | >💔 𝘛𝘰𝘥 𝘥𝘪𝘺𝘢 𝘯𝘢 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n   💢\n\n❒✗-  𝐀𝐛 𝐧𝐢𝐤𝐚𝐥 *@${kice.split("@")[0]}* 𝐛𝐬𝐝𝐤, 𝐚𝐚 𝐦𝐚𝐭 𝐣𝐚𝐧𝐚 𝐰𝐚𝐩𝐚𝐬 !!`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
+AnyaPika.sendMessage(from, {text:`ㅤ ㅤ⍙__⍙ 💢\n💢 (  ∗_∗ )         \n        | >💔 𝘛𝘰𝘥 𝘥𝘪𝘺𝘢 𝘯𝘢 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n\n𝘈𝘣 𝘯𝘪𝘬𝘢𝘭 _@${pushname}_ 𝘣𝘴𝘥𝘬, 𝘢𝘢 𝘮𝘢𝘵 𝘫𝘢𝘯𝘢 𝘸𝘢𝘱𝘢𝘴 _!!_`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
 }
 if (AntiLinkYoutubeVid)
 if (budy.includes("https://youtu.be/")){
@@ -1526,89 +1526,89 @@ if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%*` }, { quoted: m })
 					break
                     case 'stupid':
-      case 'foolish':
-      case 'smart':
-      case 'idiot':
-      case 'gay':
-      case 'lesbi':
-      case 'bastard':
-      case 'stubble':
-      case 'dog':
-      case 'fuck':
-      case 'ape':
-      case 'noob':
-      case 'great':
-      case 'horny':
-      case 'wibu':
-      case 'asshole':
-      case 'handsome':
-      case 'beautiful':
-      case 'cute':
+      case 'foolish?':
+      case 'smart?':
+      case 'idiot?':
+      case 'gay?':
+      case 'lesbi?':
+      case 'bastard?':
+      case 'stubble?':
+      case 'dog?':
+      case 'fuck?':
+      case 'ape?':
+      case 'noob?':
+      case 'great?':
+      case 'horny?':
+      case 'wibu?':
+      case 'asshole?':
+      case 'handsome?':
+      case 'beautiful?':
+      case 'cute?':
       case 'kind':
-      case 'ugly':
-      case 'pretty':
-      case 'lesbian':
-      case 'randi':
-      case 'gandu':
-      case 'madarchod':
-      case 'kala':
-      case 'gora':
-      case 'chutiya':
-      case 'nibba':
-      case 'nibbi':
-      case 'bhosdiwala':
-      case 'chutmarika':
-      case 'bokachoda':
-      case 'suarerbaccha':
-      case 'bolochoda':
-      case 'muthal':
-      case 'muthbaaz':
-      case 'randibaaz':
-      case 'topibaaz':
-      case 'cunt':
-      case 'nerd':
-      case 'behenchod':
-      case 'behnchoda':
-      case 'bhosdika':
-      case 'nerd':
-      case 'mc':
-      case 'bsdk':
-      case 'bhosdk':
-      case 'nigger':
-      case 'loda':
-      case 'laund':
-      case 'nigga':
-      case 'noobra':
-      case 'tharki':
-      case 'nibba':
-      case 'nibbi':
-      case 'mumu':
-      case 'rascal':
-      case 'scumbag':
-      case 'nuts':
-      case 'comrade':
-      case 'fagot':
-      case 'scoundrel':
-      case 'ditch':
-      case 'dope':
-      case 'gucci':
-      case 'lit':
-      case 'dumbass':
-      case 'sexy':
-      case 'crackhead':
-      case 'mf':
-      case 'motherfucker':
-      case 'dogla':
-      case 'bewda':
-      case 'boka':
-      case 'khanki':
-      case 'bal':
-      case 'sucker':
-      case 'fuckboy':
-      case 'playboy':
-      case 'fuckgirl':
-      case 'playgirl':
-      case 'hot': {
+      case 'ugly?':
+      case 'pretty?':
+      case 'lesbian?':
+      case 'randi?':
+      case 'gandu?':
+      case 'madarchod?':
+      case 'kala?':
+      case 'gora?':
+      case 'chutiya?':
+      case 'nibba?':
+      case 'nibbi?':
+      case 'bhosdiwala?':
+      case 'chutmarika?':
+      case 'bokachoda?':
+      case 'suarerbaccha?':
+      case 'bolochoda?':
+      case 'muthal?':
+      case 'muthbaaz?':
+      case 'randibaaz?':
+      case 'topibaaz?':
+      case 'cunt?':
+      case 'nerd?':
+      case 'behenchod?':
+      case 'behnchoda?':
+      case 'bhosdika?':
+      case 'nerd?':
+      case 'mc?':
+      case 'bsdk?':
+      case 'bhosdk?':
+      case 'nigger?':
+      case 'loda?':
+      case 'laund?':
+      case 'nigga?':
+      case 'noobra?':
+      case 'tharki?':
+      case 'nibba?':
+      case 'nibbi?':
+      case 'mumu?':
+      case 'rascal?':
+      case 'scumbag?':
+      case 'nuts?':
+      case 'comrade?':
+      case 'fagot?':
+      case 'scoundrel?':
+      case 'ditch?':
+      case 'dope?':
+      case 'gucci?':
+      case 'lit?':
+      case 'dumbass?':
+      case 'sexy?':
+      case 'crackhead?':
+      case 'mf?':
+      case 'motherfucker?':
+      case 'dogla?':
+      case 'bewda?':
+      case 'boka?':
+      case 'khanki?':
+      case 'bal?':
+      case 'sucker?':
+      case 'fuckboy?':
+      case 'playboy?':
+      case 'fuckgirl?':
+      case 'playgirl?':
+      case 'hot?': {
       	            	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
@@ -1964,9 +1964,9 @@ if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╭╼━━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛━━━╾ᐧᐧᐧᐧ⳹
+let teks = `╭╼━━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛━━━╾ᐧᐧᐧᐧ⳹
 │                                                 
-│            *༺ TAGALL ༻*
+│             *༺ TAGALL ༻*
 │
 🔥 *Group name* : ${groupMetadata.subject}
 ├───────────♡
@@ -3056,7 +3056,7 @@ case 'listgc': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
-let teks = `     「 Group Chat 」\n\nThere are ${anu.length} users using bot in group chat`
+let teks = `𝗠𝗬 𝗚𝗥𝗢𝗨𝗣 𝗨𝗦𝗘𝗥 𝗟𝗜𝗦𝗧 🤏🕶️🐤\n💝 𝘛𝘰𝘵𝘢𝘭 _${anu.length}_ 𝘶𝘴𝘦𝘳𝘴 𝘢𝘳𝘦 𝘶𝘴𝘪𝘯𝘨 _${global.BotName}_ 𝘪𝘯 𝘵𝘩𝘦𝘳𝘦 𝘨𝘳𝘰𝘶𝘱𝘴.`
 for (let i of anu) {
  let metadata = await AnyaPika.groupMetadata(i)
  if (metadata.owner === "undefined") {
@@ -3064,7 +3064,19 @@ for (let i of anu) {
  } else {
  loldd = metadata.owner
  }
- teks += `\n\nName : ${metadata.subject ? metadata.subject : "undefined"}\nOwner : ${loldd ? '@' + loldd.split("@")[0] : "undefined"}\nID : ${metadata.id ? metadata.id : "undefined"}\nMade : ${metadata.creation ? moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss') : "undefined"}\nMember : ${metadata.participants.length ? metadata.participants.length : "undefined"}`
+ teks += `\n┏━━━━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛━━━╾ᐧᐧᐧᐧ⳹
+╽
+┃➥ 𝗡𝗮𝗺𝗲 :
+┃✑ ${metadata.subject ? metadata.subject : "undefined"}
+┃➥ 𝗢𝘄𝗻𝗲𝗿 :
+┃✑ ${loldd ? '@' + loldd.split("@")[0] : "undefined"}
+┃➥ 𝗚𝗿𝗼𝘂𝗽 𝗜𝗗 :
+┃✑ ${metadata.id ? metadata.id : "undefined"}
+┃➥ 𝗖𝗿𝗲𝗮𝘁𝗶𝗼𝗻 𝘁𝗶𝗺𝗲 :
+┃✑ ${metadata.creation ? moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss') : "undefined"}
+┃➥ 𝗠𝗲𝗺𝗯𝗲𝗿𝘀 :
+┃✑ ${metadata.participants.length ? metadata.participants.length : "undefined"}
+┗━━━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹`
 }
 AnyaPika.sendTextWithMentions(m.chat, teks, m)
 }
@@ -3076,7 +3088,7 @@ if (!m.isGroup) return replay(mess.group)
 let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
 let online = [...Object.keys(store.presences[id]), botNumber]
 let liston = 1
-AnyaPika.sendText(m.chat, '     「 Online List 」\n\n' + online.map(v => `${liston++} . @` + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
+AnyaPika.sendText(m.chat, '     「 Online List 」\n\n┌╼━━━━᚜ 𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪 ᚛━━━╾ᐧᐧᐧᐧ⳹\n┊' + online.map(v => `${liston++} . @` + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
 }
 break
 case 'patrick':
