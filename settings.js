@@ -41,13 +41,13 @@ global.aliveMessage = `🦋⃟≛⃝ 𝗔𝗻𝘆𝗮ᵇʸ ᵖⁱᵏᵃ•••
 global.owner = ['918811074852','917355622763']
 global.ownertag = '918811074852' // Tag number //
 global.botname = '𝐴𝑛𝑦𝑎💫' // Bot name //
+global.BotName3 = '𝑸𝒖𝒆𝒆𝒏 𝑨𝒏𝒚𝒂 𝒗𝟐' // Bot name for AnyaCore.js //
 global.linkz = "https://wa.me/+91813078451" // Theme url which will be displayed on whatsapp //
 global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
 global.botscript = 'Not available publicly' // Script link //
 global.themeemoji = "🥵" // Theme emoji//
 global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ\n\n\n\n\n\n\n\n\n\n\n🥵🥵🥵 " // sticker watermark packname //
 global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
-global.BotName3 = '𝑸𝒖𝒆𝒆𝒏 𝑨𝒏𝒚𝒂 𝒗𝟐' // Bot name for AnyaCore.js //
 footer = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪❤️' // Footer //
 
 //--------Index--------\\
@@ -84,6 +84,9 @@ global.wlcm = []
 global.gcrevoke = []
 global.autorep = []
 global.ntilink = []
+
+//--------Commands Doc captions--------\\
+global.MenuDocCap = '𝘉𝘦𝘴𝘵 𝘧𝘳𝘪𝘦𝘯𝘥𝘭𝘺 𝘣𝘰𝘵 𝘧𝘰𝘳 𝘺𝘰𝘶...' // Alive message document caption //
 
 //--------Commands react--------\\
 global.reactmoji = "🤖" // Menu //
