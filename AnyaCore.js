@@ -611,13 +611,13 @@ tos = ['Hey, watch your mouth','Never been taught how to speak?','Stop being tox
 sin =  tos[Math.floor(Math.random() * (tos.length))]
 reply(sin)
 if (m.text) {
-bvl = `\`\`\`「 Bad Word Detected 」\`\`\`\n\nYou are using bad word but you are an admin that's why i won't kick you😇`
+bvl = `Huh~\nMaster...atleast aapko to ye sab nhi bolna chahiye !🙂`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await AnyaPika.groupParticipantsUpdate(m.chat, [kice], 'remove')
-AnyaPika.sendMessage(from, {text:`\`\`\`「 Bad Word Detected 」\`\`\`\n\n@${kice.split("@")[0]} was kicked because of using bad words in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
+AnyaPika.sendMessage(from, {text:`ㅤ ㅤ⍙__⍙ 💢\n💢 (  ∗_∗ )         \n        | >💔 𝘛𝘰𝘥 𝘥𝘪𝘺𝘢 𝘯𝘢 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n   💢\n\n❒✗-  𝐀𝐛 𝐧𝐢𝐤𝐚𝐥 *@${kice.split("@")[0]}* 𝐛𝐬𝐝𝐤, 𝐚𝐚 𝐦𝐚𝐭 𝐣𝐚𝐧𝐚 𝐰𝐚𝐩𝐚𝐬 !!`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
 }
 if (AntiLinkYoutubeVid)
 if (budy.includes("https://youtu.be/")){
@@ -2598,7 +2598,7 @@ if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
 if (antiToxic) return replay(`${pushname} already activated hai babe.`)
 nttoxic.push(from)
-replay('ㅤ⍙__⍙\n   (  ^.^ )\n    | >🖤 𝘠𝘦 𝘭𝘰 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n\n𝐍𝐨𝐰 𝐝𝐨𝐧`𝐭 𝐛𝐞 𝐭𝐨𝐱𝐢𝐜...𝐎𝐤𝐚𝐲?')
+replay('ㅤㅤ⍙__⍙\n      (  ^⌔^ )\n       | >❤️ 𝘠𝘦 𝘭𝘰 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n\n𝐍𝐨𝐰 𝐝𝐨𝐧`𝐭 𝐛𝐞 𝐭𝐨𝐱𝐢𝐜...𝐎𝐤𝐚𝐲?')
 var groupe = await AnyaPika.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
