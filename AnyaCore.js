@@ -8484,8 +8484,8 @@ let buttons = [
 {buttonId: `allmenu`, buttonText: {displayText:'𝘈𝘭𝘭 𝘮𝘦𝘯𝘶 🎃'},type: 1}
 ]
 let ntus = {
-image: fs.readFileSync("AnyaPikaMedia/theme/Anyatestpic.jpg"),
-jpegThumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyatestpic.jpg"),
+image: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: text,
 footer: `Choose your menu type here....`,
 buttons: buttons,
@@ -8493,7 +8493,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyamenupic.jpg"),
+thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyamenupic.jpg'),
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${link1}`
