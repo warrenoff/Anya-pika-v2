@@ -4139,7 +4139,7 @@ var walb = [
                 })
 AnyaPika.sendMessage(m.chat,{image:{url:wallpaper[i].image},caption:`*Query :* ${q}`})            
 break
-case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
+case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 					axios.get(`https://api.waifu.pics/sfw/${command}`)
@@ -4147,15 +4147,73 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 						AnyaPika.sendImageAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
 					})
 					break
-case 'waifu': case 'loli':
-					   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-					reply(mess.wait)
-					axios.get(`https://api.waifu.pics/sfw/waifu`)
-					.then(({data}) => {
-					AnyaPika.sendImage(m.chat, data.url, mess.success, m)
-					})
-					break
+case 'waifu' :
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)
+reply(`𝘊𝘰𝘮𝘮𝘢𝘯𝘥 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨ᵃⁿʸᵃ ᵇʸ ᵖⁱᵏᵃ....\n𝘔𝘰𝘳𝘦 𝘵𝘩𝘢𝘯 𝘰𝘯𝘦 𝘸𝘢𝘪𝘧𝘶 𝘸𝘪𝘭𝘭 𝘥𝘦𝘧𝘪𝘯𝘪𝘵𝘦𝘭𝘺 𝘳𝘶𝘪𝘯 𝘺𝘰𝘶𝘳 𝘓𝘢𝘪𝘧𝘶! ❤️.`)	
+    waifuddd = await axios.get('https://waifu.pics/api/sfw/waifu')
+ var wbuttsssr = [
+    {buttonId: `${prefix}waifu`, buttonText: {displayText: `More waifu 🥵`}, type: 1},
+    {buttonId: `${prefix}loli`, buttonText: {displayText: 'Loli 😚'}, type: 1}            
+    ]
+        let button4Messagess = {
+        image: {url:waifuddd.data.url},
+        caption: '_${global.BoyName2}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 🥵.',
+        buttons: wbuttsssr,
+        headerType: 4
+         }     
+                                  
+    await AnyaPika.sendMessage(m.chat, button4Messagess, { quoted:m }).catch(err => {
+        return('error..')
+        })
+break
+
+case 'neko' :
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)
+reply(mess.waiting)	
+    waifuddd = await axios.get('https://waifu.pics/api/sfw/neko')
+ var wbuttsssr = [
+    {buttonId: `-neko2`, buttonText: {displayText: `Neko once more 😋`}, type: 1},
+    {buttonId: `-meow`, buttonText: {displayText: 'Kitty waifu 😻'}, type: 1}
+    ]
+        let buttonMessagessf = {
+        image: {url:waifuddd.data.url},
+        caption: 'Nyaa...',
+        buttons: wbuttsssr,
+        headerType: 2
+         }     
+                                  
+    await AnyaPika.sendMessage(m.chat, buttonMessagessf, { quoted:m }).catch(err => {
+        return('error..')
+        })
+break
+
+
+case 'loli' :
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)
+reply(mess.waiting)	
+    waifuddd = await axios.get('https://waifu.pics/api/sfw/shinobu')
+ var wbuttsssr = [
+    {buttonId: `-loli`, buttonText: {displayText: `𝘖𝘯𝘦 𝘮𝘰𝘳𝘦 𝘓𝘰𝘭𝘪❤️`}, type: 1},
+    {buttonId: `-neko`, buttonText: {displayText: `Neko 🍓`}, type: 1},
+    {buttonId: `-foxgirl`, buttonText: {displayText: `Fox waifu 🦊`}, type: 1}
+    ]
+        let buttonMessagessfgr = {
+        image: {url:waifuddd.data.url},
+        caption: 'Dont be a lolicon !',
+        buttons: wbuttsssr,
+        headerType: 2
+         }     
+                                  
+    await AnyaPika.sendMessage(m.chat, buttonMessagessfgr, { quoted:m }).catch(err => {
+        return('error..')
+        })
+break
 case 'naruto':
 			if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
