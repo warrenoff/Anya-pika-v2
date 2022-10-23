@@ -58,6 +58,7 @@ link2 = 'https://github.com/404Layla' //2nd link for displaying //
 actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
 itemcount1 = '69696969' // item count in welcome message //
 itemcount2 = '77777777' // item count in left message //
+nikalmsg = `ㅤ ࿙⳼ 𝗟𝗺𝗮𝗼 𝗺𝗿𝗶𝘁𝘆𝘂 😚🫵 ⳹࿚\n\n*${pushname}* said... That was a nice time when we were 𝘁𝗼𝗴𝗲𝘁𝗵𝗲𝗿 but, now 𝗴𝗲𝘁 𝗹𝗼𝘀𝘁 𝗯𝗶𝘁𝗰𝗵. \n\n𝘡𝘪𝘯𝘥𝘢𝘨𝘪 𝘦𝘬 𝘴𝘢𝘧𝘢𝘳 𝘩𝘢𝘪 𝘴𝘶𝘩𝘢𝘯𝘢, 𝘺𝘢𝘩𝘢 𝘧𝘪𝘳 𝘯𝘢 𝘥𝘪𝘬𝘩𝘯𝘢 𝘵𝘶𝘮 𝘥𝘶𝘣𝘢𝘳𝘢😃🚮` \\ index nikal message \\
 
 //--------Bot theme media--------\\
 global.thum = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // thumb pic //
