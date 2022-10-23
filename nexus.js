@@ -206,7 +206,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    │➥ ${xdate} on ${xtime}
    └─────────────┈┈⃟≛⃝🖤`
 let buttons = [
-{buttonId: `nikal`, buttonText: {displayText: '𝘕𝘪𝘬𝘢𝘭🫵'}, type: 1},
+{buttonId: `readmore ${nikalmsg}`, buttonText: {displayText: '𝘕𝘪𝘬𝘢𝘭🫵'}, type: 1},
 {buttonId: `owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳❤️'}, type: 1}
 ]
 let buttonMessage = {
