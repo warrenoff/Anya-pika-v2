@@ -196,7 +196,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 	let PikaName = num
                     const xmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: `${itemcount2}`,status: 200, thumbnail: Pikabuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'Pika', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xbody = `┌─❒
+                    Pikabody = `┌─❒
 │✘                «⟮ 𝗟𝗘𝗙𝗧 ⟯»
 └┬❒ ⌈ @${PikaName.split("@")[0]} ⌋
    ├─────────────┈⳹
