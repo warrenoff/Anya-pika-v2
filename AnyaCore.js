@@ -8491,12 +8491,12 @@ footer: `Choose your menu type here....`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:`𝐇𝐞𝐲,\n𝐈'𝐚𝐦 ${global.BotName3}`,
+title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
 thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${link1}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
