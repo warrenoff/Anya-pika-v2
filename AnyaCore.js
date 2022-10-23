@@ -4153,14 +4153,14 @@ case 'waifu' :
     if (!m.isGroup) return replay(mess.grouponly)
 reply(`_Command processing_ ᵃⁿʸᵃ ᵇʸ ᵖⁱᵏᵃ.....`)	
     waifuddd = await axios.get('https://waifu.pics/api/sfw/waifu')
- var wbuttsssr = let buons = [
+ let buons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1},
 {buttonId: `owner`, buttonText: {displayText: 'owner👑'}, type: 1}
 ]
         let button4Messagess = {
         image: {url:waifuddd.data.url},
         caption: `_${global.BoyName2}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 🥵.`,
-        buttons: wbuttsssr,
+        buttons: buons,
         headerType: 4
          }     
                                   
