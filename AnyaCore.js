@@ -172,7 +172,6 @@ let Pikachuimage = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/storemedia/
 let Pikachuvideo = JSON.parse(fs.readFileSync('./AnyaPikaMedia/theme/storemedia/video.json'));
 let autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'));
 const _autostick = JSON.parse(fs.readFileSync('./database/autostickpc.json'));
-Anyapic = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
 let banUser = JSON.parse(fs.readFileSync('./database/banUser.json'));
 let banchat = JSON.parse(fs.readFileSync('./database/banChat.json'));
 let bad = JSON.parse(fs.readFileSync('./src/toxic/bad.json'))
@@ -8485,8 +8484,8 @@ let buttons = [
 {buttonId: `allmenu`, buttonText: {displayText:'𝘈𝘭𝘭 𝘮𝘦𝘯𝘶 🎃'},type: 1}
 ]
 let ntus = {
-image: fs.readFileSync("AnyaPikaMedia/theme/Anyamenupic.jpg"),
-jpegThumbnail: ${Anyapic},
+image: fs.readFileSync("AnyaPikaMedia/theme/Anyatestpic.jpg"),
+jpegThumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyatestpic.jpg"),
 caption: text,
 footer: `Choose your menu type here....`,
 buttons: buttons,
