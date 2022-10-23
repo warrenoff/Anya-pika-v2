@@ -2598,7 +2598,7 @@ if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
 if (antiToxic) return replay(`${pushname} already activated hai babe.`)
 nttoxic.push(from)
-replay('ㅤ|\_/|\n   (  •.• )\n    | >🖤 𝘠𝘦 𝘭𝘰 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n\n𝐍𝐨𝐰 𝐝𝐨𝐧'𝐭 𝐛𝐞 𝐭𝐨𝐱𝐢𝐜...𝐎𝐤𝐚𝐲?')
+replay('ㅤ|\_/|\n   (  •.• )\n    | >🖤 𝘠𝘦 𝘭𝘰 𝘮𝘦𝘳𝘢 𝘥𝘪𝘭....\n\n𝐍𝐨𝐰 𝐝𝐨𝐧`𝐭 𝐛𝐞 𝐭𝐨𝐱𝐢𝐜...𝐎𝐤𝐚𝐲?')
 var groupe = await AnyaPika.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
