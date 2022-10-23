@@ -33,7 +33,7 @@ global.doc6 = 'application/vnd.android.package-archive'
 global.vcardowner = ['918811074852'] // Owner number //
 global.ownername = "3.69_Pika" // Owner name //
 global.ytname = "YT: ONYXPIKA" // Yt chanel name //
-global.socialm = "GitHub: Pika4o4" // Github or insta name //
+global.socialm = "𝗚𝗶𝘁𝗵𝘂𝗯 : Pika4o4\n𝗜𝗻𝘀𝘁𝗮 : 3.69_pika\n\n𝟮𝗻𝗱 𝗚𝗶𝘁𝗵𝘂𝗯 : 404Layla" // Github or insta name //
 global.location = "India, Assam, Dibrugarh" // Location //
 
 //--------Bot body--------\\
@@ -42,6 +42,7 @@ global.owner = ['918811074852','917355622763']
 global.ownertag = '918811074852' // Tag number //
 global.botname = '𝐴𝑛𝑦𝑎💫' // Bot name //
 global.BotName3 = '𝑸𝒖𝒆𝒆𝒏 𝑨𝒏𝒚𝒂 𝒗𝟐' // Bot name for AnyaCore.js //
+global.BotName4 = 'Anya' // Name for media caption of AnyaCore.js //
 global.linkz = "https://wa.me/+91813078451" // Theme url which will be displayed on whatsapp //
 global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
 global.botscript = 'Not available publicly' // Script link //
