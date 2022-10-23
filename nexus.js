@@ -161,8 +161,8 @@ PikaLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
    └─────────────┈┈⃟≛⃝🥵 `
   
 let buttons = [
-{buttonId: `${prefix}description`, buttonText: {displayText: '𝘋𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯🧾'}, type: 1},
-{buttonId: `${prefix}menu`, buttonText: {displayText: '𝘔𝘦𝘯𝘶🍓'}, type: 1}
+{buttonId: `description`, buttonText: {displayText: '𝘋𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯🧾'}, type: 1},
+{buttonId: `menu`, buttonText: {displayText: '𝘔𝘦𝘯𝘶🍓'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Anya.xlsx'),
@@ -195,7 +195,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 	                const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 	let PikaName = num
                     const xmembers = metadata.participants.length
-                    let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: `${itemcount2}`,status: 200, thumbnail: xbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'Pika', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                    let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: `${itemcount2}`,status: 200, thumbnail: Pikabuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'Pika', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                     xbody = `┌─❒
 │✘                «⟮ 𝗟𝗘𝗙𝗧 ⟯»
 └┬❒ ⌈ @${PikaName.split("@")[0]} ⌋
@@ -206,8 +206,8 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    │➥ ${xdate} on ${xtime}
    └─────────────┈┈⃟≛⃝🖤`
 let buttons = [
-{buttonId: `${prefix}nikal`, buttonText: {displayText: '𝘕𝘪𝘬𝘢𝘭🫵'}, type: 1},
-{buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳❤️'}, type: 1}
+{buttonId: `nikal`, buttonText: {displayText: '𝘕𝘪𝘬𝘢𝘭🫵'}, type: 1},
+{buttonId: `owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳❤️'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Anya.xlsx'),
