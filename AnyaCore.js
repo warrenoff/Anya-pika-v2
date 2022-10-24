@@ -1086,6 +1086,8 @@ return list[Math.floor(list.length * Math.random())]
 //document randomizer
 let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
+let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
+let symb = pickRandom(symbols)
 
 // short story
 async function cerpen (category) {
@@ -8488,7 +8490,7 @@ AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }}
 let text  = `${global.aliveMessage}`
 let buttons = [
 {buttonId: `Listmenu`, buttonText: {displayText: '🥵 𝘓𝘪𝘴𝘵 𝘮𝘦𝘯𝘶'}, type: 1},
-{buttonId: `allmenu`, buttonText: {displayText:'𝘈𝘭𝘭 𝘮𝘦𝘯𝘶 🎃'},type: 1}
+{buttonId: `${symb}allmenu`, buttonText: {displayText:'𝘈𝘭𝘭 𝘮𝘦𝘯𝘶 🎃'},type: 1}
 ]
 let ntus = {
 image: fs.readFileSync('./AnyaPikaMedia/theme/Menu/Menuimg.jpg'),
