@@ -29,6 +29,18 @@ global.doc4 = 'application/zip'
 global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
+//-------Symbols variants--------\\
+symb1 = '-'
+symb2 = '.'
+symb3 = ','
+symb4 = '!'
+symb5 = '+'
+symb6 = '#'
+symb7 = '_'
+symb8 = '%'
+symb9 = '$'
+symb10 = ''
+
 //--------Owner v card--------\\
 global.vcardowner = ['918811074852'] // Owner number //
 global.ownername = "3.69_Pika" // Owner name //
