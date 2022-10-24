@@ -4150,7 +4150,7 @@ var walb = [
                 })
 AnyaPika.sendMessage(m.chat,{image:{url:wallpaper[i].image},caption:`*Query :* ${q}`})            
 break
-case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
+case 'cry':case 'kill':case 'kick':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 					axios.get(`https://api.waifu.pics/sfw/${command}`)
@@ -8679,6 +8679,12 @@ const allmenu =  `❒✗ ${prefix}ownermenu
 ❒✗ ${prefix}convertmenu
 ❒✗ ${prefix}audiomenu
 ❒✗ ${prefix}photoeffectsmenu
+❒✗ ${prefix}imagemenu
+❒✗ ${prefix}emotemenu
+❒✗ ${prefix}weebmenu
+❒✗ ${prefix}stickermenu
+❒✗ ${prefix}reactionmenu
+❒✗ ${prefix}animestickermenu
 
  *━━━〈  💻 Core 💻  〉━━━*
 
@@ -8921,6 +8927,7 @@ const allmenu =  `❒✗ ${prefix}ownermenu
 ❒✗ ${prefix}animestory
 ❒✗ ${prefix}manga
 ❒✗ ${prefix}wattpad
+❒✗ ${prefix}covid
 
 *━━━〈  🫧 Convert 🫧  〉━━━*
 
@@ -9211,7 +9218,7 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Owner Menu')
 let teks  =  `ㅤㅤ࿙༺⟅∙𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
-╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
@@ -9276,7 +9283,7 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Group Menu')
 let teks =  `ㅤㅤ࿙༺⟅∙𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
-╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
@@ -9343,7 +9350,7 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Rpg Menu')
 let teks =  `ㅤ   ࿙༺⟅∙𝑨𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
-╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
@@ -9389,13 +9396,13 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-case 'textmakermenu': {
+case 'textpromenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Maker Menu')
 let teks = `ㅤㅤ࿙༺⟅∙•𝑻𝒆𝒙𝒕 𝑴𝒆𝒏𝒖∙•⟆༻࿚
 
-╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
@@ -9538,7 +9545,7 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Download Menu')
 let teks =  `ㅤ   ࿙༺⟅∙𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
-╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
@@ -9598,7 +9605,7 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Search Menu')
 let teks =  `ㅤ   ࿙༺⟅∙𝑺𝒆𝒂𝒓𝒄𝒉 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
-╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
@@ -9662,7 +9669,7 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Convert Menu')
 let teks = `ㅤ   ࿙༺⟅∙𝑪𝒐𝒏𝒗𝒆𝒓𝒕 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
-╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
@@ -9762,22 +9769,34 @@ case 'emotemenu':{
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Emote Menu')
-let teks = `╔═══════➻「 𝓮𝓶𝓸𝓽𝓮 」	
-╿
-╠🔥${prefix}𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝙸𝚙𝚑𝚘𝚗𝚎𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝚂𝚊𝚖𝚜𝚞𝚗𝚐𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝙹𝚘𝚢𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝚂𝚔𝚢𝚙𝚎𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝚃𝚠𝚒𝚝𝚝𝚎𝚛𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝙼𝚒𝚌𝚛𝚘𝚜𝚘𝚏𝚝𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝙶𝚘𝚘𝚐𝚕𝚎𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝙿𝚎𝚍𝚒𝚊𝚎𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝙼𝚒𝚌𝚛𝚘𝚜𝚘𝚏𝚝𝚎𝚖𝚘𝚓𝚒
-╽
-╚┅┅┅┅┅┅┅༻` 
+let teks = `ㅤㅤ࿙༺⟅∙𝑬𝒎𝒐𝒕𝒆 𝑴𝒆𝒏𝒖∙⟆༻࿚
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓔𝓶𝓸𝓽𝓮 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}Instagramemoji 
+❒✗ ${prefix}facebookemoji
+❒✗ ${prefix}iphoneemoji
+❒✗ ${prefix}samsungemoji
+❒✗ ${prefix}joyemoji
+❒✗ ${prefix}skypeemoji
+❒✗ ${prefix}twitteremoji
+❒✗ ${prefix}whatsappemoji
+❒✗ ${prefix}microsoftemoji
+❒✗ ${prefix}googleemoji
+❒✗ ${prefix}pediaemoji
+❒✗ ${prefix}microsoftemoji
+┊
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻` 
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -9806,7 +9825,7 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Image Effect Menu')
 let teks =  `ㅤㅤ࿙༺⟅∙𝑷𝒉𝒐𝒕𝒐 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
-╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
@@ -9856,61 +9875,56 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-case 'animemenu':{
+case 'animestickermenu':{
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Anime Menu')
-let teks =  `╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 」	
-╿
-╠🔥${prefix}𝙽𝚊𝚛𝚞𝚝𝚘
-╠🔥${prefix}𝚈𝚊𝚘𝚒
-╠🔥${prefix}𝙽𝚎𝚔𝚘2
-╠🔥${prefix}𝚆𝚊𝚒𝚏𝚞
-╠🔥${prefix}𝚆𝚊𝚒𝚏𝚞3
-╠🔥${prefix}𝚂𝚑𝚒𝚗𝚘𝚋𝚞
-╠🔥${prefix}𝙰𝚠𝚘𝚘2
-╠🔥${prefix}𝚆𝚊𝚒𝚏𝚞2
-╠🔥${prefix}𝙵𝚘𝚡𝚐𝚒𝚛𝚕
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚗𝚘𝚖
-╠🔥${prefix}𝙶𝚘𝚘𝚜𝚎
-╠🔥${prefix}8𝚋𝚊𝚕𝚕
-╠🔥${prefix}𝙰𝚟𝚊𝚝𝚊𝚛
-╠🔥${prefix}𝚃𝚒𝚌𝚔𝚕𝚎
-╠🔥${prefix}𝙶𝚎𝚌𝚐
-╠🔥${prefix}𝙵𝚎𝚎𝚍
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚜𝚕𝚊𝚙
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚜𝚙𝚊𝚗𝚔
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚙𝚊𝚝
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚗𝚎𝚔𝚘
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚔𝚒𝚜𝚜
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚠𝚕𝚙
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚌𝚞𝚍𝚍𝚕𝚎
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚌𝚛𝚢
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚔𝚒𝚕𝚕
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚕𝚒𝚌𝚔
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚋𝚒𝚝𝚎
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚢𝚎𝚎𝚝
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚋𝚞𝚕𝚕𝚢
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚋𝚘𝚗𝚔
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚠𝚒𝚗𝚔
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚙𝚘𝚔𝚎
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚜𝚖𝚒𝚕𝚎
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚠𝚊𝚟𝚎
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚊𝚠𝚘𝚘
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚋𝚕𝚞𝚜𝚑
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚜𝚖𝚞𝚐
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚐𝚕𝚘𝚖𝚙
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚑𝚊𝚙𝚙𝚢
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚍𝚊𝚗𝚌𝚎
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚌𝚛𝚒𝚗𝚐𝚎
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚑𝚒𝚐𝚑𝚏𝚒𝚟𝚎
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚑𝚊𝚗𝚍𝚑𝚘𝚕𝚍
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚖𝚎𝚐𝚞𝚖𝚒𝚗
-╠🔥${prefix}𝙼𝚎𝚐𝚞𝚖𝚒𝚗2
-╠🔥${prefix}𝙻𝚘𝚕𝚒
-╠🔥${prefix}𝙲𝚘𝚞𝚙𝚕𝚎𝚙𝚙
-╽
-╚┅┅┅┅┅┅┅༻` 
+let teks =  `ㅤ   ࿙༺⟅∙𝑨𝒏𝒊. 𝒔𝒕𝒊. 𝑴𝒆𝒏𝒖∙⟆༻࿚
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝓲𝓶𝓮 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}animenom
+❒✗ ${prefix}animeslap
+❒✗ ${prefix}animespank
+❒✗ ${prefix}animepat
+❒✗ ${prefix}animeneko
+❒✗ ${prefix}animekiss
+❒✗ ${prefix}animewlp
+❒✗ ${prefix}animecuddle
+❒✗ ${prefix}animecry
+❒✗ ${prefix}animekill
+❒✗ ${prefix}animelick
+❒✗ ${prefix}animebite
+❒✗ ${prefix}animeyeet
+❒✗ ${prefix}animebully
+❒✗ ${prefix}animebonk
+❒✗ ${prefix}animewink
+❒✗ ${prefix}animepoke
+❒✗ ${prefix}animesmile
+❒✗ ${prefix}animewave
+❒✗ ${prefix}animeawoo
+❒✗ ${prefix}animeblush
+❒✗ ${prefix}animesmug
+❒✗ ${prefix}animeglomp
+❒✗ ${prefix}animehappt
+❒✗ ${prefix}animedance
+❒✗ ${prefix}animecringe
+❒✗ ${prefix}animehighfive
+❒✗ ${prefix}animehandhold
+❒✗ ${prefix}animemegumin
+❒✗ ${prefix}smug2
+┊
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻` 
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -9937,17 +9951,28 @@ case 'stickermenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Sticker Menu')
-let teks =  `╔═══════➻「 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
-╿
-╠🔥${prefix}𝙿𝚊𝚝𝚛𝚒𝚌𝚔
-╠🔥${prefix}𝙴𝚖𝚘𝚓𝚒
-╠🔥${prefix}𝙴𝚖𝚘𝚓𝚒𝚖𝚒𝚡
-╠🔥${prefix}𝙰𝚝𝚝𝚙
-╠🔥${prefix}𝚃𝚝𝚙
-╠🔥${prefix}𝙳𝚘𝚐𝚎
-╠🔥${prefix}𝙻𝚘𝚟𝚎𝚜𝚝𝚒𝚌𝚔𝚎𝚛
-╽
-╚┅┅┅┅┅┅┅༻`
+let teks =  `ㅤㅤ࿙༺⟅∙𝑺𝒕𝒊𝒄𝒌𝒆𝒓 𝑴𝒆𝒏𝒖∙⟆༻࿚
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓢𝓽𝓲𝓬𝓴𝓮𝓻 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}patrick
+❒✗ ${prefix}emoji
+❒✗ ${prefix}emojimix
+❒✗ ${prefix}attp
+❒✗ ${prefix}ttp  *(text)*
+❒✗ ${prefix}lovesticker
+┊
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻`
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -9970,43 +9995,55 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-case 'animestickermenu': {
+case 'reactionmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Anime Sticker Menu')
-let teks = `╔═══════➻「 𝓪𝓷𝓲𝓶𝓮 𝓼𝓽𝓲𝓬𝓴𝓮𝓻 」	
-╿
-╠🔥${prefix}𝙻𝚘𝚕𝚒
-╠🔥${prefix}𝙱𝚞𝚕𝚕𝚢
-╠🔥${prefix}𝙲𝚞𝚍𝚍𝚕𝚎
-╠🔥${prefix}𝙲𝚛𝚢
-╠🔥${prefix}𝙷𝚞𝚐
-╠🔥${prefix}𝙰𝚠𝚘𝚘
-╠🔥${prefix}𝙺𝚒𝚜𝚜
-╠🔥${prefix}𝙻𝚒𝚌𝚔
-╠🔥${prefix}𝙿𝚊𝚝
-╠🔥${prefix}𝚂𝚖𝚞𝚐
-╠🔥${prefix}𝙱𝚘𝚗𝚔
-╠🔥${prefix}𝚈𝚎𝚎𝚝
-╠🔥${prefix}𝙱𝚕𝚞𝚜𝚑
-╠🔥${prefix}𝚂𝚖𝚒𝚕𝚎
-╠🔥${prefix}𝚆𝚊𝚟𝚎
-╠🔥${prefix}𝙷𝚒𝚐𝚑𝚏𝚒𝚟𝚎
-╠🔥${prefix}𝙷𝚊𝚗𝚍𝚑𝚘𝚕𝚍
-╠🔥${prefix}𝙽𝚘𝚖
-╠🔥${prefix}𝙶𝚕𝚘𝚖𝚙
-╠🔥${prefix}𝙱𝚒𝚝𝚎
-╠🔥${prefix}𝚂𝚕𝚊𝚙
-╠🔥${prefix}𝙺𝚒𝚕𝚕
-╠🔥${prefix}𝙷𝚊𝚙𝚙𝚢
-╠🔥${prefix}𝚆𝚒𝚗𝚔
-╠🔥${prefix}𝙿𝚘𝚔𝚎
-╠🔥${prefix}𝙳𝚊𝚗𝚌𝚎
-╠🔥${prefix}𝙲𝚛𝚒𝚗𝚐𝚎
-╠🔥${prefix}𝙽𝚎𝚔𝚘
-╠🔥${prefix}𝙶𝚞𝚛𝚊
-╽
-╚┅┅┅┅┅┅┅༻`
+let teks = `ㅤ  ࿙༺⟅∙𝑹𝒆𝒂𝒄𝒕𝒊𝒐𝒏 𝑴𝒆𝒏𝒖∙⟆༻࿚
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓡𝓮𝓪𝓬𝓽𝓲𝓸𝓷 𝓶𝓮𝓷𝓾᚛━╾ᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}bully
+❒✗ ${prefix}cuddle
+❒✗ ${prefix}cry
+❒✗ ${prefix}hug
+❒✗ ${prefix}awoo
+❒✗ ${prefix}kiss
+❒✗ ${prefix}lick
+❒✗ ${prefix}pat
+❒✗ ${prefix}smug
+❒✗ ${prefix}bonk
+❒✗ ${prefix}yeet
+❒✗ ${prefix}blush
+❒✗ ${prefix}smile
+❒✗ ${prefix}wave
+❒✗ ${prefix}highfive
+❒✗ ${prefix}handhold
+❒✗ ${prefix}nom
+❒✗ ${prefix}glomp
+❒✗ ${prefix}bite
+❒✗ ${prefix}slap
+❒✗ ${prefix}kick
+❒✗ ${prefix}kill
+❒✗ ${prefix}happy
+❒✗ ${prefix}wink
+❒✗ ${prefix}poke
+❒✗ ${prefix}dance
+❒✗ ${prefix}cringe
+❒✗ ${prefix}neko
+❒✗ ${prefix}gura
+┊
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻`
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -10479,7 +10516,7 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Database Menu')
 let teks = `ㅤㅤ࿙༺⟅∙𝑨𝒖𝒅𝒊𝒐 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
-╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
@@ -10528,38 +10565,38 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-case 'indomenu': {
+case 'imagemenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Indo Menu')
-let teks =  `╔═══════➻「 𝓲𝓷𝓭𝓸 」	
-╿
-╠🔥${prefix}𝙳𝚊𝚛𝚔𝚓𝚘𝚔𝚎
-╠🔥${prefix}𝚀𝚞𝚘𝚝𝚎𝚜
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚚𝚞𝚘𝚝𝚎𝚜
-╠🔥${prefix}𝙹𝚊𝚕𝚊𝚗𝚝𝚒𝚔𝚞𝚜-𝚖𝚎𝚖𝚎
-╠🔥${prefix}𝙼𝚎𝚛𝚍𝚎𝚔𝚊-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙺𝚘𝚗𝚝𝚊𝚗-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙲𝚗𝚋𝚌-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝚃𝚛𝚒𝚋𝚞𝚗-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙸𝚗𝚍𝚘𝚣𝚘𝚗𝚎-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙺𝚘𝚖𝚙𝚊𝚜-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙳𝚎𝚝𝚒𝚔-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙳𝚊𝚒𝚕𝚢-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙸𝚗𝚎𝚠𝚜-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙾𝚔𝚎𝚣𝚘𝚗𝚎-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝚂𝚒𝚗𝚍𝚘-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝚃𝚎𝚖𝚙𝚘-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙰𝚗𝚝𝚊𝚛𝚊-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙲𝚗𝚗-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙵𝚊𝚓𝚊𝚛-𝚗𝚎𝚠𝚜 
-╠🔥${prefix}𝙲𝚒𝚗𝚎𝚖𝚊𝚜𝚌𝚑𝚎𝚍𝚞𝚕𝚎
-╠🔥${prefix}𝚆𝚒𝚔𝚒
-╠🔥${prefix}𝙲𝚘𝚟𝚒𝚍𝚒𝚗𝚍𝚘
-╠🔥${prefix}𝙴𝚊𝚛𝚝𝚑𝚚𝚞𝚊𝚔𝚎
-╠🔥${prefix}𝚃𝚟𝚜𝚌𝚑𝚎𝚍𝚞𝚕𝚎
-╽
-╚┅┅┅┅┅┅┅༻`
+let teks =  `ㅤㅤ࿙༺⟅∙𝑰𝒎𝒂𝒈𝒆 𝑴𝒆𝒏𝒖∙⟆༻࿚
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓘𝓶𝓪𝓰𝓮 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}coffee 
+❒✗ ${prefix}Bts
+❒✗ ${prefix}woof
+❒✗ ${prefix}meow
+❒✗ ${prefix}lizard
+❒✗ ${prefix}wallneon
+❒✗ ${prefix}wallpubg
+❒✗ ${prefix}wallml
+❒✗ ${prefix}wallrandom
+❒✗ ${prefix}wallcode
+❒✗ ${prefix}animewall
+❒✗ ${prefix}animewall2
+┊
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻`
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -10582,44 +10619,43 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-case 'indohoroscopemenu': {
+case 'weebmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Indo Horoscope Menu')
-let teks =  `╔═➻「 𝓲𝓷𝓭𝓸 𝓱𝓸𝓻𝓸𝓼𝓬𝓸𝓹𝓮 」	
-╿
-╠🔥${prefix}𝙽𝚘𝚖𝚘𝚛𝚑𝚘𝚔𝚒
-╠🔥${prefix}𝙰𝚛𝚝𝚒𝚖𝚒𝚖𝚙𝚒 
-╠🔥${prefix}𝙰𝚛𝚝𝚒𝚗𝚊𝚖𝚊 
-╠🔥${prefix}𝚁𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑 
-╠🔥${prefix}𝚁𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑𝚋𝚊𝚕𝚒 
-╠🔥${prefix}𝚂𝚞𝚊𝚖𝚒𝚒𝚜𝚝𝚛𝚒 
-╠🔥${prefix}𝚁𝚊𝚖𝚊𝚕𝚌𝚒𝚗𝚝𝚊 
-╠🔥${prefix}𝙲𝚘𝚌𝚘𝚔𝚗𝚊𝚖𝚊 
-╠🔥${prefix}𝙿𝚊𝚜𝚊𝚗𝚐𝚊𝚗 
-╠🔥${prefix}𝙹𝚊𝚍𝚒𝚊𝚗𝚗𝚒𝚔𝚊𝚑 
-╠🔥${prefix}𝚂𝚒𝚏𝚊𝚝𝚞𝚜𝚊𝚑𝚊 
-╠🔥${prefix}𝚁𝚎𝚣𝚎𝚔𝚒 
-╠🔥${prefix}𝙿𝚎𝚔𝚎𝚛𝚓𝚊𝚊𝚗 
-╠🔥${prefix}𝙽𝚊𝚜𝚒𝚋 
-╠🔥${prefix}𝙿𝚎𝚗𝚢𝚊𝚔𝚒𝚝 
-╠🔥${prefix}𝚃𝚊𝚛𝚘𝚝 
-╠🔥${prefix}𝙵𝚎𝚗𝚐𝚜𝚑𝚞𝚒 
-╠🔥${prefix}𝙷𝚊𝚛𝚒𝚋𝚊𝚒𝚔 
-╠🔥${prefix}𝙷𝚊𝚛𝚒𝚜𝚊𝚗𝚐𝚊𝚛 
-╠🔥${prefix}𝙷𝚊𝚛𝚒𝚜𝚒𝚊𝚕
-╠🔥${prefix}𝙽𝚊𝚐𝚊𝚑𝚊𝚛𝚒
-╠🔥${prefix}𝙰𝚛𝚊𝚑𝚛𝚎𝚣𝚎𝚔𝚒
-╠🔥${prefix}𝙿𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗 
-╠🔥${prefix}𝚆𝚎𝚝𝚘𝚗 
-╠🔥${prefix}𝙺𝚊𝚛𝚊𝚔𝚝𝚎𝚛
-╠🔥${prefix}𝙺𝚎𝚋𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗
-╠🔥${prefix}𝙼𝚎𝚖𝚊𝚗𝚌𝚒𝚗𝚐
-╠🔥${prefix}𝙼𝚊𝚜𝚊𝚜𝚞𝚋𝚞𝚛
-╠🔥${prefix}𝚉𝚘𝚍𝚒𝚊𝚔
-╠🔥${prefix}𝚂𝚑𝚒𝚘
-╽
-╚┅┅┅┅┅┅┅༻` 
+let teks =  `ㅤㅤ࿙༺⟅∙𝑾𝒆𝒆𝒃 𝑴𝒆𝒏𝒖∙⟆༻࿚
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓦𝓮𝓮𝓫 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}naruto
+❒✗ ${prefix}yaoi
+❒✗ ${prefix}neko2
+❒✗ ${prefix}waifu
+❒✗ ${prefix}waifu2
+❒✗ ${prefix}awoo2
+❒✗ ${prefix}shinobu
+❒✗ ${prefix}waifu-face
+❒✗ ${prefix}foxgirl
+❒✗ ${prefix}megumin2
+❒✗ ${prefix}loli
+❒✗ ${prefix}8ball
+❒✗ ${prefix}goose
+❒✗ ${prefix}avatar
+❒✗ ${prefix}tickle
+❒✗ ${prefix}gecg
+❒✗ ${prefix}feed
+┊
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻` 
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
