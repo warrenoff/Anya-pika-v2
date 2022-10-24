@@ -8481,7 +8481,7 @@ sourceUrl: "https://github.com/NEXUSAT12"
 AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': case 'commands': {
+case 'alive': case 'panel': case 'menu': case 'help': case '?': case 'commands': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
@@ -8491,7 +8491,7 @@ let buttons = [
 {buttonId: `allmenu`, buttonText: {displayText:'𝘈𝘭𝘭 𝘮𝘦𝘯𝘶 🎃'},type: 1}
 ]
 let ntus = {
-image: fs.readFileSync('./AnyaPikaMedia/theme/Menuimg.jpg'),
+image: fs.readFileSync('./AnyaPikaMedia/theme/Menu/Menuimg.jpg'),
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: text,
 footer: `Choose your menu type here....`,
@@ -8500,7 +8500,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
-thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyamenupic.jpg'),
+thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Menu/Anyamenupic.jpg'),
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${link1}`
@@ -9201,16 +9201,16 @@ if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Owner Menu')
 let teks  =  `ㅤㅤ࿙༺⟅∙𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
-┏━━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
-┃✘  𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
-┃➥ ${pushname}
-┣━━━━━━━━━━♡
-┃✘  𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
-┃➥ ${global.ownername}
-┣━━━━━━━━━━♡
-┃✘  𝗚𝗿𝗼𝘂𝗽 :
-┃➥ ${groupMetadata.subject}
-┗━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
 ╭╼━━᚜ 𝓞𝔀𝓷𝓮𝓻 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
 ┊
 ❒✗ ${prefix}self
