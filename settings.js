@@ -78,8 +78,8 @@ symb9 = '$'
 symb10 = ''
 
 //--------Commands docs images--------\\
-commandimg1 = 'Cimg1.jpg'
-commandimg2 = 'Cimg2.jpg'
+commandimg1 = 'Cimg1'
+commandimg2 = 'Cimg2'
 
 //--------Database--------\\
 global.premium = ['918811074852'] // premium numbers //
