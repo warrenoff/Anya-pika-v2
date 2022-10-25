@@ -78,37 +78,8 @@ symb9 = '$'
 symb10 = ''
 
 //--------Commands docs images--------\\
-cimg1 = 'Cimg1'
-cimg2 = 'Cimg2'
-cimg3 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg3.jpg')
-cimg4 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg4.jpg')
-cimg5 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg5.jpg')
-cimg6 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg6.jpg')
-cimg7 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg7.jpg')
-cimg8 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg8.jpg')
-cimg9 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg9.jpg')
-cimg10 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg10.jpg')
-cimg11 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg11.jpg')
-cimg12 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg12.jpg')
-cimg13 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg13.jpg')
-cimg14 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg14.jpg')
-cimg15 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg15.jpg')
-cimg16 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg16.jpg')
-cimg17 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg17.jpg')
-cimg18 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg18.jpg')
-cimg19 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg19.jpg')
-cimg20 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg20.jpg')
-cimg21 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg21.jpg')
-cimg22 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg22.jpg')
-cimg23 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg23.jpg')
-cimg24 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg24.jpg')
-cimg25 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg25.jpg')
-cimg26 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg26.jpg')
-cimg27 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg27.jpg')
-cimg28 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg28.jpg')
-cimg29 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg29.jpg')
-cimg30 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg30.jpg')
-cimg31 = fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg31.jpg')
+commandimg = 'Cimg1'
+commandimg = 'Cimg2'
 
 //--------Database--------\\
 global.premium = ['918811074852'] // premium numbers //
