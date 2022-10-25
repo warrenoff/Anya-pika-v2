@@ -8488,6 +8488,8 @@ break
 case 'alive': case 'panel': case 'menu': case 'help': case '?': case 'commands': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
+abc = [fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg1.jpg'),fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg2.jpg')]
+cda = abc[Math.floor(Math.random() * (abc.length))]
 AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 let text  = `${global.aliveMessage}`
 let buttons = [
@@ -8504,7 +8506,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
-thumbnail: `${cimg}`,
+thumbnail: `${cda}`,
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${link1}`
