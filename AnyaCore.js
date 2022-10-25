@@ -1088,8 +1088,8 @@ let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
 let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
-let commandimages = [Cimg1,Cimg2,Cimg3,Cimg4,Cimg5,Cimg6,Cimg7,Cimg8,Cimg9,Cimg10,Cimg11,Cimg12,Cimg,13,Cimg14,Cimg15,Cimg16,Cimg17,Cimg18,Cimg19,Cimg20,Cimg21,Cimg22,Cimg23,Cimg24,Cimg25,Cimg26,Cimg27,Cimg28,Cimg29,Cimg30,Cimg31]
-let Cimg = pickRandom(commandimages)
+let commandimages = [cimg1,cimg2,cimg3,cimg4,cimg5,cimg6,cimg7,cimg8,cimg9,cimg10,cimg11,cimg12,cimg,13,cimg14,cimg15,cimg16,cimg17,cimg18,cimg19,cimg20,cimg21,cimg22,cimg23,cimg24,cimg25,cimg26,cimg27,cimg28,cimg29,cimg30,cimg31]
+let cimg = pickRandom(commandimages)
 
 // short story
 async function cerpen (category) {
@@ -8504,7 +8504,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
-thumbnail: `${Cimg}`,
+thumbnail: `${cimg}`,
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${link1}`
@@ -9207,7 +9207,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: `${Cimg}`,
+thumbnail: `${cimg}`,
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9272,7 +9272,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: `${Cimg}`,
+thumbnail: `${cimg}`,
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
