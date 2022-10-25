@@ -8295,7 +8295,7 @@ break
 case 'description': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-        let metadata = await Miku.groupMetadata(anu.id)            
+        let metadata = await AnyaPika.groupMetadata(anu.id)            
 reply(`ㅤㅤ࿙⳼ 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 ⳹࿚
 
 ${metadata.desc}`)
