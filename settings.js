@@ -135,7 +135,17 @@ global.ntilink = []
 global.MenuDocCap = '𝘉𝘦𝘴𝘵 𝘧𝘳𝘪𝘦𝘯𝘥𝘭𝘺 𝘣𝘰𝘵 𝘧𝘰𝘳 𝘺𝘰𝘶...' // Alive message document caption //
 
 //--------Commands react--------\\
-global.reactmoji = "🤖" // Menu //
+global.reactmoji1 = "🤖" // Menu //
+global.reactmoji2 = "💋" // Menu //
+global.reactmoji3 = "💖" // Menu //
+global.reactmoji4 = "👾" // Menu //
+global.reactmoji5 = "😚" // Menu //
+global.reactmoji6 = "🥰" // Menu //
+global.reactmoji7 = "😘" // Menu //
+global.reactmoji8 = "😈" // Menu //
+global.reactmoji9 = "🥵" // Menu //
+global.reactmoji10 = "🔥" // Menu //
+global.reactmoji11 = "❤️" // Menu //
 
 //--------Others--------\\
 global.sessionName = 'session'
