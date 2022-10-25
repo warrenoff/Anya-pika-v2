@@ -1088,6 +1088,8 @@ let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
 let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
+let commandimages = [Cimg1,Cimg2,Cimg3,Cimg4,Cimg5,Cimg6,Cimg7,Cimg8,Cimg9,Cimg10,Cimg11,Cimg12,Cimg,13,Cimg14,Cimg15,Cimg16,Cimg17,Cimg18,Cimg19,Cimg20,Cimg21,Cimg22,Cimg23,Cimg24,Cimg25,Cimg26,Cimg27,Cimg28,Cimg29,Cimg30,Cimg31]
+let Cimg = pickRandom(commandimages)
 
 // short story
 async function cerpen (category) {
@@ -8502,7 +8504,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
-thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Menu/Anyamenupic.jpg'),
+thumbnail: `${Cimg}`,
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${link1}`
@@ -9197,7 +9199,7 @@ let buons = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: allmenu,
 footer: `${footer}`,
 buttons: buons,
@@ -9205,7 +9207,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
+thumbnail: `${Cimg}`,
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
@@ -9262,7 +9264,7 @@ let buttons = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${global.BotName2}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
@@ -9270,7 +9272,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
+thumbnail: `${Cimg}`,
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
