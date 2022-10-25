@@ -161,6 +161,18 @@ const {
    const isInventoryMonay = cekDuluJoinAdaApaKagaMonaynyaDiJson(m.sender)
    const ikan = ['🐟','🐠','🐡']   
 
+async function startAnyaPika() {
+    const AnyaPika = AnyaPikaConnect({
+        logger: pino({ level: 'silent' }),
+        printQRInTerminal: true,
+        browser: ['Subscribe Pika','Safari','1.0.0'],
+        auth: state
+    })
+
+let metadata2 = AnyaPika.groupMetadata(anu.id)
+const xmembers = metadata2.participants.length
+
+
 //rpg database\\
  let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
  let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
