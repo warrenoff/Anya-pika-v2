@@ -1088,7 +1088,7 @@ let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
 let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
-let menuimages = [commandimg1,commandimg2]
+let menuimages = [thumb,err4r,log0,thum]
 let menuimage = pickRandom(menuimages)
 
 // short story
@@ -8504,7 +8504,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
-thumbnail: fs.readFileSync(`${menuimage}`),
+thumbnail: menuimage,
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${link1}`
