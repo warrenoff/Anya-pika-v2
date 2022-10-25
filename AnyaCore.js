@@ -232,7 +232,7 @@ const AntiLinkAll = m.isGroup ? ntilinkall.includes(from) : true
 const antiWame = m.isGroup ? ntwame.includes(from) : false
 const antiToxic = m.isGroup ? nttoxic.includes(from) : true
 const antiVirtex = m.isChat ? ntvirtex.includes(from) : true
-const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : true
+const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : false
 const isAutoStick = _autostick.includes(from)
 const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
 const Autoreply = m.isGroup ? autorep.includes(from) : true
@@ -9759,6 +9759,7 @@ break
 case 'nsfwmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
+if (!AntiNsfw) return reply(mess.nonsfw)
 var unicorn = await getBuffer(picak+'Nsfw Menu')
 let teks =  `ㅤㅤ࿙༺⟅∙𝑵𝑭𝑺𝑾 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
