@@ -7180,31 +7180,6 @@ if (isBanChat) return reply(mess.banChat)
 
   })
   break
-
-case "jalantikus-meme":
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-  var res = await JalanTikusMeme()
-teks = "══════════════════"
-teks += "\nLaughing out loud?🥴\n"
-teks += `\nSource: ${res}\n`
-teks += "══════════════════"
-AnyaPika.sendMessage(m.chat, { image : { url : res }, caption: teks }, { quoted : m })
-break
-            case 'cinemaschedule': {
-            	            	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-            if (!text) return reply(`Example: ${prefix + command} jakarta`)
-            let res = await fetchJson(`https://zenzapis.xyz/webzone/jadwalbioskop?kota=${text}&apikey=hdiiofficial`)
-            let capt = `Jadwal Bioskop From : ${text}\n\n`
-            for (let i of res.result){
-            capt += ` Title: ${i.title}\n`
-            capt += ` Thumbnail: ${i.thumb}\n`
-            capt += ` Url: ${i.url}\n\n──────────────────────\n`
-            }
-            AnyaPika.sendImage(m.chat, res.result[0].thumb, capt, m)
-            }
-            break
 case 'shortstoryx':{
 	   if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -7258,24 +7233,7 @@ if (isBanChat) return reply(mess.banChat)
                 AnyaPika.sendMessage(m.chat, { image: { url: random.female }, caption: `Couple Female🙎🏻‍♀️` }, { quoted: m })
             }
 	    break
-            case 'animequotes': case 'animequote': {
-            	if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-		let { quotesAnime } = require('./lib/scraperW')
-                let anu = await quotesAnime()
-                result = anu[Math.floor(Math.random() * anu.length)]
-                let buttons = [
-                    {buttonId: `quotesanime`, buttonText: {displayText: 'Next'}, type: 1}
-                ]
-                let buttonMessage = {
-                    text: `~_${result.quotes}_\n\nBy '${result.karakter}', ${result.anime}\n\n- ${result.up_at}`,
-                    footer: 'Press The Button Below',
-                    buttons: buttons,
-                    headerType: 2
-                }
-                AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
-            }
-            break
+            
 case 'wallpaper': case 'animewallpaper': case 'animewall': {
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -7296,17 +7254,6 @@ if (isBanChat) return reply(mess.banChat)
                 AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-
-case 'wiki': case 'wikipedia':
- 	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-if (args.length < 1) return reply('What Are You Looking For?? ')
-const res2 = await AnyaPikaWiki(q).catch(e => {
-return reply('_[ ! ] Error Result Not Found_') 
-}) 
-const result2 = `*Title :* ${res2[0].judul}\n*Wiki :* ${res2[0].wiki}`
-AnyaPika.sendMessage(from, { image : { url : res2[0].thumb }, caption : result2}) 
-break
             case 'wikimedia': {
             	 	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -7326,346 +7273,7 @@ break
                 }
                 AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
-            break
-            case 'quotesanime': case 'animequotes': case 'animequote': case 'quoteanime': {
-            	 	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-		let { quotesAnime } = require('./lib/scraper')
-                let anu = await quotesAnime()
-                result = anu[Math.floor(Math.random() * anu.length)]
-                let buttons = [
-                    {buttonId: `quotesanime`, buttonText: {displayText: '➡️Next➡️'}, type: 1}
-                ]
-                let buttonMessage = {
-                    text: `~_${result.quotes}_\n\nBy '${result.karakter}', ${result.anime}\n\n- ${result.up_at}`,
-                    footer: 'Press The Button Below',
-                    buttons: buttons,
-                    headerType: 2
-                }
-                AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
-            }
-            break
-	        case 'nomerhoki': case 'nomorhoki': {
-			   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!Number(text)) return reply(`Example : ${prefix + command} 916909137213`)
-                let anu = await primbon.nomer_hoki(Number(text))
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Phone Number :* ${anu.message.nomer_hp}\n${themeemoji} *Shuzi Angka Figures :* ${anu.message.angka_shuzi}\n${themeemoji} *Positive Energy :*\n- Riches : ${anu.message.energi_positif.kekayaan}\n- Health : ${anu.message.energi_positif.kesehatan}\n- Love : ${anu.message.energi_positif.cinta}\n- Stability : ${anu.message.energi_positif.kestabilan}\n- Percentage : ${anu.message.energi_positif.persentase}\n${themeemoji} *Negative Energy :*\n- Dispute : ${anu.message.energi_negatif.perselisihan}\n- Lost : ${anu.message.energi_negatif.kehilangan}\n- Catastrophe : ${anu.message.energi_negatif.malapetaka}\n- Destruction : ${anu.message.energi_negatif.kehancuran}\n- Percentage : ${anu.message.energi_negatif.persentase}`, m)
-            }
-            break
-            case 'artimimpi': case 'tafsirmimpi': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} belanja`)
-                let anu = await primbon.tafsir_mimpi(text)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Dream :* ${anu.message.mimpi}\n${themeemoji} *Meaning :* ${anu.message.arti}\n${themeemoji} *Solution :* ${anu.message.solusi}`, m)
-            }
-            break
-            case 'ramalanjodoh': case 'ramaljodoh': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika, 7, 7, 2005, Novia, 16, 11, 2004`)
-                let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
-                let anu = await primbon.ramalan_jodoh(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Your Name :* ${anu.message.nama_anda.nama}\n${themeemoji} *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n${themeemoji} *Couple Name :* ${anu.message.nama_pasangan.nama}\n${themeemoji} *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n${themeemoji} *Results :* ${anu.message.result}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'ramalanjodohbali': case 'ramaljodohbali': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika, 7, 7, 2005, Novia, 16, 11, 2004`)
-                let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
-                let anu = await primbon.ramalan_jodoh_bali(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Your Name :* ${anu.message.nama_anda.nama}\n${themeemoji} *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n${themeemoji} *Couple Name :* ${anu.message.nama_pasangan.nama}\n${themeemoji} *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n${themeemoji} *Results :* ${anu.message.result}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'suamiistri': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika, 7, 7, 2005, Novia, 16, 11, 2004`)
-                let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
-                let anu = await primbon.suami_istri(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Husband's Name :* ${anu.message.suami.nama}\n${themeemoji} *Husband Born :* ${anu.message.suami.tgl_lahir}\n${themeemoji} *Wife's Name :* ${anu.message.istri.nama}\n${themeemoji} *Born Wife :* ${anu.message.istri.tgl_lahir}\n${themeemoji} *Results :* ${anu.message.result}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'ramalancinta': case 'ramalcinta': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika, 7, 7, 2005, Novia, 16, 11, 2004`)
-                let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
-                let anu = await primbon.ramalan_cinta(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Your Name :* ${anu.message.nama_anda.nama}\n${themeemoji} *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n${themeemoji} *Couple Name :* ${anu.message.nama_pasangan.nama}\n${themeemoji} *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n${themeemoji} *Positive Side :* ${anu.message.sisi_positif}\n${themeemoji} *Negative Side :* ${anu.message.sisi_negatif}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'artinama': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika Ardianta`)
-                let anu = await primbon.arti_nama(text)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Name :* ${anu.message.nama}\n${themeemoji} *Meaning :* ${anu.message.arti}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'kecocokannama': case 'cocoknama': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika, 7, 7, 2005`)
-                let [nama, tgl, bln, thn] = text.split`,`
-                let anu = await primbon.kecocokan_nama(nama, tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Name :* ${anu.message.nama}\n${themeemoji} *Born :* ${anu.message.tgl_lahir}\n${themeemoji} *Life Path :* ${anu.message.life_path}\n${themeemoji} *Destiny :* ${anu.message.destiny}\n${themeemoji} *Destiny Desire :* ${anu.message.destiny_desire}\n${themeemoji} *Personality :* ${anu.message.personality}\n${themeemoji} *Percentage :* ${anu.message.persentase_kecocokan}`, m)
-            }
-            break
-            case 'kecocokanpasangan': case 'cocokpasangan': case 'pasangan': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika|Novia`)
-                let [nama1, nama2] = text.split`|`
-                let anu = await primbon.kecocokan_nama_pasangan(nama1, nama2)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendImage(m.chat,  anu.message.gambar, `${themeemoji} *Your Name :* ${anu.message.nama_anda}\n${themeemoji} *Couple Name :* ${anu.message.nama_pasangan}\n${themeemoji} *Positive Side :* ${anu.message.sisi_positif}\n${themeemoji} *Negative Side :* ${anu.message.sisi_negatif}`, m)
-            }
-            break
-            case 'jadianpernikahan': case 'jadiannikah': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 6, 12, 2020`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.tanggal_jadian_pernikahan(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Wedding Date :* ${anu.message.tanggal}\n${themeemoji} *Characteristics :* ${anu.message.karakteristik}`, m)
-            }
-            break
-            case 'sifatusaha': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix+ command} 28, 12, 2021`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.sifat_usaha_bisnis(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Born :* ${anu.message.hari_lahir}\n${themeemoji} *Business :* ${anu.message.usaha}`, m)
-            }
-            break
-            case 'rejeki': case 'rezeki': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.rejeki_hoki_weton(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Born :* ${anu.message.hari_lahir}\n${themeemoji} *Sustenance :* ${anu.message.rejeki}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'pekerjaan': case 'kerja': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.pekerjaan_weton_lahir(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Born :* ${anu.message.hari_lahir}\n?? *Profession :* ${anu.message.pekerjaan}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'ramalannasib': case 'ramalnasib': case 'nasib': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.ramalan_nasib(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Analysis :* ${anu.message.analisa}\n${themeemoji} *Root Number :* ${anu.message.angka_akar}\n${themeemoji} *Nature :* ${anu.message.sifat}\n${themeemoji} *Element :* ${anu.message.elemen}\n${themeemoji} *Lucky Numbers :* ${anu.message.angka_keberuntungan}`, m)
-            }
-            break
-            case 'potensipenyakit': case 'penyakit': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.cek_potensi_penyakit(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Analysis :* ${anu.message.analisa}\n${themeemoji} *Sector :* ${anu.message.sektor}\n?? *Element :* ${anu.message.elemen}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'artitarot': case 'tarot': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.arti_kartu_tarot(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendImage(m.chat, anu.message.image, `${themeemoji} *Born :* ${anu.message.tgl_lahir}\n${themeemoji} *Tarot Symbol :* ${anu.message.simbol_tarot}\n${themeemoji} *Meaning :* ${anu.message.arti}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'fengshui': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika, 1, 2005\n\nNote : ${prefix + command} Name, gender, tahun lahir\nGender : 1 untuk laki-laki & 2 untuk perempuan`)
-                let [nama, gender, tahun] = text.split`,`
-                let anu = await primbon.perhitungan_feng_shui(nama, gender, tahun)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Name :* ${anu.message.nama}\n${themeemoji} *Born :* ${anu.message.tahun_lahir}\n${themeemoji} *Gender :* ${anu.message.jenis_kelamin}\n${themeemoji} *Kua Number :* ${anu.message.angka_kua}\n${themeemoji} *Group :* ${anu.message.kelompok}\n${themeemoji} *Character :* ${anu.message.karakter}\n${themeemoji} *Good Sector :* ${anu.message.sektor_baik}\n${themeemoji} *Bad Sector :* ${anu.message.sektor_buruk}`, m)
-            }
-            break
-            case 'haribaik': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.petung_hari_baik(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Born :* ${anu.message.tgl_lahir}\n${themeemoji} *When Challenged :* ${anu.message.kala_tinantang}\n${themeemoji} *Info :* ${anu.message.info}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'harisangar': case 'taliwangke': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.hari_sangar_taliwangke(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Born :* ${anu.message.tgl_lahir}\n${themeemoji} *Results :* ${anu.message.result}\n${themeemoji} *Info :* ${anu.message.info}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'harinaas': case 'harisial': {
-                if (!text) return reply(`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.primbon_hari_naas(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Day Of Birth :* ${anu.message.hari_lahir}\n${themeemoji} *Date Of Birth :* ${anu.message.tgl_lahir}\n${themeemoji} *Fateful Day :* ${anu.message.hari_naas}\n${themeemoji} *Info :* ${anu.message.catatan}\n${themeemoji} *Notes :* ${anu.message.info}`, m)
-            }
-            break
-            case 'nagahari': case 'harinaga': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.rahasia_naga_hari(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Day Of Birth :* ${anu.message.hari_lahir}\n${themeemoji} *Date Of Birth :* ${anu.message.tgl_lahir}\n${themeemoji} *Dragon Day Direction :* ${anu.message.arah_naga_hari}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'arahrejeki': case 'arahrezeki': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.primbon_arah_rejeki(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Day Of Birth :* ${anu.message.hari_lahir}\n${themeemoji} *Date Of Birth :* ${anu.message.tgl_lahir}\n${themeemoji} *Sustenance Direction :* ${anu.message.arah_rejeki}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'peruntungan': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} DIka, 7, 7, 2005, 2022\n\nNote : ${prefix + command} Name, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`)
-                let [nama, tgl, bln, thn, untuk] = text.split`,`
-                let anu = await primbon.ramalan_peruntungan(nama, tgl, bln, thn, untuk)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Name :* ${anu.message.nama}\n${themeemoji} *Born :* ${anu.message.tgl_lahir}\n${themeemoji} *Fortune Of The Year :* ${anu.message.peruntungan_tahun}\n${themeemoji} *Results :* ${anu.message.result}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'weton': case 'wetonjawa': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return (`Example : ${prefix + command} 7, 7, 2005`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.weton_jawa(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Date :* ${anu.message.tanggal}\n${themeemoji} *Number Of Neptune :* ${anu.message.jumlah_neptu}\n${themeemoji} *Day Character :* ${anu.message.watak_hari}\n${themeemoji} *Dragon Day :* ${anu.message.naga_hari}\n${themeemoji} *Good Hour :* ${anu.message.jam_baik}\n${themeemoji} *Birth Character :* ${anu.message.watak_kelahiran}`, m)
-            }
-            break
-            case 'sifat': case 'karakter': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika, 7, 7, 2005`)
-                let [nama, tgl, bln, thn] = text.split`,`
-                let anu = await primbon.sifat_karakter_tanggal_lahir(nama, tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Name :* ${anu.message.nama}\n${themeemoji} *Born :* ${anu.message.tgl_lahir}\n${themeemoji} *Lifeline :* ${anu.message.garis_hidup}`, m)
-            }
-            break
-            case 'keberuntungan': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} Dika, 7, 7, 2005`)
-                let [nama, tgl, bln, thn] = text.split`,`
-                let anu = await primbon.potensi_keberuntungan(nama, tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Name :* ${anu.message.nama}\n${themeemoji} *Born :* ${anu.message.tgl_lahir}\n${themeemoji} *Results :* ${anu.message.result}`, m)
-            }
-            break
-            case 'memancing': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} 12, 1, 2022`)
-                let [tgl, bln, thn] = text.split`,`
-                let anu = await primbon.primbon_memancing_ikan(tgl, bln, thn)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Date :* ${anu.message.tgl_memancing}\n${themeemoji} *Results :* ${anu.message.result}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'masasubur': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return (`Example : ${prefix + command} 12, 1, 2022, 28\n\nNote : ${prefix + command} First Day Of Menstruation Cycle`)
-                let [tgl, bln, thn, siklus] = text.split`,`
-                let anu = await primbon.masa_subur(tgl, bln, thn, siklus)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Results :* ${anu.message.result}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'zodiak': case 'zodiac': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix+ command} 7 7 2005`)
-                let zodiak = [
-                    ["capricorn", new Date(1970, 0, 1)],
-                    ["aquarius", new Date(1970, 0, 20)],
-                    ["pisces", new Date(1970, 1, 19)],
-                    ["aries", new Date(1970, 2, 21)],
-                    ["taurus", new Date(1970, 3, 21)],
-                    ["gemini", new Date(1970, 4, 21)],
-                    ["cancer", new Date(1970, 5, 22)],
-                    ["leo", new Date(1970, 6, 23)],
-                    ["virgo", new Date(1970, 7, 23)],
-                    ["libra", new Date(1970, 8, 23)],
-                    ["scorpio", new Date(1970, 9, 23)],
-                    ["sagittarius", new Date(1970, 10, 22)],
-                    ["capricorn", new Date(1970, 11, 22)]
-                ].reverse()
-
-                function getZodiac(month, day) {
-                    let d = new Date(1970, month - 1, day)
-                    return zodiak.find(([_,_d]) => d >= _d)[0]
-                }
-                let date = new Date(text)
-                if (date == 'Invalid Date') throw date
-                let d = new Date()
-                let [tahun, bulan, tanggal] = [d.getFullYear(), d.getMonth() + 1, d.getDate()]
-                let birth = [date.getFullYear(), date.getMonth() + 1, date.getDate()]
-
-                let zodiac = await getZodiac(birth[1], birth[2])
-                
-                let anu = await primbon.zodiak(zodiac)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Zodiac :* ${anu.message.zodiak}\n${themeemoji} *Number :* ${anu.message.nomor_keberuntungan}\n${themeemoji} *Aroma :* ${anu.message.aroma_keberuntungan}\n${themeemoji} *Planet :* ${anu.message.planet_yang_mengitari}\n${themeemoji} *Flower :* ${anu.message.bunga_keberuntungan}\n${themeemoji} *Color :* ${anu.message.warna_keberuntungan}\n${themeemoji} *Stone :* ${anu.message.batu_keberuntungan}\n${themeemoji} *Element :* ${anu.message.elemen_keberuntungan}\n${themeemoji} *Zodiac Couple :* ${anu.message.pasangan_zodiak}\n${themeemoji} *Notes :* ${anu.message.catatan}`, m)
-            }
-            break
-            case 'shio': {
-            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!text) return reply(`Example : ${prefix + command} tikus\n\nNote : For Detail https://primbon.com/shio.htm`)
-                let anu = await primbon.shio(text)
-                if (anu.status == false) return reply(anu.message)
-                AnyaPika.sendText(m.chat, `${themeemoji} *Results :* ${anu.message}`, m)
-            }
-            break
+            break           
 	    case 'tiktok':{
   	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -8295,9 +7903,11 @@ break
 case 'description': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(`ㅤㅤ࿙⳼ 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 ⳹࿚
+reply(`ㅤ ㅤ࿙⳼ 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 ⳹࿚
 
-${groupMetadata.desc}`)
+${groupMetadata.desc}
+
+𝘏𝘦𝘳𝘦'𝘴 𝘰𝘶𝘳 𝘨𝘳𝘰𝘶𝘱 𝘥𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯 _${pushname}_ 𝘣𝘢𝘣𝘺❤️`)
 break
 case 'antitag': {
 if (isBan) return reply(mess.ban)	 			
@@ -8467,32 +8077,6 @@ if (isBanChat) return reply(mess.banChat)
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid \n\n If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
-break
-case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-let teks = `*「 ${global.botname} Script 」*\n\ngithub: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
-let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu 🌺'}, type: 1}
-]
-let buttonMessage = {
-image: thum,
-jpegThumbnail: log0,
-caption: teks,
-footer: `${footer}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title:"I deserve something for my hardwork",
-body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
-mediaType:1,
-mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
-sourceUrl: "https://github.com/NEXUSAT12"
-}}
-}
-AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
-}
 break
 case 'alive': case 'panel': case 'menu': case 'help': case '?': case 'commands': {
 if (isBan) return reply(mess.ban)	 			
@@ -8699,6 +8283,9 @@ const allmenu = `╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛�
 🎃 𝗚𝗿𝗼𝘂𝗽 :
 ┊➥ ${groupMetadata.subject}
 ╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+ *━━━〈  🧾 Menu 🧾  〉━━━*
+
+❒✗ ${prefix}allmenu
 ❒✗ ${prefix}ownermenu
 ❒✗ ${prefix}groupmenu
 ❒✗ ${prefix}antilinkmenu 
