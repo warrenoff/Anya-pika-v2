@@ -213,6 +213,7 @@ module.exports = AnyaPika = async (AnyaPika, m, chatUpdate, store) => {
         //group\\
 const groupMetadata = m.isGroup ? await AnyaPika.groupMetadata(m.chat).catch(e => {}) : ''
 const groupName = m.isGroup ? groupMetadata.subject : ''
+const groupDescription = m. isGroup ? groupMetadata.desc : ''
 const participants = m.isGroup ? await groupMetadata.participants : ''
 const groupAdmins = m.isGroup ? await participants.filter(v => v.admin !== null).map(v => v.id) : ''
 const groupOwner = m.isGroup ? groupMetadata.owner : ''
@@ -8290,6 +8291,14 @@ if (isBanChat) return reply(mess.banChat)
 if (!q) return reply('Send orders *#setbio text*')
 AnyaPika.setStatus(`${q}`)
 reply(mess.success)
+break
+case 'description': 
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+        let metadata = await Miku.groupMetadata(anu.id)            
+reply(`ㅤㅤ࿙⳼ 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 ⳹࿚
+
+${metadata.desc}`)
 break
 case 'antitag': {
 if (isBan) return reply(mess.ban)	 			
