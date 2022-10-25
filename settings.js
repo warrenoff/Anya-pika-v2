@@ -78,7 +78,7 @@ symb9 = '$'
 symb10 = ''
 
 //--------Commands docs images--------\\
-Cimg1 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg1.jpg")
+cimg1 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg1.jpg")
 Cimg2 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg2.jpg")
 Cimg3 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg3.jpg")
 Cimg4 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg4.jpg")
