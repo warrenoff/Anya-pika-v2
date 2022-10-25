@@ -187,6 +187,8 @@ let tebakkalimat = db.data.game.kalimat = []
 let tebaklirik = db.data.game.lirik = []
 let tebaktebakan = db.data.game.tebakan = []
 let vote = db.data.others.vote = []
+let metadata2 = await AnyaPika.groupMetadata(anu.id)
+const xmembers = metadata2.participants.length
 
 module.exports = AnyaPika = async (AnyaPika, m, chatUpdate, store) => {
     try {
@@ -8674,7 +8676,8 @@ case 'allmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
-const allmenu =  `❒✗ ${prefix}ownermenu
+const allmenu =  `${xmembers}th member
+❒✗ ${prefix}ownermenu
 ❒✗ ${prefix}groupmenu
 ❒✗ ${prefix}antilinkmenu 
 ❒✗ ${prefix}textpromenu
@@ -9208,7 +9211,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: `${cimg}`,
+thumbnail: menuimage,
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
