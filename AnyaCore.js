@@ -8504,7 +8504,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
-thumbnail: `fs.readFileSync('./AnyaPikaMedia/theme/Command-image/${menuimage}')`,
+thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Command-image/`${menuimage}`'),
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${link1}`
