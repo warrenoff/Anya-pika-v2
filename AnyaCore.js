@@ -1088,7 +1088,7 @@ let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
 let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
-let commandimages = [cimg1,cimg2,cimg3,cimg4,cimg5,cimg6,cimg7,cimg8,cimg9,cimg10,cimg11,cimg12,cimg,13,cimg14,cimg15,cimg16,cimg17,cimg18,cimg19,cimg20,cimg21,cimg22,cimg23,cimg24,cimg25,cimg26,cimg27,cimg28,cimg29,cimg30,cimg31]
+let commandimages = [cimg1,cimg2,cimg3,cimg4,cimg5,cimg6,cimg7,cimg8,cimg9,cimg10,cimg11,cimg12,cimg13,cimg14,cimg15,cimg16,cimg17,cimg18,cimg19,cimg20,cimg21,cimg22,cimg23,cimg24,cimg25,cimg26,cimg27,cimg28,cimg29,cimg30,cimg31]
 let cimg = pickRandom(commandimages)
 
 // short story
