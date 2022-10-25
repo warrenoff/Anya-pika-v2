@@ -8382,7 +8382,7 @@ const allmenu = `╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛�
 ❒✗ ${prefix}delvote
 ❒✗ ${prefix}couplepp
 
- *━━━〈  🔪 Anti Link 🔪  〉━━━*
+ *━━━〈  🔪 AntiLink 🔪  〉━━━*
 
 ❒✗ ${prefix}antiwame
 ❒✗ ${prefix}antilinkgc
@@ -9339,26 +9339,99 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-case 'randomimagemenu': {
+case 'funmenu2': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Random Image Menu')
-let teks = `╔═══════➻「 𝓻𝓪𝓷𝓭𝓸𝓶 𝓲𝓶𝓰」	
-╿
-╠🔥${prefix}𝙲𝚘𝚏𝚏𝚎𝚎
-╠🔥${prefix}𝙱𝚝𝚜
-╠🔥${prefix}𝚆𝚘𝚘𝚏
-╠🔥${prefix}𝙼𝚎𝚘𝚠
-╠🔥${prefix}𝙻𝚒𝚣𝚊𝚛𝚍
-╠🔥${prefix}𝚆𝚊𝚕𝚕𝚗𝚎𝚘𝚗
-╠🔥${prefix}𝚆𝚊𝚕𝚕𝚙𝚞𝚋𝚐
-╠🔥${prefix}𝚆𝚊𝚕𝚕𝚖𝚕
-╠🔥${prefix}𝚆𝚊𝚕𝚕𝚛𝚊𝚗𝚍𝚘𝚖
-╠🔥${prefix}𝚆𝚊𝚕𝚕𝚌𝚘𝚍𝚎
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚠𝚊𝚕𝚕 [𝚀𝚞𝚎𝚛𝚢]
-╠🔥${prefix}𝙰𝚗𝚒𝚖𝚎𝚠𝚊𝚕𝚕2 [𝚀𝚞𝚎𝚛𝚢]
-╽
-╚┅┅┅┅┅┅┅༻` 
+let teks = `ㅤㅤ࿙༺⟅∙𝑭𝒖𝒏 𝑴𝒆𝒏𝒖 𝟐∙⟆༻࿚
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓕𝓾𝓷2 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}foolish? 
+❒✗ ${prefix}smart? 
+❒✗ ${prefix}idiot? 
+❒✗ ${prefix}gay? 
+❒✗ ${prefix}lesbi? 
+❒✗ ${prefix}bastard? 
+❒✗ ${prefix}stubble? 
+❒✗ ${prefix}dog? 
+❒✗ ${prefix}fuck? 
+❒✗ ${prefix}ape? 
+❒✗ ${prefix}noob? 
+❒✗ ${prefix}great? 
+❒✗ ${prefix}horny? 
+❒✗ ${prefix}wibu? 
+❒✗ ${prefix}asshole? 
+❒✗ ${prefix}handsome? 
+❒✗ ${prefix}beautiful? 
+❒✗ ${prefix}cute? 
+❒✗ ${prefix}kind? 
+❒✗ ${prefix}ugly? 
+❒✗ ${prefix}pretty? 
+❒✗ ${prefix}lesbian? 
+❒✗ ${prefix}randi? 
+❒✗ ${prefix}gandu? 
+❒✗ ${prefix}madarchod? 
+❒✗ ${prefix}kala? 
+❒✗ ${prefix}gora? 
+❒✗ ${prefix}chutiya? 
+❒✗ ${prefix}nibba? 
+❒✗ ${prefix}nibbi? 
+❒✗ ${prefix}bhosdiwala? 
+❒✗ ${prefix}chutmarika? 
+❒✗ ${prefix}bokachoda? 
+❒✗ ${prefix}stupid? 
+❒✗ ${prefix}suarerbaccha? 
+❒✗ ${prefix}bolochoda? 
+❒✗ ${prefix}muthal? 
+❒✗ ${prefix}muthbaaz? 
+❒✗ ${prefix}randibaaz? 
+❒✗ ${prefix}topibaaz? 
+❒✗ ${prefix}cunt? 
+❒✗ ${prefix}nerd? 
+❒✗ ${prefix}behenchod? 
+❒✗ ${prefix}behnchoda? 
+❒✗ ${prefix}bhosdika? 
+❒✗ ${prefix}nigger? 
+❒✗ ${prefix}lund? 
+❒✗ ${prefix}nigga? 
+❒✗ ${prefix}tharki? 
+❒✗ ${prefix}mumu? 
+❒✗ ${prefix}rascal? 
+❒✗ ${prefix}scumbag? 
+❒✗ ${prefix}comrade? 
+❒✗ ${prefix}fagot? 
+❒✗ ${prefix}scoundrel? 
+❒✗ ${prefix}ditch? 
+❒✗ ${prefix}dope? 
+❒✗ ${prefix}lit? 
+❒✗ ${prefix}dumbass? 
+❒✗ ${prefix}sexy? 
+❒✗ ${prefix}crackhead? 
+❒✗ ${prefix}motherfucker? 
+❒✗ ${prefix}dogla? 
+❒✗ ${prefix}bewda? 
+❒✗ ${prefix}boka? 
+❒✗ ${prefix}khanki? 
+❒✗ ${prefix}bal? 
+❒✗ ${prefix}sucker? 
+❒✗ ${prefix}fuckboy? 
+❒✗ ${prefix}playboy? 
+❒✗ ${prefix}fuckgirl? 
+❒✗ ${prefix}playgirl? 
+❒✗ ${prefix}hot? 
+┊
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻` 
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -9687,35 +9760,47 @@ case 'nsfwmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Nsfw Menu')
-let teks =  `╔═══════➻「 𝓷𝓼𝓯𝔀 」	
-╿
-╠🔥${prefix}𝙷𝚎𝚗𝚝𝚊𝚒𝚟𝚒𝚍𝚎𝚘
-╠🔥${prefix}𝚈𝚞𝚛𝚒
-╠🔥${prefix}𝙼𝚊𝚜𝚝𝚞𝚛𝚋𝚊𝚝𝚒𝚘𝚗
-╠🔥${prefix}𝚃𝚑𝚒𝚐𝚑𝚜
-╠🔥${prefix}𝙿𝚞𝚜𝚜𝚢
-╠🔥${prefix}𝙿𝚊𝚗𝚝𝚒𝚎𝚜
-╠🔥${prefix}𝙾𝚛𝚐𝚢
-╠🔥${prefix}𝙰𝚑𝚎𝚐𝚊𝚘
-╠🔥${prefix}𝙰𝚜𝚜
-╠🔥${prefix}𝙱𝚍𝚜𝚖
-╠🔥${prefix}𝙱𝚕𝚘𝚠𝚓𝚘𝚋
-╠🔥${prefix}𝙲𝚞𝚌𝚔𝚘𝚕𝚍
-╠🔥${prefix}𝙴𝚛𝚘
-╠🔥${prefix}𝙶𝚊𝚜𝚖
-╠🔥${prefix}𝙲𝚞𝚖
-╠🔥${prefix}𝙵𝚎𝚖𝚍𝚘𝚖
-╠🔥${prefix}𝙵𝚘𝚘𝚝
-╠🔥${prefix}𝙶𝚊𝚗𝚐𝚋𝚊𝚗𝚐
-╠🔥${prefix}𝙶𝚕𝚊𝚜𝚜𝚎𝚜
-╠🔥${prefix}𝙹𝚊𝚑𝚢
-╠🔥${prefix}𝚃𝚛𝚊𝚙
-╠🔥${prefix}𝙱𝚕𝚘𝚠𝚓𝚘𝚋𝚐𝚒𝚏
-╠🔥${prefix}𝚂𝚙𝚊𝚗𝚔
-╠🔥${prefix}𝙷𝚗𝚎𝚔𝚘
-╠🔥${prefix}𝙽𝚠𝚊𝚒𝚏𝚞
-╽
-╚┅┅┅┅┅┅┅༻`
+let teks =  `ㅤㅤ࿙༺⟅∙𝑵𝑭𝑺𝑾 𝑴𝒆𝒏𝒖∙⟆༻࿚
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓝𝓼𝓯𝔀 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}hentaivideo
+❒✗ ${prefix}yuri
+❒✗ ${prefix}masterbation 
+❒✗ ${prefix}thighs
+❒✗ ${prefix}pussy
+❒✗ ${prefix}panties
+❒✗ ${prefix}orgy
+❒✗ ${prefix}ahegao
+❒✗ ${prefix}ass
+❒✗ ${prefix}bdsm
+❒✗ ${prefix}blowjob
+❒✗ ${prefix}cuckold
+❒✗ ${prefix}ero
+❒✗ ${prefix}gasm
+❒✗ ${prefix}cum
+❒✗ ${prefix}fendom
+❒✗ ${prefix}foot
+❒✗ ${prefix}gangbang
+❒✗ ${prefix}glasses
+❒✗ ${prefix}jahy
+❒✗ ${prefix}trap
+❒✗ ${prefix}blowjobgif
+❒✗ ${prefix}spank
+❒✗ ${prefix}hneko
+❒✗ ${prefix}nwaifu
+┊
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻`
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -10307,32 +10392,48 @@ sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
-case 'othermenu': {
+case 'funmenu2': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Other Menu')
-let teks =  `╔═══════➻「 𝓸𝓽𝓱𝓮𝓻 」	
-╿
-╠🔥${prefix}𝙰𝚏𝚔
-╠🔥${prefix}𝚁𝚎𝚊𝚍𝚖𝚘𝚛𝚎 [𝚃𝚎𝚡𝚝]
-╠🔥${prefix}𝚃𝚘𝚟𝚒𝚎𝚠𝚘𝚗𝚌𝚎
-╠🔥${prefix}𝙲𝚑𝚊𝚝𝚒𝚗𝚏𝚘
-╠🔥${prefix}𝙰𝚕𝚒𝚟𝚎
-╠🔥${prefix}𝚂𝚌𝚛𝚒𝚙𝚝
-╠🔥${prefix}𝚂𝚙𝚎𝚎𝚍𝚝𝚎𝚜𝚝
-╠🔥${prefix}𝙿𝚒𝚗𝚐
-╠🔥${prefix}𝙾𝚠𝚗𝚎𝚛
-╠🔥${prefix}𝙼𝚎𝚗𝚞
-╠🔥${prefix}𝙳𝚎𝚕𝚎𝚝𝚎
-╠🔥${prefix}𝙲𝚑𝚊𝚝𝚒𝚗𝚏𝚘
-╠🔥${prefix}𝚀𝚞𝚘𝚝𝚎𝚍
-╠🔥${prefix}𝙻𝚒𝚜𝚝𝚙𝚌
-╠🔥${prefix}𝙻𝚒𝚜𝚝𝚐𝚌
-╠🔥${prefix}𝙳𝚘𝚗𝚊𝚝𝚎
-╠🔥${prefix}𝚁𝚎𝚚𝚞𝚎𝚜𝚝
-╠🔥${prefix}𝚁𝚎𝚙𝚘𝚛𝚝 [𝙱𝚞𝚐]
-╽
-╚┅┅┅┅┅┅┅༻` 
+let teks =  `ㅤㅤ࿙༺⟅∙𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖∙⟆༻࿚
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
+╭╼━━᚜ 𝓞𝔀𝓷𝓮𝓻 𝓶𝓮𝓷𝓾 ᚛━╾ᐧᐧᐧᐧ⳹
+┊
+❒✗ ${prefix}self
+❒✗ ${prefix}public
+❒✗ ${prefix}antitag
+❒✗ ${prefix}RentBot
+❒✗ ${prefix}Rentlist
+❒✗ ${prefix}ban
+❒✗ ${prefix}banchat
+❒✗ ${prefix}deletethis
+❒✗ ${prefix}join
+❒✗ ${prefix}leavegc
+❒✗ ${prefix}setbio
+❒✗ ${prefix}bcgroup
+❒✗ ${prefix}bcall
+❒✗ ${prefix}bcimage
+❒✗ ${prefix}bcvideo
+❒✗ ${prefix}bcaudio
+❒✗ ${prefix}bclocation
+❒✗ ${prefix}setppbot
+❒✗ ${prefix}setexif
+❒✗ ${prefix}block
+❒✗ ${prefix}unblock
+❒✗ ${prefix}coowner
+┊
+╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻` 
 let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
