@@ -8504,7 +8504,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
-thumbnail: `${cda}`,
+thumbnail: cda,
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${link1}`
