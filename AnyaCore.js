@@ -8680,7 +8680,7 @@ const allmenu = `╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛�
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
 🔥 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝘂𝘀𝗲𝗿𝘀 :
-┊➥ ${Object.keys(global.db.users).length} users
+┊➥ ${Object.keys(global.db.data.users).length} users
 ┝┅━┅━┅━┅━┅━♡
 🍓 𝗕𝗼𝘁 𝗿𝘂𝗻𝘁𝗶𝗺𝗲 :
 ┊➥ ${runtime(process.uptime())}
