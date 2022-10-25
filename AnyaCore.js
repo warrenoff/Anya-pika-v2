@@ -8674,6 +8674,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 case 'allmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
+let metadata = await AnyaPika.groupMetadata(i)
 var unicorn = await getBuffer(picak+'All Menu')
 const allmenu = `${metadata.participants.length ? metadata.participants.length : "Pta noi"}
 ❒✗ ${prefix}ownermenu
