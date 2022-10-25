@@ -161,17 +161,6 @@ const {
    const isInventoryMonay = cekDuluJoinAdaApaKagaMonaynyaDiJson(m.sender)
    const ikan = ['🐟','🐠','🐡']   
 
-async function startAnyaPika() {
-    const AnyaPika = AnyaPikaConnect({
-        logger: pino({ level: 'silent' }),
-        printQRInTerminal: true,
-        browser: ['Subscribe Pika','Safari','1.0.0'],
-        auth: state
-    })
-
-let metadata2 = AnyaPika.groupMetadata(anu.id)
-const xmembers = metadata2.participants.length
-
 
 //rpg database\\
  let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
@@ -8686,7 +8675,7 @@ case 'allmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
-const allmenu =  `${xmembers}th member
+const allmenu =  ${metadata.participants.length ? metadata.participants.length : "Pta noi"}
 ❒✗ ${prefix}ownermenu
 ❒✗ ${prefix}groupmenu
 ❒✗ ${prefix}antilinkmenu 
