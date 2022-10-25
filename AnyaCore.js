@@ -9760,7 +9760,6 @@ case 'nsfwmenu': {
 if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
 if (!m.isGroup) return replay(mess.grouponly)
-if (!AntiNsfw) return reply(mess.nonsfw)
 var unicorn = await getBuffer(picak+'Nsfw Menu')
 let teks =  `ㅤㅤ࿙༺⟅∙𝑵𝑭𝑺𝑾 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
