@@ -1088,6 +1088,8 @@ let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
 let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
+let commandimages = [cimg1,cimg2]
+let cimg = pickRandom(commandimages)
 
 // short story
 async function cerpen (category) {
@@ -8486,8 +8488,6 @@ break
 case 'alive': case 'panel': case 'menu': case 'help': case '?': case 'commands': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-abc = [`fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg1.jpg')`,`fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg2.jpg')`]
-cda = abc[Math.floor(Math.random() * (abc.length))]
 AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 let text  = `${global.aliveMessage}`
 let buttons = [
@@ -8504,7 +8504,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
 body: `${global.MenuDocCap}`, 
-thumbnail: cda,
+thumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Command-image/${cimg}.jpg')`,`fs.readFileSync('./AnyaPikaMedia/theme/Command-image/Cimg2.jpg'),
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${link1}`
