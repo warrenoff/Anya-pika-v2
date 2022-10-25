@@ -8083,7 +8083,7 @@ break
 case 'alive': case 'panel': case 'menu': case 'help': case '?': case 'commands': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
+AnyaPika.sendMessage(from, { react: { text: `${menureactemoji}`, key: m.key }})
 let text  = `${global.aliveMessage}`
 let buttons = [
 {buttonId: `Listmenu`, buttonText: {displayText: '🥵 𝘓𝘪𝘴𝘵 𝘮𝘦𝘯𝘶'}, type: 1},
