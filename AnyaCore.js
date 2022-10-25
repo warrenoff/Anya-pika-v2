@@ -8674,11 +8674,23 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 case 'allmenu': {
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
-let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
-for (let i of anu) {
-let metadata = await AnyaPika.groupMetadata(i)
 var unicorn = await getBuffer(picak+'All Menu')
-const allmenu = `${metadata.participants.length ? metadata.participants.length : "Pta noi"}
+const allmenu = `╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
+┊➥ ${pushname}
+┝┅━┅━┅━┅━┅━♡
+🔥 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝘂𝘀𝗲𝗿𝘀 :
+┊➥ ${Object.keys(global.db.users).length} users
+┝┅━┅━┅━┅━┅━♡
+🍓 𝗕𝗼𝘁 𝗿𝘂𝗻𝘁𝗶𝗺𝗲 :
+┊➥ ${runtime(process.uptime())}
+┝┅━┅━┅━┅━┅━♡
+🥵 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${global.ownername}
+┝┅━┅━┅━┅━┅━♡
+🎃 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
 ❒✗ ${prefix}ownermenu
 ❒✗ ${prefix}groupmenu
 ❒✗ ${prefix}antilinkmenu 
@@ -9207,7 +9219,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: allmenu,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${global.BotName2}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buons,
 headerType: 4,
 contextInfo:{externalAdReply:{
