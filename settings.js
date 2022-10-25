@@ -21,26 +21,6 @@ global.available = true //auto available (true to on, false to off)
 //--------Semt menu variants--------\\
 global.vidmenu = fs.readFileSync("./AnyaPikaMedia/theme/Anya-Bot.mp4") //gif and video menu
 
-//--------Documents variants--------\\
-global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
-global.doc2 = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-global.doc3 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-global.doc4 = 'application/zip'
-global.doc5 = 'application/pdf'
-global.doc6 = 'application/vnd.android.package-archive'
-
-//-------Symbols variants--------\\
-symb1 = '-'
-symb2 = '.'
-symb3 = ','
-symb4 = '!'
-symb5 = '+'
-symb6 = '#'
-symb7 = '_'
-symb8 = '%'
-symb9 = '$'
-symb10 = ''
-
 //--------Owner v card--------\\
 global.vcardowner = ['918811074852'] // Owner number //
 global.ownername = "3.69_Pika" // Owner name //
@@ -76,6 +56,59 @@ global.thum = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // thumb pic 
 global.log0 = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // logo pic //
 global.err4r = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // error pic //
 global.thumb = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // thumb pic //
+
+//--------Documents variants--------\\
+global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+global.doc2 = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+global.doc3 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+global.doc4 = 'application/zip'
+global.doc5 = 'application/pdf'
+global.doc6 = 'application/vnd.android.package-archive'
+
+//-------Symbols variants--------\\
+symb1 = '-'
+symb2 = '.'
+symb3 = ','
+symb4 = '!'
+symb5 = '+'
+symb6 = '#'
+symb7 = '_'
+symb8 = '%'
+symb9 = '$'
+symb10 = ''
+
+//--------Commands docs images--------\\
+Cimg1 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg1.jpg")
+Cimg2 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg2.jpg")
+Cimg3 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg3.jpg")
+Cimg4 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg4.jpg")
+Cimg5 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg5.jpg")
+Cimg6 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg6.jpg")
+Cimg7 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg7.jpg")
+Cimg8 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg8.jpg")
+Cimg9 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg9.jpg")
+Cimg10 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg10.jpg")
+Cimg11 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg11.jpg")
+Cimg12 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg12.jpg")
+Cimg13 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg13.jpg")
+Cimg14 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg14.jpg")
+Cimg15 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg15.jpg")
+Cimg16 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg16.jpg")
+Cimg17 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg17.jpg")
+Cimg18 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg18.jpg")
+Cimg19 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg19.jpg")
+Cimg20 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg20.jpg")
+Cimg21 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg21.jpg")
+Cimg22 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg22.jpg")
+Cimg23 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg23.jpg")
+Cimg24 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg24.jpg")
+Cimg25 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg25.jpg")
+Cimg26 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg26.jpg")
+Cimg27 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg27.jpg")
+Cimg28 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg28.jpg")
+Cimg29 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg29.jpg")
+Cimg30 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg30.jpg")
+Cimg31 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg31.jpg")
 
 //--------Database--------\\
 global.premium = ['918811074852'] // premium numbers //
