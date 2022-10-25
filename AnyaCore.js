@@ -187,7 +187,7 @@ let tebakkalimat = db.data.game.kalimat = []
 let tebaklirik = db.data.game.lirik = []
 let tebaktebakan = db.data.game.tebakan = []
 let vote = db.data.others.vote = []
-let metadata2 = await AnyaPika.groupMetadata(anu.id)
+let metadata2 = AnyaPika.groupMetadata(anu.id)
 const xmembers = metadata2.participants.length
 
 module.exports = AnyaPika = async (AnyaPika, m, chatUpdate, store) => {
