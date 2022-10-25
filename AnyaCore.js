@@ -8297,7 +8297,7 @@ case 'description':
 	if (isBanChat) return reply(mess.banChat)
 reply(`ㅤㅤ࿙⳼ 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 ⳹࿚
 
-${metadata.desc}`)
+${groupMetadata.desc}`)
 break
 case 'antitag': {
 if (isBan) return reply(mess.ban)	 			
