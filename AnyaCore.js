@@ -1092,6 +1092,8 @@ let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
 let menuimages = [thumb1,thumb2,thumb3,thumb4,thumb5,thumb6,thumb7,thumb8,thumb9,thumb10,thumb11,thumb12,thumb13,thumb14,thumb15,thumb16,thumb17,thumb18,thumb19,thumb20,thumb21,thumb22,thumb23,thumb24,thumb25,thumb26,thumb27,thumb28,thumb29,thumb30,thumb31]
 let menuimage = pickRandom(menuimages)
+let menureact = [global.reactmoji1,global.reactmoji2,global.reactmoji3,global.reactmoji4,global.reactmoji5,global.reactmoji6,global.reactmoji7,global.reactmoji8,global.reactmoji9,global.reactmoji10,global.reactmoji11]
+let menureactemoji = pickRandom(menureact)
 
 // short story
 async function cerpen (category) {
@@ -9757,9 +9759,8 @@ AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
 case 'nsfwmenu': {
-if (isBan) return reply(mess.banned)	 			
-if (isBanChat) return reply(mess.bangc)
-if (!m.isGroup) return replay(mess.grouponly)
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'Nsfw Menu')
 let teks =  `ㅤㅤ࿙༺⟅∙𝑵𝑭𝑺𝑾 𝑴𝒆𝒏𝒖∙⟆༻࿚
 
