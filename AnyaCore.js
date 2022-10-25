@@ -9757,8 +9757,9 @@ AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 }
 break
 case 'nsfwmenu': {
-if (isBan) return reply(mess.ban)
-if (isBanChat) return reply(mess.banChat)
+if (isBan) return reply(mess.banned)	 			
+if (isBanChat) return reply(mess.bangc)
+if (!m.isGroup) return replay(mess.grouponly)
 if (!AntiNsfw) return reply(mess.nonsfw)
 var unicorn = await getBuffer(picak+'Nsfw Menu')
 let teks =  `ㅤㅤ࿙༺⟅∙𝑵𝑭𝑺𝑾 𝑴𝒆𝒏𝒖∙⟆༻࿚
@@ -9806,8 +9807,8 @@ let buttns = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
 let ntus = {
-image: unicorn,
-jpegThumbnail: log0,
+image: fs.readFileSync('./AnyaPikaMedia/theme/Menu/Menuimg.jpg'),
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}`,
 buttons: buttns,
@@ -9815,7 +9816,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("AnyaPikaMedia/theme/Anyapic.jpg"),
+thumbnail: menuimage,
 mediaType:1,
 mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
 sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
