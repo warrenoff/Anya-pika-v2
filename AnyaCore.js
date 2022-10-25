@@ -1,4 +1,4 @@
-require('./settings','./nexus')
+require('./settings')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
 const util = require('util')
@@ -8295,7 +8295,6 @@ break
 case 'description': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-        let metadata = await AnyaPika.groupMetadata(anu.id)            
 reply(`ㅤㅤ࿙⳼ 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 ⳹࿚
 
 ${metadata.desc}`)
