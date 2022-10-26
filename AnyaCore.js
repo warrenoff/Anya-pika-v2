@@ -7918,6 +7918,15 @@ ${groupMetadata.desc}
 
 𝘏𝘦𝘳𝘦'𝘴 𝘰𝘶𝘳 𝘨𝘳𝘰𝘶𝘱 𝘥𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯 _${pushname}_ 𝘣𝘢𝘣𝘺❤️`)
 break
+case 'description': 
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+reply(`ㅤ ㅤ࿙⳼ 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 ⳹࿚
+
+${groupMetadata.desc}
+
+𝘏𝘦𝘳𝘦'𝘴 𝘰𝘶𝘳 𝘨𝘳𝘰𝘶𝘱 𝘥𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯 _${pushname}_ 𝘣𝘢𝘣𝘺❤️`)
+break
 case 'antitag': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
