@@ -272,12 +272,12 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
             return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
     }
     
-    AnyaPika.sendContact = async (jid, kon, quoted = '', opts = {}) => {
+        AnyaPika.sendContact = async (jid, kon, quoted = '', opts = {}) => {
 	let list = []
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await AnyaPika.getName(i + '@s.whatsapp.net'),
-		vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await AnyaPika.getName(i + '@s.whatsapp.net')}\nFN:`${global.ownername}`\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here darling if you want to chat with Pika\nitem2.EMAIL;type=INTERNET:${link1}\nitem2.X-ABLabel:GitHub\nitem3.URL:${link1}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+		vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await Miku.getName(i + '@s.whatsapp.net')}\nFN:${global.ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${link1}\nitem2.X-ABLabel:GitHub\nitem3.URL:${link1}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	AnyaPika.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
