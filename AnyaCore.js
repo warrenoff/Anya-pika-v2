@@ -1996,15 +1996,15 @@ let teks = `╭╼━━━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛
 │                                                 
 │             *༺ TAGALL ༻*
 │
-🔥 *Group name* : ${groupMetadata.subject}
+${menureactemoji} 𝗚𝗿𝗼𝘂𝗽 𝗻𝗮𝗺𝗲 : ${groupMetadata.subject}
 ├───────────♡
-🔥 *Message* : ${args.join(" ") ? args.join(" ") : 'no message'}
+${themeemojimsg} 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 : ${args.join(" ") ? args.join(" ") : 'no message'}
 ├───────────♡
-🔥 *Announcer* : @${m.sender.split('@')[0]}
+${allmenureactemoji} 𝗔𝗻𝗻𝗼𝘂𝗻𝗰𝗲𝗿 : @${m.sender.split('@')[0]}
 ╰╼━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹ \n\n╭╼━━━━᚜ 𝓜𝓮𝓶𝓫𝓮𝓻𝓼 𝓝𝓪𝓶𝓮 ᚛━━╾ᐧᐧᐧᐧ⳹
 ╽                                                   `
                 for (let mem of participants) {
-                teks += `\n┃🔥@${mem.id.split('@')[0]}`
+                teks += `\n┃${themeemojimsg}@${mem.id.split('@')[0]}`
                 }
                 AnyaPika.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
@@ -5859,7 +5859,7 @@ let search = await yts(args.join(" "))
 let teks = '*| YOUTUBE SEARCH |*\n\n Result From '+text+'\n\n'
 let no = 1
 for (let i of search.all) {
-teks += `${globalthemeemoji} No : ${no++}\n${globalthemeemoji} Type : ${i.type}\n${globalthemeemoji} Video ID : ${i.videoId}\n${globalthemeemoji} Title : ${i.title}\n${globalthemeemoji} Views : ${i.views}\n${globalthemeemoji} Duration : ${i.timestamp}\n${globalthemeemoji} Uploaded : ${i.ago}\n${globalthemeemoji} Author : ${i.author.name}\n${globalthemeemoji} Url : ${i.url}\n\n─────────────────\n\n`
+teks = `${globalthemeemoji} No : ${no++}\n${globalthemeemoji} Type : ${i.type}\n${globalthemeemoji} Video ID : ${i.videoId}\n${globalthemeemoji} Title : ${i.title}\n${globalthemeemoji} Views : ${i.views}\n${globalthemeemoji} Duration : ${i.timestamp}\n${globalthemeemoji} Uploaded : ${i.ago}\n${globalthemeemoji} Author : ${i.author.name}\n${globalthemeemoji} Url : ${i.url}\n\n─────────────────\n\n`
 }
 AnyaPika.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
 }
