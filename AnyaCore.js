@@ -8824,7 +8824,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: menuimage,
 caption: allmenu,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${global.BotName2}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: footer\n`𝗠𝘆 𝗻𝗮𝗺𝗲 : ${global.BotName2}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buons,
 headerType: 4,
 contextInfo:{externalAdReply:{
