@@ -748,6 +748,8 @@ return list[Math.floor(list.length * Math.random())]
 //document randomizer
 let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
+let tagallMsg = [tag1,tag2,tag3,tag4,tag5,tag6,tag7,tag8,tag9,tag10]
+let tagmsg = pickRandom(tagallMsg)
 let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
 let footermsg = [footer1,footer2,footer3,footer4,footer5,footer6,footer7,footer8,footer9,footer10,footer11,footer12,footer13,footer14,footer15,footer16,footer17,footer18,footer19,footer20,footer21,footer22,footer23,footer24,footer25,footer26,footer27,footer28,footer29,footer30,footer31,footer32,footer33,footer34,footer35,footer36]
@@ -8882,7 +8884,7 @@ let teks  =  `ㅤㅤ࿙༺⟅∙𝑶𝒘𝒏𝒆𝒓 𝑴𝒆𝒏𝒖∙⟆༻�
 ┊
 ╰╼━━━━━━━━━━━╾ᐧᐧᐧᐧ༻` 
 let buttons = [
-{buttonId: `${prefix}tagall 𝘏𝘦𝘺 𝘦𝘷𝘦𝘳𝘺𝘰𝘯𝘦 𝘤𝘰𝘮𝘦 𝘰𝘯𝘭𝘪𝘯𝘦 𝘢𝘯𝘥 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘢𝘸𝘦𝘴𝘰𝘮𝘦 𝘉𝘰𝘵.`, buttonText: {displayText: '𝘛𝘢𝘨𝘢𝘭𝘭✨'}, type: 1},
+{buttonId: `${prefix}tagall ${tagmsg}`, buttonText: {displayText: '𝘛𝘢𝘨𝘢𝘭𝘭✨'}, type: 1},
 {buttonId: `${prefix}owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳❤️'}, type: 1}
 ]
 let ntus = {
@@ -8895,7 +8897,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: `${cimg}`,
+thumbnail: menuimage,
 mediaType:1,
 mediaUrl: `${link1}`,
 sourceUrl: `${linkgit}`
