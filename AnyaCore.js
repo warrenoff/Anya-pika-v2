@@ -7913,7 +7913,6 @@ case 'description':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
         if (!m.isGroup) return replay(`${mess.group}`)
-reply(`𝘏𝘦𝘳𝘦'𝘴 𝘰𝘶𝘳 𝘨𝘳𝘰𝘶𝘱 𝘥𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯 _${pushname}_ 𝘣𝘢𝘣𝘺❤️`)
 let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
