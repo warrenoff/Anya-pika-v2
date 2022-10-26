@@ -38,7 +38,6 @@ global.BotName4 = 'Anya' // Name for media caption of AnyaCore.js //
 global.linkz = "https://wa.me/+91813078451" // Theme url which will be displayed on whatsapp //
 global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
 global.botscript = 'Not available publicly' // Script link //
-global.themeemoji = "🥵" // Theme emoji//
 global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ\n\n\n\n\n\n\n\n\n\n\n🥵🥵🥵 " // sticker watermark packname //
 global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
 footer = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪❤️' // Footer //
@@ -134,7 +133,20 @@ global.ntilink = []
 //--------Commands Doc captions--------\\
 global.MenuDocCap = '𝘉𝘦𝘴𝘵 𝘧𝘳𝘪𝘦𝘯𝘥𝘭𝘺 𝘣𝘰𝘵 𝘧𝘰𝘳 𝘺𝘰𝘶...' // Alive message document caption //
 
-//--------Commands react--------\\
+//--------Theme emoji--------\\
+global.themeemoji1 = "🥵" // Theme emoji//
+global.themeemoji2 = "❤️‍🔥" // Theme emoji//
+global.themeemoji3 = "🖤" // Theme emoji//
+global.themeemoji4 = "🐦" // Theme emoji//
+global.themeemoji5 = "🐤" // Theme emoji//
+global.themeemoji6 = "💖" // Theme emoji//
+global.themeemoji7 = "❤️" // Theme emoji//
+global.themeemoji8 = "🔥" // Theme emoji//
+global.themeemoji9 = "😈" // Theme emoji//
+global.themeemoji10 = "🎃" // Theme emoji//
+
+//-------------Commands reacts-------------\\
+//---Menu---\\
 global.reactmoji1 = "🤖" // Menu //
 global.reactmoji2 = "💋" // Menu //
 global.reactmoji3 = "💖" // Menu //
@@ -146,6 +158,22 @@ global.reactmoji8 = "😈" // Menu //
 global.reactmoji9 = "🥵" // Menu //
 global.reactmoji10 = "🔥" // Menu //
 global.reactmoji11 = "❤️" // Menu //
+global.reactmoji12 = "🖤" // Menu //
+global.reactmoji13 = "❤️‍🔥" // Menu //
+global.reactmoji14 = "🇮🇳" // Menu //
+//---AllMenu---\\
+global.reactmoji15 = "🐦" // AllMenu //
+global.reactmoji16 = "🐤" // AllMenu //
+global.reactmoji17 = "🧾" // AllMenu //
+global.reactmoji18 = "📃" // AllMenu //
+global.reactmoji19 = "🎃" // AllMenu //
+global.reactmoji20 = "📝" // AllMenu //
+global.reactmoji21 = "📜" // AllMenu //
+global.reactmoji22 = "🔥" // AllMenu //
+global.reactmoji23 = "💟" // AllMenu //
+global.reactmoji24 = "💙" // AllMenu //
+global.reactmoji25 = "👿" // AllMenu //
+global.reactmoji26 = "🧡" // AllMenu //
 
 //--------Others--------\\
 global.sessionName = 'session'
