@@ -40,13 +40,50 @@ global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
 global.botscript = 'Not available publicly' // Script link //
 global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ\n\n\n\n\n\n\n\n\n\n\n🥵🥵🥵 " // sticker watermark packname //
 global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
-footer = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪❤️' // Footer //
 
 //--------Index--------\\
 global.BotName2 = "Anya さん" // Bot name for welcome and left message // 
 actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
 itemcount1 = '69696969' // item count in welcome message //
 itemcount2 = '77777777' // item count in left message //
+
+//--------footer--------\\
+footer1 = '𝓠𝓾𝓮𝓮𝓷 𝓐𝓷𝔂𝓪👑' // Footer //
+footer2 = '𝓠𝓾𝓮𝓮𝓷 𝓐𝓷𝔂𝓪❤️' // Footer //
+footer3 = '𝓠𝓾𝓮𝓮𝓷 𝓐𝓷𝔂𝓪🖤' // Footer //
+footer4 = '𝓠𝓾𝓮𝓮𝓷 𝓐𝓷𝔂𝓪🔥' // Footer //
+footer5 = '𝓠𝓾𝓮𝓮𝓷 𝓐𝓷𝔂𝓪🍫' // Footer //
+footer6 = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪👑' // Footer //
+footer7 = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪❤️' // Footer //
+footer8 = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪🖤' // Footer //
+footer9 = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪🔥' // Footer //
+footer10 = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪🍫' // Footer //
+footer11 = '𝓜𝓲𝓼𝓼 𝓐𝓷𝔂𝓪👑' // Footer //
+footer12 = '𝓜𝓲𝓼𝓼 𝓐𝓷𝔂𝓪❤️' // Footer //
+footer13 = '𝓜𝓲𝓼𝓼 𝓐𝓷𝔂𝓪🖤' // Footer //
+footer14 = '𝓜𝓲𝓼𝓼 𝓐𝓷𝔂𝓪🔥' // Footer //
+footer15 = '𝓜𝓲𝓼𝓼 𝓐𝓷𝔂𝓪🍫' // Footer //
+footer16 = '𝓐𝓷𝔂𝓪 𝓢𝓪𝓷👑' // Footer //
+footer17 = '𝓐𝓷𝔂𝓪 𝓢𝓪𝓷❤️' // Footer //
+footer18 = '𝓐𝓷𝔂𝓪 𝓢𝓪𝓷🖤' // Footer //
+footer19 = '𝓐𝓷𝔂𝓪 𝓢𝓪𝓷🔥' // Footer //
+footer20 = '𝓐𝓷𝔂𝓪 𝓢𝓪𝓷🍫' // Footer //
+footer21 = '𝓐𝓷𝔂𝓪👑' // Footer //
+footer22 = '𝓐𝓷𝔂𝓪❤️' // Footer //
+footer23 = '𝓐𝓷𝔂𝓪🖤' // Footer //
+footer24 = '𝓐𝓷𝔂𝓪🔥' // Footer //
+footer25 = '𝓐𝓷𝔂𝓪🍫' // Footer //
+footer26 = '𝓐𝓷𝔂𝓪 𝓪 𝓬𝓾𝓽𝓮 𝓑𝓸𝓽👑' // Footer //
+footer27 = '𝓐𝓷𝔂𝓪 𝓪 𝓬𝓾𝓽𝓮 𝓑𝓸𝓽❤️' // Footer //
+footer28 = '𝓐𝓷𝔂𝓪 𝓪 𝓬𝓾𝓽𝓮 𝓑𝓸𝓽🖤' // Footer //
+footer29 = '𝓐𝓷𝔂𝓪 𝓪 𝓬𝓾𝓽𝓮 𝓑𝓸𝓽🔥' // Footer //
+footer30 = '𝓐𝓷𝔂𝓪 𝓪 𝓬𝓾𝓽𝓮 𝓑𝓸𝓽🍫' // Footer //
+footer31 = '𝓠𝓾𝓮𝓮𝓷 𝓐𝓷𝔂𝓪💞' // Footer //
+footer32 = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪💞' // Footer //
+footer33 = '𝓜𝓲𝓼𝓼 𝓐𝓷𝔂𝓪💞' // Footer //
+footer34 = '𝓐𝓷𝔂𝓪 𝓢𝓪𝓷💞' // Footer //
+footer35 = '𝓐𝓷𝔂𝓪💞' // Footer //
+footer36 = '𝓐𝓷𝔂𝓪 𝓪 𝓬𝓾𝓽𝓮 𝓑𝓸𝓽💞' // Footer //
 
 //--------Bot theme media--------\\
 global.thum = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // thumb pic //
@@ -168,7 +205,7 @@ global.reactmoji14 = "🇮🇳" // Menu //
 //---AllMenu---\\
 global.reactmoji15 = "🐦" // AllMenu //
 global.reactmoji16 = "🐤" // AllMenu //
-global.reactmoji17 = "🧾" // AllMenu //
+global.reactmoji17 = "🍒" // AllMenu //
 global.reactmoji18 = "📃" // AllMenu //
 global.reactmoji19 = "🎃" // AllMenu //
 global.reactmoji20 = "📝" // AllMenu //
