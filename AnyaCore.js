@@ -1998,13 +1998,13 @@ let teks = `╭╼━━━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛
 │
 ${menureactemoji} 𝗚𝗿𝗼𝘂𝗽 𝗻𝗮𝗺𝗲 : ${groupMetadata.subject}
 ├───────────♡
-${themeemojimsg} 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 : ${args.join(" ") ? args.join(" ") : 'no message'}
+${globalthemeemoji} 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 : ${args.join(" ") ? args.join(" ") : 'no message'}
 ├───────────♡
 ${allmenureactemoji} 𝗔𝗻𝗻𝗼𝘂𝗻𝗰𝗲𝗿 : @${m.sender.split('@')[0]}
 ╰╼━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹ \n\n╭╼━━━━᚜ 𝓜𝓮𝓶𝓫𝓮𝓻𝓼 𝓝𝓪𝓶𝓮 ᚛━━╾ᐧᐧᐧᐧ⳹
 ╽                                                   `
                 for (let mem of participants) {
-                teks += `\n┃${themeemojimsg}@${mem.id.split('@')[0]}`
+                teks += `\n┃${globalthemeemoji}@${mem.id.split('@')[0]}`
                 }
                 AnyaPika.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
