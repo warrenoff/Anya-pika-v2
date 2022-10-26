@@ -7923,7 +7923,6 @@ let buttons = [
 await AnyaPika.sendButtonText(m.chat, buttons, jawab, botname, m, {mentions: ments})
 }
 break
-break
 case 'antitag': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
