@@ -7920,7 +7920,7 @@ ${groupMetadata.desc}`)
 let buttons = [
 { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
 ]
-await AnyaPika.sendButtonText(m.chat, buttons, jawab, botname, m, {mentions: ments})
+await AnyaPika.sendButtonText(m.chat, buttons)
 }
 break
 case 'antitag': {
