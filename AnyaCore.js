@@ -750,6 +750,8 @@ let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
 let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
+let displaylink = [link1,link2,link3,link4]
+let linkgit = pickRandom(displaylink)
 let themeemojimsg = [global.themeemoji1,global.themeemoji2,global.themeemoji3,global.themeemoji4,global.themeemoji5,global.themeemoji6,global.themeemoji7,global.themeemoji8,global.themeemoji9,global.themeemoji10]
 let globalthemeemoji = pickRandom(themeemojimsg)
 let menuimages = [thumb1,thumb2,thumb3,thumb4,thumb5,thumb6,thumb7,thumb8,thumb9,thumb10,thumb11,thumb12,thumb13,thumb14,thumb15,thumb16,thumb17,thumb18,thumb19,thumb20,thumb21,thumb22,thumb23,thumb24,thumb25,thumb26,thumb27,thumb28,thumb29,thumb30,thumb31]
@@ -2871,7 +2873,7 @@ title:"I deserve something for my hardwork",
 body: "Click to follow", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: `${linkgit}`,
+mediaUrl: `${link1}`,
 sourceUrl: `${linkgit}`
 }}
 }
@@ -2905,7 +2907,7 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: `${linkgit}`,
+mediaUrl: `${link1}`,
 sourceUrl: `${linkgit}`
 }}
 }
@@ -5899,7 +5901,7 @@ title:`${global.ownername}`,
 body:`${global.watermark}`,
 thumbnail: log0,
 mediaType:2,
-mediaUrl: `${linkgit}`,
+mediaUrl: `${link1}`,
 sourceUrl: `${linkgit}`
 }}
 }
@@ -6046,7 +6048,7 @@ title:`${global.botname}`,
 body:`${global.ownername}`,
 thumbnail: log0,
 mediaType:2,
-mediaUrl: `${linkgit}`,
+mediaUrl: `${link1}`,
 sourceUrl: `${linkgit}`
 }}}, {quoted:m})
 } catch {
@@ -6064,7 +6066,7 @@ title:`${global.botname}`,
 body:`${global.ownername}`,
 thumbnail: log0,
 mediaType:2,
-mediaUrl: `${linkgit}`,
+mediaUrl: `${link1}`,
 sourceUrl: `${linkgit}`
 }}}, {quoted:m})
 } catch {
@@ -7434,8 +7436,8 @@ title:`${global.botname}`,
 body:`${global.botname}`,
 thumbnail: log0,
 mediaType:2,
-mediaUrl: `${global.websitex}`,
-sourceUrl: `${global.websitex}`
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}}, {quoted:m})
 }
 break
@@ -7447,8 +7449,8 @@ title:`${global.botname}`,
 body:`${global.botname}`,
 thumbnail: log0,
 mediaType:2,
-mediaUrl: `${global.websitex}`,
-sourceUrl: `${global.websitex}`
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}}, {quoted:m})
 }
 break
@@ -7505,8 +7507,8 @@ title:`${global.botname}`,
 body:`${global.ownername}`,
 thumbnail: log0,
 mediaType:2,
-mediaUrl: `${global.websitex}`,
-sourceUrl: `${global.websitex}`
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8105,7 +8107,7 @@ body: `${global.MenuDocCap}`,
 thumbnail: menuimage,
 mediaType:1,
 mediaUrl: `${link1}`,
-sourceUrl: `${link2}`
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -8828,8 +8830,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -8893,8 +8895,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: `${cimg}`,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -8960,8 +8962,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9012,8 +9014,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9155,8 +9157,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9215,8 +9217,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://github.com/NEXUSAT12/"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9279,8 +9281,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://github.com/NEXUSAT12/"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9338,8 +9340,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9453,8 +9455,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9508,8 +9510,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9564,8 +9566,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9636,8 +9638,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9684,8 +9686,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9755,8 +9757,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9822,8 +9824,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -9893,8 +9895,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -10084,8 +10086,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -10132,8 +10134,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -10178,8 +10180,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -10223,8 +10225,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -10278,8 +10280,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -10332,8 +10334,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -10391,8 +10393,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -10455,8 +10457,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
@@ -10481,8 +10483,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: menuimage,
 mediaType:1,
-mediaUrl: 'https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg',
-sourceUrl: "https://i.pinimg.com/564x/1e/9a/c9/1e9ac9e3ec037fa9642fba616e4d35be.jpg"
+mediaUrl: `${link1}`,
+sourceUrl: `${linkgit}`
 }}
 }
 AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
