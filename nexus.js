@@ -11,7 +11,6 @@ const path = require('path')
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
-const pushname = m.pushName || "No Name"
 const moment = require('moment-timezone')
 
 var low
@@ -278,7 +277,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await AnyaPika.getName(i + '@s.whatsapp.net'),
-		vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await AnyaPika.getName(i + '@s.whatsapp.net')}\nFN:${global.OwnerName}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here ${pushname} if you want to chat with Pika\nitem2.EMAIL;type=INTERNET:${link1}\nitem2.X-ABLabel:GitHub\nitem3.URL:${link1x}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+		vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await AnyaPika.getName(i + '@s.whatsapp.net')}\nFN:${global.OwnerName}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here darling if you want to chat with Pika\nitem2.EMAIL;type=INTERNET:${link1}\nitem2.X-ABLabel:GitHub\nitem3.URL:${link1x}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	AnyaPika.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
