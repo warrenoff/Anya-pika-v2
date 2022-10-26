@@ -44,8 +44,6 @@ footer = '𝓐𝓷𝔂𝓪 𝓑𝔂 𝓟𝓲𝓴𝓪❤️' // Footer //
 
 //--------Index--------\\
 global.BotName2 = "Anya さん" // Bot name for welcome and left message // 
-link1 = 'https://github.com/Pika4O4' // 1st link for displaying //
-link2 = 'https://github.com/404Layla' //2nd link for displaying //
 actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
 itemcount1 = '69696969' // item count in welcome message //
 itemcount2 = '77777777' // item count in left message //
@@ -55,6 +53,12 @@ global.thum = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // thumb pic 
 global.log0 = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // logo pic //
 global.err4r = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // error pic //
 global.thumb = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // thumb pic //
+
+//--------Links displaying--------\\
+link1 = 'https://github.com/Pika4O4' // 1st link for displaying //
+link2 = 'https://github.com/404Layla' // 2nd link for displaying //
+link3 = 'https://api.whatsapp.com/send?phone=+917355622763' // 3rd link for displaying //
+link4 = 'https://api.whatsapp.com/send?phone=+918811074852' // 4th link for displaying //
 
 //--------Documents variants--------\\
 global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
