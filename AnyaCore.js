@@ -769,6 +769,10 @@ let botname3 = pickRandom(anyaname3)
 let anyaname2 = [name11,name12,name13,name14,name15]
 let botname2 = pickRandom(anyaname2)
 
+//--------Document Captions
+let doccaption = [global.Menudoccap1,global.Menudoccap2,global.Menudoccap3,global.Menudoccap4,global.Menudoccap5]
+let Menudoccap = pickRandom(doccaption)
+
 //--------Botname for command captions 
 let anyaname1 = [name1,name2,name3,name4,name5,name6,name7,name8,name9,name10]
 let botname1 = pickRandom(anyaname1) 
