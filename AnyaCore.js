@@ -311,7 +311,7 @@ message: {
 "jpegThumbnail": log0 //The picture
 },
 "title": `${global.ownername}`, 
-"description": `${botname3}`, 
+"description": `${name16}`,
 "currencyCode": "USD",
 "priceAmount1000": "2000",
 "retailerId": `${global.watermark}`,
@@ -332,7 +332,7 @@ itemCount : 1,
 status: 1,
 surface : 1,
 message: `${global.ownername}`, //
-orderTitle: `${botname3}`,
+orderTitle: `${name16}`,
 thumbnail: log0, //Pic
 sellerJid: '0@s.whatsapp.net'
 
@@ -358,7 +358,7 @@ key : {
 },
 message: {
 documentMessage: {
-title: `${botname3}`, 
+title: `${name16}`, 
 jpegThumbnail: log0
 }
 }
@@ -372,7 +372,7 @@ participant: `0@s.whatsapp.net`, ...(from ?
 },
 message: { 
 "videoMessage": { 
-"title": `${botname3}`,
+"title": `${name16}`,
 "h": `${global.ownername}`,
 'seconds': '30', 
 'caption': `${global.watermark}`,
@@ -391,7 +391,7 @@ const fgclink = {
 "groupInviteMessage": {
 "groupJid": "120363026115750939@g.us",
 "inviteCode": `${global.ownername}`,
-"groupName": `${botname3}`, 
+"groupName": `${name16}`, 
 "caption":`${global.watermark}`, 
 'jpegThumbnail': log0
 }
@@ -406,7 +406,7 @@ participant: `0@s.whatsapp.net`, ...(from ?
 },
 message: { 
  "videoMessage": { 
- "title":`${botname3}`,
+ "title":`${name16}`,
  "h": `${global.ownername}`,
  'seconds': "30", 
  'gifPlayback': 'true', 
@@ -425,7 +425,7 @@ participant: `0@s.whatsapp.net`, ...(from ?
 message: { 
 "extendedTextMessage": {
  "text":`${global.ownername}`,
-"title": `${botname3}`,
+"title": `${name16}`,
  'jpegThumbnail': log0
 }
 } 
@@ -767,7 +767,7 @@ let botname3 = pickRandom(anyaname3)
 
 //--------Botname for documents 
 let anyaname2 = [name11,name12,name13,name14,name25]
-let botname2 = pickRandom(anyaname2)
+let botname3 = pickRandom(anyaname2)
 
 //--------Botname for command captions 
 let anyaname1 = [name1,name2,name3,name4,name5,name6,name7,name8,name9,name10]
