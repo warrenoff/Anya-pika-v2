@@ -5655,7 +5655,7 @@ case 'emoji': {
 if (isBanChat) return reply(mess.banChat)
 if (!args.join(" ")) return reply('Where is the emoji?')
 emoji.get(args.join(" ")).then(async(emoji) => {
-let mese = await AnyaPika.sendMessage(m.chat, {image:{url:emoji.images[4].url}, caption: `Made by ${botname3} for ${pushname}` baby}, {quoted:m})
+let mese = await AnyaPika.sendMessage(m.chat, {image:{url:emoji.images[4].url}, caption: `Made by ${botname3} for ${pushname} baby` }, {quoted:m})
 await AnyaPika.sendMessage(from, {text:"reply #s to this image to make sticker"}, {quoted:mese})
 })
 }
