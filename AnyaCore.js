@@ -3067,17 +3067,21 @@ case 'profile': case 'myprofile':
 
      const profilexx = `💝 *USER PROFILE* 💝 
 
-╭╼━━━᚜𝓤𝓼𝓮𝓻 𝓲𝓷𝓯𝓸. ᚛━━━╾╮
-╽
-🥵 *Your name* : ${pushname}
-🐤 *Bio* : ${bioo}
-🎃 *Group name* : ${groupMetadata.subject}
-❤️ *Group admin?* : ${adn}
-🔥 *Bot name* : `${botname3}`
+╭╼━━━᚜𝓤𝓼𝓮𝓻 𝓲𝓷𝓯𝓸 ᚛━━╾ᐧᐧᐧᐧ⳹
+┊
+🥵 𝗬𝗼𝘂𝗿 𝗻𝗮𝗺𝗲 :
+┊➥ ${pushname}
+🐤 𝗬𝗼𝘂𝗿 𝗯𝗶𝗼 :
+┊➥ ${bioo}
+🎃 𝗚𝗿𝗼𝘂𝗽 𝗻𝗮𝗺𝗲 :
+┊➥ ${groupMetadata.subject}
+❤️ 𝗚𝗿𝗼𝘂𝗽 𝗮𝗱𝗺𝗶𝗻 *?* :
+┊➥ ${adn}
+🔥 𝗕𝗼𝘁 𝗻𝗮𝗺𝗲 :
+┊➥ ${botname3}
+╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
 
-╰╼━━━━━━━━━━━━━╾╯ 
-
-Please choose the buttons below to use *more commands*. ✨`
+Please choose the buttons below to use 𝗺𝗼𝗿𝗲 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀. ✨`
  
 
 
