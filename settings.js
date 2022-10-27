@@ -25,24 +25,21 @@ global.vidmenu = fs.readFileSync("./AnyaPikaMedia/theme/Anya-Bot.mp4") //gif and
 global.vcardowner = ['918811074852'] // Owner number //
 global.ownername = "3.69_Pika" // Owner name //
 global.ytname = "YT: ONYXPIKA" // Yt chanel name //
-global.socialm = "𝗚𝗶𝘁𝗵𝘂𝗯 : Pika4o4\n𝗜𝗻𝘀𝘁𝗮 : 3.69_pika" // Github or insta name //
+global.socialm = "𝗚𝗶𝘁𝗵𝘂𝗯 : Pika4o4" // Github or insta name //
 global.location = "India, Assam, Dibrugarh" // Location //
 
 //--------Bot body--------\\
 global.aliveMessage = `🦋⃟≛⃝ 𝗔𝗻𝘆𝗮ᵇʸ ᵖⁱᵏᵃ•••       ⬇️` // Alive message for menu //
 global.owner = ['918811074852','917355622763']
 global.ownertag = '918811074852' // Tag number //
-global.botname = '𝐴𝑛𝑦𝑎💫' // Bot name //
-global.BotName3 = '𝑸𝒖𝒆𝒆𝒏 𝑨𝒏𝒚𝒂 𝒗𝟐' // Bot name for AnyaCore.js //
-global.BotName4 = 'Anya' // Name for media caption of AnyaCore.js //
-global.linkz = "https://wa.me/+91813078451" // Theme url which will be displayed on whatsapp //
+global.BotName2 = 'Anya' // Name for media caption of AnyaCore.js //
+global.linkz = "https://wa.me/+918811074852" // Theme url which will be displayed on whatsapp //
 global.websitex = "https://github.com/Pika4O4" // Website to be displayed //
 global.botscript = 'Not available publicly' // Script link //
 global.packname = "𝐴𝑛𝑦𝑎💫 вσᡶ 𝖻ꪗ ρỉƙꪖ\n\n\n\n\n\n\n\n\n\n\n🥵🥵🥵 " // sticker watermark packname //
 global.author = "🥵3.69_ρỉƙꪖ" // sticker watermark author //
 
 //--------Index--------\\
-global.BotName2 = "Anya さん" // Bot name for welcome and left message // 
 actiontitle = '࿙⚜𝑨𝒏𝒚𝒂⚜࿚' // text who displays on the top of welcome and left message //
 itemcount1 = '69696969' // item count in welcome message //
 itemcount2 = '77777777' // item count in left message //
@@ -84,6 +81,32 @@ footer33 = '𝓜𝓲𝓼𝓼 𝓐𝓷𝔂𝓪💞' // Footer //
 footer34 = '𝓐𝓷𝔂𝓪 𝓢𝓪𝓷💞' // Footer //
 footer35 = '𝓐𝓷𝔂𝓪💞' // Footer //
 footer36 = '𝓐𝓷𝔂𝓪 𝓪 𝓬𝓾𝓽𝓮 𝓑𝓸𝓽💞' // Footer //
+
+//--------Random name--------\\
+name1 = 'Anya' // Random name //
+name2 = '𝘈𝘯𝘺𝘢' // Random name //
+name3 = 'Anya さん' // Random name //
+name4 = 'Anya San' // Random name //
+name5 = '𝘈𝘯𝘺𝘢 𝘚𝘢𝘯' // Random name //
+name6 = 'Queen Anya' // Random name //
+name7 = 'Queen Anya さん' // Random name //
+name8 = '𝘘𝘶𝘦𝘦𝘯 𝘈𝘯𝘺𝘢' // Random name //
+name9 = 'Anya v2' // Random name //
+name10 = '𝘈𝘯𝘺𝘢 _v2_' // Random name //
+
+//--------Random name for doc--------\\
+name11 = '𝑴𝒊𝒔𝒔 𝑨𝒏𝒚𝒂 𝒗𝟐' // Bot name for AnyaCore.js doc msg //
+name12 = '𝑨𝒏𝒚𝒂 𝑸𝒖𝒆𝒆𝒏 𝒗𝟐' // Bot name for AnyaCore.js doc msg //
+name13 = '𝑸𝒖𝒆𝒆𝒏 𝑨𝒏𝒚𝒂 𝒗𝟐' // Bot name for AnyaCore.js doc msg //
+name14 = '𝑨𝒏𝒚𝒂 𝑺𝒂𝒏 𝒗𝟐' // Bot name for AnyaCore.js doc msg //
+name15 = '𝑪𝒖𝒕𝒆 𝑨𝒏𝒚𝒂 𝒗𝟐' // Bot name for AnyaCore.js doc msg //
+
+//--------Random name for Info section--------\\
+name16 = '𝐴𝑛𝑦𝑎❤️' // Bot name //
+name17 = '𝙰𝚗𝚢𝚊✨' // Bot name //
+name18 = '𝖠иуꪖ💫' // Bot name //
+name19 = '𝑨𝖓𝒚𝖆🔥' // Bot name //
+name20 = '『🥵ᴀɴʏᴀ🥵』' // Bot name //
 
 //--------Bot theme media--------\\
 global.thum = fs.readFileSync("./AnyaPikaMedia/theme/Anyapic.jpg") // thumb pic //
@@ -128,6 +151,13 @@ tag7 = '𝘞𝘩𝘦𝘳𝘦 𝘢𝘳𝘦 𝘺𝘰𝘶 𝘢𝘭𝘭?' // quick b
 tag8 = '𝘏𝘦𝘺 𝘸𝘩𝘦𝘳𝘦 𝘺𝘰𝘶 𝘢𝘭𝘭?...𝘤𝘰𝘮𝘦 𝘩𝘦𝘳𝘦 𝘨𝘶𝘺𝘴 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘖𝘗 𝘉𝘰𝘵!🔥' // quick button tag message //
 tag9 = '𝘠𝘰𝘶 𝘢𝘭𝘭 𝘴𝘩𝘰𝘶𝘭 𝘵𝘳𝘺 𝘵𝘩𝘪𝘴 𝘤𝘶𝘵𝘦 𝘈𝘯𝘺𝘢❤️🍫' // quick button tag message //
 tag10 = '𝘈𝘺𝘰𝘰 𝘈𝘯𝘺𝘢 𝘪𝘴 𝘉𝘦𝘴𝘵!!😚' // quick button tag message //
+
+//--------Random Tag emoji--------\\
+tagemoji1 = '🥵'
+tagemoji2 = '🔥'
+tagemoji3 = '❤️'
+tagemoji4 = '🎃'
+tagemoji5 = '🍓'
 
 //--------Commands docs images--------\\
 global.thumb1 = fs.readFileSync("./AnyaPikaMedia/theme/Command-image/Cimg1.jpg") // thumb pic //
@@ -253,7 +283,11 @@ global.autorep = []
 global.ntilink = []
 
 //--------Commands Doc captions--------\\
-global.MenuDocCap = '𝘉𝘦𝘴𝘵 𝘧𝘳𝘪𝘦𝘯𝘥𝘭𝘺 𝘣𝘰𝘵 𝘧𝘰𝘳 𝘺𝘰𝘶...' // Alive message document caption //
+global.Menudoccap1 = '𝘉𝘦𝘴𝘵 𝘧𝘳𝘪𝘦𝘯𝘥𝘭𝘺 𝘣𝘰𝘵 𝘧𝘰𝘳 𝘺𝘰𝘶...' // Alive message document caption //
+global.Menudoccap2 = '𝘈𝘭𝘸𝘢𝘺𝘴 𝘢𝘷𝘢𝘪𝘭𝘢𝘣𝘭𝘦 𝘧𝘰𝘳 𝘮𝘺 𝘥𝘢𝘳𝘭𝘪𝘯𝘨...' // Alive message document caption //
+global.Menudoccap3 = '𝘉𝘦𝘴𝘵 𝘧𝘶𝘯𝘤𝘵𝘪𝘰𝘯𝘢𝘭 𝘣𝘰𝘵 𝘧𝘰𝘳 𝘺𝘰𝘶...' // Alive message document caption //
+global.Menudoccap4 = '𝘐𝘴𝘯`𝘵 𝘵𝘩𝘦 𝘮𝘰𝘰𝘯 𝘭𝘰𝘷𝘦𝘭𝘺?' // Alive message document caption //
+global.Menudoccap5 = '𝘊𝘶𝘵𝘦𝘴𝘵 𝘣𝘰𝘵 𝘺𝘰𝘶 𝘦𝘷𝘦𝘳 𝘴𝘢𝘸<3' // Alive message document caption //
 
 //--------Theme emoji--------\\
 global.themeemoji1 = "🥵" // Theme emoji//
