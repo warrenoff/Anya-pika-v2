@@ -766,7 +766,7 @@ let anyaname3 = [name16,name17,name18,name19,name20]
 let botname3 = pickRandom(anyaname3)
 
 //--------Botname for documents 
-let anyaname2 = [name11,name12,name13,name14,name25]
+let anyaname2 = [name11,name12,name13,name14,name15]
 let botname2 = pickRandom(anyaname2)
 
 //--------Botname for command captions 
