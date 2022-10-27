@@ -448,11 +448,11 @@ message: {
 	
 	//group target \\
 const reply = (teks) => {
-           AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${botname3}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+           AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${name16}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${botname3}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+            AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${name16}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -767,7 +767,7 @@ let botname3 = pickRandom(anyaname3)
 
 //--------Botname for documents 
 let anyaname2 = [name11,name12,name13,name14,name25]
-let botname3 = pickRandom(anyaname2)
+let botname2 = pickRandom(anyaname2)
 
 //--------Botname for command captions 
 let anyaname1 = [name1,name2,name3,name4,name5,name6,name7,name8,name9,name10]
