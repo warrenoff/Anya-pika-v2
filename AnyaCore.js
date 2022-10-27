@@ -311,7 +311,7 @@ message: {
 "jpegThumbnail": log0 //The picture
 },
 "title": `${global.ownername}`, 
-"description": `${global.botname}`, 
+"description": `${botname3}`, 
 "currencyCode": "USD",
 "priceAmount1000": "2000",
 "retailerId": `${global.watermark}`,
@@ -332,7 +332,7 @@ itemCount : 1,
 status: 1,
 surface : 1,
 message: `${global.ownername}`, //
-orderTitle: `${global.botname}`,
+orderTitle: `${botname3}`,
 thumbnail: log0, //Pic
 sellerJid: '0@s.whatsapp.net'
 
@@ -358,7 +358,7 @@ key : {
 },
 message: {
 documentMessage: {
-title: `${global.botname}`, 
+title: `${botname3}`, 
 jpegThumbnail: log0
 }
 }
@@ -372,7 +372,7 @@ participant: `0@s.whatsapp.net`, ...(from ?
 },
 message: { 
 "videoMessage": { 
-"title": `${global.botname}`,
+"title": `${botname3}`,
 "h": `${global.ownername}`,
 'seconds': '30', 
 'caption': `${global.watermark}`,
@@ -391,7 +391,7 @@ const fgclink = {
 "groupInviteMessage": {
 "groupJid": "120363026115750939@g.us",
 "inviteCode": `${global.ownername}`,
-"groupName": `${global.botname}`, 
+"groupName": `${botname3}`, 
 "caption":`${global.watermark}`, 
 'jpegThumbnail': log0
 }
@@ -406,7 +406,7 @@ participant: `0@s.whatsapp.net`, ...(from ?
 },
 message: { 
  "videoMessage": { 
- "title":`${global.botname}`,
+ "title":`${botname3}`,
  "h": `${global.ownername}`,
  'seconds': "30", 
  'gifPlayback': 'true', 
@@ -425,7 +425,7 @@ participant: `0@s.whatsapp.net`, ...(from ?
 message: { 
 "extendedTextMessage": {
  "text":`${global.ownername}`,
-"title": `${global.botname}`,
+"title": `${botname3}`,
  'jpegThumbnail': log0
 }
 } 
@@ -448,11 +448,11 @@ message: {
 	
 	//group target \\
 const reply = (teks) => {
-           AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+           AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${botname3}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+            AnyaPika.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${botname3}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./AnyaPikaMedia/theme/Anyapic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -1190,7 +1190,7 @@ replay('Success in unbanning the gc')
   { buttonId: `${command} on`, buttonText: { displayText: 'Ban' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Unban' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntnsfw, `Please click the button below\n\nBan to Ban\nUnban to unban`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntnsfw, `Please click the button below\n\nBan to Ban\nUnban to unban`, `${botname3}`, m)
   }
   }
   break
@@ -1393,7 +1393,7 @@ tebaklagu[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebaklagu.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Answer: " + result.jawaban)
-AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess song', buttonText: { displayText: 'Guess the song' }, type: 1 }], `Time has run out\nAnswer:  ${tebaklagu[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${global.botname}`, m)
+AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess song', buttonText: { displayText: 'Guess the song' }, type: 1 }], `Time has run out\nAnswer:  ${tebaklagu[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${botname3}`, m)
 delete tebaklagu[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'picture') {
@@ -1406,7 +1406,7 @@ tebakgambar[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebakgambar.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Answer: " + result.jawaban)
-AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess picture', buttonText: { displayText: 'Guess the picture' }, type: 1 }], `Time has run out\nAnswer:  ${tebakgambar[m.sender.split('@')[0]]}\n\nWant to play? press the button below`,`${global.botname}`, m)
+AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess picture', buttonText: { displayText: 'Guess the picture' }, type: 1 }], `Time has run out\nAnswer:  ${tebakgambar[m.sender.split('@')[0]]}\n\nWant to play? press the button below`,`${botname3}`, m)
 delete tebakgambar[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'word') {
@@ -1419,7 +1419,7 @@ tebakkata[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebakkata.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Answer: " + result.jawaban)
-AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess word', buttonText: { displayText: 'Guess The Word' }, type: 1 }], `Time Out\nAnswer:  ${tebakkata[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${global.botname}`, m)
+AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess word', buttonText: { displayText: 'Guess The Word' }, type: 1 }], `Time Out\nAnswer:  ${tebakkata[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${botname3}`, m)
 delete tebakkata[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'sentence') {
@@ -1432,7 +1432,7 @@ tebakkalimat[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Answer: " + result.jawaban)
-AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess sentence', buttonText: { displayText: 'Guess the Sentence' }, type: 1 }], `Time Out\nAnswer:  ${tebakkalimat[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${global.botname}`, m)
+AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess sentence', buttonText: { displayText: 'Guess the Sentence' }, type: 1 }], `Time Out\nAnswer:  ${tebakkalimat[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${botname3}`, m)
 delete tebakkalimat[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'lyrics') {
@@ -1445,7 +1445,7 @@ tebaklirik[m.sender.split('@')[0]] = result.jawaban.toLowerCase()
 await sleep(60000)
 if (tebaklirik.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Answer: " + result.jawaban)
-AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess lyrics', buttonText: { displayText: 'Guess The Lyrics' }, type: 1 }], `Time Out\nAnswer:  ${tebaklirik[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${global.botname}`, m)
+AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess lyrics', buttonText: { displayText: 'Guess The Lyrics' }, type: 1 }], `Time Out\nAnswer:  ${tebaklirik[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${botname3}`, m)
 delete tebaklirik[m.sender.split('@')[0]]
 }
 } else if (args[0] === 'guess saying') {
@@ -1459,7 +1459,7 @@ caklontong_desk[m.sender.split('@')[0]] = result.deskripsi
 await sleep(60000)
 if (caklontong.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Answer: " + result.jawaban)
-AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess saying', buttonText: { displayText: 'Guess The Saying' }, type: 1 }], `Time Out\nAnswer:  ${caklontong[m.sender.split('@')[0]]}\nDescription : ${caklontong_desk[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${global.botname}`, m)
+AnyaPika.sendButtonText(m.chat, [{ buttonId: 'guess saying', buttonText: { displayText: 'Guess The Saying' }, type: 1 }], `Time Out\nAnswer:  ${caklontong[m.sender.split('@')[0]]}\nDescription : ${caklontong_desk[m.sender.split('@')[0]]}\n\nWant to play? press the button below`, `${botname3}`, m)
 delete caklontong[m.sender.split('@')[0]]
 delete caklontong_desk[m.sender.split('@')[0]]
 }
@@ -2336,7 +2336,7 @@ replay('Success in turning off group chat antilink in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2367,7 +2367,7 @@ replay('Success in turning off youtube video antilink in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2398,7 +2398,7 @@ replay('Success in turning off youtube channel antilink in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2429,7 +2429,7 @@ replay('Success in turning off instagram antilink in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2460,7 +2460,7 @@ replay('Success in turning off facebook antilink in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2491,7 +2491,7 @@ replay('Success in turning off telegram antilink in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2522,7 +2522,7 @@ replay('Success in turning off tiktok antilink in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2553,7 +2553,7 @@ replay('Success in turning off twitter antilink in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2584,7 +2584,7 @@ replay('Success in turning off all antilink in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2615,7 +2615,7 @@ replay('Success in turning off antivirus this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntvirtex, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntvirtex, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2639,7 +2639,7 @@ replay('Success in turning off autoreply in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonswlcm, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonswlcm, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2670,7 +2670,7 @@ replay('ㅤㅤ   ⍙__⍙\n         ( ^⌔^  )\n𝘉𝘺𝘦~🖤< |\n𝐌𝐞 �
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsnttoxic, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsnttoxic, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2701,7 +2701,7 @@ replay('Success in turning off antiwame in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntwame, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntwame, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2732,7 +2732,7 @@ replay('Success in turning off nsfw in this group')
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
   ]
-  await AnyaPika.sendButtonText(m.chat, buttonsntnsfw, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  await AnyaPika.sendButtonText(m.chat, buttonsntnsfw, `Please click the button below\n\nOn to enable\nOff to disable`, `${botname3}`, m)
   }
   }
   break
@@ -2988,7 +2988,7 @@ id: 'owner'
                     AnyaPika.sendMessage(i, { sticker: { url: media } }, { quoted: ftroli })
                     } else if (/image/.test(mime)) {
                     let AnyaPikachu = `*「 ${global.ownername}'s Broadcast」*${text ? '\n\n' + text : ''}`
-                    AnyaPika.send5ButImg(i, AnyaPikachu, `${global.botname}`, buffer, butoon)
+                    AnyaPika.send5ButImg(i, AnyaPikachu, `${botname3}`, buffer, butoon)
                     } else if (/video/.test(mime)) {
                     let AnyaPikachu = `*「 ${global.ownername}'s Broadcast」*${text ? '\n\n' + text : ''}`
                     AnyaPika.sendMessage(i, {video: buffer, caption: `${botname}`}, { quoted: ftroli })
@@ -3073,7 +3073,7 @@ case 'profile': case 'myprofile':
 🐤 *Bio* : ${bioo}
 🎃 *Group name* : ${groupMetadata.subject}
 ❤️ *Group admin?* : ${adn}
-🔥 *Bot name* : ${global.BotName}
+🔥 *Bot name* : `${botname3}`
 
 ╰╼━━━━━━━━━━━━━╾╯ 
 
@@ -3303,7 +3303,7 @@ try{
 reply(mess.wait)						
 nyz2 = await fetchJson(`https://myselfff.herokuapp.com/docs/wallpaper/${command}`) 
 nyz3 = await getBuffer(nyz2.list.gambar)
-AnyaPika.sendMessage(from, {image : nyz3, caption:`By ${global.botname}`}, {quoted:m}) 						
+AnyaPika.sendMessage(from, {image : nyz3, caption:`By `${botname3}`}, {quoted:m}) 						
 } catch (e) {
 error("Error!")
 }
@@ -4217,7 +4217,7 @@ reply(`_Command processing_ ᵃⁿʸᵃ ᵇʸ ᵖⁱᵏᵃ.....`)
 ]
         let button4Messagess = {
         image: {url:waifuddd.data.url},
-        caption: `_${global.BotName2}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 🥵.`,
+        caption: `_${botname1}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 🥵.`,
         buttons: buons,
         headerType: 4
          }     
@@ -4647,7 +4647,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4658,7 +4658,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/3d-box-text-effect-online-880.html", [
     `${q}`,])
-.then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+.then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
 .catch((err) => console.log(err));
 break
 
@@ -4670,7 +4670,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
  maker.textpro("https://textpro.me/dropwater-text-effect-872.html", [
      `${q}`,])
-    .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+    .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
     .catch((err) => console.log(err));
      break
 
@@ -4682,7 +4682,7 @@ if (isBanChat) return reply(mess.banChat)
   reply(mess.wait)
   maker.textpro("https://textpro.me/create-lion-logo-mascot-online-938.html", [
       `${q}`,])
-     .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+     .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
      .catch((err) => console.log(err));
      break
 
@@ -4694,7 +4694,7 @@ if (isBanChat) return reply(mess.banChat)
       reply(mess.wait)
       maker.textpro("https://textpro.me/create-art-paper-cut-text-effect-online-1022.html", [
 `${q}`,])
-         .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+         .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
          .catch((err) => console.log(err));
          break
 
@@ -4706,7 +4706,7 @@ if (isBanChat) return reply(mess.banChat)
       reply(mess.wait)
       maker.textpro("https://textpro.me/create-a-transformer-text-effect-online-1035.html", [
 `${q}`,])
-.then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+.then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
 .catch((err) => console.log(err));
 break
    
@@ -4720,7 +4720,7 @@ if (isBanChat) return reply(mess.banChat)
        teks2 = q.split("|")[1]
        maker.textpro("https://textpro.me/create-harry-potter-text-effect-online-1025.html", [
  `${teks1}`,`${teks2}`])
- .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+ .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
  .catch((err) => console.log(err));
  break
 
@@ -4732,7 +4732,7 @@ if (isBanChat) return reply(mess.banChat)
       reply(mess.wait)
       maker.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html", [
 `${q}`,])
-         .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+         .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
          .catch((err) => console.log(err));
          break
 
@@ -4744,7 +4744,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/3d-stone-cracked-cool-text-effect-1029.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4756,7 +4756,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/create-3d-avengers-logo-online-974.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4768,7 +4768,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/online-thunder-text-effect-generator-1031.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
    
@@ -4780,7 +4780,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/write-text-on-foggy-window-online-free-1015.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
    case 'blackpinkneon':
@@ -4790,7 +4790,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/create-neon-light-blackpink-logo-text-effect-online-1081.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4804,7 +4804,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4819,7 +4819,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/pornhub-style-logo-online-generator-free-977.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4832,7 +4832,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/create-blackpink-logo-style-online-1001.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4843,7 +4843,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/create-impressive-glitch-text-effects-online-1027.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4858,7 +4858,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/create-a-glitch-text-effect-online-free-1026.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4873,7 +4873,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4888,7 +4888,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/create-space-3d-text-effect-online-985.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4903,7 +4903,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/create-lion-logo-mascot-online-938.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4916,7 +4916,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/create-3d-neon-light-text-effect-online-1028.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4929,7 +4929,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/neon-text-effect-online-879.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4942,7 +4942,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/green-neon-text-effect-874.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
    
@@ -4955,7 +4955,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/bokeh-text-effect-876.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
    
@@ -4968,7 +4968,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/holographic-3d-text-effect-975.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4983,7 +4983,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -4998,7 +4998,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/create-wolf-logo-galaxy-online-936.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -5012,7 +5012,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/create-logo-joker-online-934.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -5024,7 +5024,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/dropwater-text-effect-872.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
    
@@ -5035,7 +5035,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/create-a-summer-neon-light-text-effect-online-1076.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -5046,7 +5046,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/neon-light-text-effect-with-galaxy-style-981.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -5057,7 +5057,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/break-wall-text-effect-871.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
    
@@ -5068,7 +5068,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/natural-leaves-text-effect-931.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break 
 
@@ -5079,7 +5079,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/carbon-text-effect-833.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
@@ -5090,7 +5090,7 @@ if(!q) return reply(`Use ${prefix + command} text`)
 reply(mess.wait)
 maker.textpro("https://textpro.me/create-a-sketch-text-effect-online-1044.html", [
     `${q}`,])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
  
@@ -5167,7 +5167,7 @@ if (isBanChat) return reply(mess.banChat)
              if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-online-980.html'
                 if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'           
              let anu = await maker.textpro(link, q)
-                AnyaPika.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname}` }, { quoted: m })
+                AnyaPika.sendMessage(m.chat, { image: { url: anu }, caption: `Made by `${botname3}` }, { quoted: m })
              }
              break
 
@@ -5651,7 +5651,7 @@ case 'emoji': {
 if (isBanChat) return reply(mess.banChat)
 if (!args.join(" ")) return reply('Where is the emoji?')
 emoji.get(args.join(" ")).then(async(emoji) => {
-let mese = await AnyaPika.sendMessage(m.chat, {image:{url:emoji.images[4].url}, caption: `Made by ${global.botname}`}, {quoted:m})
+let mese = await AnyaPika.sendMessage(m.chat, {image:{url:emoji.images[4].url}, caption: `Made by `${botname3}`}, {quoted:m})
 await AnyaPika.sendMessage(from, {text:"reply #s to this image to make sticker"}, {quoted:mese})
 })
 }
@@ -6074,7 +6074,7 @@ if (isBanChat) return reply(mess.banChat)
 if (!args[0]) return reply(`Where's the link ?`)
 try {
 AnyaPika.sendMessage(from, {video:{url:args[0]}, caption:"Succes", contextInfo:{externalAdReply:{
-title:`${global.botname}`,
+title:`${botname3}`,
 body:`${global.ownername}`,
 thumbnail: log0,
 mediaType:2,
@@ -6092,7 +6092,7 @@ if (isBanChat) return reply(mess.banChat)
 if (!args[0]) return reply(`Where's the link?`)
 try {
 AnyaPika.sendMessage(from, {image:{url:args[0]}, caption:"Success", contextInfo:{externalAdReply:{
-title:`${global.botname}`,
+title:`${botname3}`,
 body:`${global.ownername}`,
 thumbnail: log0,
 mediaType:2,
@@ -6179,7 +6179,7 @@ footer: `${footer}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:`${global.botname}`,
+title:`${botname3}`,
 body:lotwit.title ? lotwit.title : "Twitter Downloader",
 thumbnail: log0,
 mediaType:1,
@@ -6206,7 +6206,7 @@ footer: `${footer}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:`${global.botname}`,
+title:`${botname3}`,
 body: "Twitter Downloader",
 thumbnail: log0,
 mediaType:1,
@@ -6276,7 +6276,7 @@ footer: `${footer}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:`${global.botname}`,
+title:`${botname3}`,
 body:"Facebook Downloader",
 thumbnail: log0,
 mediaType:1,
@@ -6303,7 +6303,7 @@ footer: `${footer}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:`${global.botname}`,
+title:`${botname3}`,
 body: " Facebook Downloader",
 thumbnail: log0,
 mediaType:1,
@@ -6504,7 +6504,7 @@ if (isBanChat) return reply(mess.banChat)
              if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-online-980.html'
                 if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'
              let anu = await maker.textpro(link, q)
-                AnyaPika.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname},For my Darling ` }, { quoted: m })
+                AnyaPika.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${botname3},For my Darling ` }, { quoted: m })
              }
              break
             case 'drakorxxx':
@@ -7409,7 +7409,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: anu.title,
-body: `${global.botname}`,
+body: `${botname3}`,
 thumbnail: log0,
 mediaType:2,
 mediaUrl: anu.url,
@@ -7462,8 +7462,8 @@ case 'ytvd': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, {video:{url:args[0]}, mimetype:"video/mp4", caption:"Success", contextInfo:{externalAdReply:{
-title:`${global.botname}`,
-body:`${global.botname}`,
+title:`${botname3}`,
+body:`${botname3}`,
 thumbnail: log0,
 mediaType:2,
 mediaUrl: `${link1}`,
@@ -7475,8 +7475,8 @@ case 'ytad': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, {audio:{url:args[0]}, mimetype:"audio/mp4", ptt:true, contextInfo:{externalAdReply:{
-title:`${global.botname}`,
-body:`${global.botname}`,
+title:`${botname3}`,
+body:`${botname3}`,
 thumbnail: log0,
 mediaType:2,
 mediaUrl: `${link1}`,
@@ -7533,7 +7533,7 @@ footer: `${footer}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:`${global.botname}`,
+title:`${botname3}`,
 body:`${global.ownername}`,
 thumbnail: log0,
 mediaType:2,
@@ -8132,7 +8132,7 @@ footer: `Choose your menu type here....`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${global.BotName3}`,
+title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${botname2}`,
 body: `${global.MenuDocCap}`, 
 thumbnail: menuimage,
 mediaType:1,
