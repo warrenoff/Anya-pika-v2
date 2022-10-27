@@ -332,7 +332,7 @@ global.reactmoji25 = "👿" // AllMenu //
 global.reactmoji26 = "🧡" // AllMenu //
 
 //--------Empty message--------\\
-empty = '✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n✗/n'
+empty = '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
 
 //--------Others--------\\
 global.sessionName = 'session'
