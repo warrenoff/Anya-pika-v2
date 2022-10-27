@@ -745,21 +745,47 @@ const reactionMessage = {
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
-//document randomizer
+//--------document randomizer
 let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
 let docs = pickRandom(documents)
+
+//--------tagall randomizer
 let tagallMsg = [tag1,tag2,tag3,tag4,tag5,tag6,tag7,tag8,tag9,tag10]
 let tagmsg = pickRandom(tagallMsg)
+
+//--------symbols randomizer
 let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
+
+//--------footer randomizer
 let footermsg = [footer1,footer2,footer3,footer4,footer5,footer6,footer7,footer8,footer9,footer10,footer11,footer12,footer13,footer14,footer15,footer16,footer17,footer18,footer19,footer20,footer21,footer22,footer23,footer24,footer25,footer26,footer27,footer28,footer29,footer30,footer31,footer32,footer33,footer34,footer35,footer36]
 let footer = pickRandom(footermsg)
+
+//--------Botname for information section 
+let anyaname3 = [name16,name17,name18,name19,name20]
+let botname3 = pickRandom(anyaname3)
+
+//--------Botname for documents 
+let anyaname2 = [name11,name12,name13,name14,name25]
+let botname2 = pickRandom(anyaname2)
+
+//--------Botname for command captions 
+let anyaname1 = [name1,name2,name3,name4,name5,name6,name7,name8,name9,name10]
+let botname1 = pickRandom(anyaname1) 
+
+//--------Links for displaying on documents 
 let displaylink = [link1,link2,link3,link4]
 let linkgit = pickRandom(displaylink)
+
+//-------Themeemoji
 let themeemojimsg = [global.themeemoji1,global.themeemoji2,global.themeemoji3,global.themeemoji4,global.themeemoji5,global.themeemoji6,global.themeemoji7,global.themeemoji8,global.themeemoji9,global.themeemoji10]
 let globalthemeemoji = pickRandom(themeemojimsg)
+
+//--------document thumbnails
 let menuimages = [thumb1,thumb2,thumb3,thumb4,thumb5,thumb6,thumb7,thumb8,thumb9,thumb10,thumb11,thumb12,thumb13,thumb14,thumb15,thumb16,thumb17,thumb18,thumb19,thumb20,thumb21,thumb22,thumb23,thumb24,thumb25,thumb26,thumb27,thumb28,thumb29,thumb30,thumb31]
 let menuimage = pickRandom(menuimages)
+
+//--------Command reacts
 let menureact = [global.reactmoji1,global.reactmoji2,global.reactmoji3,global.reactmoji4,global.reactmoji5,global.reactmoji6,global.reactmoji7,global.reactmoji8,global.reactmoji9,global.reactmoji10,global.reactmoji11,global.reactmoji12,global.reactmoji13,global.reactmoji14]
 let menureactemoji = pickRandom(menureact)
 let allmenureact = [global.reactmoji15,global.reactmoji16,global.reactmoji17,global.reactmoji18,global.reactmoji19,global.reactmoji20,global.reactmoji21,global.reactmoji22,global.reactmoji23,global.reactmoji24,global.reactmoji25,global.reactmoji26]
