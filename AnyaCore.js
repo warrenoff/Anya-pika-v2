@@ -7957,7 +7957,7 @@ case 'description':
 case 'emptymsg': case 'emptymessage': case 'empty-message': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-        reply(`𝐈😚${empty}𝐋𝐨𝐯𝐞❤️${empty}𝐘𝐨𝐮🥺${empty}\n\n_${pushname} read the message again 😩❤️_\n\n${footer}`)
+        reply(`𝐈😚${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}𝐋𝐨𝐯𝐞❤️${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}𝐘𝐨𝐮🥺${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${pushname}${empty}\n\n_${pushname} read the message again 😩❤️_\n\n${footer}`)
         break
 case 'antitag': {
 if (isBan) return reply(mess.ban)	 			
