@@ -4862,7 +4862,7 @@ teks1 = q.split("|")[0]
 teks2 = q.split("|")[1]
 maker.textpro("https://textpro.me/create-a-glitch-text-effect-online-free-1026.html", [
     `${teks1}`,`${teks2}`])
-  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by `${botname3}` }, { quoted: m }))
+  .then((data) => AnyaPika.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${botname3} for ${pushname}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
 
