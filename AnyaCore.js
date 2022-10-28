@@ -2897,7 +2897,7 @@ let buttons = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: text,
 footer: `${footer}`,
 buttons: buttons,
@@ -2931,7 +2931,7 @@ let buttons = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: text,
 footer: `${footer}`,
 buttons: buttons,
@@ -8967,7 +8967,7 @@ let button = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: button,
@@ -9019,7 +9019,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -9162,7 +9162,7 @@ let bttons = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: bttons,
@@ -9222,7 +9222,7 @@ let uttons = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: uttons,
@@ -9286,7 +9286,7 @@ let butons = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: butons,
@@ -9345,7 +9345,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -9461,7 +9461,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -9516,7 +9516,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -9572,7 +9572,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -9644,7 +9644,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -9692,7 +9692,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -9763,7 +9763,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -9901,7 +9901,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -10092,7 +10092,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -10140,7 +10140,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -10186,7 +10186,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -10231,7 +10231,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -10286,7 +10286,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -10340,7 +10340,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -10399,7 +10399,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -10463,7 +10463,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
@@ -10489,7 +10489,7 @@ let buttns = [
 ]
 let ntus = {
 image: unicorn,
-jpegThumbnail: log0,
+jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
 footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
