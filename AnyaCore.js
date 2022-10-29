@@ -8128,7 +8128,7 @@ Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid \n\n If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
 break
-case 'alive': case 'panel': case 'menu': case 'help': case '?': case 'commands': {
+case 'alive': case 'panel': case 'menu': case 'help': case 'Anyaa': case 'commands': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { react: { text: `${menureactemoji}`, key: m.key }})
@@ -8163,14 +8163,15 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `Aww my darling ${pushname} you need help? 🥺❤️`,
                     description: `\n╭╼━━━━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛━━╾ᐧᐧᐧᐧ⳹
-┊
- 𝗨𝘀𝗲𝗿 : ${pushname}
- 𝗢𝘄𝗻𝗲𝗿 : http://wa.me//${global.ownertag}
- 𝗚𝗿𝗼𝘂𝗽 : ${groupMetadata.subject}
-┊
+❤️‍🩹 𝗨𝘀𝗲𝗿 :
+┊➥ ${pushname}
+${menureactemoji} 𝗢𝘄𝗻𝗲𝗿 :
+┊➥ http://wa.me//${global.ownertag}
+${allmenureactemoji} 𝗚𝗿𝗼𝘂𝗽 :
+┊➥ ${groupMetadata.subject}
 ╰╼━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹`,
                     buttonText: "🦋⃟✮͢ 𝑻𝒂𝒑 𝒉𝒆𝒓𝒆 ✮⃝❤️",
-                    footerText: `${footer}\n\n*ᴍʏ ɴᴀᴍᴇ* : ${botname1}
+                    footerText: `\n${footer}\n*ᴍʏ ɴᴀᴍᴇ* : ${botname1}
 *ᴍʏ sᴘᴇᴇᴅ* : ${latensie.toFixed(4)} ms
 *ᴍʏ ʀᴜɴᴛɪᴍᴇ* : ${runtime(process.uptime())}
 *ᴄᴜʀʀᴇɴᴛ ᴜsᴇʀs* : ${Object.keys(global.db.data.users).length} users`,
@@ -8301,7 +8302,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": `Credit ${menureact}`,
+								"title": `Credit ${menureactemoji}`,
 								"rows": [
 									{
 										"title": "𝗔𝗹𝗹 𝘁𝗵𝗮𝗻𝗸𝘀 𝘁𝗼 ❤️‍🩹-",
