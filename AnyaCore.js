@@ -766,7 +766,7 @@ let anyaname3 = [name16,name17,name18,name19,name20]
 let botname3 = pickRandom(anyaname3)
 
 //--------Botname for documents 
-let anyaname2 = [name11,name12,name13,name14,name15]
+let anyaname2 = [name11,name12,name13,name14,name15,name21,name22,name23,name24,name25,name26,name27,name28,name29,name30,name31,name32,name33,name34,name35,name36,name37,name38,name39,name40,name41,name42,name43,name44,name45,name46,name47,name48,name49,name50,name51,name52,name53,name54,name55]
 let botname2 = pickRandom(anyaname2)
 
 //--------Document Captions
@@ -774,7 +774,7 @@ let doccaption = [global.Menudoccap1,global.Menudoccap2,global.Menudoccap3,globa
 let Menudoccap = pickRandom(doccaption)
 
 //--------Botname for command captions 
-let anyaname1 = [name1,name2,name3,name4,name5,name6,name7,name8,name9,name10,name21,name22,name23,name24,name25,name26,name27,name28,name29,name30,name31,name32,name33,name34,name35,name36,name37,name38,name39,name40,name41,name42,name43,name44,name45,name46,name47,name48,name49,name50,name51,name52,name53,name54,name55]
+let anyaname1 = [name1,name2,name3,name4,name5,name6,name7,name8,name9,name10]
 let botname1 = pickRandom(anyaname1) 
 
 //--------Links for displaying on documents 
@@ -8146,7 +8146,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${botname2}`,
-body: `${global.MenuDocCap}`, 
+body: `${Menudoccap}`, 
 thumbnail: menuimage,
 mediaType:1,
 mediaUrl: `${link1}`,
@@ -8841,7 +8841,7 @@ footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽�
 buttons: buons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:`𝑯𝒆𝒚,\n𝑰'𝒂𝒎 ${botname2}`,
+title:`${botname2}`,
 body: `${Menudoccap}`, 
 thumbnail: menuimage,
 mediaType:1,
