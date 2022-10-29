@@ -8842,8 +8842,8 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: menuimage,
 caption: allmenu,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
-buttons: buons,
+footer: `${footer}`,
+buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:`${botname2}`,
@@ -8907,8 +8907,8 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: menuimage,
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
-buttons: buttons,
+footer: `${footer}`,
+buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:`${botname2}`,
@@ -8974,8 +8974,8 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
-buttons: button,
+footer: `${footer}`,
+buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:`${botname2}`,
@@ -9026,7 +9026,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9169,8 +9169,8 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
-buttons: bttons,
+footer: `${footer}`,
+buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:`${botname2}`,
@@ -9229,8 +9229,8 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
-buttons: uttons,
+footer: `${footer}`,
+buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:`${botname2}`,
@@ -9293,8 +9293,8 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
-buttons: butons,
+footer: `${footer}`,
+buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:`${botname2}`,
@@ -9352,7 +9352,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9468,7 +9468,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9523,7 +9523,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9579,7 +9579,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9651,7 +9651,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9699,7 +9699,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9770,7 +9770,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9837,7 +9837,7 @@ let ntus = {
 image: fs.readFileSync('./AnyaPikaMedia/theme/Menu/Menuimg.jpg'),
 jpegThumbnail: menuimage,
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9908,7 +9908,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10099,7 +10099,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10147,7 +10147,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10193,7 +10193,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10238,7 +10238,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10293,7 +10293,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10347,7 +10347,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10406,7 +10406,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10470,7 +10470,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10496,7 +10496,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
