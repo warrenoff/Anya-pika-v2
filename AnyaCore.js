@@ -753,6 +753,10 @@ let docs = pickRandom(documents)
 let tagallMsg = [tag1,tag2,tag3,tag4,tag5,tag6,tag7,tag8,tag9,tag10]
 let tagmsg = pickRandom(tagallMsg)
 
+//--------tagall emoji randomizer
+tagallMsgemoji = [tagemoji1,tagemoji2,tagemoji3,tagemoji4,tagemoji5]
+tagmsgemoji = pickRandom(tagallMsgemoji)
+
 //--------symbols randomizer
 let symbols = [symb1,symb2,symb3,symb4,symb5,symb6,symb7,symb8,symb9,symb10]
 let symb = pickRandom(symbols)
@@ -836,7 +840,7 @@ const emoji = new EmojiAPI();
 emoji.get(satu)
 .then(emoji => {
 const buttons = [{buttonId: "y", buttonText: {displayText:satu}, type: 1}]
-const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Here you go!",footerText:`${footer}` , buttons: buttons,headerType: 4}
+const buttonMessage = {image: {url: emoji.images[dua].url},caption: "Here you go!",footerText:`${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ` , buttons: buttons,headerType: 4}
 AnyaPika.sendMessage(from, buttonMessage, {quoted:m})
 })
 } catch (e) {
@@ -2100,7 +2104,7 @@ let buttonsVote = [
 
             let buttonMessageVote = {
                 text: teks_vote,
-                footer: `${footer}`,
+                footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
                 buttons: buttonsVote,
                 headerType: 1
             }
@@ -2143,7 +2147,7 @@ ${vote[m.chat][2].map((v, i) => `┃╠🔥${i + 1}. @${v.split`@`[0]}`).join('\
 
             let buttonMessageUpvote = {
                 text: teks_vote,
-                footer: `${footer}`,
+                footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
                 buttons: buttonsUpvote,
                 headerType: 1,
                 mentions: menvote
@@ -2187,7 +2191,7 @@ ${vote[m.chat][2].map((v, i) => `┃╠🔥${i + 1}. @${v.split`@`[0]}`).join('\
 
             let buttonMessageDevote = {
                 text: teks_vote,
-                footer: `${footer}`,
+                footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
                 buttons: buttonsDevote,
                 headerType: 1,
                 mentions: menvote
@@ -2829,7 +2833,7 @@ if (isBanChat) return reply(mess.banChat)
       from, 
       {
        text: "Group Settings",
-       footer: `${footer}`,
+       footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
        title: "Set your group settings here......",
        buttonText: "Click Button",
        sections
@@ -2899,7 +2903,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: text,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -2933,7 +2937,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: text,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -3017,7 +3021,7 @@ if (!isCreator) return replay(mess.owner)
 	     	for (let yoi of anu) {
 	     	await sleep(1500)
 		    var button = [{ buttonId: `${prefix}ho`, buttonText: { displayText: `${melo2}` }, type: 1 }]              
-            AnyaPika.sendMessage(yoi, { caption: `${melo}`, location: { jpegThumbnail: await getBuffer(picak+`${ownername}'s Broadcast`) }, buttons: button, footer: `${footer}`, mentions: [m.sender] })
+            AnyaPika.sendMessage(yoi, { caption: `${melo}`, location: { jpegThumbnail: await getBuffer(picak+`${ownername}'s Broadcast`) }, buttons: button, footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`, mentions: [m.sender] })
 		}		
             }
             break
@@ -3096,7 +3100,7 @@ let buttonspro = [
             let buttonMessage = {
                 image: { url: pfp },
                 caption: profilexx,
-                footer: `${footer}`,
+                footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
                 buttons: buttonspro,
                 headerType: 4
             }
@@ -3335,7 +3339,7 @@ reply(mess.wait)
       let buttonssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3467,7 +3471,7 @@ reply(mess.wait)
       let buttonsssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3486,7 +3490,7 @@ reply(mess.wait)
       let button1ssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3505,7 +3509,7 @@ reply(mess.wait)
       let button12ssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3542,7 +3546,7 @@ reply(mess.wait)
       let button112ssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3561,7 +3565,7 @@ reply(mess.wait)
       let buttonssMessage = {
        image: {url:waifud.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbutsss,
       headerType: 4
       }
@@ -3580,7 +3584,7 @@ reply(mess.wait)
       let buttonsosMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3599,7 +3603,7 @@ reply(mess.wait)
       let btutttonssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3618,7 +3622,7 @@ reply(mess.wait)
       let xxbuttonssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3637,7 +3641,7 @@ reply(mess.wait)
       let buttonsTsMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3656,7 +3660,7 @@ reply(mess.wait)
       let buttonussMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3675,7 +3679,7 @@ reply(mess.wait)
       let bxxuttonssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3694,7 +3698,7 @@ reply(mess.wait)
       let buttoxnssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3713,7 +3717,7 @@ reply(mess.wait)
       let buttonssxMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3732,7 +3736,7 @@ reply(mess.wait)
       let button1ssxMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbutt1sss,
       headerType: 4
       }     
@@ -3751,7 +3755,7 @@ reply(mess.wait)
       let buttonszzsxMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszzss,
       headerType: 4
       }     
@@ -3770,7 +3774,7 @@ reply(mess.wait)
       let buttonszzsx12Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz12ss,
       headerType: 4
       }     
@@ -3789,7 +3793,7 @@ reply(mess.wait)
       let buttonszzsx123Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz123ss,
       headerType: 4
       }     
@@ -3808,7 +3812,7 @@ reply(mess.wait)
       let buttonszzsx124Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz124ss,
       headerType: 4
       }     
@@ -3827,7 +3831,7 @@ reply(mess.wait)
       let buttonszzsx125Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz125ss,
       headerType: 4
       }     
@@ -3846,7 +3850,7 @@ reply(mess.wait)
       let buttonszzsx126Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz126ss,
       headerType: 4
       }     
@@ -3865,7 +3869,7 @@ reply(mess.wait)
       let buttonszzsx127Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz127ss,
       headerType: 4
       }     
@@ -3884,7 +3888,7 @@ reply(mess.wait)
       let buttonszzsx128Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz128ss,
       headerType: 4
       }     
@@ -3903,7 +3907,7 @@ reply(mess.wait)
       let buttonszzsx129Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz129ss,
       headerType: 4
       }     
@@ -3922,7 +3926,7 @@ reply(mess.wait)
       let buttonszzsx1210Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1210ss,
       headerType: 4
       }     
@@ -3941,7 +3945,7 @@ reply(mess.wait)
       let buttonszzsx1211Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1211ss,
       headerType: 4
       }     
@@ -3960,7 +3964,7 @@ reply(mess.wait)
       let buttonszzsx1212Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1212ss,
       headerType: 4
       }     
@@ -3979,7 +3983,7 @@ reply(mess.wait)
       let buttonszzsx1213Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1213ss,
       headerType: 4
       }     
@@ -3998,7 +4002,7 @@ reply(mess.wait)
       let buttonszzsx1214Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1214ss,
       headerType: 4
       }     
@@ -4017,7 +4021,7 @@ reply(mess.wait)
       let buttonszzsx1215Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1215ss,
       headerType: 4
       }     
@@ -4036,7 +4040,7 @@ reply(mess.wait)
       let buttonszzsx1216Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1216ss,
       headerType: 4
       }     
@@ -4055,7 +4059,7 @@ reply(mess.wait)
       let buttonszzsx1217Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1217ss,
       headerType: 4
       }     
@@ -4074,7 +4078,7 @@ reply(mess.wait)
       let buttonszzsx1218Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1218ss,
       headerType: 4
       }     
@@ -4093,7 +4097,7 @@ reply(mess.wait)
       let buttonszzsx1219Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`, 
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`, 
       buttons: wbuttszz1219ss,
       headerType: 4
       }     
@@ -4112,7 +4116,7 @@ reply(mess.wait)
       let buttonszzsx1220Messages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: wbuttszz1220ss,
       headerType: 4
       }     
@@ -4131,7 +4135,7 @@ var wbutsss = [
       let buttonsesMessage = {
       image: {url:ud.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
           buttons: wbutsss,
      headerType: 4
                       }
@@ -4150,7 +4154,7 @@ var wbutsss = [
       let buttonzMessage = {
       image: {url:ud.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
           buttons: wbutsss,
      headerType: 4
                       }
@@ -4169,7 +4173,7 @@ reply(mess.wait)
   let button1Messages = {
    image: {url:waifudd.data.url},
    caption:  `Here you go!`,
-   footer: `${footer}`,
+   footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
   buttons: wbuttsss,
   headerType: 2
   }       
@@ -4196,7 +4200,7 @@ var walb = [
       let wal = {
        image: {url:wallpaper[i].image},
        caption: `*Query :* ${q}`,
-      footer: `${footer}`,
+      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
       buttons: walb,
       headerType: 4
       }     
@@ -4287,7 +4291,7 @@ case 'naruto':
 			    var query = ["naruto hd","naruto boruto","naruto sasuke", "naruto aesthetic", "naruto aesthetic"]
                 var data = await pinterest(pickRandom(query))
 				var but = [{buttonId: `naruto`, buttonText: { displayText: "Next➡️" }, type: 1 }]
-				AnyaPika.sendMessage(from, { caption: `Here you go!`, image: { url: pickRandom(data.result) }, buttons: but, footer: `${footer}` }, { quoted: m })
+				AnyaPika.sendMessage(from, { caption: `Here you go!`, image: { url: pickRandom(data.result) }, buttons: but, footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ` }, { quoted: m })
  			    break
 case 'yaoi':
 			if (isBan) return reply(mess.ban)
@@ -4296,7 +4300,7 @@ case 'yaoi':
 			    var query = ["yaoi","yaoi aesthetic","yaoi hd","yaoi ganteng"]
                 var data = await pinterest(pickRandom(query))
 				var but = [{buttonId: `${command}`, buttonText: { displayText: "Next➡️" }, type: 1 }]
-				AnyaPika.sendMessage(from, { caption: "Here you go!", image: { url: pickRandom(data.result) }, buttons: but, footer: `${footer}` }, { quoted: m })
+				AnyaPika.sendMessage(from, { caption: "Here you go!", image: { url: pickRandom(data.result) }, buttons: but, footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ` }, { quoted: m })
  			    break
 case 'coffee': case 'kopi': {
 	if (isBan) return reply(mess.ban)	 			
@@ -4307,7 +4311,7 @@ if (isBanChat) return reply(mess.banChat)
                 let buttonMessage = {
                     image: { url: 'https://coffee.alexflipnote.dev/random' },
                     caption: `Here you go!`,
-                    footer: `${footer}`,
+                    footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -4349,7 +4353,7 @@ if (isBanChat) return reply(mess.banChat)
       m.chat, 
       {
        text: `${data.meta.title} *Here is the list of videos, click the button below to choose*`,
-       footer: `${footer}`, 
+       footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`, 
        title: "*SAVE FROM*",
        buttonText: "CLICK HERE",
        sections
@@ -5931,7 +5935,7 @@ caption: `*| GOOGLE IMAGE |*
 
 ${globalthemeemoji} Query : ${text}
 ${globalthemeemoji} Media Url : ${images}`,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -5973,7 +5977,7 @@ let buttonMessage = {
 image:log0,
 jpegThumbnail:thum,
 caption: textbv,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4
 }
@@ -6053,7 +6057,7 @@ let buttonMessage = {
 image:log0,
 jpegThumbnail:thum,
 caption: textbv,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4
 }
@@ -6183,7 +6187,7 @@ let buttons = [
 let buttonMessage = {
 video: {url:lotwit.medias[1].url},
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -6210,7 +6214,7 @@ let buttons = [
 let buttonMessage = {
 video: {url:args[0]},
 caption: "Done!",
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -6280,7 +6284,7 @@ let buttons = [
 let buttonMessage = {
 video: {url:resd.medias[0].url},
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -6307,7 +6311,7 @@ let buttons = [
 let buttonMessage = {
 video: {url:args[0]},
 caption: "Done!",
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -6391,7 +6395,7 @@ if (isBan) return reply(mess.ban)
       m.chat, 
       {
        text: `${ucapannya2} ${pushname} *Search Results From ${text} Click the button below to choose*`,
-       footer:`${footer}`,
+       footer:`${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
        title: "*APK DOWNLOADER,*",
        buttonText: "CLICK HERE",
        sections
@@ -6827,7 +6831,7 @@ let buttonMessage = {
 image: log0,
 jpegThumbnail: thum,
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4
 }
@@ -6852,7 +6856,7 @@ let buttonMessage = {
 image: {url:res[0].icon},
 jpegThumbnail: thum,
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4
 }
@@ -6879,7 +6883,7 @@ let buttonMessage = {
 image: log0,
 jpegThumbnail: thum,
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4
 }
@@ -6903,7 +6907,7 @@ let buttonMessage = {
 image: log0,
 jpegThumbnail: thum,
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4
 }
@@ -7296,7 +7300,7 @@ if (isBanChat) return reply(mess.banChat)
                 let buttonMessage = {
                     image: { url: result.image[0] },
                     caption: `Title : ${result.title}\nCategory : ${result.type}\nDetail : ${result.source}\nMedia Url : ${result.image[2] || result.image[1] || result.image[0]}`,
-                    footer: `${footer}`,
+                    footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -7316,7 +7320,7 @@ if (isBanChat) return reply(mess.banChat)
                 let buttonMessage = {
                     image: { url: result.image },
                     caption: `${themeemoji} Title : ${result.title}\n${themeemoji} Source : ${result.source}\n${themeemoji} Media Url : ${result.image}`,
-                    footer: `${footer}`,
+                    footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -7343,7 +7347,7 @@ let buttons = [
 let buttonMessage = {
 video: {url:Pikatiktokop},
 caption: texttk,
-footer:`${footer}`,
+footer:`${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -7412,7 +7416,7 @@ ${globalthemeemoji}Author : ${anu.author.name}
 ${globalthemeemoji}Channel : ${anu.author.url}
 ${globalthemeemoji}Description : ${anu.description}
 ${globalthemeemoji}Url : ${anu.url}`,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -7447,7 +7451,7 @@ let buttons = [
 let buttonMessage = {
 image: {url:res.thumb},
 caption: textyt,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -7537,7 +7541,7 @@ let buttons = [
 let buttonMessage = {
 image: { url: imgnyee },
 caption:  `${global.dogeemoji} Title : ` + args.join(" ") + `\n${global.dogeemoji} Media Url : `+imgnyee,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -7594,7 +7598,7 @@ ${themeemoji} Caption : ${anu.caption}
 ${themeemoji} Url : ${anu.media[0]}
 To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp4 Command With The Url Above
 `,
-			footer: `${footer}`,
+			footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 			buttons,
 			headerType: 4
 		    }
@@ -8842,7 +8846,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: menuimage,
 caption: allmenu,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -8907,7 +8911,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: menuimage,
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -8974,7 +8978,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: button,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9026,7 +9030,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9169,7 +9173,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: bttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9229,7 +9233,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: uttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9293,7 +9297,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: butons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9352,7 +9356,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9468,7 +9472,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9523,7 +9527,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9579,7 +9583,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9651,7 +9655,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9699,7 +9703,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9770,7 +9774,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9837,7 +9841,7 @@ let ntus = {
 image: fs.readFileSync('./AnyaPikaMedia/theme/Menu/Menuimg.jpg'),
 jpegThumbnail: menuimage,
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -9908,7 +9912,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10099,7 +10103,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10147,7 +10151,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10193,7 +10197,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10238,7 +10242,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10293,7 +10297,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10347,7 +10351,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10406,7 +10410,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10470,7 +10474,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -10496,7 +10500,7 @@ let ntus = {
 image: unicorn,
 jpegThumbnail: fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 caption: teks,
-footer: `${footer}`,
+footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
 buttons: buttns,
 headerType: 4,
 contextInfo:{externalAdReply:{
