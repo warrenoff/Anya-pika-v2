@@ -7751,6 +7751,8 @@ case 'alive': case 'panel': case 'menu': case 'help': case 'Anyaa': case 'comman
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { react: { text: `${menureactemoji}`, key: m.key }})
+let msg = await AnyaPika.sendMessage(m.chat, { audio: fs.readFileSync(`./AnyaPikaMedia/audio/${anju}.mp3`), mimetype: 'audio/mpeg' }, { quoted: m }),
+AnyaPika.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m }),
 let text  = `${global.aliveMessage}`
 let buttons = [
 {buttonId: `Listmenu`, buttonText: {displayText: '🥵 𝘓𝘪𝘴𝘵 𝘮𝘦𝘯𝘶'}, type: 1},
