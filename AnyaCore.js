@@ -1946,7 +1946,7 @@ if (isBanChat) return reply(mess.banChat)
      if (!isBotAdmins) return replay(mess.botadmin)
      if (!isAdmins && !isCreator) return replay(mess.useradmin)
      let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await Miku.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(jsonformat(res))).catch((err) => replay(jsonformat(err)))
+     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(jsonformat(res))).catch((err) => replay(jsonformat(err)))
      }
      break
 
@@ -1957,7 +1957,7 @@ if (isBanChat) return reply(mess.banChat)
      if (!isBotAdmins) return replay(mess.botadmin)
      if (!isAdmins && !isCreator) return replay(mess.useradmin)
      let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await Miku.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => replay(jsonformat(res))).catch((err) => replay(jsonformat(err)))
+     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => replay(jsonformat(res))).catch((err) => replay(jsonformat(err)))
      }
      break
         case 'block': {
@@ -2857,18 +2857,6 @@ replay(`RESTARTING THE BOT..............`)
 }
 break
 
-case 'deleteit': case 'del': {
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.quoted) reply(false)
-let { chat, fromEveryone, id, isBaileys } = m.quoted
-if (!isBaileys) return replay(`The Message Was Not Sent By A Bot!`)
-let { Chat, fromMe, id} = m.quoted
-
-Miku.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.quoted.id, participant: m.quoted.sender })
-}
-break
-
 case 'delete': case 'del': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -2878,6 +2866,16 @@ if (!isBaileys) return replay(`The Message Was Not Sent By A Bot!`)
 AnyaPika.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
 }
             break
+case 'deletethis': case 'delthis': case 'deletethismessage': case 'delthismsg': {
+if (isBan) return reply(mess.banned)	 			
+if (isBanChat) return reply(mess.bangc)
+if (!isBotAdmins) return replay(mess.botadmin)
+if (!isAdmins && !isCreator) return replay(mess.useradmin)
+if (!m.quoted) return reply('Please mention a message baka!')
+let { chat, fromMe, id} = m.quoted
+AnyaPika.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.quoted.id, participant: m.quoted.sender })
+}
+break
 case 'bcgc': case 'bcgroup': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
