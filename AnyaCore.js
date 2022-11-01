@@ -1682,7 +1682,7 @@ AnyaPika.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
             let buttons = [
                         { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
                     ]
-                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, botname, m, {mentions: ments})
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
             break
 case 'dare':
@@ -3028,8 +3028,8 @@ for (let i of msg.userReceipt) {
 let read = i.readTimestamp
 let unread = i.receiptTimestamp
 let waktu = read ? read : unread
-teks += `${globalthemeemoji} @${i.userJid.split('@')[0]}\n`
-teks += ` ┗━${globalthemeemoji} *Time :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} ${globalthemeemoji} *Status :* ${read ? 'Read' : 'Sent'}\n\n`
+teks += `${menureactemoji} @${i.userJid.split('@')[0]}\n`
+teks += ` ┗━${tagmsgemoji} 𝗧𝗶𝗺𝗲 : ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} ${tagmsgemoji} 𝗦𝘁𝗮𝘁𝘂𝘀 : ${read ? 'Read' : 'Sent'}\n\n`
 }
 AnyaPika.sendTextWithMentions(m.chat, teks, m)
 }
@@ -3040,7 +3040,7 @@ if (isBanChat) return reply(mess.banChat)
 if (!m.quoted) return replay('Reply Message!!')
 let wokwol = await AnyaPika.serializeM(await m.getQuotedObj())
 if (!wokwol.quoted) return replay('The message you replied to does not contain a reply')
-await wokwol.quoted.copyNForward(m.chat, true)
+await AnyaPika.quoted.copyNForward(m.chat, true)
 }
 break
 case 'profile': case 'myprofile':
@@ -3326,12 +3326,13 @@ case 'tickle':
 reply(mess.wait)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/${command}`)
                            var wbuttsss = [
-        {buttonId: `.${command}`, buttonText: {displayText: `Next ✨`}, type: 1},
+        {buttonId: `.${command}`, buttonText: {displayText: `🔥 𝘕𝘦𝘹𝘵`}, type: 1},
+        {buttonId: `${prefix}${rancommands1}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮 🔀`
         ]
       let buttonssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+      footer: `${footer}`,
       buttons: wbuttsss,
       headerType: 4
       }     
