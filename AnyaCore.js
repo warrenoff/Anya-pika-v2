@@ -1904,14 +1904,6 @@ if (isBanChat) return reply(mess.banChat)
 		await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-case 'remove-me': {
-		if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-		if (!m.isGroup) return replay(`${mess.group}`)             
-		let users = @${m.sender.split('@')[0]}
-		await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
-	}
-	break
 	case 'add':{     			
     if (!m.isGroup) return replay(mess.grouponly)
  if (!isBotAdmins) return replay(mess.botadmin)
@@ -1928,7 +1920,7 @@ if (isBanChat) return reply(mess.banChat)
      if (!isBotAdmins) return replay(mess.botadmin)
      if (!isAdmins && !isCreator) return replay(mess.useradmin)
      let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(jsonformat(res))).catch((err) => replay(jsonformat(err)))
+     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(`${pushname} successfully promoted ${users}.`)
      }
      break
 
