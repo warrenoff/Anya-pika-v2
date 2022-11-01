@@ -4218,7 +4218,8 @@ reply(mess.waiting)
     waifuddd = await axios.get('https://waifu.pics/api/sfw/neko')
  var wbuttsssr = [
     {buttonId: `-neko2`, buttonText: {displayText: `Neko once more 😋`}, type: 1},
-    {buttonId: `-meow`, buttonText: {displayText: 'Kitty waifu 😻'}, type: 1}
+    {buttonId: `-meow`, buttonText: {displayText: 'Kitty waifu 😻'}, type: 1},       
+    {buttonId: `-awoo`, buttonText: {displayText: 'Awoooo😚'}, type: 1}        
     ]
         let buttonMessagessf = {
         image: {url:waifuddd.data.url},
@@ -4227,7 +4228,7 @@ reply(mess.waiting)
         headerType: 2
          }     
                                   
-    await AnyaPika.sendMessage(m.chat, buttonMessagessf, { quoted:m }).catch(err => {
+    await Miku.sendMessage(m.chat, buttonMessagessf, { quoted:m }).catch(err => {
         return('error..')
         })
 break
@@ -4240,10 +4241,9 @@ case 'loli' :
 reply(mess.waiting)	
     waifuddd = await axios.get('https://waifu.pics/api/sfw/shinobu')
  var wbuttsssr = [
-    {buttonId: `-loli`, buttonText: {displayText: `𝘖𝘯𝘦 𝘮𝘰𝘳𝘦 𝘓𝘰𝘭𝘪❤️`}, type: 1},
-    {buttonId: `-neko`, buttonText: {displayText: `Neko 🍓`}, type: 1},
-    {buttonId: `-foxgirl`, buttonText: {displayText: `Fox waifu 🦊`}, type: 1}
-    ]
+	{buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🔥`}, type: 1},
+        {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
+        ]
         let buttonMessagessfgr = {
         image: {url:waifuddd.data.url},
         caption: 'Dont be a lolicon !',
@@ -4251,7 +4251,7 @@ reply(mess.waiting)
         headerType: 2
          }     
                                   
-    await AnyaPika.sendMessage(m.chat, buttonMessagessfgr, { quoted:m }).catch(err => {
+    await Miku.sendMessage(m.chat, buttonMessagessfgr, { quoted:m }).catch(err => {
         return('error..')
         })
 break
