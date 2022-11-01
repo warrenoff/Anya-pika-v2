@@ -3535,7 +3535,7 @@ break
 case 'waifu-face':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(`_Processing !!... Can't wait for her face @${pushname('@')[0]} ?_`)						
+reply(`_Processing !!... Can't wait for her face ${pushname} ?_`)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/waifu`)
                            var wbuttsss = [
         {buttonId: `${prefix + command}`, buttonText: {displayText: `🔥 𝘔𝘰𝘳𝘦...`}, type: 1},
@@ -4163,10 +4163,11 @@ break
 case 'awoo2': case 'awoo':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(`Processing !!....`)						
+reply(`_Processing !!.... Ready for Awoo ${pushname} ?_`)						
  waifudd = await axios.get(`https://waifu.pics/api/sfw/awoo`)
  var wbuttsss = [
-    {buttonId: `.${command}`, buttonText: {displayText: `Next ✨`}, type: 1},
+    {buttonId: `${prefix + command}`, buttonText: {displayText: `❤️‍🩹 𝘕𝘦𝘹𝘵 𝘈𝘸𝘰𝘰`}, type: 1},
+    {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮 𝘢𝘯𝘪𝘮𝘦 🥵`}, type: 1}
     ]
   let button1Messages = {
    image: {url:waifudd.data.url},
