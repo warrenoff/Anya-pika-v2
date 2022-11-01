@@ -4244,7 +4244,10 @@ case 'yaoi':
 				reply(mess.wait)
 			    var query = ["yaoi","yaoi aesthetic","yaoi hd","yaoi ganteng"]
                 var data = await pinterest(pickRandom(query))
-				var but = [{buttonId: `${command}`, buttonText: { displayText: "Next➡️" }, type: 1 }]
+				var but = [
+{buttonId: `${prefix + command}`, buttonText: {displayText: '❤️‍🩹 𝘔𝘰𝘳𝘦...'}, type: 1},
+{buttonId: `${prefix + rancommands2}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 🔀'},type: 1}
+]
 				AnyaPika.sendMessage(from, { caption: "Here you go!", image: { url: pickRandom(data.result) }, buttons: but, footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ` }, { quoted: m })
  			    break
 case 'coffee': case 'kopi': {
@@ -7698,7 +7701,7 @@ if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { react: { text: `${menureactemoji}`, key: m.key }})
 let text  = `${global.aliveMessage}`
 let buttons = [
-{buttonId: `Listmenu`, buttonText: {displayText: '🥵 𝘓𝘪𝘴𝘵 𝘮𝘦𝘯𝘶'}, type: 1},
+{buttonId: `${prefix}Listmenu`, buttonText: {displayText: '🥵 𝘓𝘪𝘴𝘵 𝘮𝘦𝘯𝘶'}, type: 1},
 {buttonId: `${symb}allmenu`, buttonText: {displayText:'𝘈𝘭𝘭 𝘮𝘦𝘯𝘶 🎃'},type: 1}
 ]
 let ntus = {
