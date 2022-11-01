@@ -3529,10 +3529,10 @@ if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 reply(`_Processing !!... Can't wait for her face ${pushname} ?_`)						
 waifudd = await axios.get(`https://waifu.pics/api/sfw/waifu`)
-var wbuttsss = [
-{buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🥵`}, type: 1},
-{buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
-]
+             var wbuttsss = [
+        {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🔥`}, type: 1},
+        {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
+        ]
 let button1120ssMessages = {
 image: {url:waifudd.data.url},
 caption:  `I got your waifu ${pushname} ❤️`,
