@@ -3304,7 +3304,7 @@ case 'wallneon': case 'wallrandom': case 'wallcode': case 'wallpubg': case 'wall
 try{
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(mess.wait)						
+reply(`_Processing your ${command} ${pushname} baby._`)						
 nyz2 = await fetchJson(`https://myselfff.herokuapp.com/docs/wallpaper/${command}`) 
 nyz3 = await getBuffer(nyz2.list.gambar)
 AnyaPika.sendMessage(from, {image : nyz3, caption:`By ${botname3}`}, {quoted:m}) 						
