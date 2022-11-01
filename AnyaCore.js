@@ -3323,11 +3323,13 @@ case 'meow':
 case 'tickle':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
+        const randomCommand1 = ['woof','8ball','goose','gecg','feed','avatar','lizard','meow','tickle']
+        const rancommands1 = randomCommand1[Math.floor(Math.random() * randomCommand1.length)]
 reply(mess.wait)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/${command}`)
                            var wbuttsss = [
-        {buttonId: `.${command}`, buttonText: {displayText: `🔥 𝘕𝘦𝘹𝘵`}, type: 1},
-        {buttonId: `${prefix}${rancommands1}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮 🔀`
+        {buttonId: `${prefix + command}`, buttonText: {displayText: `🔥 𝘕𝘦𝘹𝘵`}, type: 1},
+        {buttonId: `${prefix + rancommands1}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮 🔀`}, type: 1}
         ]
       let buttonssMessages = {
        image: {url:waifudd.data.url},
