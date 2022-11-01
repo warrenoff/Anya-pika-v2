@@ -3533,10 +3533,11 @@ break
 case 'waifu-face':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(mess.wait)						
+reply(`_Processing !!... Can't wait for her face @${m.sender.split("@")[0]} ?_`)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/waifu`)
                            var wbuttsss = [
-        {buttonId: `.${command}`, buttonText: {displayText: `Next ✨`}, type: 1},
+        {buttonId: `${prefix + command}`, buttonText: {displayText: `🔥 𝘔𝘰𝘳𝘦`}, type: 1},
+        {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`} type: 1}
         ]
       let button112ssMessages = {
        image: {url:waifudd.data.url},
