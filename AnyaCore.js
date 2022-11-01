@@ -238,6 +238,8 @@ const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
 const Autoreply = m.isGroup ? autorep.includes(from) : true
 const isBan = banUser.includes(m.sender)
 const isBanChat = m.isGroup ? banchat.includes(from) : false
+const randomCommand2 = ['woof','8ball','goose','gecg','feed','avatar','lizard','meow','tickle']
+const rancommands2 = randomCommand2[Math.floor(Math.random() * randomCommand2.length)]
 autoreadsw = false
         //member\\
         let picaks = [flaming,fluming,flarun,flasmurf]
@@ -3533,7 +3535,7 @@ break
 case 'waifu-face':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(`_Processing !!... Can't wait for her face @${m.sender.split("@")[0]} ?_`)						
+reply(`_Processing !!... Can't wait for her face @${mem.id.split('@')[0]} ?_`)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/waifu`)
                            var wbuttsss = [
         {buttonId: `${prefix + command}`, buttonText: {displayText: `🔥 𝘔𝘰𝘳𝘦`}, type: 1},
