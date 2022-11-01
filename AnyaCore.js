@@ -1209,7 +1209,7 @@ case 'ban': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
-if (!args[0]) return replay(`Select add or del(add to ban, del to unban), For Example: Reply *${prefix}ban add* to the user u want to ban`)
+if (!args[0]) return replay(`Master !!/n Maybe you forgot!! Type ${symb}ban add / ${symb}ban del for ban and unbanning user!!`)
 if (args[1]) {
 orgnye = args[1] + "@s.whatsapp.net"
 } else if (m.quoted) {
@@ -1217,14 +1217,14 @@ orgnye = m.quoted.sender
 }
 const isBane = banUser.includes(orgnye)
 if (args[0] === "add") {
-if (isBane) return ads('User was already banned')
+if (isBane) return ads('I already banned that user Master !!')
 banUser.push(orgnye)
-replay(`Successfully banned the user`)
+replay(`Successfully I banned the user ${pushname}`)
 } else if (args[0] === "del") {
-if (!isBane) return ads('User was already unbanned')
+if (!isBane) return ads('Actually the user is already unbanned Master !')
 let delbans = banUser.indexOf(orgnye)
 banUser.splice(delbans, 1)
-replay(`Successfully unbanned the user`)
+replay(`Successfully unbanned the user ${pushname}`)
 } else {
 replay("Error")
 }
@@ -1360,34 +1360,7 @@ if (isBanChat) return reply(mess.banChat)
                     AnyaPika.chatModify({ clear: { message: { id: m.quoted.id, fromMe: true }} }, m.chat, []).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
                 }
             }
-            break
-	    case 'family100': {
-		if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-                if ('family100'+m.chat in _family100) {
-                    reply('There Are Still Unfinished Sessions!')
-                    reply(false)
-                }
-                let anu = await fetchJson('https://raw.githubusercontent.com/BochilTeam/database/master/games/family100.json')
-                let random = anu[Math.floor(Math.random() * anu.length)]
-                let hasil = `*Answer The Following Questions :*\n${random.soal}\n\nThere Is *${random.jawaban.length}* Answer ${random.jawaban.find(v => v.includes(' ')) ? `(Some Answers Have Spaces)` : ''}`.trim()
-                _family100['family100'+m.chat] = {
-                    id: 'family100'+m.chat,
-                    pesan: await AnyaPika.sendText(m.chat, hasil, m),
-                    ...random,
-                    terjawab: Array.from(random.jawaban, () => false),
-                    hadiah: 6,
-                }
-            }
-            break
-            case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
-            if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-            if (!m.quoted && !text) return replay(`Send/Reply Text With Caption ${prefix + command}`)
-            ter = command[1].toLowerCase()
-            tex = m.quoted ? m.quoted.text ? m.quoted.text : q ? q : m.text : q ? q : m.text
-            reply(tex.replace(/[aiueo]/g, ter).replace(/[AIUEO]/g, ter.toUpperCase()))
-            break
+            break	               
 case 'guess': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -1489,7 +1462,7 @@ break
 if (isBanChat) return reply(mess.banChat)
                 if (kuismath.hasOwnProperty(m.sender.split('@')[0])) return replay(`There Are Still Unfinished Sessions!`)
                 let { genMath, modes } = require('./lib/math')
-                if (!text) return replay(`Mode: ${Object.keys(modes).join(' | ')}\nFor Examples: ${prefix}math medium`)
+                if (!text) return replay(`Mode: ${Object.keys(modes).join(' | ')}\n\nFor Examples: ${prefix}math medium`)
                 let result = await genMath(text.toLowerCase())
                 AnyaPika.sendText(m.chat, `*What Is The Result Of: ${result.soal.toLowerCase()}*?\n\nTime: ${(result.waktu / 1000).toFixed(2)} second`, m).then(() => {
                     kuismath[m.sender.split('@')[0]] = result.jawaban
@@ -1502,10 +1475,10 @@ if (isBanChat) return reply(mess.banChat)
                 }
             }
             break
-            case 'mysoulmate': {
+            case 'mysoulmate': case 'soulmate': {
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-            if (!m.isGroup) return replay(`${mess.group}`)
+            if (!m.isGroup) return replay(`Use this feature in a group chat ${pushname}`)
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
@@ -1931,16 +1904,23 @@ if (isBanChat) return reply(mess.banChat)
 		await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'add': {
+case 'remove-me': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-		if (!m.isGroup) return replay(`${mess.group}`)
-                if (!isBotAdmins) return replay(`${mess.botAdmin}`)
-                if (!isAdmins) return replay(`${mess.admin}`)
-		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'add')
+		if (!m.isGroup) return replay(`${mess.group}`)             
+		let users = @${m.sender.split('@')[0]}
+		await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
+	case 'add':{     			
+    if (!m.isGroup) return replay(mess.grouponly)
+ if (!isBotAdmins) return replay(mess.botadmin)
+ Miku.sendMessage(from, { react: { text: `${global.reactmoji18}`, key: m.key }})
+ let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+ if (users.length == 0) return replay(`Please write the number of the person you want to add to thhis group`)
+  await Miku.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => replay(`User Added Successfully in this group by ${global.BotName} !`)).catch((err) => replay(`Cannot add that user to this group!`))
+ }
+ break
      case 'promote': {
         if (isBan) return reply(mess.banned)	 			
      if (isBanChat) return reply(mess.bangc)
@@ -3538,12 +3518,12 @@ case 'waifu-face':
 reply(`_Processing !!... Can't wait for her face ${pushname} ?_`)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/waifu`)
                            var wbuttsss = [
-        {buttonId: `${prefix + command}`, buttonText: {displayText: `🔥 𝘔𝘰𝘳𝘦...`}, type: 1},
+        {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🔥`}, type: 1},
         {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
         ]
       let button112ssMessages = {
        image: {url:waifudd.data.url},
-       caption:  `Here is your face @${pushname}.`,
+       caption:  `Here is your waifu face ${pushname}.`,
       footer: `${footer}`,
       buttons: wbuttsss,
       headerType: 4
@@ -4166,13 +4146,13 @@ case 'awoo2': case 'awoo':
 reply(`_Processing !!.... Ready for Awoo ${pushname} ?_`)						
  waifudd = await axios.get(`https://waifu.pics/api/sfw/awoo`)
  var wbuttsss = [
-    {buttonId: `${prefix + command}`, buttonText: {displayText: `❤️‍🩹 𝘕𝘦𝘹𝘵 𝘈𝘸𝘰𝘰`}, type: 1},
-    {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮 𝘢𝘯𝘪𝘮𝘦 🥵`}, type: 1}
-    ]
+        {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘈𝘨𝘢𝘪𝘯...🐺`}, type: 1},
+        {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
+        ]
   let button1Messages = {
    image: {url:waifudd.data.url},
    caption:  `Here you go!`,
-   footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+   footer: `${footer}`,
   buttons: wbuttsss,
   headerType: 2
   }       
@@ -4181,11 +4161,12 @@ reply(`_Processing !!.... Ready for Awoo ${pushname} ?_`)
                 })
 break
 case 'animewall2': case 'animewallpaper2':
-   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-reply(mess.wait)						
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)
+    reply(mess.waiting)						
 const { AnimeWallpaper } =require("anime-wallpaper")
-if(!q) return reply('What wallpaper do you want?')
+if(!q) return reply('Please enter a seach term!')
 const wall = new AnimeWallpaper();
     const pages = [1,2,3,4];
         const random=pages[Math.floor(Math.random() * pages.length)]
@@ -4194,19 +4175,18 @@ const wall = new AnimeWallpaper();
             .catch(() => null);
 const i = Math.floor(Math.random() * wallpaper.length);
 var walb = [
-        {buttonId: `.${command} ${q}`, buttonText: {displayText: `Next ✨`}, type: 1},        
+        {buttonId: `-animewall2 ${q}`, buttonText: {displayText: `>>`}, type: 1},        
         ]
       let wal = {
        image: {url:wallpaper[i].image},
-       caption: `*Query :* ${q}`,
-      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+       caption: `*Search Term :* ${q}`,
+      footer: `${footer}`,
       buttons: walb,
       headerType: 4
       }     
-            await AnyaPika.sendMessage(m.chat, wal,{ quoted:m }).catch(err => {
+            await Miku.sendMessage(m.chat, wal,{ quoted:m }).catch(err => {
                     return('Error!')
-                })
-AnyaPika.sendMessage(m.chat,{image:{url:wallpaper[i].image},caption:`*Query :* ${q}`})            
+                })          
 break
 case 'cry':case 'kill':case 'kick':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo-sticker':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
    if (isBan) return reply(mess.ban)
@@ -4220,15 +4200,15 @@ case 'waifu' :
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
-reply(`_Command processing_ ᵃⁿʸᵃ ᵇʸ ᵖⁱᵏᵃ.....`)	
+reply(`_This waifu will definitely ruin ${pushname}'s whole laifu...🥵_`)	
     waifuddd = await axios.get('https://waifu.pics/api/sfw/waifu')
  let buons = [
-{buttonId: `waifu-face`, buttonText: {displayText: 'Menu'}, type: 1},
-{buttonId: `owner`, buttonText: {displayText: 'owner👑'}, type: 1}
-]
+        {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🥵`}, type: 1},
+        {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
+        ]
         let button4Messagess = {
         image: {url:waifuddd.data.url},
-        caption: `_${botname1}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 🥵.`,
+        caption: `_${botname1}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 ❤️.`,
         buttons: buons,
         headerType: 4
          }     
