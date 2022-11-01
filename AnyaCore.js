@@ -1920,7 +1920,7 @@ if (isBanChat) return reply(mess.banChat)
      if (!isBotAdmins) return replay(mess.botadmin)
      if (!isAdmins && !isCreator) return replay(mess.useradmin)
      let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(`${pushname} successfully promoted ${users}.`)
+     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(`${pushname} successfully promoted ${users}.`))
      }
      break
 
