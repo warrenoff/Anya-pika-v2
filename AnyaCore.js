@@ -3364,7 +3364,7 @@ if (!AntiNsfw) return reply(mess.nsfw)
                 reply(mess.wait)
                 anu = await hentai()
                 result912 = anu[Math.floor(Math.random(), anu.length)]
-                AnyaPika.sendMessage(m.chat, { video: { url: result912.video_1 }, caption: `${themeemoji} Title : ${result912.title}\n${themeemoji} Category : ${result912.category}\n${themeemoji} Mimetype : ${result912.type}\n${themeemoji} Views : ${result912.views_count}\n${themeemoji} Shares : ${result912.share_count}\n${themeemoji} Source : ${result912.link}\n${themeemoji} Media Url : ${result912.video_1}` }, { quoted: m })
+                AnyaPika.sendMessage(m.chat, { video: { url: result912.video_1 }, caption: `${tagmsgemoji} Title : ${result912.title}\n${tagmsgemoji} Category : ${result912.category}\n${tagmsgemoji} Mimetype : ${result912.type}\n${tagmsgemoji} Views : ${result912.views_count}\n${tagmsgemoji} Shares : ${result912.share_count}\n${tagmsgemoji} Source : ${result912.link}\n${tagmsgemoji} Media Url : ${result912.video_1}` }, { quoted: m })
             }
             break
 case 'trap' :
@@ -3458,8 +3458,8 @@ case 'smug2':
 reply(mess.wait)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/smug`)
                            var wbuttsss = [
-{buttonId: `${prefix + command}`, buttonText: {displayText: '🤤 𝘔𝘰𝘳𝘦...'}, type: 1},
-{buttonId: `${prefix + rancommands3}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 💦'},type: 1}
+{buttonId: `${prefix + command}`, buttonText: {displayText: '✨ 𝘔𝘰𝘳𝘦...'}, type: 1},
+{buttonId: `${prefix + rancommands2}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 🔀'},type: 1}
 ]
       let button1ssMessages = {
        image: {url:waifudd.data.url},
