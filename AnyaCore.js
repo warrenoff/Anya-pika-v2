@@ -3533,14 +3533,14 @@ var wbuttsss = [
 {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🥵`}, type: 1},
 {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
 ]
-let button112ssMessages = {
+let button1120ssMessages = {
 image: {url:waifudd.data.url},
 caption:  `I got your waifu ${pushname} ❤️`,
 footer: `${footer}`,
 buttons: wbuttsss,
 headerType: 4
 }     
-await AnyaPika.sendMessage(m.chat, button112ssMessages,{ quoted:m }).catch(err => {
+await AnyaPika.sendMessage(m.chat, button1120ssMessages,{ quoted:m }).catch(err => {
 return('Error!')
 })
 break
@@ -4218,14 +4218,14 @@ var wbuttsss = [
 {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...✨`}, type: 1},
 {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
 ]
-let button112ssMessages = {
+let button1121ssMessages = {
 image: {url:waifudd.data.url},
 caption:  `Here is your neko ${pushname}.`,
 footer: `${footer}`,
 buttons: wbuttsss,
 headerType: 4
 }     
-await AnyaPika.sendMessage(m.chat, button112ssMessages,{ quoted:m }).catch(err => {
+await AnyaPika.sendMessage(m.chat, button1121ssMessages,{ quoted:m }).catch(err => {
 return('Error!')
 })
 break
