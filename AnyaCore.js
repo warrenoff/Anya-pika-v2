@@ -238,7 +238,7 @@ const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
 const Autoreply = m.isGroup ? autorep.includes(from) : true
 const isBan = banUser.includes(m.sender)
 const isBanChat = m.isGroup ? banchat.includes(from) : false
-const randomCommand2 = ['woof','8ball','goose','gecg','feed','avatar','lizard','meow','tickle']
+const randomCommand2 = ['waifu','waifu-face','neko2','neko','awoo','awoo2','foxgirl','yaoi','megumin','megumin2','loli']
 const rancommands2 = randomCommand2[Math.floor(Math.random() * randomCommand2.length)]
 autoreadsw = false
         //member\\
@@ -3535,16 +3535,16 @@ break
 case 'waifu-face':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(`_Processing !!... Can't wait for her face @${m.sender.split('@')[0]} ?_`)						
+reply(`_Processing !!... Can't wait for her face @${pushname('@')[0]} ?_`)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/waifu`)
                            var wbuttsss = [
-        {buttonId: `${prefix + command}`, buttonText: {displayText: `🔥 𝘔𝘰𝘳𝘦`}, type: 1},
+        {buttonId: `${prefix + command}`, buttonText: {displayText: `🔥 𝘔𝘰𝘳𝘦...`}, type: 1},
         {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
         ]
       let button112ssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here is your face @${pushname}.`,
-      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+      footer: `${footer}`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -4160,10 +4160,10 @@ await AnyaPika.sendMessage(m.chat,buttonzMessage, { quoted:m }).catch(err => {
      return('Error!')
     })               
 break     
-case 'awoo2':
+case 'awoo2': case 'awoo':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(mess.wait)						
+reply(`Processing !!....`)						
  waifudd = await axios.get(`https://waifu.pics/api/sfw/awoo`)
  var wbuttsss = [
     {buttonId: `.${command}`, buttonText: {displayText: `Next ✨`}, type: 1},
@@ -4207,7 +4207,7 @@ var walb = [
                 })
 AnyaPika.sendMessage(m.chat,{image:{url:wallpaper[i].image},caption:`*Query :* ${q}`})            
 break
-case 'cry':case 'kill':case 'kick':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
+case 'cry':case 'kill':case 'kick':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo-sticker':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 					axios.get(`https://api.waifu.pics/sfw/${command}`)
@@ -8308,7 +8308,8 @@ const allmenu = `╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛�
 ❒✗ ${prefix}yaoi
 ❒✗ ${prefix}neko2
 ❒✗ ${prefix}waifu
-❒✗ ${prefix}waifu2
+❒✗ ${prefix}waifu-face
+❒✗ ${prefix}awoo
 ❒✗ ${prefix}awoo2
 ❒✗ ${prefix}shinobu
 ❒✗ ${prefix}waifu-face
@@ -8337,7 +8338,7 @@ const allmenu = `╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛�
 ❒✗ ${prefix}cuddle
 ❒✗ ${prefix}cry
 ❒✗ ${prefix}hug
-❒✗ ${prefix}awoo
+❒✗ ${prefix}awoo-sticker
 ❒✗ ${prefix}kiss
 ❒✗ ${prefix}lick
 ❒✗ ${prefix}pat
