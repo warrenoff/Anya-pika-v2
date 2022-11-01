@@ -3304,7 +3304,7 @@ case 'wallneon': case 'wallrandom': case 'wallcode': case 'wallpubg': case 'wall
 try{
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(`_Processing your ${command} ${pushname} baby._`)						
+reply(`_Processing your ${command} *${pushname}* baby...._`)						
 nyz2 = await fetchJson(`https://myselfff.herokuapp.com/docs/wallpaper/${command}`) 
 nyz3 = await getBuffer(nyz2.list.gambar)
 AnyaPika.sendMessage(from, {image : nyz3, caption:`By ${botname3}`}, {quoted:m}) 						
@@ -3325,7 +3325,7 @@ case 'tickle':
 	if (isBanChat) return reply(mess.banChat)
         const randomCommand1 = ['woof','8ball','goose','gecg','feed','avatar','lizard','meow','tickle']
         const rancommands1 = randomCommand1[Math.floor(Math.random() * randomCommand1.length)]
-reply(mess.wait)						
+reply(`_Processing your ${command} *${pushname}* baby...._`)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/${command}`)
                            var wbuttsss = [
         {buttonId: `${prefix + command}`, buttonText: {displayText: `🔥 𝘕𝘦𝘹𝘵`}, type: 1},
