@@ -1907,10 +1907,10 @@ if (isBanChat) return reply(mess.banChat)
 	case 'add':{     			
     if (!m.isGroup) return replay(mess.grouponly)
  if (!isBotAdmins) return replay(mess.botadmin)
- Miku.sendMessage(from, { react: { text: `${global.reactmoji18}`, key: m.key }})
+ AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji18}`, key: m.key }})
  let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
  if (users.length == 0) return replay(`Please write the number of the person you want to add to thhis group`)
-  await Miku.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => replay(`User Added Successfully in this group by ${global.BotName} !`)).catch((err) => replay(`Cannot add that user to this group!`))
+  await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => replay(`User Added Successfully in this group by ${global.BotName} !`)).catch((err) => replay(`Cannot add that user to this group!`))
  }
  break
      case 'promote': {
@@ -1920,7 +1920,7 @@ if (isBanChat) return reply(mess.banChat)
      if (!isBotAdmins) return replay(mess.botadmin)
      if (!isAdmins && !isCreator) return replay(mess.useradmin)
      let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(`${pushname} successfully promoted ${users}.`))
+     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(`${pushname} successfully promoted to 𝗠𝗲𝗺𝗯𝗲𝗿 𝘁𝗼 𝗔𝗱𝗺𝗶𝗻.`))
      }
      break
 
@@ -1931,7 +1931,7 @@ if (isBanChat) return reply(mess.banChat)
      if (!isBotAdmins) return replay(mess.botadmin)
      if (!isAdmins && !isCreator) return replay(mess.useradmin)
      let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => replay(jsonformat(res))).catch((err) => replay(jsonformat(err)))
+     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => replay(`${pushname} succesfully demoted to 𝗔𝗱𝗺𝗶𝗻 𝘁𝗼 𝗺𝗲𝗺𝗯𝗲𝗿.`))
      }
      break
         case 'block': {
@@ -1956,8 +1956,8 @@ if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) replay(`${mess.admin}`)
-                if (!text) replay(`Where Is The Text?`)
-                await AnyaPika.groupUpdateSubject(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
+                if (!text) replay(`Where Is The Text ${pushname} ?`)
+                await AnyaPika.groupUpdateSubject(m.chat, text).then((res) => reply(`Name changed by ${pushname}.`)).catch((err) => reply(jsonformat(err)))
             }
             break
           case 'setdesc': case 'setdescription': {
@@ -1966,7 +1966,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) replay(`${mess.admin}`)
-                if (!text) replay(`Where Is The Text?`)
+                if (!text) replay(`Where Is The Text ${pushname} ?`)
                 await AnyaPika.groupUpdateDescription(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
             }
             break
@@ -3505,24 +3505,24 @@ if (!m.isGroup) return replay(mess.group)
                 })
 break
 case 'waifu-face':
-   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
 reply(`_Processing !!... Can't wait for her face ${pushname} ?_`)						
- waifudd = await axios.get(`https://nekos.life/api/v2/img/waifu`)
-                           var wbuttsss = [
-        {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🔥`}, type: 1},
-        {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
-        ]
-      let button112ssMessages = {
-       image: {url:waifudd.data.url},
-       caption:  `Here is your waifu face ${pushname}.`,
-      footer: `${footer}`,
-      buttons: wbuttsss,
-      headerType: 4
-      }     
-            await AnyaPika.sendMessage(m.chat, button112ssMessages,{ quoted:m }).catch(err => {
-                    return('Error!')
-                })
+waifudd = await axios.get(`https://nekos.life/api/v2/img/waifu`)
+var wbuttsss = [
+{buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🔥`}, type: 1},
+{buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
+]
+let button112ssMessages = {
+image: {url:waifudd.data.url},
+caption:  `Here is your waifu face ${pushname}.`,
+footer: `${footer}`,
+buttons: wbuttsss,
+headerType: 4
+}     
+await AnyaPika.sendMessage(m.chat, button112ssMessages,{ quoted:m }).catch(err => {
+return('Error!')
+})
 break
 case 'neko2':
    if (isBan) return reply(mess.ban)
@@ -4138,7 +4138,7 @@ case 'awoo2': case 'awoo':
 reply(`_Processing !!.... Ready for Awoo ${pushname} ?_`)						
  waifudd = await axios.get(`https://waifu.pics/api/sfw/awoo`)
  var wbuttsss = [
-        {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘈𝘨𝘢𝘪𝘯...🐺`}, type: 1},
+        {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘈𝘨𝘢𝘪𝘯...🐈‍⬛`}, type: 1},
         {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
         ]
   let button1Messages = {
@@ -4176,7 +4176,7 @@ var walb = [
       buttons: walb,
       headerType: 4
       }     
-            await Miku.sendMessage(m.chat, wal,{ quoted:m }).catch(err => {
+            await AnyaPika.sendMessage(m.chat, wal,{ quoted:m }).catch(err => {
                     return('Error!')
                 })          
 break
