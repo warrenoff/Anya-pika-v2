@@ -3524,6 +3524,26 @@ await AnyaPika.sendMessage(m.chat, button112ssMessages,{ quoted:m }).catch(err =
 return('Error!')
 })
 break
+case 'waifu':
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
+reply(`_Processing !!... Can't wait for her face ${pushname} ?_`)						
+waifudd = await axios.get(`https://waifu.pics/api/sfw/waifu`)
+var wbuttsss = [
+{buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🥵`}, type: 1},
+{buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
+]
+let button112ssMessages = {
+image: {url:waifudd.data.url},
+caption:  `I got your waifu ${pushname} ❤️`,
+footer: `${footer}`,
+buttons: wbuttsss,
+headerType: 4
+}     
+await AnyaPika.sendMessage(m.chat, button112ssMessages,{ quoted:m }).catch(err => {
+return('Error!')
+})
+break
 case 'neko2':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -4094,18 +4114,19 @@ reply(mess.wait)
                     return('Error!')
                 })
 break
-case 'shinobu2':  
+case 'loli':  
  if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(mess.wait)						
+reply(`_Processing !!... Uff these little waifus 😚_`)						
                     ud = await axios.get('https://waifu.pics/api/sfw/shinobu')
 var wbutsss = [
-    {buttonId: `.shinobu`, buttonText: {displayText: `Next ✨`}, type: 1},
-         ]
+        {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🥺`}, type: 1},
+        {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
+        ]
       let buttonsesMessage = {
       image: {url:ud.data.url},
-       caption:  `Here you go!`,
-      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+       caption:  `Here is your little loli ${pushname} !`,
+      footer: `${footer}`,
           buttons: wbutsss,
      headerType: 4
                       }
@@ -4188,72 +4209,25 @@ case 'cry':case 'kill':case 'kick':case 'hug':case 'pat':case 'lick':case 'kiss'
 						AnyaPika.sendImageAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
 					})
 					break
-case 'waifu' :
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-reply(`_This waifu will definitely ruin ${pushname}'s whole laifu...🥵_`)	
-    waifuddd = await axios.get('https://waifu.pics/api/sfw/waifu')
- let buons = [
-        {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🥵`}, type: 1},
-        {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
-        ]
-        let button4Messagess = {
-        image: {url:waifuddd.data.url},
-        caption: `_${botname1}_ 𝘨𝘰𝘵 𝘺𝘰𝘶𝘳 𝘸𝘢𝘪𝘧𝘶 _${pushname}_ 𝘣𝘢𝘣𝘺 ❤️.`,
-        buttons: buons,
-        headerType: 4
-         }     
-                                  
-    await AnyaPika.sendMessage(m.chat, button4Messagess, { quoted:m }).catch(err => {
-        return('error..')
-        })
-break
-
-case 'neko' :
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-reply(mess.waiting)	
-    waifuddd = await axios.get('https://waifu.pics/api/sfw/neko')
- var wbuttsssr = [
-    {buttonId: `-neko2`, buttonText: {displayText: `Neko once more 😋`}, type: 1},
-    {buttonId: `-meow`, buttonText: {displayText: 'Kitty waifu 😻'}, type: 1},       
-    {buttonId: `-awoo`, buttonText: {displayText: 'Awoooo😚'}, type: 1}        
-    ]
-        let buttonMessagessf = {
-        image: {url:waifuddd.data.url},
-        caption: 'Nyaa...',
-        buttons: wbuttsssr,
-        headerType: 2
-         }     
-                                  
-    await Miku.sendMessage(m.chat, buttonMessagessf, { quoted:m }).catch(err => {
-        return('error..')
-        })
-break
-
-
-case 'loli' :
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-reply(mess.waiting)	
-    waifuddd = await axios.get('https://waifu.pics/api/sfw/shinobu')
- var wbuttsssr = [
-	{buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🔥`}, type: 1},
-        {buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
-        ]
-        let buttonMessagessfgr = {
-        image: {url:waifuddd.data.url},
-        caption: 'Dont be a lolicon !',
-        buttons: wbuttsssr,
-        headerType: 2
-         }     
-                                  
-    await Miku.sendMessage(m.chat, buttonMessagessfgr, { quoted:m }).catch(err => {
-        return('error..')
-        })
+case 'neko':
+if (isBan) return reply(mess.ban)
+if (isBanChat) return reply(mess.banChat)
+reply(`_Processing !!... Yout neko is coming ${pushname} ?_`)						
+waifudd = await axios.get(`https://waifu.pics/api/sfw/neko`)
+var wbuttsss = [
+{buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...✨`}, type: 1},
+{buttonId: `${prefix + rancommands2}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮𝘴 🔀`}, type: 1}
+]
+let button112ssMessages = {
+image: {url:waifudd.data.url},
+caption:  `Here is your neko ${pushname}.`,
+footer: `${footer}`,
+buttons: wbuttsss,
+headerType: 4
+}     
+await AnyaPika.sendMessage(m.chat, button112ssMessages,{ quoted:m }).catch(err => {
+return('Error!')
+})
 break
 case 'naruto':
 			if (isBan) return reply(mess.ban)
