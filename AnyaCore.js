@@ -3302,9 +3302,9 @@ case 'tickle':
 reply(`_Processing your ${command} *${pushname}* baby...._`)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/${command}`)
                            var wbuttsss = [
-        {buttonId: `${prefix + command}`, buttonText: {displayText: `🔥 𝘕𝘦𝘹𝘵`}, type: 1},
-        {buttonId: `${prefix + rancommands1}`, buttonText: {displayText: `𝘙𝘢𝘯𝘥𝘰𝘮 🔀`}, type: 1}
-        ]
+{buttonId: `${prefix + command}`, buttonText: {displayText: '😄 𝘈𝘨𝘢𝘪𝘯..'}, type: 1},
+{buttonId: `${prefix + rancommands2}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 🔀'},type: 1}
+]
       let buttonssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
@@ -3375,11 +3375,12 @@ if (!AntiNsfw) return reply(mess.nsfw)
 reply(mess.wait)
  waifudd = await axios.get(`https://waifu.pics/api/nsfw/${command}`)       
  let trapbot = [
-    {buttonId: `trap`, buttonText: {displayText: `Next ⚡`}, type: 1},
-    ]
+{buttonId: `${prefix + command}`, buttonText: {displayText: '🤤 𝘔𝘰𝘳𝘦...'}, type: 1},
+{buttonId: `${prefix + rancommands3}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 💦'},type: 1}
+]
   let button2Messages = {
    image: {url:waifudd.data.url},
-   caption:  `Here you go!`,
+   caption:  `Here you go! 💦`,
   buttons: trapbot,
   headerType: 1
   }     
@@ -3395,11 +3396,12 @@ if (!m.isGroup) return replay(mess.group)
 if (!AntiNsfw) return reply(mess.nsfw)
     waifudd = await axios.get(`https://waifu.pics/api/nsfw/neko`)
  let hnekobot = [
-    {buttonId: `.hneko`, buttonText: {displayText: `Next ⚡`}, type: 1},
-    ]
+{buttonId: `${prefix + command}`, buttonText: {displayText: '🤤 𝘔𝘰𝘳𝘦...'}, type: 1},
+{buttonId: `${prefix + rancommands3}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 💦'},type: 1}
+]
   let button3Messages = {
    image: {url:waifudd.data.url},
-   caption:  `Here you go!`,
+   caption:  `Here you go! 🤤`,
   buttons: hnekobot,
   headerType: 1
   }      
@@ -3416,11 +3418,12 @@ if (!AntiNsfw) return reply(mess.nsfw)
 reply(mess.wait)
     waifudd = await axios.get(`https://waifu.pics/api/nsfw/waifu`)         
  let nwaifubot = [
-    {buttonId: `.hneko`, buttonText: {displayText: `Next ⚡`}, type: 1},
-    ]
+{buttonId: `${prefix + command}`, buttonText: {displayText: '🤤 𝘔𝘰𝘳𝘦...'}, type: 1},
+{buttonId: `${prefix + rancommands3}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 💦'},type: 1}
+]
   let button4Messages = {
    image: {url:waifudd.data.url},
-   caption:  `Here you go!`,
+   caption:  `Here you go! ❤️‍🩹`,
   buttons: nwaifubot,
   headerType: 1
   }      
@@ -3435,12 +3438,13 @@ case 'gasm':
 reply(mess.wait)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/${command}`)
                            var wbuttsss = [
-        {buttonId: `.${command}`, buttonText: {displayText: `Next ✨`}, type: 1},
-        ]
+{buttonId: `${prefix + command}`, buttonText: {displayText: '🤤 𝘔𝘰𝘳𝘦...'}, type: 1},
+{buttonId: `${prefix + rancommands3}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 💦'},type: 1}
+]
       let buttonsssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+      footer: `${footer}`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3454,12 +3458,13 @@ case 'smug2':
 reply(mess.wait)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/smug`)
                            var wbuttsss = [
-        {buttonId: `.${command}`, buttonText: {displayText: `Next ✨`}, type: 1},
-        ]
+{buttonId: `${prefix + command}`, buttonText: {displayText: '🤤 𝘔𝘰𝘳𝘦...'}, type: 1},
+{buttonId: `${prefix + rancommands3}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 💦'},type: 1}
+]
       let button1ssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+      footer: `${footer}`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3473,12 +3478,13 @@ case 'foxgirl':
 reply(mess.wait)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/fox_girl`)
                            var wbuttsss = [
-        {buttonId: `.${command}`, buttonText: {displayText: `Next ✨`}, type: 1},
-        ]
+{buttonId: `${prefix + command}`, buttonText: {displayText: '🦊 𝘕𝘦𝘹𝘵...'}, type: 1},
+{buttonId: `${prefix + rancommands2}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 🔀'},type: 1}
+]
       let button12ssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here you go!`,
-      footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+      footer: `${footer}`,
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -3492,8 +3498,9 @@ if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
     waifudd = await axios.get(`https://waifu.pics/api/sfw/nom`)
  let xxhnekobot = [
-    {buttonId: `.nom`, buttonText: {displayText: `Next ⚡`}, type: 1},
-    ]
+{buttonId: `${prefix + command}`, buttonText: {displayText: '😄 𝘈𝘨𝘢𝘪𝘯..'}, type: 1},
+{buttonId: `${prefix + rancommands2}`, buttonText: {displayText:'𝘙𝘢𝘯𝘥𝘰𝘮 🔀'},type: 1}
+]
   let xx1button3Messages = {
    image: {url:waifudd.data.url},
    caption:  `Here you go!`,
