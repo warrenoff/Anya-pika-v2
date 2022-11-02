@@ -238,7 +238,7 @@ const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
 const Autoreply = m.isGroup ? autorep.includes(from) : true
 const isBan = banUser.includes(m.sender)
 const isBanChat = m.isGroup ? banchat.includes(from) : false
-const randomCommand2 = ['waifu','waifu-face','neko2','neko','awoo','awoo2','foxgirl','yaoi','megumin','megumin2','loli']
+const randomCommand2 = ['waifu','waifu-face','neko2','neko','awoo','awoo2','foxgirl','yaoi','megumin','smug','loli']
 const rancommands2 = randomCommand2[Math.floor(Math.random() * randomCommand2.length)]
 autoreadsw = false
         //member\\
@@ -1920,7 +1920,7 @@ if (isBanChat) return reply(mess.banChat)
      if (!isBotAdmins) return replay(mess.botadmin)
      if (!isAdmins && !isCreator) return replay(mess.useradmin)
      let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(`${pushname} successfully promoted to 𝗠𝗲𝗺𝗯𝗲𝗿 𝘁𝗼 𝗔𝗱𝗺𝗶𝗻.`))
+     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => replay(`Successfully promoted to 𝗠𝗲𝗺𝗯𝗲𝗿 𝘁𝗼 𝗔𝗱𝗺𝗶𝗻 by ${pushname}.`))
      }
      break
 
@@ -1931,7 +1931,7 @@ if (isBanChat) return reply(mess.banChat)
      if (!isBotAdmins) return replay(mess.botadmin)
      if (!isAdmins && !isCreator) return replay(mess.useradmin)
      let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => replay(`${pushname} succesfully demoted to 𝗔𝗱𝗺𝗶𝗻 𝘁𝗼 𝗺𝗲𝗺𝗯𝗲𝗿.`))
+     await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => replay(`Succesfully demoted to 𝗔𝗱𝗺𝗶𝗻 𝘁𝗼 𝗺𝗲𝗺𝗯𝗲𝗿 by ${pushname}.`))
      }
      break
         case 'block': {
@@ -2886,7 +2886,7 @@ AnyaPika.sendMessage(m.chat , ntus , { quoted: m })
 replay(`Successfully Sent Broadcast To ${anu.length} Group`)
 }
 break
-case 'bc': case 'broadcast': case 'bcall': {
+case 'broadcast': case 'bcall': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
@@ -3028,7 +3028,7 @@ case 'profile': case 'myprofile':
      var flob = await getBuffer(picak+'User Profile')
      var bio= await AnyaPika.fetchStatus(m.sender)
      var bioo = bio.status
-     const adn= isAdmins? "True":"False"
+     const adn= isAdmins? "is an Admin.":"is not an Admin."
      
      try {
         
@@ -3050,7 +3050,7 @@ case 'profile': case 'myprofile':
 🎃 𝗚𝗿𝗼𝘂𝗽 𝗻𝗮𝗺𝗲 :
 ┊➥ ${groupMetadata.subject}
 ❤️ 𝗚𝗿𝗼𝘂𝗽 𝗮𝗱𝗺𝗶𝗻 *?* :
-┊➥ ${adn}
+┊➥ ${pushname} ${adn}
 🔥 𝗕𝗼𝘁 𝗻𝗮𝗺𝗲 :
 ┊➥ ${botname3}
 ╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
@@ -3452,7 +3452,7 @@ reply(mess.wait)
                     return('Error!')
                 })
 break   
-case 'smug2':
+case 'smug':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(mess.wait)						
@@ -3534,7 +3534,7 @@ break
 case 'waifu':
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
-reply(`_Processing !!... Can't wait for her face ${pushname} ?_`)						
+reply(`_Processing !!... Ahh these hot waifus will kill ${pushname} 🥵_`)						
 waifudd = await axios.get(`https://waifu.pics/api/sfw/waifu`)
              var wbuttsss = [
         {buttonId: `${prefix + command}`, buttonText: {displayText: `𝘔𝘰𝘳𝘦...🔥`}, type: 1},
@@ -4141,7 +4141,7 @@ await AnyaPika.sendMessage(m.chat,buttonsesMessage, { quoted:m }).catch(err => {
      return('Error!')
     })               
 break
-case 'megumin2':
+case 'megumin':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(mess.wait)						
@@ -4208,7 +4208,7 @@ var walb = [
                     return('Error!')
                 })          
 break
-case 'cry':case 'kill':case 'kick':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo-sticker':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
+case 'cry':case 'kill':case 'kick':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'blush':case 'glomp':case 'happy':case 'shinobu':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'handhold':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 					axios.get(`https://api.waifu.pics/sfw/${command}`)
