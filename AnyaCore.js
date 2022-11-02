@@ -792,7 +792,7 @@ let themeemojimsg = [global.themeemoji1,global.themeemoji2,global.themeemoji3,gl
 let globalthemeemoji = pickRandom(themeemojimsg)
 
 //--------document thumbnails
-let menuimages = [thumb1,thumb2,thumb3,thumb4,thumb5,thumb6,thumb7,thumb8,thumb9,thumb10,thumb11,thumb12,thumb13,thumb14,thumb15,thumb16,thumb17,thumb18,thumb19,thumb20,thumb21,thumb22,thumb23,thumb24,thumb25,thumb26,thumb27,thumb28,thumb29,thumb30,thumb31,thumb32,thumb33,thumb34,thumb35,thumb36,thumb37,thumb38,thumb39,thumb40,thumb41,thumb42,thumb43,thumb44,,thumb45,thumb46,thumb47,thumb48,thumb49,thumb50,thumb51,thumb52,thumb53,thumb54,thumb55,thumb56]
+let menuimages = [thumb1,thumb2,thumb3,thumb4,thumb5,thumb6,thumb7,thumb8,thumb9,thumb10,thumb11,thumb12,thumb13,thumb14,thumb15,thumb16,thumb17,thumb18,thumb19,thumb20,thumb21,thumb22,thumb23,thumb24,thumb25,thumb26,thumb27,thumb28,thumb29,thumb30,thumb31,thumb32,thumb33,thumb34,thumb35,thumb36,thumb37,thumb38,thumb39,thumb40,thumb41,thumb42,thumb43,thumb44,,thumb45,thumb46,thumb47,thumb48,thumb49,thumb50,thumb51,thumb52,thumb53,thumb54,thumb55,thumb56,thumb57,thumb58,thumb59,thumb60,thumb61,thumb62,thumb63,thumb64,thumb65,thumb66,thumb67,thumb68,thumb69,thumb70,thumb71,thumb72,thumb73,thumb74,thumb75,thumb76,thumb77,thumb78,thumb79,thumb80,thumb81,thumb82]
 let menuimage = pickRandom(menuimages)
 
 //--------Command reacts
