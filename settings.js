@@ -337,6 +337,22 @@ global.themeemoji9 = "😈" // Theme emoji//
 global.themeemoji10 = "🎃" // Theme emoji//
 
 //-------------Commands reacts-------------\\
+//---Autoreplies---\\
+autoemoji1 = '✨' // For auto stickers, audios, videos, images //
+autoemoji2 = '💞' // For auto stickers, audios, videos, images //
+autoemoji3 = '❤️‍🩹' // For auto stickers, audios, videos, images //
+autoemoji4 = '💝' // For auto stickers, audios, videos, images //
+autoemoji5 = '💖' // For auto stickers, audios, videos, images //
+autoemoji6 = '💙' // For auto stickers, audios, videos, images //
+autoemoji7 = '❤️' // For auto stickers, audios, videos, images //
+autoemoji8 = '❣️' // For auto stickers, audios, videos, images //
+autoemoji9 = '🤍' // For auto stickers, audios, videos, images //
+autoemoji10 = '☺️' // For auto stickers, audios, videos, images //
+autoemoji11 = '😊' // For auto stickers, audios, videos, images //
+autoemoji12 = '😍' // For auto stickers, audios, videos, images //
+autoemoji13 = '🥰' // For auto stickers, audios, videos, images //
+autoemoji14 = '😘' // For auto stickers, audios, videos, images //
+autoemoji15 = '😚' // For auto stickers, audios, videos, images //
 //---Menu---\\
 global.reactmoji1 = "🤖" // Menu //
 global.reactmoji2 = "💋" // Menu //
