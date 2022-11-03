@@ -7655,9 +7655,8 @@ if (isBan) return reply(mess.ban)
                         { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
                     ]
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
-            }
-            break
-case 'test2': {
+            },
+            {
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
