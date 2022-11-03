@@ -196,7 +196,7 @@ module.exports = AnyaPika = async (AnyaPika, m, chatUpdate, store) => {
         var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&-.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&-.©^]/gi)[0] : "" : prefa ?? global.prefix
         var prefix2 = global.prefa2
         const isCmd = body.startsWith(prefix)
-        const isCmd2 = body. startWith(prefix2)
+        const isCmd2 = body.startsWith(prefix2)
         const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
         const args = body.trim().split(/ +/).slice(1)
         const pushname = m.pushName || "No Name"
