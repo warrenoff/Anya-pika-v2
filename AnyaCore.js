@@ -246,22 +246,22 @@ const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
  if(time2 < "23:59:00"){
-var ucapanWaktu = 'Good night ðŸŒŒ'
+var PikaDay = 'Oyasuminasai'
  }
  if(time2 < "19:00:00"){
-var ucapanWaktu = 'Good afternoon ðŸŒƒ'
+var PikaDay = `Konbanwa'-gozaimasu`
  }
  if(time2 < "18:00:00"){
-var ucapanWaktu = 'Good afternoon ðŸŒ…'
+var PikaDay = `Kon'nichiwā`
  }
  if(time2 < "15:00:00"){
-var ucapanWaktu = 'Good afternoon ðŸ™'
+var PikaDay = `Kon'nichiwa~`
  }
  if(time2 < "11:00:00"){
-var ucapanWaktu = 'Good morning ðŸŒ„'
+var PikaDay = `Ohayō'-gozaimasu`
  }
  if(time2 < "05:00:00"){
-var ucapanWaktu = 'Good morning ðŸŒ‰'
+var PikaDay = `Hayai ohayō'`
  } 
 const randomCommand2 = ['waifu','waifu-face','neko2','neko','awoo','awoo2','foxgirl','yaoi','megumin','smug','loli']
 const rancommands2 = randomCommand2[Math.floor(Math.random() * randomCommand2.length)]
@@ -5893,55 +5893,51 @@ teks = `${globalthemeemoji} No : ${no++}\n${globalthemeemoji} Type : ${i.type}\n
 AnyaPika.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
 }
 break
-case 'google': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} apa arti cinta`)
-let google = require('google-it')
-google({'query': args.join(" ")}).then(res => {
-let teks = `Google Search From : ${text}\n\n`
-for (let g of res) {
-teks += `${globalthemeemoji} *Title* : ${g.title}\n`
-teks += `${globalthemeemoji} *Description* : ${g.snippet}\n`
-teks += `${globalthemeemoji} *Link* : ${g.link}\n\n────────────────────────\n\n`
-} 
-reply(teks)
-})
-}
-break
-case 'gimage': case 'googleimage': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!args[0]) return reply("What picture are you looking for??")
+case 'gimage': case 'gig': case 'googleimage':{
+   if (isBan) return reply(mess.banned)	 			
+if (isBanChat) return reply(mess.bangc)
+if (!args[0]) return reply("Enter a search term to get Google Image!")
 let gis = require('g-i-s')
 gis(args.join(" "), async (error, result) => {
 n = result
 images = n[Math.floor(Math.random() * n.length)].url
 let buttons = [
-{buttonId: `gimage ${args.join(" ")}`, buttonText: {displayText: 'Next Image 👀'}, type: 1}
+{buttonId: `${prefix}gimage ${args.join(" ")}`, buttonText: {displayText: '>> Next image >>'}, type: 1},
+{buttonId: `${prefix}menu`, buttonText: {displayText: '🍓 Menu 🍓'}, type: 1}
 ]
 let buttonMessage = {
 image: { url: images },
-caption: `*| GOOGLE IMAGE |*
+caption: `「 _Google Image Search_ 」
 
-${globalthemeemoji} Query : ${text}
-${globalthemeemoji} Media Url : ${images}`,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+_Search Term_ : ${text}
+_Media Url_ : ${images}`,
+footer: `${footer}`,
 buttons: buttons,
 headerType: 4,
-contextInfo:{externalAdReply:{
-title:`${global.ownername}`,
-body:`${global.watermark}`,
-thumbnail: log0,
-mediaType:2,
-mediaUrl: `${link1}`,
-sourceUrl: `${linkgit}`
-}}
+
 }
 AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
 })
 }
 break
+
+
+case 'google': case 'search': {
+    if (isBan) return reply(mess.banned)	 			
+ if (isBanChat) return reply(mess.bangc)
+ if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} apa arti cinta`)
+ let google = require('google-it')
+ google({'query': args.join(" ")}).then(res => {
+ let teks = `「 *Google Search Engine* 」\n\n*Search term:* ${text}\n\n\n`
+ for (let g of res) {
+ teks += `*Title* : ${g.title}\n\n`
+ teks += `*Description* : ${g.snippet}\n\n`
+ teks += `*Link* : ${g.link}\n\n\n        -----------------------------------------------------------------------------\n\n`
+ } 
+ reply(teks)
+ })
+ }
+ break
 	case 'igstoryxx': case 'instagramstoryxx': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -6119,10 +6115,10 @@ case 'hijack':{
   }
   break
 case 'repeat':{
-                let text1 = q.split("for")[0]
-                let text2 = q.split("for")[1]
-                  if (!text1) return m.reply(`Example! : ${order + ' ' + 'Pika for 30'}`)    
-                  if (!text2) return m.reply(`Example! : ${order + ' ' + 'Pika for 30'}`)
+                let text1 = q.split("|")[0]
+                let text2 = q.split("|")[1]
+                  if (!text1) return m.reply(`Example! : ${order + ' ' + 'Pika | 69'}`)    
+                  if (!text2) return m.reply(`Example! : ${order + ' ' + 'Pika | 69'}`)
                   let txtzh = `${text1}`.repeat(text2)
                m.reply(txtzh)
               }
@@ -7970,7 +7966,7 @@ if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { react: { text: `${allmenureactemoji}`, key: m.key }})
 var unicorn = await getBuffer(picak+'All Menu')
-const allmenu = ` ${ucapanWaktu} ${pushname}.
+const allmenu = `*${PikaDay} ${pushname} ❤️😚*.
 
 ╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
