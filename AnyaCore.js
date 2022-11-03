@@ -7647,23 +7647,41 @@ case 'test': {
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `test3`
+            let jawab = `𝐍𝐅𝐒𝐖 𝟏`
             let ments = [me, jodoh]
             let buttons = [
-                        { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
-                    ]
+{buttonId: `${prefix}hentaivideo`, buttonText: {displayText: '࿙✗ 𝘏𝘦𝘯𝘵𝘢𝘪 𝘷𝘪𝘥𝘦𝘰 ✗࿚'}, type: 1},
+{buttonId: `${prefix}yuri`, buttonText: {displayText:'࿙✗ 𝘠𝘶𝘳𝘪 ✗࿚'},type: 1},
+{buttonId: `${prefix}masterbation`, buttonText: {displayText:'࿙✗ 𝘔𝘢𝘴𝘵𝘦𝘳𝘣𝘢𝘵𝘪𝘰𝘯 ✗࿚'},type: 1}
+]
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
 case 'test': {
-   if (!m.isGroup) replay(`${mess.group}`)
+   if (!m.isGroup) return replay(`${mess.group}`)
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
             let jawab = `test3`
             let ments = [me, jodoh]
             let buttons = [
-                        { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
-                    ]
+{buttonId: `${prefix}thighs`, buttonText: {displayText: '𝘛𝘩𝘪𝘨𝘩𝘴 🦵🏻'}, type: 1},
+{buttonId: `${prefix}pussy`, buttonText: {displayText:'𝘗𝘶𝘴𝘴𝘺 ❤️'},type: 1},
+{buttonId: `${prefix}panties`, buttonText: {displayText:'𝘗𝘢𝘯𝘵𝘪𝘦𝘴 👙'},type: 1}
+]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+case 'test': {
+   if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `test3`
+            let ments = [me, jodoh]
+            let buttons = [
+{buttonId: `${prefix}orgy`, buttonText: {displayText: '𝘖𝘳𝘨𝘺'}, type: 1},
+{buttonId: `${prefix}ahegao`, buttonText: {displayText:'𝘗𝘶𝘴𝘴𝘺 ❤️'},type: 1},
+{buttonId: `${prefix}ass`, buttonText: {displayText:'𝘗𝘢𝘯𝘵𝘪𝘦𝘴 👙'},type: 1}
+]
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
             break
