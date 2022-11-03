@@ -242,6 +242,27 @@ const isAutoSticker = m.isGroup ? autosticker.includes(from) : false
 const Autoreply = m.isGroup ? autorep.includes(from) : true
 const isBan = banUser.includes(m.sender)
 const isBanChat = m.isGroup ? banchat.includes(from) : false
+const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+ if(time2 < "23:59:00"){
+var ucapanWaktu = 'Good night ðŸŒŒ'
+ }
+ if(time2 < "19:00:00"){
+var ucapanWaktu = 'Good afternoon ðŸŒƒ'
+ }
+ if(time2 < "18:00:00"){
+var ucapanWaktu = 'Good afternoon ðŸŒ…'
+ }
+ if(time2 < "15:00:00"){
+var ucapanWaktu = 'Good afternoon ðŸ™'
+ }
+ if(time2 < "11:00:00"){
+var ucapanWaktu = 'Good morning ðŸŒ„'
+ }
+ if(time2 < "05:00:00"){
+var ucapanWaktu = 'Good morning ðŸŒ‰'
+ } 
 const randomCommand2 = ['waifu','waifu-face','neko2','neko','awoo','awoo2','foxgirl','yaoi','megumin','smug','loli']
 const rancommands2 = randomCommand2[Math.floor(Math.random() * randomCommand2.length)]
 autoreadsw = false
@@ -7949,7 +7970,9 @@ if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { react: { text: `${allmenureactemoji}`, key: m.key }})
 var unicorn = await getBuffer(picak+'All Menu')
-const allmenu = `╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
+const allmenu = ` ${time2} ${pushname}.
+
+╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
 ┊➥ ${pushname}
 ┝┅━┅━┅━┅━┅━♡
