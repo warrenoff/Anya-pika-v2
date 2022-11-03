@@ -267,7 +267,7 @@ var PikaDay = `Hayai ohayō'`
  } 
 const randomCommand2 = ['waifu','waifu-face','neko2','neko','awoo','awoo2','foxgirl','yaoi','megumin','smug','loli']
 const rancommands2 = randomCommand2[Math.floor(Math.random() * randomCommand2.length)]
-const randomCommand3 = ['hentaivideo','yuri','masterbation','thighs','pussy','panties','orgy','ahegao','ass','bdsm','blowjob','cuckold','ero','gasm','cum','fendom','foot','gangbang','galsses','jahy','trap','blowjobgif','spank','hneko','nwaofu']
+const randomCommand3 = ['yuri','masterbation','thighs','pussy','panties','orgy','ahegao','ass','bdsm','blowjob','cuckold','ero','cum','fendom','foot','gangbang','galsses','jahy','spank']
 const rancommands3 = randomCommand3[Math.floor(Math.random() * randomCommand2.length)]
 autoreadsw = false
         //member\\
@@ -3352,20 +3352,6 @@ reply(`_Processing your ${command} *${pushname}* baby...._`)
                     return('Error!')
                 })
 break
-case 'masturbation': case 'jahy': case 'hentai': case 'glasses': case 'gangbang': case 'foot': 
-case 'femdom': case 'cum': case 'ero': case 'cuckold': case 'blowjob': case 'bdsm': 
-case 'ahegao': case 'ass': case 'orgy': case 'panties': case 'pussy': case 'thighs': case 'yuri': case 'tentacles':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!AntiNsfw) return reply(mess.nsfw)
-try{
-reply(mess.wait)
-NoHorny = await fetchJson(`https://myselfff.herokuapp.com/docs/nsfw/${command}`)
-YesHorny = await getBuffer(NoHorny.result)
-AnyaPika.sendMessage(from, {image:YesHorny},{quoted:m})
-} catch (e) {error("Error")}	
-break
    case 'spank':
       if (isBan) return reply(mess.ban)	 			
    if (isBanChat) return reply(mess.banChat)
@@ -5927,9 +5913,10 @@ break
 case 'masturbation': case 'jahy': case 'hentai': case 'glasses': case 'gangbang': case 'foot': 
 case 'femdom': case 'cum': case 'ero': case 'cuckold': case 'blowjob': case 'bdsm': 
 case 'ahegao': case 'ass': case 'orgy': case 'panties': case 'pussy': case 'thighs': case 'yuri': case 'tentacles': {
-if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-            if (!m.isGroup) return replay(`${mess.group}`)
+   if (isBan) return reply(mess.ban)	 			
+     if (isBanChat) return reply(mess.banChat)
+       if (!m.isGroup) return replay(mess.group)
+            if (!AntiNsfw) return reply(mess.nsfw)
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
