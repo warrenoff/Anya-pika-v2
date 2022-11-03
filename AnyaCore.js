@@ -267,6 +267,8 @@ var PikaDay = `Hayai ohayō'`
  } 
 const randomCommand2 = ['waifu','waifu-face','neko2','neko','awoo','awoo2','foxgirl','yaoi','megumin','smug','loli']
 const rancommands2 = randomCommand2[Math.floor(Math.random() * randomCommand2.length)]
+const randomCommand3 = ['hentaivideo','yuri','masterbation','thighs','pussy','panties','orgy','ahegao','ass','bdsm','blowjob','cuckold','ero','gasm','cum','fendom','foot','gangbang','galsses','jahy','trap','blowjobgif','spank','hneko','nwaofu']
+const rancommands3 = randomCommand3[Math.floor(Math.random() * randomCommand2.length)]
 autoreadsw = false
         //member\\
         let picaks = [flaming,fluming,flarun,flasmurf]
@@ -5895,7 +5897,7 @@ teks = `${globalthemeemoji} No : ${no++}\n${globalthemeemoji} Type : ${i.type}\n
 AnyaPika.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
 }
 break
-case 'gimage': case 'gig': case 'googleimage':{
+case 'gimage': case 'gimg': case 'googleimage':{
    if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
 if (!args[0]) return reply("Enter a search term to get Google Image!")
@@ -5922,8 +5924,47 @@ AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
 })
 }
 break
+case 'masturbation': case 'jahy': case 'hentai': case 'glasses': case 'gangbang': case 'foot': 
+case 'femdom': case 'cum': case 'ero': case 'cuckold': case 'blowjob': case 'bdsm': 
+case 'ahegao': case 'ass': case 'orgy': case 'panties': case 'pussy': case 'thighs': case 'yuri': case 'tentacles': {
+if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+            if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `𝗥𝗲𝗮𝗱𝘆 𝗳𝗼𝗿 𝘁𝗵𝗲 *${command} !?* 🥵💦`
+            let ments = [me, jodoh]
+            let buttons = [
+{buttonId: `${prefix}nsfwimage anime ${command}`, buttonText: {displayText: `See ${command} ${pushname}`}, type: 1}
+]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+            break
+case 'nsfwimage':{
+   if (isBan) return reply(mess.banned)	 			
+if (isBanChat) return reply(mess.bangc)
+if (!args[0]) return reply("Enter a search term to get Google Image!")
+let gis = require('g-i-s')
+gis(args.join(" "), async (error, result) => {
+n = result
+images = n[Math.floor(Math.random() * n.length)].url
+let buttons = [
+{buttonId: `${prefix}nsfwimage anime ${command}`, buttonText: {displayText: '🤤 𝘔𝘰𝘳𝘦...'}, type: 1},
+{buttonId: `${prefix}nsfwimage anime ${rancommands3}`, buttonText: {displayText: '𝘙𝘢𝘯𝘥𝘰𝘮 💦'}, type: 1}
+]
+let buttonMessage = {
+image: { url: images },
+caption: `_Enjoy your ${text} ${pushname} darling ❤️🤤_`,
+footer: `${footer}`,
+buttons: buttons,
+headerType: 4,
 
-
+}
+AnyaPika.sendMessage(m.chat, buttonMessage, { quoted: m })
+})
+}
+break
 case 'google': case 'search': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
