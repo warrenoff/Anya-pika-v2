@@ -338,12 +338,12 @@ global.themeemoji10 = "🎃" // Theme emoji//
 
 //-------------Commands reacts-------------\\
 //---Autoreplies---\\
-autoemoji1 = '✨' // For auto stickers, audios, videos, images //
-autoemoji2 = '💞' // For auto stickers, audios, videos, images //
-autoemoji3 = '❤️‍🩹' // For auto stickers, audios, videos, images //
-autoemoji4 = '💝' // For auto stickers, audios, videos, images //
-autoemoji5 = '💖' // For auto stickers, audios, videos, images //
-autoemoji6 = '💙' // For auto stickers, audios, videos, images //
+autoemoji1 = 'anya' // For auto stickers, audios, videos, images //
+autoemoji2 = 'anya' // For auto stickers, audios, videos, images //
+autoemoji3 = 'anya' // For auto stickers, audios, videos, images //
+autoemoji4 = 'anya' // For auto stickers, audios, videos, images //
+autoemoji5 = 'anya' // For auto stickers, audios, videos, images //
+autoemoji6 = 'anya' // For auto stickers, audios, videos, images //
 autoemoji7 = '❤️' // For auto stickers, audios, videos, images //
 autoemoji8 = '❣️' // For auto stickers, audios, videos, images //
 autoemoji9 = '🤍' // For auto stickers, audios, videos, images //
