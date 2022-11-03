@@ -389,6 +389,7 @@ empty = '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 global.sessionName = 'session'
 global.antitags = true
 global.prefa = ['','-']
+global.prefa2 = ['.',',','-','_','+','!','$','#']
 global.sp = '⭔'
 global.mess = {
     success: 'Done ✓',
