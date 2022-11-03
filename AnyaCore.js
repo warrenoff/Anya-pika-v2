@@ -6098,10 +6098,10 @@ case 'hijack':{
   }
   break
 case 'repeat':{
-                let text1 = q.split("|")[0]
-                let text2 = q.split("|")[1]
-                  if (!text1) return m.reply(`Example! : ${order + ' ' + 'test|30'}`)    
-                  if (!text2) return m.reply(`Example! : ${order + ' ' + 'test|30'}`)
+                let text1 = q.split("for")[0]
+                let text2 = q.split("for")[1]
+                  if (!text1) return m.reply(`Example! : ${order + ' ' + 'Pika for 30'}`)    
+                  if (!text2) return m.reply(`Example! : ${order + ' ' + 'Pika for 30'}`)
                   let txtzh = `${text1}`.repeat(text2)
                m.reply(txtzh)
               }
