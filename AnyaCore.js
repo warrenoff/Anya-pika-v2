@@ -7970,7 +7970,7 @@ if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 AnyaPika.sendMessage(from, { react: { text: `${allmenureactemoji}`, key: m.key }})
 var unicorn = await getBuffer(picak+'All Menu')
-const allmenu = ` ${time2} ${pushname}.
+const allmenu = ` ${ucapanWaktu} ${pushname}.
 
 ╭╼━━᚜ 𝓐𝓷𝔂𝓪 𝓫𝔂 𝓟𝓲𝓴𝓪 ᚛╾ᐧᐧᐧᐧ⳹
 ❤️ 𝗨𝘀𝗲𝗿 𝗻𝗮𝗺𝗲 : 
