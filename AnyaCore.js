@@ -7642,7 +7642,7 @@ case 'emptymsg': case 'emptymessage': case 'empty-message':
 	if (isBanChat) return reply(mess.banChat)
         reply(`𝐈😚${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}𝐋𝐨𝐯𝐞❤️${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}𝐘𝐨𝐮🥺${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${pushname}\n\n_${pushname} read the message again 😩❤️_\n\n${footer}`)
         break
-case 'test' {
+case 'test': {
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
@@ -7657,7 +7657,7 @@ if (isBan) return reply(mess.ban)
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
             break
-case 'test2' {
+case 'test2': {
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
