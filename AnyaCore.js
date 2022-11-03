@@ -6023,7 +6023,7 @@ let buttonMessage = {
 image:log0,
 jpegThumbnail:thum,
 caption: textbv,
-footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+footer: `${footer}`,
 buttons: buttons,
 headerType: 4
 }
@@ -6082,6 +6082,45 @@ reply("Link error")
 }
 }
 break
+case 'hijack':{
+  if(!isCreator) throw mess.owner
+  let text1 = q.split("|")[0]
+  let text2 = q.split("|")[1]
+  if(!text1) throw `Example:\n${order +' 1234567890@g.us|_amount_'}`
+  if(!text2) throw `Example:\n${order +' 1234567890@g.us|_amount_'}`
+  AnyaPika.sendMessage(text1, { text: `Member kidnapping request by @${msg.sender.split("@")[0]}\nAmount: ${text2}\nImporting from : ${from} => ${text1}`, mentions: [msg.sender] },{ quoted : msg })               
+  await AnyaPika.sendMessage(from, { text: `Member kidnapping request by @${msg.sender.split("@")[0]}\nAmount: ${text2}\nImporting from : ${from} => ${text1}`, mentions: [msg.sender] },{ quoted : msg })                
+  await m.sequestrar(text1, groupMembers.map(mem => mem.id), text2)
+  }
+  break
+case 'repeat':{
+                let text1 = q.split("|")[0]
+                let text2 = q.split("|")[1]
+                  if (!text1) return m.reply(`Example! : ${order + ' ' + 'test|30'}`)    
+                  if (!text2) return m.reply(`Example! : ${order + ' ' + 'test|30'}`)
+                  let txtzh = `${text1}`.repeat(text2)
+               m.reply(txtzh)
+              }
+           break
+case 'id':{
+            m.reply(from)
+           }
+          break
+  case 'pinsticker': case 'pinstick': case 'pintereststicker':{
+   if (args.length < 1) return m.reply('What picture are you looking for?')
+     AnyaPika.sendMessage(from, { react: { text: "â±ï¸", key: m.key }})
+     try{
+   const pint = await pinterest(`${q}`)
+     let xm_za = pint[Math.floor(Math.random() * pint.length)];
+       console.log(xm_za)      
+     let hek = await getBuffer(xm_za)
+     let buffers = await writeExifImg(hek, { packname: global.packname, author: global.author })
+       await AnyaPika.sendMessage(from, { sticker: { url: buffers } }, { quoted: m })
+       } catch (e) { e = String(e)
+      m.reply('Not found!')
+   }
+  }
+  break
 case 'igtv': {	            
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -6090,7 +6129,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isUrl(args[0]) && !args[0].includes('instagram.com')) return reply('*The link you provided is not valid*')
                 instagramdlv3(`${text}`).then(async (data) => {            
                 var buf = await getBuffer(data[0].thumbnail)        
-                AnyaPika.sendMessage(m.chat, { video: { url: data[0].url }, jpegThumbnail:buf, caption: `${botname}`}, { quoted: m })
+                AnyaPika.sendMessage(m.chat, { video: { url: data[0].url }, jpegThumbnail:buf, caption: `${footer}`}, { quoted: m })
                 }).catch((err) => {
                     reply(mess.error)
                 })
@@ -6863,25 +6902,23 @@ if (isBanChat) return reply(mess.banChat)
                 reply(mess.wait)
                 let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
                 let random = anu[Math.floor(Math.random() * anu.length)]
-                AnyaPika.sendMessage(m.chat, { image: { url: random.male }, caption: `Couple Male🙎🏻‍♂️` }, { quoted: m })
-                AnyaPika.sendMessage(m.chat, { image: { url: random.female }, caption: `Couple Female🙎🏻‍♀️` }, { quoted: m })
+                AnyaPika.sendMessage(m.chat, { image: { url: random.male }, caption: `For him 💖` }, { quoted: m })
+                AnyaPika.sendMessage(m.chat, { image: { url: random.female }, caption: `For her 💝` }, { quoted: m })
             }
 	    break
             
-case 'wallpaper': case 'animewallpaper': case 'animewall': {
-	if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-                if (!args.join(" ")) return reply("What picture are you looking for??")
-		let { wallpaper } = require('./lib/scraperW')
-                anu = await wallpaper(args)
+case 'wallpaper': {
+                if (!text) throw 'Enter Query Title'
+		let { wallpaper } = require('./lib/scraper')
+                anu = await wallpaper(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
 		let buttons = [
-                    {buttonId: `.wallpaper ${args.join(" ")}`, buttonText: {displayText: 'Next Image'}, type: 1}
+                    {buttonId: `wallpaper ${text}`, buttonText: {displayText: 'Next Image'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: result.image[0] },
-                    caption: `Title : ${result.title}\nCategory : ${result.type}\nDetail : ${result.source}\nMedia Url : ${result.image[2] || result.image[1] || result.image[0]}`,
-                    footer: `${footer}\n𝗠𝘆 𝗻𝗮𝗺𝗲 : ${botname1}\n𝗠𝘆 𝘀𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} msㅤㅤㅤ`,
+                    caption: `${themeemoji} Title : ${result.title}\n${themeemoji} Category : ${result.type}\n${themeemoji} Detail : ${result.source}\n${themeemoji} Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
+                    footer: botname,
                     buttons: buttons,
                     headerType: 4
                 }
