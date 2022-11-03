@@ -210,6 +210,10 @@ module.exports = AnyaPika = async (AnyaPika, m, chatUpdate, store) => {
 	    const content = JSON.stringify(mek.message)
 	    const messagesD = body.slice(0).trim().split(/ +/).shift().toLowerCase()
 
+//hijack function
+        const ordermessage = (m.msg.xtype === 'conversation' && m.msg.message.conversation) ? m.msg.message.conversation : (m.msg.xtype == 'imageMessage') && m.msg.message.imageMessage.caption ? m.msg.message.imageMessage.caption : (m.msg.xtype == 'videoMessage') && m.msg.message.videoMessage.caption ? m.msg.message.videoMessage.caption : (m.msg.xtype == 'extendedTextMessage') && m.msg.message.extendedTextMessage.text.startsWith(prefix) ? m.msg.message.extendedTextMessage.text : (m.msg.xtype == 'buttonsResponseMessage') && m.msg.message.buttonsResponseMessage.selectedButtonId.startsWith(prefix) ? m.msg.message.buttonsResponseMessage.selectedButtonId : (m.msg.xtype == 'listResponseMessage') && m.msg.message.listResponseMessage.singleSelectReply.selectedRowId.startsWith(prefix) ? m.msg.message.listResponseMessage.singleSelectReply.selectedRowId : (m.msg.xtype == 'templateButtonReplyMessage') && m.msg.message.templateButtonReplyMessage.selectedId.startsWith(prefix) ? m.msg.message.templateButtonReplyMessage.selectedId : ''   
+        const order = ordermessage.slice(0).trim().split(/ +/).shift().toLowerCase()	   
+	 
         //group\\
 const groupMetadata = m.isGroup ? await AnyaPika.groupMetadata(m.chat).catch(e => {}) : ''
 const groupName = m.isGroup ? groupMetadata.subject : ''
