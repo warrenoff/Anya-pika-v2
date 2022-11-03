@@ -7643,23 +7643,19 @@ case 'emptymsg': case 'emptymessage': case 'empty-message':
         reply(`𝐈😚${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}𝐋𝐨𝐯𝐞❤️${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}𝐘𝐨𝐮🥺${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${pushname}\n\n_${pushname} read the message again 😩❤️_\n\n${footer}`)
         break
 case 'test': {
-if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-            if (!m.isGroup) return replay(`${mess.group}`)
+   if (!m.isGroup) return replay(`${mess.group}`)
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `test2`
+            let jawab = `test3`
             let ments = [me, jodoh]
             let buttons = [
                         { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
                     ]
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
-            },
-            {
-if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-            if (!m.isGroup) return replay(`${mess.group}`)
+            }
+case 'test': {
+   if (!m.isGroup) return replay(`${mess.group}`)
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
