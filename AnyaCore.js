@@ -5942,7 +5942,7 @@ let buttons = [
 ]
 let buttonMessage = {
 image: { url: images },
-caption: `_Enjoy your ${text} ${pushname} darling ❤️🤤_`,
+caption: `_Enjoy your ${command} ${pushname} darling ❤️🤤_`,
 footer: `${footer}`,
 buttons: buttons,
 headerType: 4,
