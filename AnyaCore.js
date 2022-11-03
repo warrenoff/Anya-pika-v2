@@ -807,7 +807,7 @@ autoemoji = pickRandom(autoreplyemoji)
 
 	     for (let anji of Pikachusticker){
 				if (budy === anji){
-                                AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji1}`, key: m.key }})
+                                AnyaPika.sendMessage(from, { react: { text: `${autoemoji}`, key: m.key }})
 					let result = fs.readFileSync(`./AnyaPikaMedia/sticker/${anji}.webp`)
 					AnyaPika.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
@@ -815,12 +815,14 @@ autoemoji = pickRandom(autoreplyemoji)
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anju of Pikachuaudio){
 				if (budy === anju){
+                                AnyaPika.sendMessage(from, { react: { text: `${autoemoji}`, key: m.key }})
 					let result = fs.readFileSync(`./AnyaPikaMedia/audio/${anju}.mp3`)
 					AnyaPika.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anjh of Pikachuimage){
+                                AnyaPika.sendMessage(from, { react: { text: `${autoemoji}`, key: m.key }})
 				if (budy === anjh){
 					let result = fs.readFileSync(`./AnyaPikaMedia/image/${anjh}.jpg`)
 					AnyaPika.sendMessage(m.chat, { image: result }, { quoted: m })
@@ -829,6 +831,7 @@ autoemoji = pickRandom(autoreplyemoji)
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 					for (let anjh of Pikachuvideo){
 				if (budy === anjh){
+                                AnyaPika.sendMessage(from, { react: { text: `${autoemoji}`, key: m.key }})
 					let result = fs.readFileSync(`./AnyaPikaMedia/video/${anjh}.mp4`)
 					AnyaPika.sendMessage(m.chat, { video: result }, { quoted: m })
 					}
