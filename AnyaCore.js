@@ -7655,7 +7655,7 @@ case 'test': {
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
 case 'test': {
-   if (!m.isGroup) return replay(`${mess.group}`)
+   if (!m.isGroup) replay(`${mess.group}`)
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
