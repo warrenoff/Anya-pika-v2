@@ -801,6 +801,10 @@ let menureactemoji = pickRandom(menureact)
 let allmenureact = [global.reactmoji15,global.reactmoji16,global.reactmoji17,global.reactmoji18,global.reactmoji19,global.reactmoji20,global.reactmoji21,global.reactmoji22,global.reactmoji23,global.reactmoji24,global.reactmoji25,global.reactmoji26]
 let allmenureactemoji = pickRandom(allmenureact)
 
+//--------auto replies
+autoreplyemoji = [autoemoji1,autoemoji2,autoemoji3,autoemoji4,autoemoji5,autoemoji6,autoemoji7,autoemoji8,autoemoji9,autoemoji10,autoemoji11,autoemoji12,autoemoji13,autoemoji14,autoemoji15]
+autoemoji = pickRandom(autoreplyemoji)
+
 	     for (let anji of Pikachusticker){
 				if (budy === anji){
                                 AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji1}`, key: m.key }})
