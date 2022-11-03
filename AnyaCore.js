@@ -7647,12 +7647,12 @@ case 'test': {
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `𝐍𝐅𝐒𝐖 𝟏`
+            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮 𝟏`
             let ments = [me, jodoh]
             let buttons = [
-{buttonId: `${prefix}hentaivideo`, buttonText: {displayText: '࿙✗ 𝘏𝘦𝘯𝘵𝘢𝘪 𝘷𝘪𝘥𝘦𝘰 ✗࿚'}, type: 1},
-{buttonId: `${prefix}yuri`, buttonText: {displayText:'࿙✗ 𝘠𝘶𝘳𝘪 ✗࿚'},type: 1},
-{buttonId: `${prefix}masterbation`, buttonText: {displayText:'࿙✗ 𝘔𝘢𝘴𝘵𝘦𝘳𝘣𝘢𝘵𝘪𝘰𝘯 ✗࿚'},type: 1}
+{buttonId: `${prefix}hentaivideo`, buttonText: {displayText: '𝘏𝘦𝘯𝘵𝘢𝘪 𝘷𝘪𝘥𝘦𝘰 🥵'}, type: 1},
+{buttonId: `${prefix}yuri`, buttonText: {displayText:'𝘠𝘶𝘳𝘪 💦'},type: 1},
+{buttonId: `${prefix}masterbation`, buttonText: {displayText:'𝘔𝘢𝘴𝘵𝘦𝘳𝘣𝘢𝘵𝘪𝘰𝘯 ✊🏻'},type: 1}
 ]
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
@@ -7661,7 +7661,7 @@ case 'test': {
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `test3`
+            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮 𝟐`
             let ments = [me, jodoh]
             let buttons = [
 {buttonId: `${prefix}thighs`, buttonText: {displayText: '𝘛𝘩𝘪𝘨𝘩𝘴 🦵🏻'}, type: 1},
@@ -7675,12 +7675,95 @@ case 'test': {
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `test3`
+            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮 𝟑`
             let ments = [me, jodoh]
             let buttons = [
-{buttonId: `${prefix}orgy`, buttonText: {displayText: '𝘖𝘳𝘨𝘺'}, type: 1},
+{buttonId: `${prefix}orgy`, buttonText: {displayText: '𝘖𝘳𝘨𝘺 🤤'}, type: 1},
 {buttonId: `${prefix}ahegao`, buttonText: {displayText:'𝘗𝘶𝘴𝘴𝘺 ❤️'},type: 1},
 {buttonId: `${prefix}ass`, buttonText: {displayText:'𝘗𝘢𝘯𝘵𝘪𝘦𝘴 👙'},type: 1}
+]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+case 'test': {
+   if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮 𝟒`
+            let ments = [me, jodoh]
+            let buttons = [
+{buttonId: `${prefix}bdsm`, buttonText: {displayText: '𝘉𝘋𝘚𝘔 🤧'}, type: 1},
+{buttonId: `${prefix}blowjob`, buttonText: {displayText:'𝘉𝘭𝘰𝘸𝘫𝘰𝘣 🫦'},type: 1},
+{buttonId: `${prefix}cuckold`, buttonText: {displayText:'𝘊𝘶𝘤𝘬𝘰𝘭𝘥 🍌'},type: 1}
+]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+case 'test': {
+   if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮 𝟓`
+            let ments = [me, jodoh]
+            let buttons = [
+{buttonId: `${prefix}ero`, buttonText: {displayText: '𝘌𝘳𝘰 🧚‍♀️'}, type: 1},
+{buttonId: `${prefix}gasm`, buttonText: {displayText:'𝘎𝘢𝘴𝘮 ✊🏻'},type: 1},
+{buttonId: `${prefix}cum`, buttonText: {displayText:'𝘊𝘶𝘮 💦'},type: 1}
+]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+case 'test': {
+   if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮 𝟔`
+            let ments = [me, jodoh]
+            let buttons = [
+{buttonId: `${prefix}fendom`, buttonText: {displayText: '𝘍𝘦𝘯𝘥𝘰𝘮 🫦'}, type: 1},
+{buttonId: `${prefix}foot`, buttonText: {displayText:'𝘍𝘰𝘰𝘵 🦵🏻'},type: 1},
+{buttonId: `${prefix}gangbang`, buttonText: {displayText:'𝘎𝘢𝘯𝘨𝘉𝘢𝘯𝘨 🥵'},type: 1}
+]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+case 'test': {
+   if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮 𝟕`
+            let ments = [me, jodoh]
+            let buttons = [
+{buttonId: `${prefix}glasses`, buttonText: {displayText: '𝘎𝘭𝘢𝘴𝘴𝘦𝘴 🔥'}, type: 1},
+{buttonId: `${prefix}jahy`, buttonText: {displayText:'𝘑𝘢𝘩𝘺 💗'},type: 1},
+{buttonId: `${prefix}trap`, buttonText: {displayText:'𝘛𝘳𝘢𝘱 🌚'},type: 1}
+]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+case 'test': {
+   if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮`
+            let ments = [me, jodoh]
+            let buttons = [
+{buttonId: `${prefix}spank`, buttonText: {displayText: '𝘚𝘱𝘢𝘯𝘬 💝'}, type: 1},
+{buttonId: `${prefix}hneko`, buttonText: {displayText:'𝘏𝘯𝘦𝘬𝘰 😳'},type: 1},
+{buttonId: `${prefix}nwaifu`, buttonText: {displayText:'𝘕𝘸𝘢𝘪𝘧𝘶 😋'},type: 1}
+]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+case 'test': {
+   if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮`
+            let ments = [me, jodoh]
+            let buttons = [
+{buttonId: `${prefix}myprofile`, buttonText: {displayText: '🕶️𝘗𝘳𝘰𝘧𝘪𝘭𝘦'}, type: 1},
+{buttonId: `${prefix}owner`, buttonText: {displayText:'𝘖𝘸𝘯𝘦𝘳 ❤️'},type: 1}
 ]
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
