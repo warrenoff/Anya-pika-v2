@@ -7622,16 +7622,56 @@ if (!q) return reply('Send orders *#setbio text*')
 AnyaPika.setStatus(`${q}`)
 reply(mess.success)
 break
-case 'description': 
+case 'description': {
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-        reply(`ㅤ ㅤ࿙⳼ 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 ⳹࿚\n\n─────────────────\n\n${groupMetadata.desc}\n\n─────────────────\n\n𝘏𝘦𝘳𝘦'𝘴 𝘰𝘶𝘳 𝘨𝘳𝘰𝘶𝘱 𝘥𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯 _${pushname}_ 𝘣𝘢𝘣𝘺❤️\n\n${footer}`)
-        break
+            if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `ㅤ ㅤ࿙⳼ 𝗗𝗘𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 ⳹࿚\n\n─────────────────────\n\n${groupMetadata.desc}\n\n─────────────────────\n\n𝘏𝘦𝘳𝘦'𝘴 𝘰𝘶𝘳 𝘨𝘳𝘰𝘶𝘱 𝘥𝘦𝘴𝘤𝘳𝘪𝘱𝘵𝘪𝘰𝘯 _${pushname}_ 𝘣𝘢𝘣𝘺❤️\n\n${footer}`
+            let ments = [me, jodoh]
+            let buttons = [
+                        { buttonId: '${prefix}owner', buttonText: { displayText: '❤️𝘖𝘸𝘯𝘦𝘳 𝘰𝘧 𝘵𝘩𝘪𝘴 𝘴𝘦𝘹𝘺 𝘽𝙤𝙩😚' }, type: 1 }
+                    ]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+            break
 case 'emptymsg': case 'emptymessage': case 'empty-message': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
         reply(`𝐈😚${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}𝐋𝐨𝐯𝐞❤️${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}𝐘𝐨𝐮🥺${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${empty}${pushname}\n\n_${pushname} read the message again 😩❤️_\n\n${footer}`)
         break
+case 'test' {
+if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+            if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `test2`
+            let ments = [me, jodoh]
+            let buttons = [
+                        { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
+                    ]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+            break
+case 'test2' {
+if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+            if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `test3`
+            let ments = [me, jodoh]
+            let buttons = [
+                        { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
+                    ]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+            break
 case 'antitag': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
