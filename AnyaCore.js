@@ -8139,60 +8139,64 @@ const allmenu = `*${PikaDay} ${pushname} ❤️😚*.
 ╭───『 𝘾𝞗𝞛𝞛𝞓𝞜𝘿𝙎』──❖
 ╽
 ┃┏━━━━━━━━━━━━━◆
-┃┃*❃---▶ ΜΞΝṴ ◀---✯*
+┣┫ *❃----- ᴍᴇɴᴜ -----✯*
 ┃┗┯━━━━━━━━━━━━◆
-┃┌┤
-┃│❒✗ ${prefix}allmenu
-┃│❒✗ ${prefix}ownermenu
-┃│❒✗ ${prefix}groupmenu
-┃│❒✗ ${prefix}antilinkmenu 
-┃│❒✗ ${prefix}textpromenu
-┃│❒✗ ${prefix}downloadermenu
-┃│❒✗ ${prefix}searchmenu
-┃│❒✗ ${prefix}convertmenu
-┃│❒✗ ${prefix}audiomenu
-┃│❒✗ ${prefix}photoeffectsmenu
-┃│❒✗ ${prefix}imagemenu
-┃│❒✗ ${prefix}emotemenu
-┃│❒✗ ${prefix}weebmenu
-┃│❒✗ ${prefix}stickermenu
-┃│❒✗ ${prefix}reactionmenu
-┃│❒✗ ${prefix}animestickermenu
-┃│❒✗ ${prefix}funmenu
-┃╰─────────────◆
- *━━━〈  💻 Core 💻  〉━━━*
-
-❒✗ ${prefix}alive  *(Bot working?)*
-❒✗ ${prefix}restart
-❒✗ ${prefix}afk
-❒✗ ${prefix}chatinfo
-❒✗ ${prefix}script
-❒✗ ${prefix}speedtest
-❒✗ ${prefix}ping
-❒✗ ${prefix}owner
-❒✗ ${prefix}Menu
-❒✗ ${prefix}delete
-❒✗ ${prefix}chatinfo
-❒✗ ${prefix}listpc
-❒✗ ${prefix}listgc
-❒✗ ${prefix}request
-❒✗ ${prefix}report
-❒✗ ${prefix}setcmd
-❒✗ ${prefix}listcmd
-❒✗ ${prefix}delcmd
-❒✗ ${prefix}lockcmd
-❒✗ ${prefix}addmsg
-❒✗ ${prefix}listmsg
-❒✗ ${prefix}getmsg
-❒✗ ${prefix}delmsg
-
+┠┬┤
+┃│ ❒✗ ${prefix}allmenu
+┃│ ❒✗ ${prefix}ownermenu
+┃│ ❒✗ ${prefix}groupmenu
+┃│ ❒✗ ${prefix}antilinkmenu 
+┃│ ❒✗ ${prefix}textpromenu
+┃│ ❒✗ ${prefix}downloadermenu
+┃│ ❒✗ ${prefix}searchmenu
+┃│ ❒✗ ${prefix}convertmenu
+┃│ ❒✗ ${prefix}audiomenu
+┃│ ❒✗ ${prefix}photoeffectsmenu
+┃│ ❒✗ ${prefix}imagemenu
+┃│ ❒✗ ${prefix}emotemenu
+┃│ ❒✗ ${prefix}weebmenu
+┃│ ❒✗ ${prefix}stickermenu
+┃│ ❒✗ ${prefix}reactionmenu
+┃│ ❒✗ ${prefix}animestickermenu
+┃│ ❒✗ ${prefix}funmenu
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃----- ᴄᴏʀᴇ -----✯*
+┃┗┯━━━━━━━━━━━━◆
+┠┬┤
+┃│ ❒✗ ${prefix}alive  *(Bot working?)*
+┃│ ❒✗ ${prefix}restart
+┃│ ❒✗ ${prefix}afk
+┃│ ❒✗ ${prefix}chatinfo
+┃│ ❒✗ ${prefix}script
+┃│ ❒✗ ${prefix}speedtest
+┃│ ❒✗ ${prefix}ping
+┃│ ❒✗ ${prefix}owner
+┃│ ❒✗ ${prefix}Menu
+┃│ ❒✗ ${prefix}delete
+┃│ ❒✗ ${prefix}chatinfo
+┃│ ❒✗ ${prefix}listpc
+┃│ ❒✗ ${prefix}listgc
+┃│ ❒✗ ${prefix}request
+┃│ ❒✗ ${prefix}report
+┃│ ❒✗ ${prefix}setcmd
+┃│ ❒✗ ${prefix}listcmd
+┃│ ❒✗ ${prefix}delcmd
+┃│ ❒✗ ${prefix}lockcmd
+┃│ ❒✗ ${prefix}addmsg
+┃│ ❒✗ ${prefix}listmsg
+┃│ ❒✗ ${prefix}getmsg
+┃│ ❒✗ ${prefix}delmsg
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
 *━━━〈  🥵 Owner 🥵  〉━━━*	
 
-❒✗ ${prefix}self
-❒✗ ${prefix}public
-❒✗ ${prefix}antitag
-❒✗ ${prefix}RentBot
-❒✗ ${prefix}Rentlist
+┃│ ❒✗ ${prefix}self
+┃│ ❒✗ ${prefix}public
+┃│ ❒✗ ${prefix}antitag
+┃│ ❒✗ ${prefix}RentBot
+┃│ ❒✗ ${prefix}Rentlist
 ❒✗ ${prefix}ban
 ❒✗ ${prefix}banchat
 ❒✗ ${prefix}deletethis
