@@ -326,7 +326,7 @@ global.Menudoccap5 = '𝘊𝘶𝘵𝘦𝘴𝘵 𝘣𝘰𝘵 𝘺𝘰𝘶 𝘦�
 
 //--------Theme emoji--------\\
 global.themeemoji1 = "🥵" // Theme emoji//
-global.themeemoji2 = "❤️‍🔥" // Theme emoji//
+global.themeemoji2 = "💘" // Theme emoji//
 global.themeemoji3 = "🖤" // Theme emoji//
 global.themeemoji4 = "🐦" // Theme emoji//
 global.themeemoji5 = "🐤" // Theme emoji//
@@ -355,8 +355,8 @@ autoemoji14 = '😘' // For auto stickers, audios, videos, images //
 autoemoji15 = '😚' // For auto stickers, audios, videos, images //
 //---Menu---\\
 global.reactmoji1 = "🤖" // Menu //
-global.reactmoji2 = "💋" // Menu //
-global.reactmoji3 = "💖" // Menu //
+global.reactmoji2 = "💘" // Menu //
+global.reactmoji3 = "🧚‍♀️" // Menu //
 global.reactmoji4 = "👾" // Menu //
 global.reactmoji5 = "😚" // Menu //
 global.reactmoji6 = "🥰" // Menu //
@@ -365,9 +365,9 @@ global.reactmoji8 = "😈" // Menu //
 global.reactmoji9 = "🥵" // Menu //
 global.reactmoji10 = "🔥" // Menu //
 global.reactmoji11 = "❤️" // Menu //
-global.reactmoji12 = "🖤" // Menu //
+global.reactmoji12 = "😳" // Menu //
 global.reactmoji13 = "❤️‍🔥" // Menu //
-global.reactmoji14 = "🇮🇳" // Menu //
+global.reactmoji14 = "😉" // Menu //
 //---AllMenu---\\
 global.reactmoji15 = "🐦" // AllMenu //
 global.reactmoji16 = "🐤" // AllMenu //
@@ -389,7 +389,6 @@ empty = '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 global.sessionName = 'session'
 global.antitags = true
 global.prefa = ['','-']
-global.prefa2 = ['.',',','-','_','+','!','$','#']
 global.sp = '⭔'
 global.mess = {
     success: 'Done ✓',
