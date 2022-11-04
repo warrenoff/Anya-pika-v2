@@ -277,7 +277,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await AnyaPika.getName(i + '@s.whatsapp.net'),
-		vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await AnyaPika.getName(i + '@s.whatsapp.net')}\nORG:;\nFN:${global.ownername}\nitem1.TEL;type=CELL;type=VOICE;waid=${i}:"https://wa.me/+918811074852"\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${link1}\nitem2.X-ABLabel:GitHub\nitem3.URL:${link1}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+		vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await AnyaPika.getName(i + '@s.whatsapp.net')}\nORG:;\nFN:${global.ownername}\nitem1.TEL;type=CELL;type=VOICE;waid=${global.ownername}:+${global.ownername}\nEND:VCARD`
 	    })
 	}
 	AnyaPika.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
