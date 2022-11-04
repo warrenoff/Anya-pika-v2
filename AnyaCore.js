@@ -8124,7 +8124,7 @@ ${allmenureactemoji} 𝗚𝗿𝗼𝘂𝗽 :
           listType: 1
                 }
             }), {})
-            AnyaPika.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            AnyaPika.relayMessage(m.chat, template.message, m, { messageId: template.key.id })
             }
             break
 case 'allmenu': {
