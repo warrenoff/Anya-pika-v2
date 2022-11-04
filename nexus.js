@@ -277,8 +277,25 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await AnyaPika.getName(i + '@s.whatsapp.net'),
-		vcard: `BEGIN:VCARD\nVERSION:4.0\nN:${await AnyaPika.getName(i + '@s.whatsapp.net')}\nFN:${global.ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${link1}\nitem2.X-ABLabel:GitHub\nitem3.URL:${link1}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
-	    })
+		vcard = 'BEGIN:VCARD\n' 
+            + 'VERSION:3.0\n' 
+            + 'FN:' + Config.ownername + '\n'
+            + 'ORG:;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=' + owner[0] + ':+' + owner[0] + '\n'
+            + 'END:VCARD'
+     let buttonMessaged = {
+          contacts: { displayName: Config.ownername, contacts: [{ vcard }] },
+					contextInfo: {
+						externalAdReply: {
+							title: Config.ownername,
+							body: '♥️',
+							previewType: "PHOTO",
+							thumbnailUrl: ``,
+							thumbnail: log0,
+							mediaType: 2,
+							mediaUrl: `https://wa.me/+`+owner[0]+'?text=Hii bro,I am '+citel.pushName,
+							sourceUrl: `https://wa.me/+`+owner[0]+'?text=Hii bro,I am '+citel.pushName,
+						})
 	}
 	AnyaPika.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
     }
