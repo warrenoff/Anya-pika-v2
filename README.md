@@ -18,7 +18,7 @@
 ## 𝘅𝗯𝗼𝘁 𝗮 𝗺𝘂𝗹𝘁𝗶 𝗳𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝗮𝗹 𝗯𝗼𝘁 𝗳𝗼𝗿 𝘄𝗵𝗮𝘁𝘀𝗮𝗽𝗽 
 ##
 <p align="center">
-<img src="./AnyaPikaMedia/theme/Videoshot_20221026_164328.jpg" width="520">
+<img src="./AnyaPikaMedia/theme/Videoshot_20221026_164328.jpg" width="820">
 <p align="center">
 </p>
 
