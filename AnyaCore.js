@@ -1681,9 +1681,8 @@ AnyaPika.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
       case 'playboy?':
       case 'fuckgirl?':
       case 'playgirl?':
-      case 'hot?': {
-      	            	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
+      case 'hot?': {     
+      if (isBan) return reply(mess.ban) 	            		
             
             let member = participants.map(u => u.id)
             let me = m.sender
