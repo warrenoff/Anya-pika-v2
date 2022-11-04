@@ -6,9 +6,7 @@
 
 <img src="./AnyaPikaMedia/theme/Videoshot_20221026_164328.jpg" width="820">
  
-<div align="center">
-</p>  
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar&duration=5316&pause=1064&color=F70D0C&width=435&lines=WELCOME+TO+THE+X-BOT;POWERED+BY+TEAM-X_FIRE;CREATED+BY+NEXUS;HOPE+YOU+ENJOY+THE+BOT+;AND+DONT+FORGET+TO+FOLLOW)](https://git.io/typing-svg)
+
   
 ## ╰━━━≺🥵 𝘉ꪗ ρỉƙꪖ 🥵≻━━━╯
   
