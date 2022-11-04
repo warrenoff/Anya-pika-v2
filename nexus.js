@@ -167,7 +167,7 @@ let buttons = [
 let buttonMessage = {
 document: fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Anya.xlsx'),
 mimetype: docs,
-jpegThumbnail:fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Welcome-Left-msg/Welcome.jpg'),
+jpegThumbnail:fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 mentions: [num],
 fileName: `${metadata.subject}`,
 fileLength: 99999999999999,
@@ -212,7 +212,7 @@ let buttons = [
 let buttonMessage = {
 document: fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Anya.xlsx'),
 mimetype: docs,
-jpegThumbnail:fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Welcome-Left-msg/Left.jpg'),
+jpegThumbnail:fs.readFileSync('./AnyaPikaMedia/theme/Anyatestpic.jpg'),
 mentions: [num],
 fileName: `${metadata.subject}`,
 fileLength: 99999999999999,
