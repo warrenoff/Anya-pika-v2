@@ -367,7 +367,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         }
         AnyaPika.sendMessage(jid, buttonMessage, { quoted, ...options })
     }
-    
+     
     /**
      * 
      * @param {*} jid 
