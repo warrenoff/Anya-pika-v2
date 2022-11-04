@@ -1,11 +1,11 @@
 {
-  "name": "CheemsBot-MD",
+  "name": "Anya-Pika",
   "version": "5.0.0",
   "description": "Automated whatsapp md bot created using nodejs",
-  "main": "index.js",
+  "main": "nexus.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "start": "node nexus.js"
   },
   "keywords": [
     "termux",
@@ -16,9 +16,9 @@
     "bot",
     "bot-md",
     "multi-device",
-    "xeon-bot-inc"
+    "AnyaPika"
   ],
-  "author": "DGXeon",
+  "author": "Pika",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
