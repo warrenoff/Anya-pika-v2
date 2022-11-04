@@ -172,7 +172,7 @@ mentions: [num],
 fileName: `${metadata.subject}`,
 fileLength: 99999999999999,
 caption: Pikabody,
-footer: `${footer}
+footer: `${footer7}
 Time : ${xtime}
 Date  : ${xdate}
 Bot    : ${global.BotName2}
@@ -206,8 +206,8 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    │➥ ${xdate} on ${xtime}
    └─────────────┈┈⃟≛⃝🖤`
 let buttons = [
-{buttonId: `nikal`, buttonText: {displayText: '𝘕𝘪𝘬𝘢𝘭🫵'}, type: 1},
-{buttonId: `owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳❤️'}, type: 1}
+{buttonId: `-nikal`, buttonText: {displayText: '𝘕𝘪𝘬𝘢𝘭🫵'}, type: 1},
+{buttonId: `-owner`, buttonText: {displayText: '𝘖𝘸𝘯𝘦𝘳❤️'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./AnyaPikaMedia/theme/storemedia/Anya.xlsx'),
@@ -217,7 +217,7 @@ mentions: [num],
 fileName: `${metadata.subject}`,
 fileLength: 99999999999999,
 caption: Pikabody,
-footer: `${footer}
+footer: `${footer7}
 𝗚𝗿𝗼𝘂𝗽 : ${metadata.subject}`,
 buttons: buttons,
 headerType: 4,
