@@ -1691,7 +1691,7 @@ AnyaPika.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
             let buttons = [
                         { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
                     ]
-                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, {mentions: ments})
             }
             break
 case 'dare':
@@ -8109,7 +8109,7 @@ ${allmenureactemoji} 𝗚𝗿𝗼𝘂𝗽 :
           listType: 1
                 }
             }), {})
-            AnyaPika.relayMessage(m.chat, template.message, m, { messageId: template.key.id })
+            AnyaPika.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
 case 'allmenu': {
