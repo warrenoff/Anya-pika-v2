@@ -282,7 +282,7 @@ AnyaPika.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
             + 'FN:' + Config.ownername + '\n'
             + 'ORG:;\n'
             + 'TEL;type=CELL;type=VOICE;waid=' + owner[0] + ':+' + owner[0] + '\n'
-            + 'END:VCARD'
+            + 'END:VCARD',
      let buttonMessaged = {
           contacts: { displayName: Config.ownername, contacts: [{ vcard }] },
 					contextInfo: {
