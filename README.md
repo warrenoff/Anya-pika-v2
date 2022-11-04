@@ -11,6 +11,9 @@
 <br>
 
 
+<p align="center"><img src="https://profile-counter.glitch.me/{Pika}/count.svg" alt="Pika :: Visitor's Count" /></p>
+
+
 
 ## 𝘅𝗯𝗼𝘁 𝗮 𝗺𝘂𝗹𝘁𝗶 𝗳𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝗮𝗹 𝗯𝗼𝘁 𝗳𝗼𝗿 𝘄𝗵𝗮𝘁𝘀𝗮𝗽𝗽 
 ##
