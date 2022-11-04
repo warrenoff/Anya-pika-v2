@@ -1935,7 +1935,7 @@ if (isBanChat) return reply(mess.banChat)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'remove')
 	}
 	break
 	case 'add':{     			
@@ -1944,7 +1944,7 @@ if (isBanChat) return reply(mess.banChat)
  AnyaPika.sendMessage(from, { react: { text: `${global.reactmoji18}`, key: m.key }})
  let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
  if (users.length == 0) return replay(`Please write the number of the person you want to add to thhis group`)
-  await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => replay(`User Added Successfully in this group by ${global.BotName} !`)).catch((err) => replay(`Cannot add that user to this group!`))
+  await AnyaPika.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => replay(`User Added Successfully in this group by ${botname1} !`)).catch((err) => replay(`Cannot add that user to this group!`))
  }
  break
      case 'promote': {
@@ -7956,14 +7956,14 @@ if (isBanChat) return reply(mess.banChat)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Aww my darling ${pushname} you need help? 🥺❤️`,
-                    description: `\n╭╼━━━━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛━━╾ᐧᐧᐧᐧ⳹
+                    description: `\n╭╼━━━᚜ 𝓐𝓷𝔂𝓪 𝓱𝔂 𝓟𝓲𝓴𝓪 ᚛━━╾ᐧᐧᐧᐧ⳹
 ❤️‍🩹 𝗨𝘀𝗲𝗿 :
 ┊➥ ${pushname}
 ${menureactemoji} 𝗢𝘄𝗻𝗲𝗿 :
 ┊➥ http://wa.me//${global.ownertag}
 ${allmenureactemoji} 𝗚𝗿𝗼𝘂𝗽 :
 ┊➥ ${groupMetadata.subject}
-╰╼━━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹`,
+╰╼━━━━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹`,
                     buttonText: "🦋⃟✮͢ 𝑻𝒂𝒑 𝒉𝒆𝒓𝒆 ✮⃝❤️",
                     footerText: `\n${footer}\n*ᴍʏ ɴᴀᴍᴇ* : ${botname1}
 *ᴍʏ sᴘᴇᴇᴅ* : ${latensie.toFixed(4)} ms
@@ -8135,26 +8135,31 @@ const allmenu = `*${PikaDay} ${pushname} ❤️😚*.
 🎃 𝗚𝗿𝗼𝘂𝗽 :
 ┊➥ ${groupMetadata.subject}
 ╰╼━━━━━━━━━━━━╾ᐧᐧᐧᐧ⳹
- *━━━〈  🧾 Menu 🧾  〉━━━*
 
-❒✗ ${prefix}allmenu
-❒✗ ${prefix}ownermenu
-❒✗ ${prefix}groupmenu
-❒✗ ${prefix}antilinkmenu 
-❒✗ ${prefix}textpromenu
-❒✗ ${prefix}downloadermenu
-❒✗ ${prefix}searchmenu
-❒✗ ${prefix}convertmenu
-❒✗ ${prefix}audiomenu
-❒✗ ${prefix}photoeffectsmenu
-❒✗ ${prefix}imagemenu
-❒✗ ${prefix}emotemenu
-❒✗ ${prefix}weebmenu
-❒✗ ${prefix}stickermenu
-❒✗ ${prefix}reactionmenu
-❒✗ ${prefix}animestickermenu
-❒✗ ${prefix}funmenu
-
+╭───『 𝘾𝞗𝞛𝞛𝞓𝞜𝘿𝙎』──❖
+╽
+┃┏━━━━━━━━━━━━━◆
+┃┃*❃---▶ ΜΞΝṴ ◀---✯*
+┃┗┯━━━━━━━━━━━━◆
+┃┌┤
+┃│❒✗ ${prefix}allmenu
+┃│❒✗ ${prefix}ownermenu
+┃│❒✗ ${prefix}groupmenu
+┃│❒✗ ${prefix}antilinkmenu 
+┃│❒✗ ${prefix}textpromenu
+┃│❒✗ ${prefix}downloadermenu
+┃│❒✗ ${prefix}searchmenu
+┃│❒✗ ${prefix}convertmenu
+┃│❒✗ ${prefix}audiomenu
+┃│❒✗ ${prefix}photoeffectsmenu
+┃│❒✗ ${prefix}imagemenu
+┃│❒✗ ${prefix}emotemenu
+┃│❒✗ ${prefix}weebmenu
+┃│❒✗ ${prefix}stickermenu
+┃│❒✗ ${prefix}reactionmenu
+┃│❒✗ ${prefix}animestickermenu
+┃│❒✗ ${prefix}funmenu
+┃╰─────────────◆
  *━━━〈  💻 Core 💻  〉━━━*
 
 ❒✗ ${prefix}alive  *(Bot working?)*
