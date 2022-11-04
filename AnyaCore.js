@@ -1693,7 +1693,7 @@ AnyaPika.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
             let buttons = [
                         { buttonId: '👀', buttonText: { displayText: '👀😂' }, type: 1 }
                     ]
-                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, {mentions: ments})
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
             break
 case 'dare':
