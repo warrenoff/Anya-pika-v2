@@ -1681,8 +1681,7 @@ AnyaPika.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
       case 'playboy?':
       case 'fuckgirl?':
       case 'playgirl?':
-      case 'hot?': {     
-      if (isBan) return reply(mess.ban) 	            		
+      case 'hot?': {      	            		
             
             let member = participants.map(u => u.id)
             let me = m.sender
@@ -7750,19 +7749,6 @@ case 'test': {
 {buttonId: `${prefix}spank`, buttonText: {displayText: '𝘚𝘱𝘢𝘯𝘬 💝'}, type: 1},
 {buttonId: `${prefix}hneko`, buttonText: {displayText:'𝘏𝘯𝘦𝘬𝘰 😳'},type: 1},
 {buttonId: `${prefix}nwaifu`, buttonText: {displayText:'𝘕𝘸𝘢𝘪𝘧𝘶 😋'},type: 1}
-]
-                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
-            }
-case 'test': {
-   if (!m.isGroup) return replay(`${mess.group}`)
-            let member = participants.map(u => u.id)
-            let me = m.sender
-            let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `𝐍𝐅𝐒𝐖 𝐌𝐞𝐧𝐮`
-            let ments = [me, jodoh]
-            let buttons = [
-{buttonId: `${prefix}myprofile`, buttonText: {displayText: '🕶️𝘗𝘳𝘰𝘧𝘪𝘭𝘦'}, type: 1},
-{buttonId: `${prefix}owner`, buttonText: {displayText:'𝘖𝘸𝘯𝘦𝘳 ❤️'},type: 1}
 ]
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
