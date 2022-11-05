@@ -8269,207 +8269,207 @@ const allmenu = `*${PikaDay} ${pushname} ❤️😚*.
 
 *━━━〈  ✨ Text Maker ✨  〉━━━*
 
-❒✗ ${prefix}candy
-❒✗ ${prefix}blackpinkneon
-❒✗ ${prefix}deepsea
-❒✗ ${prefix}scifi
-❒✗ ${prefix}fiction
-❒✗ ${prefix}berry
-❒✗ ${prefix}fruitjuice
-❒✗ ${prefix}biscuit
-❒✗ ${prefix}wood
-❒✗ ${prefix}chocolate
-❒✗ ${prefix}matrix
-❒✗ ${prefix}blood
-❒✗ ${prefix}halloween
-❒✗ ${prefix}wicker
-❒✗ ${prefix}darkgold
-❒✗ ${prefix}firework
-❒✗ ${prefix}skeleton
-❒✗ ${prefix}sand
-❒✗ ${prefix}glue
-❒✗ ${prefix}leaves
-❒✗ ${prefix}magma
-❒✗ ${prefix}lava
-❒✗ ${prefix}rock
-❒✗ ${prefix}bloodglas
-❒✗ ${prefix}underwater
-❒✗ ${prefix}textmaker
-❒✗ ${prefix}honey
-❒✗ ${prefix}ice
-❒✗ ${prefix}watercolor
-❒✗ ${prefix}multicolor
-❒✗ ${prefix}snow
-❒✗ ${prefix}harrypot
-❒✗ ${prefix}harrypotter
-❒✗ ${prefix}brokenglass
-❒✗ ${prefix}waterpipe
-❒✗ ${prefix}spooky
-❒✗ ${prefix}circuit
-❒✗ ${prefix}metalic
-❒✗ ${prefix}demon
-❒✗ ${prefix}sparklechristmas
-❒✗ ${prefix}Christmas
-❒✗ ${prefix}3Dchristmas
-❒✗ ${prefix}3Dbox
-❒✗ ${prefix}waterdrop
-❒✗ ${prefix}lion2
-❒✗ ${prefix}papercut
-❒✗ ${prefix}transformer
-❒✗ ${prefix}neondevil
-❒✗ ${prefix}3Davengers
-❒✗ ${prefix}3Dstone
-❒✗ ${prefix}3Dstone2
-❒✗ ${prefix}summertime
-❒✗ ${prefix}thunder
-❒✗ ${prefix}window
-❒✗ ${prefix}graffiti
-❒✗ ${prefix}graffitibike
-❒✗ ${prefix}pornhub
-❒✗ ${prefix}glitch
-❒✗ ${prefix}glitch2
-❒✗ ${prefix}glitch3
-❒✗ ${prefix}blackpink
-❒✗ ${prefix}3Dspace
-❒✗ ${prefix}lion
-❒✗ ${prefix}3Dneon
-❒✗ ${prefix}greenneon
-❒✗ ${prefix}bokeh
-❒✗ ${prefix}holographic
-❒✗ ${prefix}bear
-❒✗ ${prefix}wolf
-❒✗ ${prefix}joker
-❒✗ ${prefix}dropwater
-❒✗ ${prefix}dropwater2
-❒✗ ${prefix}thewall
-❒✗ ${prefix}neonlight
-❒✗ ${prefix}natural
-❒✗ ${prefix}carbon
-❒✗ ${prefix}pencil
-❒✗ ${prefix}blackpink2
-❒✗ ${prefix}neon
-❒✗ ${prefix}neonlight2
-❒✗ ${prefix}toxic
-❒✗ ${prefix}strawberry 
-❒✗ ${prefix}discovery
-❒✗ ${prefix}1917
-❒✗ ${prefix}sci_fi
-❒✗ ${prefix}ancient
-❒✗ ${prefix}fabric
-❒✗ ${prefix}horror
-❒✗ ${prefix}whitebear
-❒✗ ${prefix}juice
-❒✗ ${prefix}batman
-❒✗ ${prefix}multicolor
-❒✗ ${prefix}collwall
-❒✗ ${prefix}wonder
-❒✗ ${prefix}cool
-❒✗ ${prefix}sketch
-❒✗ ${prefix}marvel
-❒✗ ${prefix}foggy
-❒✗ ${prefix}writing
-❒✗ ${prefix}Halloweenfire
-❒✗ ${prefix}classic
+┃│ ❒✗ ${prefix}candy
+┃│ ❒✗ ${prefix}blackpinkneon
+┃│ ❒✗ ${prefix}deepsea
+┃│ ❒✗ ${prefix}scifi
+┃│ ❒✗ ${prefix}fiction
+┃│ ❒✗ ${prefix}berry
+┃│ ❒✗ ${prefix}fruitjuice
+┃│ ❒✗ ${prefix}biscuit
+┃│ ❒✗ ${prefix}wood
+┃│ ❒✗ ${prefix}chocolate
+┃│ ❒✗ ${prefix}matrix
+┃│ ❒✗ ${prefix}blood
+┃│ ❒✗ ${prefix}halloween
+┃│ ❒✗ ${prefix}wicker
+┃│ ❒✗ ${prefix}darkgold
+┃│ ❒✗ ${prefix}firework
+┃│ ❒✗ ${prefix}skeleton
+┃│ ❒✗ ${prefix}sand
+┃│ ❒✗ ${prefix}glue
+┃│ ❒✗ ${prefix}leaves
+┃│ ❒✗ ${prefix}magma
+┃│ ❒✗ ${prefix}lava
+┃│ ❒✗ ${prefix}rock
+┃│ ❒✗ ${prefix}bloodglas
+┃│ ❒✗ ${prefix}underwater
+┃│ ❒✗ ${prefix}textmaker
+┃│ ❒✗ ${prefix}honey
+┃│ ❒✗ ${prefix}ice
+┃│ ❒✗ ${prefix}watercolor
+┃│ ❒✗ ${prefix}multicolor
+┃│ ❒✗ ${prefix}snow
+┃│ ❒✗ ${prefix}harrypot
+┃│ ❒✗ ${prefix}harrypotter
+┃│ ❒✗ ${prefix}brokenglass
+┃│ ❒✗ ${prefix}waterpipe
+┃│ ❒✗ ${prefix}spooky
+┃│ ❒✗ ${prefix}circuit
+┃│ ❒✗ ${prefix}metalic
+┃│ ❒✗ ${prefix}demon
+┃│ ❒✗ ${prefix}sparklechristmas
+┃│ ❒✗ ${prefix}Christmas
+┃│ ❒✗ ${prefix}3Dchristmas
+┃│ ❒✗ ${prefix}3Dbox
+┃│ ❒✗ ${prefix}waterdrop
+┃│ ❒✗ ${prefix}lion2
+┃│ ❒✗ ${prefix}papercut
+┃│ ❒✗ ${prefix}transformer
+┃│ ❒✗ ${prefix}neondevil
+┃│ ❒✗ ${prefix}3Davengers
+┃│ ❒✗ ${prefix}3Dstone
+┃│ ❒✗ ${prefix}3Dstone2
+┃│ ❒✗ ${prefix}summertime
+┃│ ❒✗ ${prefix}thunder
+┃│ ❒✗ ${prefix}window
+┃│ ❒✗ ${prefix}graffiti
+┃│ ❒✗ ${prefix}graffitibike
+┃│ ❒✗ ${prefix}pornhub
+┃│ ❒✗ ${prefix}glitch
+┃│ ❒✗ ${prefix}glitch2
+┃│ ❒✗ ${prefix}glitch3
+┃│ ❒✗ ${prefix}blackpink
+┃│ ❒✗ ${prefix}3Dspace
+┃│ ❒✗ ${prefix}lion
+┃│ ❒✗ ${prefix}3Dneon
+┃│ ❒✗ ${prefix}greenneon
+┃│ ❒✗ ${prefix}bokeh
+┃│ ❒✗ ${prefix}holographic
+┃│ ❒✗ ${prefix}bear
+┃│ ❒✗ ${prefix}wolf
+┃│ ❒✗ ${prefix}joker
+┃│ ❒✗ ${prefix}dropwater
+┃│ ❒✗ ${prefix}dropwater2
+┃│ ❒✗ ${prefix}thewall
+┃│ ❒✗ ${prefix}neonlight
+┃│ ❒✗ ${prefix}natural
+┃│ ❒✗ ${prefix}carbon
+┃│ ❒✗ ${prefix}pencil
+┃│ ❒✗ ${prefix}blackpink2
+┃│ ❒✗ ${prefix}neon
+┃│ ❒✗ ${prefix}neonlight2
+┃│ ❒✗ ${prefix}toxic
+┃│ ❒✗ ${prefix}strawberry 
+┃│ ❒✗ ${prefix}discovery
+┃│ ❒✗ ${prefix}1917
+┃│ ❒✗ ${prefix}sci_fi
+┃│ ❒✗ ${prefix}ancient
+┃│ ❒✗ ${prefix}fabric
+┃│ ❒✗ ${prefix}horror
+┃│ ❒✗ ${prefix}whitebear
+┃│ ❒✗ ${prefix}juice
+┃│ ❒✗ ${prefix}batman
+┃│ ❒✗ ${prefix}multicolor
+┃│ ❒✗ ${prefix}collwall
+┃│ ❒✗ ${prefix}wonder
+┃│ ❒✗ ${prefix}cool
+┃│ ❒✗ ${prefix}sketch
+┃│ ❒✗ ${prefix}marvel
+┃│ ❒✗ ${prefix}foggy
+┃│ ❒✗ ${prefix}writing
+┃│ ❒✗ ${prefix}Halloweenfire
+┃│ ❒✗ ${prefix}classic
 
 *━━━〈  🎃 Downloader 🎃  〉━━━*
 
-❒✗ ${prefix}instagram
-❒✗ ${prefix}igtv
-❒✗ ${prefix}igstory
-❒✗ ${prefix}facebook
-❒✗ ${prefix}fbmp3
-❒✗ ${prefix}twitter
-❒✗ ${prefix}twittermp3 
-❒✗ ${prefix}tiktok
-❒✗ ${prefix}tiktokaudio
-❒✗ ${prefix}tiktoknown
-❒✗ ${prefix}mediafire
-❒✗ ${prefix}ytmp3
-❒✗ ${prefix}ytmp4
-❒✗ ${prefix}getmusic
-❒✗ ${prefix}getvudeo
-❒✗ ${prefix}gitclone
-❒✗ ${prefix}soundcloud
-❒✗ ${prefix}zippyshare
+┃│ ❒✗ ${prefix}instagram
+┃│ ❒✗ ${prefix}igtv
+┃│ ❒✗ ${prefix}igstory
+┃│ ❒✗ ${prefix}facebook
+┃│ ❒✗ ${prefix}fbmp3
+┃│ ❒✗ ${prefix}twitter
+┃│ ❒✗ ${prefix}twittermp3 
+┃│ ❒✗ ${prefix}tiktok
+┃│ ❒✗ ${prefix}tiktokaudio
+┃│ ❒✗ ${prefix}tiktoknown
+┃│ ❒✗ ${prefix}mediafire
+┃│ ❒✗ ${prefix}ytmp3
+┃│ ❒✗ ${prefix}ytmp4
+┃│ ❒✗ ${prefix}getmusic
+┃│ ❒✗ ${prefix}getvudeo
+┃│ ❒✗ ${prefix}gitclone
+┃│ ❒✗ ${prefix}soundcloud
+┃│ ❒✗ ${prefix}zippyshare
 	
  *━━━〈  🧐 Search 🧐  〉━━━*
  
-❒✗ ${prefix}play
-❒✗ ${prefix}song
-❒✗ ${prefix}yts
-❒✗ ${prefix}lyrics
-❒✗ ${prefix}google
-❒✗ ${prefix}playstore
-❒✗ ${prefix}gimage
-❒✗ ${prefix}pinterest
-❒✗ ${prefix}image
-❒✗ ${prefix}film
-❒✗ ${prefix}wallpaper
-❒✗ ${prefix}seachgc
-❒✗ ${prefix}happymod
-❒✗ ${prefix}tvsearch
-❒✗ ${prefix}wikimedia
-❒✗ ${prefix}ytsearch
-❒✗ ${prefix}ringtone
-❒✗ ${prefix}webtoon
-❒✗ ${prefix}anime
-❒✗ ${prefix}animestory
-❒✗ ${prefix}manga
-❒✗ ${prefix}wattpad
-❒✗ ${prefix}covid
+┃│ ❒✗ ${prefix}play
+┃│ ❒✗ ${prefix}song
+┃│ ❒✗ ${prefix}yts
+┃│ ❒✗ ${prefix}lyrics
+┃│ ❒✗ ${prefix}google
+┃│ ❒✗ ${prefix}playstore
+┃│ ❒✗ ${prefix}gimage
+┃│ ❒✗ ${prefix}pinterest
+┃│ ❒✗ ${prefix}image
+┃│ ❒✗ ${prefix}film
+┃│ ❒✗ ${prefix}wallpaper
+┃│ ❒✗ ${prefix}seachgc
+┃│ ❒✗ ${prefix}happymod
+┃│ ❒✗ ${prefix}tvsearch
+┃│ ❒✗ ${prefix}wikimedia
+┃│ ❒✗ ${prefix}ytsearch
+┃│ ❒✗ ${prefix}ringtone
+┃│ ❒✗ ${prefix}webtoon
+┃│ ❒✗ ${prefix}anime
+┃│ ❒✗ ${prefix}animestory
+┃│ ❒✗ ${prefix}manga
+┃│ ❒✗ ${prefix}wattpad
+┃│ ❒✗ ${prefix}covid
 
 *━━━〈  🫧 Convert 🫧  〉━━━*
 
-❒✗ ${prefix}toimg
-❒✗ ${prefix}sticker
-❒✗ ${prefix}toviewonce
-❒✗ ${prefix}readmore
-❒✗ ${prefix}take
-❒✗ ${prefix}smeme
-❒✗ ${prefix}emoji
-❒✗ ${prefix}tovideo
-❒✗ ${prefix}togif
-❒✗ ${prefix}tourl
-❒✗ ${prefix}toVN
-❒✗ ${prefix}tomo3
-❒✗ ${prefix}toaudio
-❒✗ ${prefix}Enbnary
-❒✗ ${prefix}Dbinary 
-❒✗ ${prefix}tinyurl
-❒✗ ${prefix}styletext
+┃│ ❒✗ ${prefix}toimg
+┃│ ❒✗ ${prefix}sticker
+┃│ ❒✗ ${prefix}toviewonce
+┃│ ❒✗ ${prefix}readmore
+┃│ ❒✗ ${prefix}take
+┃│ ❒✗ ${prefix}smeme
+┃│ ❒✗ ${prefix}emoji
+┃│ ❒✗ ${prefix}tovideo
+┃│ ❒✗ ${prefix}togif
+┃│ ❒✗ ${prefix}tourl
+┃│ ❒✗ ${prefix}toVN
+┃│ ❒✗ ${prefix}tomo3
+┃│ ❒✗ ${prefix}toaudio
+┃│ ❒✗ ${prefix}Enbnary
+┃│ ❒✗ ${prefix}Dbinary 
+┃│ ❒✗ ${prefix}tinyurl
+┃│ ❒✗ ${prefix}styletext
 
  *━━━〈  🔉 Audio 🔉  〉━━━*
  
-❒✗ ${prefix}volume
-❒✗ ${prefix}tempo
-❒✗ ${prefix}bass
-❒✗ ${prefix}blown
-❒✗ ${prefix}deep
-❒✗ ${prefix}earrape
-❒✗ ${prefix}fast
-❒✗ ${prefix}fat
-❒✗ ${prefix}nightcore
-❒✗ ${prefix}reverse
-❒✗ ${prefix}robot
-❒✗ ${prefix}slow
-❒✗ ${prefix}squirrel
+┃│ ❒✗ ${prefix}volume
+┃│ ❒✗ ${prefix}tempo
+┃│ ❒✗ ${prefix}bass
+┃│ ❒✗ ${prefix}blown
+┃│ ❒✗ ${prefix}deep
+┃│ ❒✗ ${prefix}earrape
+┃│ ❒✗ ${prefix}fast
+┃│ ❒✗ ${prefix}fat
+┃│ ❒✗ ${prefix}nightcore
+┃│ ❒✗ ${prefix}reverse
+┃│ ❒✗ ${prefix}robot
+┃│ ❒✗ ${prefix}slow
+┃│ ❒✗ ${prefix}squirrel
 
 *━━〈 🖼️ Photo effects 🖼️ 〉━━*
 
-❒✗ ${prefix}wanted
-❒✗ ${prefix}blur
-❒✗ ${prefix}framed 
-❒✗ ${prefix}gayeffect
-❒✗ ${prefix}imagessketch
-❒✗ ${prefix}invert
-❒✗ ${prefix}burn
-❒✗ ${prefix}triggeredwebp
-❒✗ ${prefix}shit
-❒✗ ${prefix}rip
-❒✗ ${prefix}jail
-❒✗ ${prefix}beutifuleffect
-❒✗ ${prefix}deleteeffect
-❒✗ ${prefix}pixelate
+┃│ ❒✗ ${prefix}wanted
+┃│ ❒✗ ${prefix}blur
+┃│ ❒✗ ${prefix}framed 
+┃│ ❒✗ ${prefix}gayeffect
+┃│ ❒✗ ${prefix}imagessketch
+┃│ ❒✗ ${prefix}invert
+┃│ ❒✗ ${prefix}burn
+┃│ ❒✗ ${prefix}triggeredwebp
+┃│ ❒✗ ${prefix}shit
+┃│ ❒✗ ${prefix}rip
+┃│ ❒✗ ${prefix}jail
+┃│ ❒✗ ${prefix}beutifuleffect
+┃│ ❒✗ ${prefix}deleteeffect
+┃│ ❒✗ ${prefix}pixelate
 
 *━━━〈  📷 image 📷  〉━━━*
 
