@@ -8193,71 +8193,79 @@ const allmenu = `*${PikaDay} ${pushname} ❤️😚*.
 ┃│ ❒✗ ${prefix}delmsg
 ┃╰────────────ᐧᐧᐧᐧ⳹
 ┃
-*━━━〈  🥵 Owner 🥵  〉━━━*	
-
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃----- ᴏᴡɴᴇʀ -----✯*
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
 ┃│ ❒✗ ${prefix}self
 ┃│ ❒✗ ${prefix}public
 ┃│ ❒✗ ${prefix}antitag
 ┃│ ❒✗ ${prefix}RentBot
 ┃│ ❒✗ ${prefix}Rentlist
-❒✗ ${prefix}ban
-❒✗ ${prefix}banchat
-❒✗ ${prefix}deletethis
-❒✗ ${prefix}join
-❒✗ ${prefix}leavegc
-❒✗ ${prefix}setbio
-❒✗ ${prefix}bcgroup
-❒✗ ${prefix}bcall
-❒✗ ${prefix}bcimage
-❒✗ ${prefix}bcvideo
-❒✗ ${prefix}bcaudio
-❒✗ ${prefix}bclocation
-❒✗ ${prefix}setppbot
-❒✗ ${prefix}setexif
-❒✗ ${prefix}block
-❒✗ ${prefix}unblock
-❒✗ ${prefix}coowner
-
-*━━━〈  🐦 Group 🐦  〉━━━*
-
-❒✗ ${prefix}groupsetting
-❒✗ ${prefix}grouplink
-❒✗ ${prefix}ephemeral
-❒✗ ${prefix}setgcpp
-❒✗ ${prefix}setname *(group)*
-❒✗ ${prefix}setdesc
-❒✗ ${prefix}group 
-❒✗ ${prefix}resetgrouplink
-❒✗ ${prefix}editinfo
-❒✗ ${prefix}add
-❒✗ ${prefix}remove
-❒✗ ${prefix}hidetag
-❒✗ ${prefix}tagall
-❒✗ ${prefix}antivirus
-❒✗ ${prefix}antitoxic
-❒✗ ${prefix}autoreply
-❒✗ ${prefix}promote
-❒✗ ${prefix}demote
-❒✗ ${prefix}react *(emoji)*
-❒✗ ${prefix}vote
-❒✗ ${prefix}devote
-❒✗ ${prefix}upvote
-❒✗ ${prefix}checkvote
-❒✗ ${prefix}delvote
-❒✗ ${prefix}couplepp
-
- *━━━〈  🔪 AntiLink 🔪  〉━━━*
-
-❒✗ ${prefix}antiwame
-❒✗ ${prefix}antilinkgc
-❒✗ ${prefix}antilinktg
-❒✗ ${prefix}antilinktt
-❒✗ ${prefix}antilinkytch *(channel)*
-❒✗ ${prefix}antilinkytvid *(video)*
-❒✗ ${prefix}antilinkig
-❒✗ ${prefix}antilinkfb
-❒✗ ${prefix}antilinktwitter
-❒✗ ${prefix}antilinkall
+┃│ ❒✗ ${prefix}ban
+┃│ ❒✗ ${prefix}banchat
+┃│ ❒✗ ${prefix}deletethis
+┃│ ❒✗ ${prefix}join
+┃│ ❒✗ ${prefix}leavegc
+┃│ ❒✗ ${prefix}setbio
+┃│ ❒✗ ${prefix}bcgroup
+┃│ ❒✗ ${prefix}bcall
+┃│ ❒✗ ${prefix}bcimage
+┃│ ❒✗ ${prefix}bcvideo
+┃│ ❒✗ ${prefix}bcaudio
+┃│ ❒✗ ${prefix}bclocation
+┃│ ❒✗ ${prefix}setppbot
+┃│ ❒✗ ${prefix}setexif
+┃│ ❒✗ ${prefix}block
+┃│ ❒✗ ${prefix}unblock
+┃│ ❒✗ ${prefix}coowner
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃---- ɢʀᴏᴜᴘ ----✯*
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ${prefix}groupsetting
+┃│ ❒✗ ${prefix}grouplink
+┃│ ❒✗ ${prefix}ephemeral
+┃│ ❒✗ ${prefix}setgcpp
+┃│ ❒✗ ${prefix}setname *(group)*
+┃│ ❒✗ ${prefix}setdesc
+┃│ ❒✗ ${prefix}group 
+┃│ ❒✗ ${prefix}resetgrouplink
+┃│ ❒✗ ${prefix}editinfo
+┃│ ❒✗ ${prefix}add
+┃│ ❒✗ ${prefix}remove
+┃│ ❒✗ ${prefix}hidetag
+┃│ ❒✗ ${prefix}tagall
+┃│ ❒✗ ${prefix}antivirus
+┃│ ❒✗ ${prefix}antitoxic
+┃│ ❒✗ ${prefix}autoreply
+┃│ ❒✗ ${prefix}promote
+┃│ ❒✗ ${prefix}demote
+┃│ ❒✗ ${prefix}react *(emoji)*
+┃│ ❒✗ ${prefix}vote
+┃│ ❒✗ ${prefix}devote
+┃│ ❒✗ ${prefix}upvote
+┃│ ❒✗ ${prefix}checkvote
+┃│ ❒✗ ${prefix}delvote
+┃│ ❒✗ ${prefix}couplepp
+┃╰────────────ᐧᐧᐧᐧ⳹
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃--- ᴀɴᴛɪʟɪɴᴋ ---✯*
+┃┗┯━━━━━━━━━━━━◆	
+┠┬┤
+┃│ ❒✗ ${prefix}antiwame
+┃│ ❒✗ ${prefix}antilinkgc
+┃│ ❒✗ ${prefix}antilinktg
+┃│ ❒✗ ${prefix}antilinktt
+┃│ ❒✗ ${prefix}antilinkytch *(channel)*
+┃│ ❒✗ ${prefix}antilinkytvid *(video)*
+┃│ ❒✗ ${prefix}antilinkig
+┃│ ❒✗ ${prefix}antilinkfb
+┃│ ❒✗ ${prefix}antilinktwitter
+┃│ ❒✗ ${prefix}antilinkall
 
 *━━━〈  ✨ Text Maker ✨  〉━━━*
 
