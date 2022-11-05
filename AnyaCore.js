@@ -8473,183 +8473,183 @@ const allmenu = `*${PikaDay} ${pushname} ❤️😚*.
 
 *━━━〈  📷 image 📷  〉━━━*
 
-❒✗ ${prefix}coffee 
-❒✗ ${prefix}Bts
-❒✗ ${prefix}woof
-❒✗ ${prefix}meow
-❒✗ ${prefix}lizard
-❒✗ ${prefix}wallneon
-❒✗ ${prefix}wallpubg
-❒✗ ${prefix}wallml
-❒✗ ${prefix}wallrandom
-❒✗ ${prefix}wallcode
-❒✗ ${prefix}animewall
-❒✗ ${prefix}animewall2
+┃│ ❒✗ ${prefix}coffee 
+┃│ ❒✗ ${prefix}Bts
+┃│ ❒✗ ${prefix}woof
+┃│ ❒✗ ${prefix}meow
+┃│ ❒✗ ${prefix}lizard
+┃│ ❒✗ ${prefix}wallneon
+┃│ ❒✗ ${prefix}wallpubg
+┃│ ❒✗ ${prefix}wallml
+┃│ ❒✗ ${prefix}wallrandom
+┃│ ❒✗ ${prefix}wallcode
+┃│ ❒✗ ${prefix}animewall
+┃│ ❒✗ ${prefix}animewall2
 
 *━━━〈  💃 emote 💃  〉━━━*
 
-❒✗ ${prefix}Instagramemoji 
-❒✗ ${prefix}facebookemoji
-❒✗ ${prefix}iphoneemoji
-❒✗ ${prefix}samsungemoji
-❒✗ ${prefix}joyemoji
-❒✗ ${prefix}skypeemoji
-❒✗ ${prefix}twitteremoji
-❒✗ ${prefix}whatsappemoji
-❒✗ ${prefix}microsoftemoji
-❒✗ ${prefix}googleemoji
-❒✗ ${prefix}pediaemoji
-❒✗ ${prefix}microsoftemoji
+┃│ ❒✗ ${prefix}Instagramemoji 
+┃│ ❒✗ ${prefix}facebookemoji
+┃│ ❒✗ ${prefix}iphoneemoji
+┃│ ❒✗ ${prefix}samsungemoji
+┃│ ❒✗ ${prefix}joyemoji
+┃│ ❒✗ ${prefix}skypeemoji
+┃│ ❒✗ ${prefix}twitteremoji
+┃│ ❒✗ ${prefix}whatsappemoji
+┃│ ❒✗ ${prefix}microsoftemoji
+┃│ ❒✗ ${prefix}googleemoji
+┃│ ❒✗ ${prefix}pediaemoji
+┃│ ❒✗ ${prefix}microsoftemoji
 
  *━━━〈  ❤️ Weeb ❤️  〉━━━*
 
-❒✗ ${prefix}naruto
-❒✗ ${prefix}yaoi
-❒✗ ${prefix}neko2
-❒✗ ${prefix}waifu
-❒✗ ${prefix}waifu-face
-❒✗ ${prefix}awoo
-❒✗ ${prefix}awoo2
-❒✗ ${prefix}shinobu
-❒✗ ${prefix}waifu-face
-❒✗ ${prefix}foxgirl
-❒✗ ${prefix}megumin2
-❒✗ ${prefix}loli
-❒✗ ${prefix}8ball
-❒✗ ${prefix}goose
-❒✗ ${prefix}avatar
-❒✗ ${prefix}tickle
-❒✗ ${prefix}gecg
-❒✗ ${prefix}feed
+┃│ ❒✗ ${prefix}naruto
+┃│ ❒✗ ${prefix}yaoi
+┃│ ❒✗ ${prefix}neko2
+┃│ ❒✗ ${prefix}waifu
+┃│ ❒✗ ${prefix}waifu-face
+┃│ ❒✗ ${prefix}awoo
+┃│ ❒✗ ${prefix}awoo2
+┃│ ❒✗ ${prefix}shinobu
+┃│ ❒✗ ${prefix}waifu-face
+┃│ ❒✗ ${prefix}foxgirl
+┃│ ❒✗ ${prefix}megumin2
+┃│ ❒✗ ${prefix}loli
+┃│ ❒✗ ${prefix}8ball
+┃│ ❒✗ ${prefix}goose
+┃│ ❒✗ ${prefix}avatar
+┃│ ❒✗ ${prefix}tickle
+┃│ ❒✗ ${prefix}gecg
+┃│ ❒✗ ${prefix}feed
 
  *━━━〈  👻 Stickers 👻  〉━━━*
 
-❒✗ ${prefix}patrick
-❒✗ ${prefix}emoji
-❒✗ ${prefix}emojimix
-❒✗ ${prefix}attp
-❒✗ ${prefix}ttp  *(text)*
-❒✗ ${prefix}lovesticker
+┃│ ❒✗ ${prefix}patrick
+┃│ ❒✗ ${prefix}emoji
+┃│ ❒✗ ${prefix}emojimix
+┃│ ❒✗ ${prefix}attp
+┃│ ❒✗ ${prefix}ttp  *(text)*
+┃│ ❒✗ ${prefix}lovesticker
 
  *━━━〈  🥶 Reactions 🥶  〉━━━*
 
-❒✗ ${prefix}bully
-❒✗ ${prefix}cuddle
-❒✗ ${prefix}cry
-❒✗ ${prefix}hug
-❒✗ ${prefix}awoo-sticker
-❒✗ ${prefix}kiss
-❒✗ ${prefix}lick
-❒✗ ${prefix}pat
-❒✗ ${prefix}smug
-❒✗ ${prefix}bonk
-❒✗ ${prefix}yeet
-❒✗ ${prefix}blush
-❒✗ ${prefix}smile
-❒✗ ${prefix}wave
-❒✗ ${prefix}highfive
-❒✗ ${prefix}handhold
-❒✗ ${prefix}nom
-❒✗ ${prefix}glomp
-❒✗ ${prefix}bite
-❒✗ ${prefix}slap
-❒✗ ${prefix}kick
-❒✗ ${prefix}kill
-❒✗ ${prefix}happy
-❒✗ ${prefix}wink
-❒✗ ${prefix}poke
-❒✗ ${prefix}dance
-❒✗ ${prefix}cringe
-❒✗ ${prefix}neko
-❒✗ ${prefix}gura
+┃│ ❒✗ ${prefix}bully
+┃│ ❒✗ ${prefix}cuddle
+┃│ ❒✗ ${prefix}cry
+┃│ ❒✗ ${prefix}hug
+┃│ ❒✗ ${prefix}awoo-sticker
+┃│ ❒✗ ${prefix}kiss
+┃│ ❒✗ ${prefix}lick
+┃│ ❒✗ ${prefix}pat
+┃│ ❒✗ ${prefix}smug
+┃│ ❒✗ ${prefix}bonk
+┃│ ❒✗ ${prefix}yeet
+┃│ ❒✗ ${prefix}blush
+┃│ ❒✗ ${prefix}smile
+┃│ ❒✗ ${prefix}wave
+┃│ ❒✗ ${prefix}highfive
+┃│ ❒✗ ${prefix}handhold
+┃│ ❒✗ ${prefix}nom
+┃│ ❒✗ ${prefix}glomp
+┃│ ❒✗ ${prefix}bite
+┃│ ❒✗ ${prefix}slap
+┃│ ❒✗ ${prefix}kick
+┃│ ❒✗ ${prefix}kill
+┃│ ❒✗ ${prefix}happy
+┃│ ❒✗ ${prefix}wink
+┃│ ❒✗ ${prefix}poke
+┃│ ❒✗ ${prefix}dance
+┃│ ❒✗ ${prefix}cringe
+┃│ ❒✗ ${prefix}neko
+┃│ ❒✗ ${prefix}gura
 
  *━━〈 💖 Anime sticker 💖 〉━━*
 
-❒✗ ${prefix}animenom
-❒✗ ${prefix}animeslap
-❒✗ ${prefix}animespank
-❒✗ ${prefix}animepat
-❒✗ ${prefix}animeneko
-❒✗ ${prefix}animekiss
-❒✗ ${prefix}animewlp
-❒✗ ${prefix}animecuddle
-❒✗ ${prefix}animecry
-❒✗ ${prefix}animekill
-❒✗ ${prefix}animelick
-❒✗ ${prefix}animebite
-❒✗ ${prefix}animeyeet
-❒✗ ${prefix}animebully
-❒✗ ${prefix}animebonk
-❒✗ ${prefix}animewink
-❒✗ ${prefix}animepoke
-❒✗ ${prefix}animesmile
-❒✗ ${prefix}animewave
-❒✗ ${prefix}animeawoo
-❒✗ ${prefix}animeblush
-❒✗ ${prefix}animesmug
-❒✗ ${prefix}animeglomp
-❒✗ ${prefix}animehappt
-❒✗ ${prefix}animedance
-❒✗ ${prefix}animecringe
-❒✗ ${prefix}animehighfive
-❒✗ ${prefix}animehandhold
-❒✗ ${prefix}animemegumin
-❒✗ ${prefix}smug2
+┃│ ❒✗ ${prefix}animenom
+┃│ ❒✗ ${prefix}animeslap
+┃│ ❒✗ ${prefix}animespank
+┃│ ❒✗ ${prefix}animepat
+┃│ ❒✗ ${prefix}animeneko
+┃│ ❒✗ ${prefix}animekiss
+┃│ ❒✗ ${prefix}animewlp
+┃│ ❒✗ ${prefix}animecuddle
+┃│ ❒✗ ${prefix}animecry
+┃│ ❒✗ ${prefix}animekill
+┃│ ❒✗ ${prefix}animelick
+┃│ ❒✗ ${prefix}animebite
+┃│ ❒✗ ${prefix}animeyeet
+┃│ ❒✗ ${prefix}animebully
+┃│ ❒✗ ${prefix}animebonk
+┃│ ❒✗ ${prefix}animewink
+┃│ ❒✗ ${prefix}animepoke
+┃│ ❒✗ ${prefix}animesmile
+┃│ ❒✗ ${prefix}animewave
+┃│ ❒✗ ${prefix}animeawoo
+┃│ ❒✗ ${prefix}animeblush
+┃│ ❒✗ ${prefix}animesmug
+┃│ ❒✗ ${prefix}animeglomp
+┃│ ❒✗ ${prefix}animehappt
+┃│ ❒✗ ${prefix}animedance
+┃│ ❒✗ ${prefix}animecringe
+┃│ ❒✗ ${prefix}animehighfive
+┃│ ❒✗ ${prefix}animehandhold
+┃│ ❒✗ ${prefix}animemegumin
+┃│ ❒✗ ${prefix}smug2
 
  *━━━〈  💃 Fun 💃  〉━━━*
 
-❒✗ ${prefix}rate *(Text)*
-❒✗ ${prefix}wangy
-❒✗ ${prefix}beautifulcheck
-❒✗ ${prefix}awesomecheck
-❒✗ ${prefix}prettycheck
-❒✗ ${prefix}lesbiancheck
-❒✗ ${prefix}gaycheck
-❒✗ ${prefix}cutecheck
-❒✗ ${prefix}uglycheck
-❒✗ ${prefix}hornycheck
-❒✗ ${prefix}charactercheck 
-❒✗ ${prefix}lovelycheck
-❒✗ ${prefix}murderercheck
-❒✗ ${prefix}chutiyacheck 
-❒✗ ${prefix}dethcheck
-❒✗ ${prefix}couple
-❒✗ ${prefix}mysoulmate
-❒✗ ${prefix}hot
-❒✗ ${prefix}sexy
-❒✗ ${prefix}kind
-❒✗ ${prefix}idiot
-❒✗ ${prefix}handsome
-❒✗ ${prefix}beutiful 
-❒✗ ${prefix}cute
-❒✗ ${prefix}pretty
-❒✗ ${prefix}lesbian
-❒✗ ${prefix}noob
-❒✗ ${prefix}bastard
+┃│ ❒✗ ${prefix}rate *(Text)*
+┃│ ❒✗ ${prefix}wangy
+┃│ ❒✗ ${prefix}beautifulcheck
+┃│ ❒✗ ${prefix}awesomecheck
+┃│ ❒✗ ${prefix}prettycheck
+┃│ ❒✗ ${prefix}lesbiancheck
+┃│ ❒✗ ${prefix}gaycheck
+┃│ ❒✗ ${prefix}cutecheck
+┃│ ❒✗ ${prefix}uglycheck
+┃│ ❒✗ ${prefix}hornycheck
+┃│ ❒✗ ${prefix}charactercheck 
+┃│ ❒✗ ${prefix}lovelycheck
+┃│ ❒✗ ${prefix}murderercheck
+┃│ ❒✗ ${prefix}chutiyacheck 
+┃│ ❒✗ ${prefix}dethcheck
+┃│ ❒✗ ${prefix}couple
+┃│ ❒✗ ${prefix}mysoulmate
+┃│ ❒✗ ${prefix}hot
+┃│ ❒✗ ${prefix}sexy
+┃│ ❒✗ ${prefix}kind
+┃│ ❒✗ ${prefix}idiot
+┃│ ❒✗ ${prefix}handsome
+┃│ ❒✗ ${prefix}beutiful 
+┃│ ❒✗ ${prefix}cute
+┃│ ❒✗ ${prefix}pretty
+┃│ ❒✗ ${prefix}lesbian
+┃│ ❒✗ ${prefix}noob
+┃│ ❒✗ ${prefix}bastard
 
 ....Type 𝗙𝘂𝗻𝗺𝗲𝗻𝘂𝟮 for more....
 
  *━━━〈  🎮 Games 🎮  〉━━━*
 
-❒✗ ${prefix}truth
-❒✗ ${prefix}dare
-❒✗ ${prefix}tictactoe
-❒✗ ${prefix}delttt
-❒✗ ${prefix}guess  *(𝙾𝚙𝚝𝚒𝚘𝚗)*
-❒✗ ${prefix}math
+┃│ ❒✗ ${prefix}truth
+┃│ ❒✗ ${prefix}dare
+┃│ ❒✗ ${prefix}tictactoe
+┃│ ❒✗ ${prefix}delttt
+┃│ ❒✗ ${prefix}guess  *(𝙾𝚙𝚝𝚒𝚘𝚗)*
+┃│ ❒✗ ${prefix}math
 
  *━━〈  🙆 Anonymous chat 🙆  〉━━*
 
-❒✗ ${prefix}anonymous 
-❒✗ ${prefix}start
-❒✗ ${prefix}next
-❒✗ ${prefix}leave
+┃│ ❒✗ ${prefix}anonymous 
+┃│ ❒✗ ${prefix}start
+┃│ ❒✗ ${prefix}next
+┃│ ❒✗ ${prefix}leave
 
  *━━━〈  ⚒️ Tools ⚒️  〉━━━*
 
-❒✗ ${prefix}translate
-❒✗ ${prefix}fliptext 
-❒✗ ${prefix}toletter  *(number)*
+┃│ ❒✗ ${prefix}translate
+┃│ ❒✗ ${prefix}fliptext 
+┃│ ❒✗ ${prefix}toletter  *(number)*
 ` 
 let buons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1},
