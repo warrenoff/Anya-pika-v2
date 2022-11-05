@@ -7638,6 +7638,21 @@ case 'description': {
                     await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
             }
             break
+case 'nikalmsgs': {
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+            if (!m.isGroup) return replay(`${mess.group}`)
+            let member = participants.map(u => u.id)
+            let me = m.sender
+            let jodoh = member[Math.floor(Math.random() * member.length)]
+            let jawab = `ㅤ ࿙⳼ 𝗟𝗺𝗮𝗼 𝗺𝗿𝗶𝘁𝘆𝘂 😚🫵 ⳹࿚\n\n*${pushname}* said... That was a nice time when we were 𝘁𝗼𝗴𝗲𝘁𝗵𝗲𝗿 but, now 𝗴𝗲𝘁 𝗹𝗼𝘀𝘁 𝗯𝗶𝘁𝗰𝗵. \n\n_${nikalmsg}_`
+            let ments = [me, jodoh]
+            let buttons = [
+                        { buttonId: '${prefix}owner', buttonText: { displayText: '❤️𝘖𝘸𝘯𝘦𝘳 𝘰𝘧 𝘵𝘩𝘪𝘴 𝘴𝘦𝘹𝘺 𝘽𝙤𝙩😚' }, type: 1 }
+                    ]
+                    await AnyaPika.sendButtonText(m.chat, buttons, jawab, footer, m, {mentions: ments})
+            }
+            break
 case 'emptymsg': case 'emptymessage': case 'empty-message': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
